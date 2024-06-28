@@ -6,6 +6,7 @@
 <html class="loading" lang="en" data-textdirection="ltr">
 <head>
 <meta charset="UTF-8">
+<script src="/esc/resources/js/jQuery-v.3.5.min.js"  ></script>
 <!-- <meta name="google-signin-client_id" content="180023549420-4araucipo8cil4matp902f64cte57md9.apps.googleusercontent.com">
  --> <script src="https://accounts.google.com/gsi/client" onload="initClient()" async defer></script>
 <title>Header</title>
@@ -55,7 +56,7 @@
                   </defs>
                   <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                     <g id="Artboard" transform="translate(-400.000000, -178.000000)">
-			         <img src="<%=request.getContextPath() %>/resources/images/logo/P2-LoginPage.jpeg" width="50" height="" class="card-img">
+			         <img src="<%=request.getContextPath() %>/resources/images/logo/logo.svg" width="50" height="" class="card-img">
                     </g>
                   </g>
                 </svg></span>
@@ -185,9 +186,7 @@
     <script>
     $(window).on("load",(function(){
     	//$('.btn-page-block-custom').hide();
-        if (feather) {
-          feather.replace({ width: 14, height: 14 });
-        }
+  /* 
         if('${welcome}' != ''){
         	jQuery('#clickModal').click();
         	  "use strict";var e,o,t,r,a,s="#ebf0f7",i="#5e5873",n="#ebe9f1",d=document.querySelector("#gained-chart"),l=document.querySelector("#order-chart"),h=document.querySelector("#avg-sessions-chart"),p=document.querySelector("#support-trackers-chart"),c=document.querySelector("#sales-visit-chart"),w="rtl"===$("html").attr("data-textdirection");setTimeout(
@@ -217,7 +216,7 @@
             overlayCSS: {
               opacity: 0.8
             }
-          });
+          }); */
   	 }));
     
     const button = document.getElementById("signout_button");

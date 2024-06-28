@@ -338,7 +338,7 @@ $(function () {
       $.blockUI({
         message:
           '<div class="d-flex justify-content-center align-items-center"><p class="me-50 mb-0">Please wait...</p> <div class="spinner-grow spinner-grow-sm text-white" role="status"></div> </div>',
-        timeout: 1000,
+        //timeout: 1000,
         css: {
           backgroundColor: 'transparent',
           color: '#fff',

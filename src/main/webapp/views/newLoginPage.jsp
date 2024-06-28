@@ -103,76 +103,53 @@
               
               <div class=" d-none d-lg-flex col-lg-8 align-items-center p-5 ">
                  <div class="w-100 d-lg-flex align-items-center justify-content-center px-5 imgDiv"  id="imgDiv">
-				          <div id="carousel-example-caption" class="carousel slide" data-bs-ride="carousel">
-				            <ol class="carousel-indicators">
-				              <li data-bs-target="#carousel-example-caption" data-bs-slide-to="0" class="active"></li>
-				              <li data-bs-target="#carousel-example-caption" data-bs-slide-to="1"></li>
-				              <li data-bs-target="#carousel-example-caption" data-bs-slide-to="2"></li>
+<!-- 				          <div id="carousel-example-caption" class="carousel slide" data-bs-ride="carousel">
+ -->
+ <div id="carousel-interval" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+ 				            <ol class="carousel-indicators">
+ 				            
+				              <li data-bs-target="#carousel-interval" data-bs-slide-to="0" class="active"></li>
+				              <li data-bs-target="#carousel-interval" data-bs-slide-to="1"></li>
+				              <li data-bs-target="#carousel-interval" data-bs-slide-to="2"></li>
+				                <li data-bs-target="#carousel-interval" data-bs-slide-to="3"></li>
 				            </ol>
 				            <div class="carousel-inner">
 				              <div class="carousel-item active">
-				                <img class="img-fluid" src="<c:url value="/resources/images/SafetyP1.png"/>" alt="First slide" />
+				                <img class="img-fluid" src="<c:url value="/resources/images/iwm.png"/>" alt="First slide" />
 				                <div class="carousel-caption d-none d-md-block">
 				                  <!-- <h3 class="text-white">First Slide Label</h3> -->
-				                 <!--  <p class="text-white">
-				                    Donut jujubes I love topping I love sweet. Jujubes I love brownie gummi bears I love donut sweet
-				                    chocolate. Tart chocolate marshmallow.Tart carrot cake muffin.
-				                  </p> -->
+				                
 				                </div>
 				              </div>
-				    <%--           <div class="carousel-item">
-				                <img class="img-fluid" src="<c:url value="/resources/images/Safety2.png"/>" alt="Second slide" />
+				  
+				                <div class="carousel-item">
+				                <img class="img-fluid" src="<c:url value="/resources/images/msw.png"/>" alt="Second slide" />
 				                <div class="carousel-caption d-none d-md-block">
-				                 <!--  <p class="text-white">
-				                    Tart macaroon marzipan I love soufflé apple pie wafer. Chocolate bar jelly caramels jujubes
-				                    chocolate cake gummies. Cupcake cake I love cake danish carrot cake.
-				                  </p> -->
+				                  
 				                </div>
 				              </div>
+				                <div class="carousel-item">
+				                <img class="img-fluid" src="<c:url value="/resources/images/bmw.png"/>" alt="Third slide" />
+				                <div class="carousel-caption d-none d-md-block">
+				                 
+				                </div>
+				              </div>
+				              
 				              <div class="carousel-item">
-				                <img class="img-fluid" src="<c:url value="/resources/images/Safety3.png"/>" alt="Third slide" />
+				                <img class="img-fluid" src="<c:url value="/resources/images/water.png"/>" alt="Fourth slide" />
 				                <div class="carousel-caption d-none d-md-block">
-				                  <!-- <p class="text-white">
-				                    Pudding sweet pie gummies. Chocolate bar sweet tiramisu cheesecake chocolate cotton candy pastry
-				                    muffin. Marshmallow cake powder icing.
-				                  </p> -->
-				                </div>
-				              </div> --%>
-				                <div class="carousel-item">
-				                <img class="img-fluid" src="<c:url value="/resources/images/SafetyP2.png"/>" alt="Third slide" />
-				                <div class="carousel-caption d-none d-md-block">
-				                  <!-- <p class="text-white">
-				                    Pudding sweet pie gummies. Chocolate bar sweet tiramisu cheesecake chocolate cotton candy pastry
-				                    muffin. Marshmallow cake powder icing.
-				                  </p> -->
+				                 
 				                </div>
 				              </div>
-				                <div class="carousel-item">
-				                <img class="img-fluid" src="<c:url value="/resources/images/SafetyP3.png"/>" alt="Third slide" />
-				                <div class="carousel-caption d-none d-md-block">
-				                  <!-- <p class="text-white">
-				                    Pudding sweet pie gummies. Chocolate bar sweet tiramisu cheesecake chocolate cotton candy pastry
-				                    muffin. Marshmallow cake powder icing.
-				                  </p> -->
-				                </div>
-				              </div>
-				            <%--   <div class="carousel-item">
-				                <img class="img-fluid" src="<c:url value="/resources/images/SafetyP4.jpeg"/>" alt="Third slide" />
-				                <div class="carousel-caption d-none d-md-block">
-				                  <!-- <p class="text-white">
-				                    Pudding sweet pie gummies. Chocolate bar sweet tiramisu cheesecake chocolate cotton candy pastry
-				                    muffin. Marshmallow cake powder icing.
-				                  </p> -->
-				                </div>
-				              </div> --%>
+				          
 				            </div>
 				            <a
 				              class="carousel-control-prev"
-				              data-bs-target="#carousel-example-caption"
+				              data-bs-target="carousel-interval"
 				              role="button"
 				              data-bs-slide="prev"
 				            >
-				              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				              <span class="carousel-interval" aria-hidden="true"></span>
 				              <span class="visually-hidden">Previous</span>
 				            </a>
 				            <a
@@ -181,7 +158,7 @@
 				              role="button"
 				              data-bs-slide="next"
 				            >
-				              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				              <span class="carousel-interval" aria-hidden="true"></span>
 				              <span class="visually-hidden">Next</span>
 				            </a>
 				          </div>
@@ -190,66 +167,36 @@
               <!-- /Left Text-->
               <!-- Login-->
               
-              <div class="d-flex col-lg-4 align-items-center auth-bg px-2 p-lg-2">
-               <!-- Login basic -->
-				 	
-                <div class="col-12 col-sm-8 col-md-6 mt-1 col-lg-12 px-xl-2 mx-auto">
-				<img src="<c:url value="/resources/images/logo/protect-main.jpeg"/>" href="https://resustainability.com/"  alt="logo" class="mb-2 ms-2" style="
-    height: 6rem;
-">
-                <div style="color: red;" >${invalidEmail} ${multipleLoginFound}</div>
-                <h3><strong>Welcome to</strong></h3>
-              
-                  <h4 class="mb-2">Re Sustainability Safety Portal</h4>
-                   <hr class="m-b-10 fr-text m-t-0">
-                  <div class="p-10 text-center"> 
-                     <img class="box-title m-b-15" src="<c:url value="/resources/images/login_icon.png"/>"  height="107" width="102">      
-    				<br></div>
-    				
-    				<div id="g_id_onload"
-					     data-client_id="180023549420-57imk7usicj28m4489imvf0spmk3v7l7.apps.googleusercontent.com"
-					     data-context="use"
-					     data-ux_mode="popup"
-					     data-callback="handleCredentialResponse"
-					     data-nonce=""
-					     data-itp_support="true">
-					</div>
-					<div class="g_id_signin justify-content-center mt-1"
-					     data-type="standard" 
-					     data-shape="rectangular"
-					     data-theme="filled_blue"
-					     data-text="signin_with"
-					     data-size="large"
-					     data-logo_alignment="left">
-					</div>
-	<!-- 			 <div id="g_id_onload"
-									 180023549420-57imk7usicj28m4489imvf0spmk3v7l7.apps.googleusercontent.com
-				     data-client_id="180023549420-4araucipo8cil4matp902f64cte57md9.apps.googleusercontent.com"
-				     data-context="signin"
-				     data-ux_mode="popup"
-				     data-callback="handleCredentialResponse"
-				     data-nonce=""
-				     data-auto_select="true"
-				     data-itp_support="true">
-				</div>
-				
-				<div class="g_id_signin justify-content-center mt-1"
-				     data-type="standard"
-				     data-shape="rectangular"
-				     data-theme="outline"
-				     data-text="signin_with"
-				     data-size="large"
-				     data-logo_alignment="left">
-				</div> -->
-				    
-			        <p class="mt-2 text-secondary fw-bolder">Please ensure username should be your Email ID @resustainability.com</p>
-			        <p class=" fr-text text-secondary">Incase of any login issue, connect on <a href="mailto:it.helpdesk@resustainability.com" class="link"><u>it.helpdesk@resustainability.com</u></a></p>
-                 	<hr class="m-b-10 fr-text m-t-0">
-                 	<p class=" fr-text">Signing up in this Safety Portal confirms your acceptance to ReSL IT Application Usage Policy </p>
-                 
-             <div class="m-t-30 "><p class="font-10 fr-text">Safety Portal © 2023. ReSL, All Rights Reserved.</p></div>
+          <div class="d-flex col-lg-4 align-items-center auth-bg px-2 p-lg-5">
+                <div class="col-12 col-sm-8 col-md-6 col-lg-12 px-xl-2 mx-auto">
+                      <!-- <h2 class="badge bg-dark card-title fw-bold mb-1">WELCOME</h2> -->
+                   
+                      <h2 class="badge badge-glow  bg-info card-title fw-bold mb-1" style="text-align: center;">WELCOME</h2>
+                      
+                      
+                  <form class="auth-login-form mt-2" action="<%=request.getContextPath() %>/login" method="POST" novalidate="novalidate">
+                    <div class="mb-1">
+                      <label class="form-label" for="login-email">Email</label>
+                      <input class="form-control" id="login-email" type="text" name="email_id" placeholder="john@example.com" aria-describedby="login-email" autofocus="" tabindex="1">
+                    </div>
+                 <%--    <div class="mb-1">
+                      <div class="d-flex justify-content-between">
+                        <label class="form-label" for="login-password">Password</label><a href="auth-forgot-password-cover.html"><small>Forgot Password?</small></a>
+                      </div>
+                      <div class="input-group input-group-merge form-password-toggle">
+                        <input class="form-control form-control-merge" id="login-password" type="password" name="login-password" placeholder="············" aria-describedby="login-password" tabindex="2"><span class="input-group-text cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></span>
+                      </div>
+                    </div> --%>
+                    <div class="mb-1">
+                      <div class="form-check">
+                        <input class="form-check-input" id="remember-me" type="checkbox" tabindex="3">
+                        <label class="form-check-label" for="remember-me"> Remember Me</label>
+                      </div>
+                    </div>
+                    <button class="btn btn-primary w-100 waves-effect waves-float waves-light" type="submit" tabindex="4">Sign in</button>
+                  </form>
+                  
                 </div>
-                	
               </div>
               
               <!-- /Login-->

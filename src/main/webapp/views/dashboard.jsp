@@ -25,44 +25,44 @@ License: You must have a valid license purchased only from themeforest(the above
     <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="PIXINVENT">
-    <title>Dashboard analytics - reirm</title>
-    <link rel="apple-touch-icon" href="/reirm/resources/images/ico/apple-icon-120.html">
-   <link rel="icon" type="image/png" sizes="96x96" href="/reirm/resources/images/protect-favicon.png" >
+    <title>Dashboard analytics - esc</title>
+    <link rel="apple-touch-icon" href="/esc/resources/images/ico/apple-icon-120.html">
+   <link rel="icon" type="image/png" sizes="96x96" href="/esc/resources/images/protect-favicon.png" >
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
 	    <meta name="google-signin-client_id" content="46521935412-0pl18k3a2mq7fs8nrl1853qcie9h5fjb.apps.googleusercontent.com">
-<script src="/reirm/resources/js/jQuery-v.3.5.min.js"></script>
+<script src="/esc/resources/js/jQuery-v.3.5.min.js"></script>
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="<c:url value="/resources/vendors/css/extensions/sweetalert2.min.css"/>">
     <link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/plugins/extensions/ext-component-sweet-alerts.min.css"/>">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/vendors/css/vendors.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/vendors/css/tables/datatable/dataTables.bootstrap5.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/vendors/css/tables/datatable/responsive.bootstrap5.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/vendors/css/tables/datatable/buttons.bootstrap5.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/vendors/css/tables/datatable/rowGroup.bootstrap5.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/vendors/css/pickers/pickadate/pickadate.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/vendors/css/pickers/flatpickr/flatpickr.min.css">
-        <link rel="stylesheet" type="text/css" href="/reirm/resources/vendors/css/extensions/toastr.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/css/plugins/extensions/ext-component-toastr.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/tables/datatable/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/tables/datatable/responsive.bootstrap5.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/tables/datatable/buttons.bootstrap5.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/tables/datatable/rowGroup.bootstrap5.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/pickers/pickadate/pickadate.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/pickers/flatpickr/flatpickr.min.css">
+        <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/extensions/toastr.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/css/plugins/extensions/ext-component-toastr.min.css">
     <!-- END: Vendor CSS-->
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 	  <link rel="stylesheet" href="<c:url value="/resources/css/font-awesome-v.4.7.css" />">
     <!-- BEGIN: Theme CSS-->
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/css/bootstrap-extended.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/css/colors.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/css/components.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/css/themes/dark-layout.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/css/themes/bordered-layout.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/css/themes/semi-dark-layout.min.css">
-   <link rel="stylesheet" type="text/css" href="/reirm/resources/vendors/css/forms/select/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/css/bootstrap-extended.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/css/colors.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/css/components.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/css/themes/dark-layout.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/css/themes/bordered-layout.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/css/themes/semi-dark-layout.min.css">
+   <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/forms/select/select2.min.css">
     <!-- BEGIN: Page CSS-->
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/css/core/menu/menu-types/horizontal-menu.min.css">
-        <link rel="stylesheet" type="text/css" href="/reirm/resources/css/plugins/forms/pickers/form-flat-pickr.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/css/plugins/forms/pickers/form-pickadate.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/css/core/menu/menu-types/horizontal-menu.min.css">
+        <link rel="stylesheet" type="text/css" href="/esc/resources/css/plugins/forms/pickers/form-flat-pickr.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/css/plugins/forms/pickers/form-pickadate.min.css">
 
     <!-- BEGIN: Custom CSS-->
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/css/style.css">
     <!-- END: Custom CSS-->
 <style>
 .modal {
@@ -209,12 +209,12 @@ License: You must have a valid license purchased only from themeforest(the above
        <div class="col-xl-8 col-md-6 col-12">
       <div class="card card-statistics">
         <div class="card-header">
-          <h4 class="card-title">IRM Statistics</h4>
+          <h4 class="card-title">Report</h4>
           <div class="d-flex align-items-center">
             <p class="card-text font-small-2 me-25 mb-0">Updated seconds ago</p>
           </div>
         </div>
-        <div class="card-body statistics-body">
+      <%--   <div class="card-body statistics-body">
           <div class="row">
             <div class="col-xl-3 col-sm-6 col-12 mb-2 mb-xl-0">
               <div class="d-flex flex-row">
@@ -269,7 +269,7 @@ License: You must have a valid license purchased only from themeforest(the above
               </div>
             </div>
           </div>
-        </div>
+        </div> --%>
       </div>
     </div>
     <!--/ Statistics Card -->
@@ -714,7 +714,7 @@ License: You must have a valid license purchased only from themeforest(the above
               title="Billy Hopkins"
               class="avatar pull-up"
             >
-              <img src="/reirm/resources/images/portrait/small/avatar-s-9.jpg" alt="Avatar" width="33" height="33" />
+              <img src="/esc/resources/images/portrait/small/avatar-s-9.jpg" alt="Avatar" width="33" height="33" />
             </div>
             <div
               data-bs-toggle="tooltip"
@@ -723,7 +723,7 @@ License: You must have a valid license purchased only from themeforest(the above
               title="Amy Carson"
               class="avatar pull-up"
             >
-              <img src="/reirm/resources/images/portrait/small/avatar-s-6.jpg" alt="Avatar" width="33" height="33" />
+              <img src="/esc/resources/images/portrait/small/avatar-s-6.jpg" alt="Avatar" width="33" height="33" />
             </div>
             <div
               data-bs-toggle="tooltip"
@@ -732,7 +732,7 @@ License: You must have a valid license purchased only from themeforest(the above
               title="Brandon Miles"
               class="avatar pull-up"
             >
-              <img src="/reirm/resources/images/portrait/small/avatar-s-8.jpg" alt="Avatar" width="33" height="33" />
+              <img src="/esc/resources/images/portrait/small/avatar-s-8.jpg" alt="Avatar" width="33" height="33" />
             </div>
             <div
               data-bs-toggle="tooltip"
@@ -742,7 +742,7 @@ License: You must have a valid license purchased only from themeforest(the above
               class="avatar pull-up"
             >
               <img
-                src="/reirm/resources/images/portrait/small/avatar-s-20.jpg"
+                src="/esc/resources/images/portrait/small/avatar-s-20.jpg"
                 alt="Avatar"
                 width="33"
                 height="33"
@@ -756,7 +756,7 @@ License: You must have a valid license purchased only from themeforest(the above
               class="avatar pull-up"
             >
               <img
-                src="/reirm/resources/images/portrait/small/avatar-s-20.jpg"
+                src="/esc/resources/images/portrait/small/avatar-s-20.jpg"
                 alt="Avatar"
                 width="33"
                 height="33"
@@ -790,7 +790,7 @@ License: You must have a valid license purchased only from themeforest(the above
           <div class="browser-states">
             <div class="d-flex">
               <img
-                src="/reirm/resources/images/icons/google-chrome.png"
+                src="/esc/resources/images/icons/google-chrome.png"
                 class="rounded me-1"
                 height="30"
                 alt="Google Chrome"
@@ -805,7 +805,7 @@ License: You must have a valid license purchased only from themeforest(the above
           <div class="browser-states">
             <div class="d-flex">
               <img
-                src="/reirm/resources/images/icons/mozila-firefox.png"
+                src="/esc/resources/images/icons/mozila-firefox.png"
                 class="rounded me-1"
                 height="30"
                 alt="Mozila Firefox"
@@ -820,7 +820,7 @@ License: You must have a valid license purchased only from themeforest(the above
           <div class="browser-states">
             <div class="d-flex">
               <img
-                src="/reirm/resources/images/icons/apple-safari.png"
+                src="/esc/resources/images/icons/apple-safari.png"
                 class="rounded me-1"
                 height="30"
                 alt="Apple Safari"
@@ -835,7 +835,7 @@ License: You must have a valid license purchased only from themeforest(the above
           <div class="browser-states">
             <div class="d-flex">
               <img
-                src="/reirm/resources/images/icons/internet-explorer.png"
+                src="/esc/resources/images/icons/internet-explorer.png"
                 class="rounded me-1"
                 height="30"
                 alt="Internet Explorer"
@@ -849,7 +849,7 @@ License: You must have a valid license purchased only from themeforest(the above
           </div>
           <div class="browser-states">
             <div class="d-flex">
-              <img src="/reirm/resources/images/icons/opera.png" class="rounded me-1" height="30" alt="Opera Mini" />
+              <img src="/esc/resources/images/icons/opera.png" class="rounded me-1" height="30" alt="Opera Mini" />
               <h6 class="align-self-center mb-0">Opera Mini</h6>
             </div>
             <div class="d-flex align-items-center">
@@ -1149,56 +1149,56 @@ License: You must have a valid license purchased only from themeforest(the above
 
 
     <!-- BEGIN: Vendor JS-->
-    <script src="/reirm/resources/vendors/js/vendors.min.js"></script>
+    <script src="/esc/resources/vendors/js/vendors.min.js"></script>
     <!-- BEGIN Vendor JS-->
 
     <!-- BEGIN: Page Vendor JS-->
-    <script src="/reirm/resources/vendors/js/ui/jquery.sticky.js"></script>
-    <script src="/reirm/resources/vendors/js/forms/select/select2.full.min.js"></script>
-    <script src="/reirm/resources/vendors/js/charts/apexcharts.min.js"></script>
-    <script src="/reirm/resources/vendors/js/extensions/toastr.min.js"></script>
-    <script src="/reirm/resources/vendors/js/extensions/moment.min.js"></script>
-    <script src="/reirm/resources/vendors/js/tables/datatable/jquery.dataTables.min.js"></script>
-    <script src="/reirm/resources/vendors/js/tables/datatable/datatables.buttons.min.js"></script>
-    <script src="/reirm/resources/vendors/js/tables/datatable/dataTables.bootstrap5.min.js"></script>
-    <script src="/reirm/resources/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
-    <script src="/reirm/resources/vendors/js/tables/datatable/responsive.bootstrap5.js"></script>
+    <script src="/esc/resources/vendors/js/ui/jquery.sticky.js"></script>
+    <script src="/esc/resources/vendors/js/forms/select/select2.full.min.js"></script>
+    <script src="/esc/resources/vendors/js/charts/apexcharts.min.js"></script>
+    <script src="/esc/resources/vendors/js/extensions/toastr.min.js"></script>
+    <script src="/esc/resources/vendors/js/extensions/moment.min.js"></script>
+    <script src="/esc/resources/vendors/js/tables/datatable/jquery.dataTables.min.js"></script>
+    <script src="/esc/resources/vendors/js/tables/datatable/datatables.buttons.min.js"></script>
+    <script src="/esc/resources/vendors/js/tables/datatable/dataTables.bootstrap5.min.js"></script>
+    <script src="/esc/resources/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
+    <script src="/esc/resources/vendors/js/tables/datatable/responsive.bootstrap5.js"></script>
     <!-- END: Page Vendor JS-->
- <script src="/reirm/resources/js/materialize-v.1.0.min.js "  ></script>
-    <script src="/reirm/resources/js/jquery-validation-1.19.1.min.js"  ></script>
-    <script src="/reirm/resources/js/jquery.dataTables-v.1.10.min.js"  ></script>
-     <script src="/reirm/resources/js/datetime-moment-v1.10.12.js"  ></script>
-         <script src="/reirm/resources/js/dataTables.material.min.js"  ></script>
-      <script src="/reirm/resources/js/moment-v2.8.4.min.js"  ></script>
+ <script src="/esc/resources/js/materialize-v.1.0.min.js "  ></script>
+    <script src="/esc/resources/js/jquery-validation-1.19.1.min.js"  ></script>
+    <script src="/esc/resources/js/jquery.dataTables-v.1.10.min.js"  ></script>
+     <script src="/esc/resources/js/datetime-moment-v1.10.12.js"  ></script>
+         <script src="/esc/resources/js/dataTables.material.min.js"  ></script>
+      <script src="/esc/resources/js/moment-v2.8.4.min.js"  ></script>
     <!-- BEGIN: Theme JS-->
-    <script src="/reirm/resources/js/core/app-menu.min.js"></script>
-    <script src="/reirm/resources/js/core/app.min.js"></script>
-    <script src="/reirm/resources/js/scripts/customizer.min.js"></script>
-     <script src="/reirm/resources/js/scripts/forms/form-select2.min.js"></script>
+    <script src="/esc/resources/js/core/app-menu.min.js"></script>
+    <script src="/esc/resources/js/core/app.min.js"></script>
+    <script src="/esc/resources/js/scripts/customizer.min.js"></script>
+     <script src="/esc/resources/js/scripts/forms/form-select2.min.js"></script>
     <!-- END: Theme JS-->
-   <script src="/reirm/resources/js/scripts/pages/modal-add-new-cc.min.js"></script>
-    <script src="/reirm/resources/js/scripts/pages/page-pricing.min.js"></script>
-    <script src="/reirm/resources/js/scripts/pages/modal-add-new-address.min.js"></script>
-    <script src="/reirm/resources/js/scripts/pages/modal-create-app.min.js"></script>
-    <script src="/reirm/resources/js/scripts/pages/modal-two-factor-auth.min.js"></script>
-    <script src="/reirm/resources/js/scripts/pages/modal-edit-user.min.js"></script>
-    <script src="/reirm/resources/js/scripts/pages/modal-share-project.min.js"></script>
+   <script src="/esc/resources/js/scripts/pages/modal-add-new-cc.min.js"></script>
+    <script src="/esc/resources/js/scripts/pages/page-pricing.min.js"></script>
+    <script src="/esc/resources/js/scripts/pages/modal-add-new-address.min.js"></script>
+    <script src="/esc/resources/js/scripts/pages/modal-create-app.min.js"></script>
+    <script src="/esc/resources/js/scripts/pages/modal-two-factor-auth.min.js"></script>
+    <script src="/esc/resources/js/scripts/pages/modal-edit-user.min.js"></script>
+    <script src="/esc/resources/js/scripts/pages/modal-share-project.min.js"></script>
     <!-- BEGIN: Page JS-->
-     <script src="/reirm/resources/js/scripts/pages/dashboard-analytics.min.js"></script>
-    <script src="/reirm/resources/js/scripts/pages/app-invoice-list.min.js"></script>
+     <script src="/esc/resources/js/scripts/pages/dashboard-analytics.min.js"></script>
+    <script src="/esc/resources/js/scripts/pages/app-invoice-list.min.js"></script>
     
-        <script src="/reirm/resources/vendors/js/pickers/pickadate/picker.js"></script>
-    <script src="/reirm/resources/vendors/js/pickers/pickadate/picker.date.js"></script>
-    <script src="/reirm/resources/vendors/js/pickers/pickadate/picker.time.js"></script>
-    <script src="/reirm/resources/vendors/js/pickers/pickadate/legacy.js"></script>
-    <script src="/reirm/resources/vendors/js/pickers/flatpickr/flatpickr.min.js"></script>
-     <script src="/reirm/resources/js/scripts/forms/pickers/form-pickers.min.js"></script>
-     <script src="/reirm/resources/js/scripts/extensions/ext-component-blockui.js"></script>
-      <script src="/reirm/resources/js/scripts/pages/dashboard-ecommerce.min.js"></script>
+        <script src="/esc/resources/vendors/js/pickers/pickadate/picker.js"></script>
+    <script src="/esc/resources/vendors/js/pickers/pickadate/picker.date.js"></script>
+    <script src="/esc/resources/vendors/js/pickers/pickadate/picker.time.js"></script>
+    <script src="/esc/resources/vendors/js/pickers/pickadate/legacy.js"></script>
+    <script src="/esc/resources/vendors/js/pickers/flatpickr/flatpickr.min.js"></script>
+     <script src="/esc/resources/js/scripts/forms/pickers/form-pickers.min.js"></script>
+     <script src="/esc/resources/js/scripts/extensions/ext-component-blockui.js"></script>
+      <script src="/esc/resources/js/scripts/pages/dashboard-ecommerce.min.js"></script>
     <!-- END: Theme JS-->
 
     <!-- BEGIN: Page JS-->
-    <script src="/reirm/resources/js/scripts/pages/dashboard-ecommerce.min.js"></script>
+    <script src="/esc/resources/js/scripts/pages/dashboard-ecommerce.min.js"></script>
     <!-- END: Page JS-->
  <form action="<%=request.getContextPath() %>/logout" name="logoutForm" id="logoutForm" method="post">
 		<input type="hidden" name="email" id="email"/>
