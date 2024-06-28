@@ -7,7 +7,7 @@ Template Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
 Author: PixInvent
 Website: http://www.pixinvent.com/
 Contact: hello@pixinvent.com
-Follow: www.twitter.com/pixinvents
+Follow: www.twitter.com/pixinvents 
 Like: www.facebook.com/pixinvents
 Purchase: https://1.envato.market/vuexy_admin
 Renew Support: https://1.envato.market/vuexy_admin
