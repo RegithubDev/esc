@@ -1858,6 +1858,21 @@ License: You must have a valid license purchased only from themeforest(the above
                 </span>
               </button>
             </div>
+			
+			
+			<div class="step" data-target="#greenbelt" role="tab" id="greenbelt_development">
+              <button type="button" class="step-trigger py-75">
+                <span class="bs-stepper-box">
+                  <i data-feather="credit-card" class="font-medium-3"></i>
+                </span>
+                <span class="bs-stepper-label">
+                  <span class="bs-stepper-title">Billing</span>
+                  <span class="bs-stepper-subtitle">Payment details</span>
+                </span>
+              </button>
+            </div>
+			
+			
             <div class="step" data-target="#create-app-submit" role="tab" id="create-app-submit-trigger">
               <button type="button" class="step-trigger py-75">
                 <span class="bs-stepper-box">

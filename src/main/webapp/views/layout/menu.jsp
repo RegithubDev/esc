@@ -31,9 +31,9 @@ div.main-menu-content {
 					</li>
 			</c:if>
 				<c:if test="${sessionScope.BASE_ROLE eq 'Admin'|| sessionScope.BASE_ROLE eq 'Management' }">
-			<li class="dropdown nav-item " data-menu="dropdown" id="home"><a class="dropdown-toggle nav-link d-flex align-items-center" href="#" data-bs-toggle="dropdown"><i data-feather="package"></i><span data-i18n="Masters">Dashboard</span></a>
-              <ul class="dropdown-menu" data-bs-popper="none">
-					
+<!-- 			<li class="dropdown nav-item " data-menu="dropdown" id="home"><a class="dropdown-toggle nav-link d-flex align-items-center" href="#" data-bs-toggle="dropdown"><i data-feather="package"></i><span data-i18n="Masters">Dashboard</span></a>
+ -->         <!--      <ul class="dropdown-menu" data-bs-popper="none">
+					 -->
 			
 			
 			<li class="" data-menu  id="homeChild0" url = "/home" onClick="exFunction('homeChild0')">
@@ -41,14 +41,14 @@ div.main-menu-content {
 					     data-i18n="home"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle"><circle cx="12" cy="12" r="10"></circle></svg>
 					      <span data-i18n="home">Power BI Dashboard</span></a> 
 					</li>
-			<li class="" data-menu  id="homeChild1" url = "/dash-sd" onClick="exFunction('homeChild1')">
+			<%-- <li class="" data-menu  id="homeChild1" url = "/dash-sd" onClick="exFunction('homeChild1')">
 					    <a class="dropdown-item d-flex align-items-center" href="<%=request.getContextPath() %>/dash-sd" data-bs-toggle=""
 					     data-i18n="home"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle"><circle cx="12" cy="12" r="10"></circle></svg>
 					      <span data-i18n="home">Secondary Dashboard</span></a> 
-					</li>
+					</li> --%>
 				
-            </ul>
-           </li>
+            <!-- </ul> -->
+          <!--  </li> -->
            </c:if>
           <%--  </c:if>  --%>
           
@@ -82,7 +82,7 @@ div.main-menu-content {
 			      <span data-i18n="Analytics">Work Permit</span></a>
 			</li>
 			</c:if> --%>
-			 <li class="dropdown nav-item " data-menu id="reports" url="irm-report">
+			<%--  <li class="dropdown nav-item " data-menu id="reports" url="irm-report">
 			    <a class="dropdown-item d-flex align-items-center" href="<%=request.getContextPath() %>/irm-report" data-bs-toggle=""
 			     data-i18n="Analytics"><i data-feather='layers'></i>
 			      <span data-i18n="Analytics">Reports</span></a>
@@ -92,7 +92,7 @@ div.main-menu-content {
 			    <a class="dropdown-item d-flex align-items-center" href="<%=request.getContextPath() %>/help-center" data-bs-toggle=""
 			     data-i18n="Analytics"><i data-feather='help-circle'></i>
 			      <span data-i18n="Analytics">Help Center</span></a>
-			</li>
+			</li> --%>
 			
 	<%-- 	<li class="dropdown nav-item " data-menu id="home">
 			    <a class="dropdown-item d-flex align-items-center" href="<%=request.getContextPath() %>/bb-is" data-bs-toggle=""

@@ -12,15 +12,11 @@ Like: www.facebook.com/pixinvents
 Purchase: https://1.envato.market/vuexy_admin
 Renew Support: https://1.envato.market/vuexy_admin
 License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
-
 -->
 <html class="loading" lang="en" data-textdirection="ltr">
   <!-- BEGIN: Head--> 
-  
 <!-- Mirrored from pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/horizontal-menu-template/table-datatable-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Aug 2022 05:37:16 GMT -->
 <head>
-   
-
  	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
@@ -28,44 +24,42 @@ License: You must have a valid license purchased only from themeforest(the above
     <meta name="keywords" content="admin template,IRM, Safety admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="PIXINVENT">
   <title>User Profile</title>
-       <link rel="icon" type="image/png" sizes="96x96" href="/reirm/resources/images/protect-favicon.png" >
-	<script src="/reirm/resources/js/jQuery-v.3.5.min.js"  ></script>
+       <link rel="icon" type="image/png" sizes="96x96" href="/esc/resources/images/protect-favicon.png" >
+	<script src="/esc/resources/js/jQuery-v.3.5.min.js"  ></script>
     <!-- BEGIN: Vendor CSS-->
-      <link rel="apple-touch-icon" href="/reirm/resources/images/ico/apple-icon-120.html">
+      <link rel="apple-touch-icon" href="/esc/resources/images/ico/apple-icon-120.html">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
     <!-- BEGIN: Vendor CSS-->
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/vendors/css/vendors.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/vendors/css/tables/datatable/dataTables.bootstrap5.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/vendors/css/tables/datatable/responsive.bootstrap5.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/vendors/css/tables/datatable/buttons.bootstrap5.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/vendors/css/tables/datatable/rowGroup.bootstrap5.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/vendors/css/pickers/pickadate/pickadate.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/vendors/css/pickers/flatpickr/flatpickr.min.css">
-        <link rel="stylesheet" type="text/css" href="/reirm/resources/vendors/css/extensions/toastr.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/css/plugins/extensions/ext-component-toastr.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/tables/datatable/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/tables/datatable/responsive.bootstrap5.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/tables/datatable/buttons.bootstrap5.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/tables/datatable/rowGroup.bootstrap5.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/pickers/pickadate/pickadate.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/pickers/flatpickr/flatpickr.min.css">
+        <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/extensions/toastr.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/css/plugins/extensions/ext-component-toastr.min.css">
     <!-- END: Vendor CSS-->
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 	  <link rel="stylesheet" href="<c:url value="/resources/css/font-awesome-v.4.7.css" />">
     <!-- BEGIN: Theme CSS-->
      <link rel="stylesheet" type="text/css" href="<c:url value="/resources/vendors/css/extensions/sweetalert2.min.css"/>">
     <link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/plugins/extensions/ext-component-sweet-alerts.min.css"/>">
-    
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/css/bootstrap-extended.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/css/colors.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/css/components.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/css/themes/dark-layout.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/css/themes/bordered-layout.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/css/themes/semi-dark-layout.min.css">
-   <link rel="stylesheet" type="text/css" href="/reirm/resources/vendors/css/forms/select/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/css/bootstrap-extended.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/css/colors.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/css/components.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/css/themes/dark-layout.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/css/themes/bordered-layout.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/css/themes/semi-dark-layout.min.css">
+   <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/forms/select/select2.min.css">
     <!-- BEGIN: Page CSS-->
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/css/core/menu/menu-types/horizontal-menu.min.css">
-        <link rel="stylesheet" type="text/css" href="/reirm/resources/css/plugins/forms/pickers/form-flat-pickr.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/css/plugins/forms/pickers/form-pickadate.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/css/core/menu/menu-types/horizontal-menu.min.css">
+        <link rel="stylesheet" type="text/css" href="/esc/resources/css/plugins/forms/pickers/form-flat-pickr.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/css/plugins/forms/pickers/form-pickadate.min.css">
     <!-- END: Page CSS-->
-
     <!-- BEGIN: Custom CSS-->
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/css/style.css">
     <!-- END: Custom CSS-->
 <style>
 .mdl-grid{
@@ -146,7 +140,7 @@ tr td:last-child {
 
     <!-- BEGIN: Header-->
 	<jsp:include page="../views/layout/header.jsp"></jsp:include> 
-<jsp:include page="../views/layout/userActivityCheck.jsp"></jsp:include>
+    <jsp:include page="../views/layout/userActivityCheck.jsp"></jsp:include>
 
     <!-- END: Header-->
     <!-- BEGIN: Main Menu-->
@@ -168,8 +162,7 @@ tr td:last-child {
                     </defs>
                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                       <g id="Artboard" transform="translate(-400.000000, -178.000000)">
-                       			         <img src="<%=request.getContextPath() %>/resources/images/logo/protect-main.jpeg" width="50" height="40" class="card-img">
-
+                        <img src="<%=request.getContextPath() %>/resources/images/logo/protect-main.jpeg" width="50" height="40" class="card-img">
                       </g>
                     </g>
                   </svg></span>
@@ -179,11 +172,10 @@ tr td:last-child {
         </div>
         <div class="shadow-bottom"></div>
         <!-- Horizontal menu content-->
- 			<jsp:include page="../views/layout/menu.jsp"></jsp:include> 
+ 		 <jsp:include page="../views/layout/menu.jsp"></jsp:include> 
       </div>
     </div>
     <!-- END: Main Menu-->
-
     <!-- BEGIN: Content-->
     <div class="app-content content ">
       <div class="content-overlay"></div> 
@@ -198,7 +190,6 @@ tr td:last-child {
                   <ol class="breadcrumb">
                   <%--    <c:if test="${sessionScope.BASE_ROLE ne 'User' }">   <li class="breadcrumb-item"><a href="<%=request.getContextPath() %>/home">Home</a>
                     </li></c:if> --%>
-
                     <li class="breadcrumb-item active">Profile Update
                     </li>
                   </ol>
@@ -206,7 +197,6 @@ tr td:last-child {
               </div>
             </div>
           </div>
-   
         </div>
         <div class="content-body mb-3"><!-- Dashboard Analytics Start -->
 <section id="dashboard-analytics" >
@@ -270,8 +260,7 @@ tr td:last-child {
               id="select2-reporting_to_add-container"
               name="reporting_to"
               class="select2 form-select formSelect"
-              aria-label="Default select example"
-            >
+              aria-label="Default select example">
               <option value="">Select Reporting To</option>
              	 <c:forEach var="obj" items="${objList}">
 					<option value="${obj.user_id }" <c:if test="${sessionScope.REPORTING_TO  eq obj.user_id}">selected</c:if>>[${obj.user_id }] - ${obj.user_name }</option>
@@ -291,21 +280,13 @@ tr td:last-child {
             />
              <span id="contact_number_addError" class="error-msg" ></span>
           </div>
-		
-        
-          <div class="col-12 text-center mt-2 pt-50">
+		 <div class="col-12 text-center mt-2 pt-50">
             <a class="btn btn-primary me-1" onclick="addUser();">Update Profile</a>
           </div>
-
         </form>
 </div>
-
- 							
 </section>
-
-           
-  </div>				
- 																					
+ </div>				
    <div class="page-loader" style="display: none;">
 	  <div class="preloader-wrapper big active">
 	    <div class="spinner-layer spinner-blue-only">
@@ -333,45 +314,45 @@ tr td:last-child {
     <!-- END: Footer-->
 
  
-        <script src="/reirm/resources/vendors/js/vendors.min.js"></script>
+        <script src="/esc/resources/vendors/js/vendors.min.js"></script>
     <!-- BEGIN Vendor JS-->
 
     <!-- BEGIN: Page Vendor JS-->
-    <script src="/reirm/resources/vendors/js/ui/jquery.sticky.js"></script>
-    <script src="/reirm/resources/vendors/js/forms/select/select2.full.min.js"></script>
-    <script src="/reirm/resources/vendors/js/charts/apexcharts.min.js"></script>
-    <script src="/reirm/resources/vendors/js/extensions/toastr.min.js"></script>
-    <script src="/reirm/resources/vendors/js/extensions/moment.min.js"></script>
-    <script src="/reirm/resources/vendors/js/tables/datatable/jquery.dataTables.min.js"></script>
-    <script src="/reirm/resources/vendors/js/tables/datatable/datatables.buttons.min.js"></script>
-    <script src="/reirm/resources/vendors/js/tables/datatable/dataTables.bootstrap5.min.js"></script>
-    <script src="/reirm/resources/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
-    <script src="/reirm/resources/vendors/js/tables/datatable/responsive.bootstrap5.js"></script>
+    <script src="/esc/resources/vendors/js/ui/jquery.sticky.js"></script>
+    <script src="/esc/resources/vendors/js/forms/select/select2.full.min.js"></script>
+    <script src="/esc/resources/vendors/js/charts/apexcharts.min.js"></script>
+    <script src="/esc/resources/vendors/js/extensions/toastr.min.js"></script>
+    <script src="/esc/resources/vendors/js/extensions/moment.min.js"></script>
+    <script src="/esc/resources/vendors/js/tables/datatable/jquery.dataTables.min.js"></script>
+    <script src="/esc/resources/vendors/js/tables/datatable/datatables.buttons.min.js"></script>
+    <script src="/esc/resources/vendors/js/tables/datatable/dataTables.bootstrap5.min.js"></script>
+    <script src="/esc/resources/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
+    <script src="/esc/resources/vendors/js/tables/datatable/responsive.bootstrap5.js"></script>
     <!-- END: Page Vendor JS-->
- <script src="/reirm/resources/js/materialize-v.1.0.min.js "  ></script>
-    <script src="/reirm/resources/js/jquery-validation-1.19.1.min.js"  ></script>
-    <script src="/reirm/resources/js/jquery.dataTables-v.1.10.min.js"  ></script>
-     <script src="/reirm/resources/js/datetime-moment-v1.10.12.js"  ></script>
-         <script src="/reirm/resources/js/dataTables.material.min.js"  ></script>
-      <script src="/reirm/resources/js/moment-v2.8.4.min.js"  ></script>
+ <script src="/esc/resources/js/materialize-v.1.0.min.js "  ></script>
+    <script src="/esc/resources/js/jquery-validation-1.19.1.min.js"  ></script>
+    <script src="/esc/resources/js/jquery.dataTables-v.1.10.min.js"  ></script>
+     <script src="/esc/resources/js/datetime-moment-v1.10.12.js"  ></script>
+         <script src="/esc/resources/js/dataTables.material.min.js"  ></script>
+      <script src="/esc/resources/js/moment-v2.8.4.min.js"  ></script>
     <!-- BEGIN: Theme JS-->
-    <script src="/reirm/resources/js/core/app-menu.min.js"></script>
-    <script src="/reirm/resources/js/core/app.min.js"></script>
-    <script src="/reirm/resources/js/scripts/customizer.min.js"></script>
-     <script src="/reirm/resources/js/scripts/forms/form-select2.min.js"></script>
+    <script src="/esc/resources/js/core/app-menu.min.js"></script>
+    <script src="/esc/resources/js/core/app.min.js"></script>
+    <script src="/esc/resources/js/scripts/customizer.min.js"></script>
+     <script src="/esc/resources/js/scripts/forms/form-select2.min.js"></script>
     <!-- END: Theme JS-->
-   <script src="/reirm/resources/js/scripts/pages/modal-add-new-cc.min.js"></script>
-    <script src="/reirm/resources/js/scripts/pages/page-pricing.min.js"></script>
-    <script src="/reirm/resources/js/scripts/pages/modal-add-new-address.min.js"></script>
-    <script src="/reirm/resources/js/scripts/pages/modal-create-app.min.js"></script>
-    <script src="/reirm/resources/js/scripts/pages/modal-two-factor-auth.min.js"></script>
-    <script src="/reirm/resources/js/scripts/pages/modal-edit-user.min.js"></script>
-    <script src="/reirm/resources/js/scripts/pages/modal-share-project.min.js"></script>
+   <script src="/esc/resources/js/scripts/pages/modal-add-new-cc.min.js"></script>
+    <script src="/esc/resources/js/scripts/pages/page-pricing.min.js"></script>
+    <script src="/esc/resources/js/scripts/pages/modal-add-new-address.min.js"></script>
+    <script src="/esc/resources/js/scripts/pages/modal-create-app.min.js"></script>
+    <script src="/esc/resources/js/scripts/pages/modal-two-factor-auth.min.js"></script>
+    <script src="/esc/resources/js/scripts/pages/modal-edit-user.min.js"></script>
+    <script src="/esc/resources/js/scripts/pages/modal-share-project.min.js"></script>
     <!-- BEGIN: Page JS-->
-     <script src="/reirm/resources/js/scripts/pages/dashboard-analytics.min.js"></script>
-    <script src="/reirm/resources/js/scripts/pages/app-invoice-list.min.js"></script>
-    <script src="/reirm/resources/vendors/js/file-uploaders/dropzone.min.js"></script>
-    <script src="/reirm/resources/js/scripts/forms/form-file-uploader.min.js"></script>
+     <script src="/esc/resources/js/scripts/pages/dashboard-analytics.min.js"></script>
+    <script src="/esc/resources/js/scripts/pages/app-invoice-list.min.js"></script>
+    <script src="/esc/resources/vendors/js/file-uploaders/dropzone.min.js"></script>
+    <script src="/esc/resources/js/scripts/forms/form-file-uploader.min.js"></script>
 
     <!-- BEGIN: Page JS-->
     <script src="/reisp/resources/js/scripts/pages/auth-register.min.js"></script>
@@ -379,21 +360,18 @@ tr td:last-child {
 
     
   <form action="<%=request.getContextPath()%>/export-irm" name="exportIRMForm" id="exportIRMForm" target="_blank" method="post">	
-      
-        <input type="hidden" name=project_code id="exportSBU_filter" />
-        <input type="hidden" name="sbu_code" id="exportProject_Code_filter" />
+         <input type="hidden" name=project_code id="exportSBU_filter" />
+         <input type="hidden" name="sbu_code" id="exportProject_Code_filter" />
          <input type="hidden" name=status id="exportIRM_filter" />
-        <input type="hidden" name="incident_type" id="exportCompany_Code_filter" />
+         <input type="hidden" name="incident_type" id="exportCompany_Code_filter" />
          <input type="hidden" name="from_and_to" id="exportFrom_filter" />
 	</form>
 	
 	  <form action="<%=request.getContextPath()%>/update-irm-form" name="updateIRM" id="updateIRM" method="post">	
-      
         <input type="hidden" name=document_code id="document_codeUpdate" />
         <input type="hidden" name=approver_type id="approver_typeUpdate" />
         <input type="hidden" name=status id="statusUpdate" />
         <input type="hidden" name=approver_code id="approver_codeUpdate" />
-        
 	</form>
 	
     <script>

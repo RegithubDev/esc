@@ -75,13 +75,7 @@
         </div> 
         <ul class="nav navbar-nav align-items-center ms-auto">
          
-          <li class="nav-item "><a href="<%=request.getContextPath() %>/irm-add-incident" class="nav-link " data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="+ Submit Incident" aria-label="+ Submit Incident"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit ficon text-danger"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg></a>
-              <div class="bookmark-input search-input">
-                <div class="bookmark-input-icon"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></div>
-                <input class="form-control input" type="text" placeholder="Bookmark" tabindex="0" data-search="search">
-                <ul class="search-list search-list-bookmark ps"><div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></ul>
-              </div>
-         </li>
+
          
          
          <!--  <li class="nav-item d-none d-lg-block"><a class="nav-link nav-link-style"><i class="ficon" data-feather="moon"></i></a></li>
