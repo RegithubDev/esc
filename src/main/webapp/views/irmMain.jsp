@@ -221,6 +221,17 @@ License: You must have a valid license purchased only from themeforest(the above
 </div>
 
 
+<div class="col-md-4">
+  <div class="card border rounded" style="max-width:14rem; /* margin: auto; */">
+    <div class="card-body text-center">
+      <h2 class="card-title mb-2">BMW</h2>
+      <button type="button" class="btn btn-primary waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#bmw">
+        Show
+      </button>
+    </div>
+  </div>
+</div>
+
 
     <!-- / create app card-->
   </div>
@@ -230,14 +241,14 @@ License: You must have a valid license purchased only from themeforest(the above
  
 
  
- <div class="modal fade" id="msw" tabindex="-1" aria-labelledby="createAppTitle" aria-hidden="true">
+ <div class="modal fade" id="msw" tabindex="-1" aria-labelledby="msw_report" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-xl">
     <div class="modal-content">
       <div class="modal-header bg-transparent">
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body pb-3 px-sm-3">
-        <h1 class="text-center mb-1" id="createAppTitle">Create App</h1>
+        <h1 class="text-center mb-1" id="msw_report">MSW Report</h1>
 
         <div class="bs-stepper vertical wizard-modern create-app-wizard">
           <div class="bs-stepper-header" role="tablist">
@@ -771,7 +782,558 @@ License: You must have a valid license purchased only from themeforest(the above
 
 
 
+
+
+
  
+ <div class="modal fade" id="bmw" tabindex="-1" aria-labelledby="bmw_report" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content">
+      <div class="modal-header bg-transparent">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body pb-3 px-sm-3">
+        <h1 class="text-center mb-1" id="bmw_report">BMW Report</h1>
+
+        <div class="bs-stepper vertical wizard-modern create-app-wizard">
+          <div class="bs-stepper-header" role="tablist">
+            <div class="step" data-target="#bmw_water_edit" role="tab" id="bmw_water">
+              <button type="button" class="step-trigger py-75">
+                <span class="bs-stepper-box">
+                  <i data-feather="credit-card" class="font-medium-3"></i>
+                </span>
+                <span class="bs-stepper-label">
+                  <span class="bs-stepper-title">Fresh Water</span>
+                </span>
+              </button>
+            </div>
+            <div class="step" data-target="#bmw_electrical_energy_edit" role="tab" id="bmw_electrical_energy">
+              <button type="button" class="step-trigger py-75">
+                <span class="bs-stepper-box">
+                  <i data-feather="credit-card" class="font-medium-3"></i>
+                </span>
+                <span class="bs-stepper-label">
+                  <span class="bs-stepper-title">Electrical Energy<br> (within the facility)</span>
+                </span>
+              </button>
+            </div>
+            <div class="step" data-target="#bmw_thermal_energy_edit" role="tab" id="bmw_thermal_energy">
+              <button type="button" class="step-trigger py-75">
+                <span class="bs-stepper-box">
+                  <i data-feather="credit-card" class="font-medium-3"></i>
+                </span>
+                <span class="bs-stepper-label">
+                  <span class="bs-stepper-title">Thermal Energy<br> (within the facility)</span>
+                </span>
+              </button>
+            </div>
+            <div class="step" data-target="#bmw_sbu_goal_edit" role="tab" id="bmw_sbu_goal">
+              <button type="button" class="step-trigger py-75">
+                <span class="bs-stepper-box">
+                  <i data-feather="credit-card" class="font-medium-3"></i>
+                </span>
+                <span class="bs-stepper-label">
+                  <span class="bs-stepper-title">Sector Specific Goals</span>
+                </span>
+              </button>
+            </div>
+            
+             <div class="step" data-target="#bmw_greenbelt" role="tab" id="bmw_greenbelt_development">
+              <button type="button" class="step-trigger py-75">
+                <span class="bs-stepper-box">
+                  <i data-feather="credit-card" class="font-medium-3"></i>
+                </span>
+                <span class="bs-stepper-label">
+                  <span class="bs-stepper-title">Green Development</span>
+                </span>
+              </button>
+            </div>
+            
+            <div class="step" data-target="#bmw_training" role="tab" id="bmw_training_development">
+              <button type="button" class="step-trigger py-75">
+                <span class="bs-stepper-box">
+                  <i data-feather="credit-card" class="font-medium-3"></i>
+                </span>
+                <span class="bs-stepper-label">
+                  <span class="bs-stepper-title">Training Development</span>
+                </span>
+              </button>
+            </div>
+            
+            
+             <div class="step" data-target="#bmw_sscompliance" role="tab" id="bmw_compliance">
+              <button type="button" class="step-trigger py-75">
+                <span class="bs-stepper-box">
+                  <i data-feather="credit-card" class="font-medium-3"></i>
+                </span>
+                <span class="bs-stepper-label">
+                  <span class="bs-stepper-title">Compliance</span>
+                </span>
+              </button>
+            </div>
+            
+            <div class="step" data-target="#bmwsubmit" role="tab" id="submit">
+              <button type="button" class="step-trigger py-75">
+                <span class="bs-stepper-box">
+                  <i data-feather="check" class="font-medium-3"></i>
+                </span>
+                <span class="bs-stepper-label">
+                  <span class="bs-stepper-title">Submit</span>
+                </span>
+              </button>
+            </div>
+          </div>
+
+        <div class="bs-stepper-content shadow-none " style="width: 80%;">           
+           <div id="bmw_water_edit" class="content" role="tabpanel" aria-labelledby="bmw_water">
+              <h5 class="card-title">Fresh Water</h5>
+            <div class="abc-container">
+        <div class="abc-card">
+        <span class="badge bg-dark">Baseline Information (FY 2023-24)</span><br>
+        <div class="abc-card-section">
+            <div class="abc-card-text">Total Net Fresh Water Consumption, in KLt</div>
+            <div class="abc-badge-input-container">
+                <div class="abc-badge">KL
+                </div>
+                <div class="abc-input-box">
+                    <input type="text" placeholder="Enter code">
+                </div>
+            </div>
+            </div>
+            
+            
+            <div class="abc-card-section">
+             <div class="abc-card-text">Total Net Fresh Water Consumption, in KLt</div>
+            <div class="abc-badge-input-container">
+                <div class="abc-badge">KL/Ton
+                </div>
+                <div class="abc-input-box">
+                    <input type="text" placeholder="Enter code">
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="abc-card">
+        <span class="badge bg-dark">Site Level Sustainability Goals (FY 2024-25)</span><br>
+            <div class="abc-card-text">Reduction in Specific Fresh Water Consumption in FY 2024-25 compared to the Baseline FY 2023-24</div>
+            <div class="abc-badge-input-container">
+                <div class="abc-badge">%</div>
+                <div class="abc-input-box">
+                    <input type="text" placeholder="Enter code">
+                </div>
+            </div>
+        </div>
+    </div>
+              <div class="d-flex justify-content-between mt-2">
+                <button class="btn btn-outline-secondary btn-prev" disabled>
+                  <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
+                  <span class="align-middle d-sm-inline-block d-none">Previous</span>
+                </button>
+                <button class="btn btn-primary btn-next">
+                  <span class="align-middle d-sm-inline-block d-none">Next</span>
+                  <i data-feather="arrow-right" class="align-middle ms-sm-25 ms-0"></i>
+                </button>
+              </div>
+            </div>
+            <div
+              id="bmw_electrical_energy_edit"
+              class="content"
+              role="tabpanel"
+              aria-labelledby="bmw_electrical_energy">
+                              <h5 class="card-title"> Electrical Energy (within the facility)
+                              </h5>
+                 <div class="abc-container">
+        <div class="abc-card">
+        <span class="badge bg-dark">Baseline Information (FY 2023-24)</span><br>
+        <div class="abc-card-section">
+            <div class="abc-card-text">Electricity Consumption from Grid</div>
+            <div class="abc-badge-input-container">
+                <div class="abc-badge">kWh
+                </div>
+                <div class="abc-input-box">
+                    <input type="text" placeholder="Enter code">
+                </div>
+            </div>
+            </div>
+            
+            
+            <div class="abc-card-section">
+             <div class="abc-card-text">Specific Electricity Consumption</div>
+            <div class="abc-badge-input-container">
+                <div class="abc-badge">kWh
+                </div>
+                <div class="abc-input-box">
+                    <input type="text" placeholder="Enter code">
+                </div>
+            </div>
+            </div>
+            
+            
+             <div class="abc-card-section">
+             <div class="abc-card-text">Electricity Consumption from Renewable (Solar) Source</div>
+            <div class="abc-badge-input-container">
+                <div class="abc-badge">kWh/ton
+                </div>
+                <div class="abc-input-box">
+                    <input type="text" placeholder="Enter code">
+                </div>
+            </div>
+            </div>
+        </div>
+      
+        <div class="abc-card">
+        <span class="badge bg-dark">Site Level Sustainability Goals (FY 2024-25)</span><br>
+        <div class="abc-card-section">
+            <div class="abc-card-text">Renewable Energy in Total Energy Consumption</div>
+            <div class="abc-badge-input-container">
+                <div class="abc-badge">%</div>
+                <div class="abc-input-box">
+                    <input type="text" placeholder="Enter code">
+                </div>
+            </div>
+            </div>
+            
+            
+            <div class="abc-card-section">
+             <div class="abc-card-text">Reduction in Specific Electricity Consumption in FY 2024-25 compared to the Baseline FY 2023-24
+             </div>
+            <div class="abc-badge-input-container">
+                <div class="abc-badge">%</div>
+                <div class="abc-input-box">
+                    <input type="text" placeholder="Enter code">
+                </div>
+            </div>
+            </div>
+            
+            
+         
+        </div>
+      
+    </div>
+              
+       <div class="d-flex justify-content-between mt-2">
+                <button class="btn btn-primary btn-prev">
+                  <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
+                  <span class="align-middle d-sm-inline-block d-none">Previous</span>
+                </button>
+                <button class="btn btn-primary btn-next">
+                  <span class="align-middle d-sm-inline-block d-none">Next</span>
+                  <i data-feather="arrow-right" class="align-middle ms-sm-25 ms-0"></i>
+                </button>
+              </div>
+            </div>
+            <div id="bmw_thermal_energy_edit" class="content" role="tabpanel" aria-labelledby="bmw_thermal_energy">
+            
+             <h5 class="card-title"> Thermal Energy (within the facility)  </h5>
+              <div class="abc-container">
+        <div class="abc-card">
+        <span class="badge bg-dark">Baseline Information (FY 2023-24)</span><br>
+        <div class="abc-card-section">
+            <div class="abc-card-text">HSD consumption
+            </div>
+            <div class="abc-badge-input-container">
+                <div class="abc-badge">Liters
+                </div>
+                <div class="abc-input-box">
+                    <input type="text" placeholder="Enter code">
+                </div>
+            </div>
+            </div>
+            
+            
+            <div class="abc-card-section">
+             <div class="abc-card-text">LDO consumption
+             </div>
+            <div class="abc-badge-input-container">
+                <div class="abc-badge">Liters</div>
+                <div class="abc-input-box">
+                    <input type="text" placeholder="Enter code">
+                </div>
+            </div>
+            </div>
+            
+             <div class="abc-card-section">
+             <div class="abc-card-text">PNG consumption
+             </div>
+            <div class="abc-badge-input-container">
+                <div class="abc-badge">Kg</div>
+                <div class="abc-input-box">
+                    <input type="text" placeholder="Enter code">
+                </div>
+            </div>
+            </div>
+            
+             <div class="abc-card-section">
+             <div class="abc-card-text">CNG/CBG consumption
+             </div>
+            <div class="abc-badge-input-container">
+                <div class="abc-badge">Kg</div>
+                <div class="abc-input-box">
+                    <input type="text" placeholder="Enter code">
+                </div>
+            </div>
+            </div>
+            
+             <div class="abc-card-section">
+             <div class="abc-card-text">Coal consumption
+             </div>
+            <div class="abc-badge-input-container">
+                <div class="abc-badge">Kg</div>
+                <div class="abc-input-box">
+                    <input type="text" placeholder="Enter code">
+                </div>
+            </div>
+            </div>
+            
+             <div class="abc-card-section">
+             <div class="abc-card-text">Furnace Oil consumption</div>
+            <div class="abc-badge-input-container">
+                <div class="abc-badge">Liters</div>
+                <div class="abc-input-box">
+                    <input type="text" placeholder="Enter code">
+                </div>
+            </div>
+            </div>
+            
+             <div class="abc-card-section">
+             <div class="abc-card-text">Biomass
+             </div>
+            <div class="abc-badge-input-container">
+                <div class="abc-badge">Kg</div>
+                <div class="abc-input-box">
+                    <input type="text" placeholder="Enter code">
+                </div>
+            </div>
+            </div>
+            
+            
+             <div class="abc-card-section">
+             <div class="abc-card-text">Total Energy, in GJ</div>
+            <div class="abc-badge-input-container">
+                <div class="abc-badge">GJ</div>
+                <div class="abc-input-box">
+                    <input type="text" placeholder="Enter code">
+                </div>
+            </div>
+            
+            </div>
+            
+            
+             <div class="abc-card-section">
+            <div class="abc-card-text">Specific Thermal Energy Consumption, in GJ/ton (FY 2023-24)
+            
+            </div>
+            <div class="abc-badge-input-container">
+                <div class="abc-badge">GJ/Ton</div>
+                <div class="abc-input-box">
+                    <input type="text" placeholder="Enter code">
+                </div>
+            </div>
+            </div>
+        </div>
+      
+        <div class="abc-card">
+        <span class="badge bg-dark">Site Level Sustainability Goals (FY 2024-25)</span><br>
+        <div class="abc-card-section">
+            <div class="abc-card-text">Reduction in Specific Thermal Energy Consumption in FY 2024-25 compared to the Baseline FY 2023-24</div>
+            <div class="abc-badge-input-container">
+                <div class="abc-badge">%</div>
+                <div class="abc-input-box">
+                    <input type="text" placeholder="Enter code">
+                </div>
+            </div>
+            </div>
+            </div>
+    </div>
+             
+              <div class="d-flex justify-content-between mt-2">
+                <button class="btn btn-primary btn-prev">
+                  <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
+                  <span class="align-middle d-sm-inline-block d-none">Previous</span>
+                </button>
+                <button class="btn btn-primary btn-next">
+                  <span class="align-middle d-sm-inline-block d-none">Next</span>
+                  <i data-feather="arrow-right" class="align-middle ms-sm-25 ms-0"></i>
+                </button>
+              </div>
+            </div>
+            
+            
+            <div id="bmw_sbu_goal_edit" class="content" role="tabpanel" aria-labelledby="bmw_sbu_goal">
+                <h5 class="card-title"> Sector Specific Goals</h5>
+                    <div class="abc-container">
+        <div class="abc-card">
+        <span class="badge bg-dark">Baseline Information (FY 2023-24)</span><br>
+        <div class="abc-card-section">
+            <div class="abc-card-text">Quantity of RDF sent to Cement Industries
+            </div>
+            <div class="abc-badge-input-container">
+                <div class="">
+                </div>
+                <div class="abc-input-box">
+                    <input type="text" placeholder="Enter code">
+                </div>
+            </div>
+            </div>
+            </div>
+        <div class="abc-card">
+        <span class="badge bg-dark">Site Level Sustainability Goals (FY 2024-25)</span><br>
+        <div class="abc-card-section">
+            <div class="abc-card-text">Quantity of RDF to Cement Industries (FY 2025)</div>
+            <div class="abc-badge-input-container">
+                <div class="abc-badge">Tons</div>
+                <div class="abc-input-box">
+                    <input type="text" placeholder="Enter code">
+                </div>
+            </div>
+            </div>
+            </div>
+             </div>
+
+
+  <div class="d-flex justify-content-between mt-5 pt-1">
+                <button class="btn btn-primary btn-prev">
+                  <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
+                  <span class="align-middle d-sm-inline-block d-none">Previous</span>
+                </button>
+                <button class="btn btn-primary btn-next">
+                  <span class="align-middle d-sm-inline-block d-none">Next</span>
+                  <i data-feather="arrow-right" class="align-middle ms-sm-25 ms-0"></i>
+                </button>
+              </div>
+            </div>
+               <div id="bmw_greenbelt" class="content" role="tabpanel" aria-labelledby="bmw_greenbelt_development">
+                  <h5 class="card-title"> Greenbelt Development </h5>
+                      <div class="abc-container">
+        <div class="abc-card">
+        <span class="badge bg-dark">Site Level Sustainability Goals (FY 2024-25)</span><br>
+        <div class="abc-card-section">
+            <div class="abc-card-text">Plantation of New Trees (either w/in or outside the facility)</div>
+            <div class="abc-badge-input-container">
+                <div class="abc-badge">Number</div>
+                <div class="abc-input-box">
+                    <input type="text" placeholder="Enter code">
+                </div>
+            </div>
+            </div>
+            </div>
+              </div>
+
+
+         <div class="d-flex justify-content-between mt-5 pt-1">
+                <button class="btn btn-primary btn-prev">
+                  <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
+                  <span class="align-middle d-sm-inline-block d-none">Previous</span>
+                </button>
+                <button class="btn btn-primary btn-next">
+                  <span class="align-middle d-sm-inline-block d-none">Next</span>
+                  <i data-feather="arrow-right" class="align-middle ms-sm-25 ms-0"></i>
+                </button>
+              </div>
+            </div>
+            
+            
+            
+                
+             <div id="bmw_training" class="content" role="tabpanel" aria-labelledby="bmw_training_development">
+   <h5 class="card-title"> Training and Development </h5>
+     <div class="abc-container">
+        <div class="abc-card">
+        <span class="badge bg-dark">Site Level Sustainability Goals (FY 2024-25)</span><br>
+        <div class="abc-card-section">
+            <div class="abc-card-text">Total Training Hours (excluding mandatory training) for All Employees at the Facility</div>
+            <div class="abc-badge-input-container">
+                <div class="abc-badge">No. of hours</div>
+                <div class="abc-input-box">
+                    <input type="text" placeholder="Enter code">
+                </div>
+            </div>
+            </div>
+            </div>
+            </div>
+
+
+  <div class="d-flex justify-content-between mt-5 pt-1">
+                <button class="btn btn-primary btn-prev">
+                  <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
+                  <span class="align-middle d-sm-inline-block d-none">Previous</span>
+                </button>
+                <button class="btn btn-primary btn-next">
+                  <span class="align-middle d-sm-inline-block d-none">Next</span>
+                  <i data-feather="arrow-right" class="align-middle ms-sm-25 ms-0"></i>
+                </button>
+              </div>
+            </div>            
+             <div id="bmw_sscompliance" class="content" role="tabpanel" aria-labelledby="bmw_compliance">
+          <h5 class="card-title"> Compliance</h5>
+              <div class="abc-container">
+        <div class="abc-card">
+        <span class="badge bg-dark">Site Level Sustainability Goals (FY 2024-25)</span><br>
+        <div class="abc-card-section">
+            <div class="abc-card-text">Number of Violations and Non-Compliances</div>
+            <div class="abc-badge-input-container">
+                <div class="abc-badge">Number</div>
+                <div class="abc-input-box">
+                    <input type="text" placeholder="Enter code">
+                </div>
+            </div>
+            </div>
+            </div>
+             </div>
+
+
+  <div class="d-flex justify-content-between mt-5 pt-1">
+                <button class="btn btn-primary btn-prev">
+                  <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
+                  <span class="align-middle d-sm-inline-block d-none">Previous</span>
+                </button>
+                <button class="btn btn-primary btn-next">
+                  <span class="align-middle d-sm-inline-block d-none">Next</span>
+                  <i data-feather="arrow-right" class="align-middle ms-sm-25 ms-0"></i>
+                </button>
+              </div>
+            </div>
+            
+           <div
+              id="bmw_submit"
+              class="content text-center"
+              role="tabpanel"
+              aria-labelledby="submit">
+              <h3>Submit 🥳</h3>
+              <p>Submit your app to kickstart your project.</p>
+              <img
+                src="https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/resources/images/illustration/pricing-Illustration.svg"
+                height="218"
+                alt="illustration"
+              />
+              <div class="d-flex justify-content-between mt-3">
+                <button class="btn btn-primary btn-prev">
+                  <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
+                  <span class="align-middle d-sm-inline-block d-none">Previous</span>
+                </button>
+                <button class="btn btn-success btn-submit">
+                  <span class="align-middle d-sm-inline-block d-none">Submit</span>
+                  <i data-feather="check" class="align-middle ms-sm-25 ms-0"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
  
   
  

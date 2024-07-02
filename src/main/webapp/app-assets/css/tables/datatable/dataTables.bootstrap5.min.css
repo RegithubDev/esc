@@ -981,12 +981,29 @@ License: You must have a valid license purchased only from themeforest(the above
           <p class="card-text">Use this modal to modify the existing user's current information.</p>
 
           <!-- modal trigger button -->
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editUser">Show</button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#msw">Show</button>
         </div>
       </div>
     </div>
     <!-- / edit user  -->
   </div>
+  
+  
+  <div class="col-md-4">
+      <div class="card">
+        <div class="card-body text-center">
+          <i data-feather="user" class="font-large-2 mb-1"></i>
+          <h5 class="card-title">Edit User Info</h5>
+          <p class="card-text">Use this modal to modify the existing user's current information.</p>
+
+          <!-- modal trigger button -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modals" data-bs-target="#wtes">Show</button>
+        </div>
+      </div>
+    </div>
+    <!-- / edit user  -->
+  </div>
+  
 </section>
           <!-- share project modal -->
 <div class="modal fade" id="shareProject" tabindex="-1" aria-labelledby="shareProjectTitle" aria-hidden="true">
