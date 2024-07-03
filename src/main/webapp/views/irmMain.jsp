@@ -211,19 +211,23 @@ License: You must have a valid license purchased only from themeforest(the above
 
 <c:forEach var="obj" items="${pList }" varStatus="index">
 <div class="col-md-4">
-  <div class="card border rounded" style="max-width:14rem; /* margin: auto; */">
-    <div class="card-body text-center">
-      <h2 class="card-title mb-2">${obj.project_name }</h2>
-      <button type="button" class="btn btn-primary waves-effect waves-float waves-light" data-bs-toggle="modal"
-       <c:if test="${obj.project_code eq sessionScope.BASE_PROJECT_CODE  }"> data-bs-target="#sbu"</c:if> >
+  <div class="card border rounded">
+    <div class="card-body text-center"        <c:if test="${obj.project_code ne sessionScope.BASE_PROJECT_CODE  }">  style="background: #ccc!important;"</c:if> >
+      <h2 class="card-title mb-2"  <c:if test="${obj.project_code ne sessionScope.BASE_PROJECT_CODE  }">  style="color: #a28e8e!important;"</c:if>>${obj.project_name }</h2>
+     <c:if test="${obj.project_code eq sessionScope.BASE_PROJECT_CODE  }">   <button type="button" class="btn btn-primary waves-effect waves-float waves-light" data-bs-toggle="modal"
+      data-bs-target="#sbu">
         Show
-      </button>
+      </button></c:if> 
     </div>
   </div>
 </div>
 
 </c:forEach>
 
+
+
+<!-- badge badge-light-secondary
+ -->
 
     <!-- / create app card-->
   </div>
