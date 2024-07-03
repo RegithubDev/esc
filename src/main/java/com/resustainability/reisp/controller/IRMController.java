@@ -57,6 +57,7 @@ import com.resustainability.reisp.model.RoleMapping;
 import com.resustainability.reisp.model.User;
 import com.resustainability.reisp.model.UserPaginationObject;
 import com.resustainability.reisp.service.IRMService;
+import com.resustainability.reisp.service.ProjectService;
 import com.resustainability.reisp.service.IRMService;
 
 @Controller
@@ -70,6 +71,9 @@ public class IRMController {
 	
 	@Autowired
 	IRMService service;
+	
+	@Autowired
+	ProjectService serviceP;
 	
 	@Value("${common.error.message}")
 	public String commonError;
@@ -99,20 +103,20 @@ public class IRMController {
 		String userId = null;
 		String userName = null;
 		String role = null;
+		String sbu = null;
 		List<IRM> companiesList = null;
+		List<Project> pList = null;
 		try {
 			userId = (String) session.getAttribute("USER_ID");
 			userName = (String) session.getAttribute("USER_NAME");
 			role = (String) session.getAttribute("BASE_ROLE");
+			sbu = (String) session.getAttribute("BASE_SBU");
+			Project p = new Project();
+			p.setSbu_code(sbu);
 			obj.setUser(userId);
 			obj.setRole(role);
-			companiesList = service.getIRMList(obj);
-			 if(companiesList.size() > 0) {
-				 model.addObject("all_irm", companiesList.get(0).getAll_irm());
-				 model.addObject("active_irm", companiesList.get(0).getActive_irm());
-				 model.addObject("inActive_irm", companiesList.get(0).getInActive_irm());
-				 model.addObject("not_assigned", companiesList.get(0).getNot_assigned());
-			 }
+			pList = serviceP.getProjectsList(p);
+			model.addObject("pList", pList);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
