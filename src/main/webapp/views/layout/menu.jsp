@@ -39,7 +39,7 @@ div.main-menu-content {
 			<li class="" data-menu  id="homeChild0" url = "/home" onClick="exFunction('homeChild0')">
 					    <a class="dropdown-item d-flex align-items-center" href="<%=request.getContextPath() %>/home" data-bs-toggle=""
 					     data-i18n="home"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle"><circle cx="12" cy="12" r="10"></circle></svg>
-					      <span data-i18n="home">Power BI Dashboard</span></a> 
+					      <span data-i18n="home">Dashboard</span></a> 
 					</li>
 			<%-- <li class="" data-menu  id="homeChild1" url = "/dash-sd" onClick="exFunction('homeChild1')">
 					    <a class="dropdown-item d-flex align-items-center" href="<%=request.getContextPath() %>/dash-sd" data-bs-toggle=""
@@ -71,7 +71,7 @@ div.main-menu-content {
 			     data-i18n="Analytics"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
 			      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity">
 			      <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
-			      <span data-i18n="Analytics">Incident Report</span></a>
+			      <span data-i18n="Analytics">Report</span></a>
 	         </li>
 			<%-- <c:if test="${sessionScope.R_DASHBOARD eq 'Yes' }">
 			 <li class="dropdown nav-item " data-menu id="home">

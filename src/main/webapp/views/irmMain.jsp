@@ -57,6 +57,7 @@ License: You must have a valid license purchased only from themeforest(the above
     <!-- END: Custom CSS-->
   <style>
   
+  
   .card {
     border: 1px solid #dee2e6;
   }
@@ -207,27 +208,44 @@ License: You must have a valid license purchased only from themeforest(the above
           <section id="modal-examples">
   <div class="row">
     <!-- create app card-->
+<div class="card border rounded shadow-sm" style="background: #ccc; border: 3px solid #f7f9fc;">
+  <div class="card-body">
+    <div class="d-flex justify-content-around">
+      <div class="card border rounded shadow-sm" style="max-width: 14rem; background: #f7f9fc;">
+        <div class="card-body text-center">
+          <h2 class="card-title mb-3" style="color: #333;">MSW</h2>
+          <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#msw">
+            Show
+          </button>
+        </div>
+      </div>
 
+      <div class="card border rounded shadow-sm" style="max-width: 14rem; background: #f7f9fc;">
+        <div class="card-body text-center">
+          <h2 class="card-title mb-3" style="color: #333;">WTE</h2>
+          <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#msw">
+            Show
+          </button>
+        </div>
+      </div>
 
-<div class="col-md-4">
-  <div class="card border rounded" style="max-width:14rem; /* margin: auto; */">
-    <div class="card-body text-center">
-      <h2 class="card-title mb-2">MSW</h2>
-      <button type="button" class="btn btn-primary waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#msw">
-        Show
-      </button>
-    </div>
-  </div>
-</div>
+      <div class="card border rounded shadow-sm" style="max-width: 14rem; background: #f7f9fc;">
+        <div class="card-body text-center">
+          <h2 class="card-title mb-3" style="color: #333;">IWM</h2>
+          <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#msw">
+            Show
+          </button>
+        </div>
+      </div>
 
-
-<div class="col-md-4">
-  <div class="card border rounded" style="max-width:14rem; /* margin: auto; */">
-    <div class="card-body text-center">
-      <h2 class="card-title mb-2">BMW</h2>
-      <button type="button" class="btn btn-primary waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#bmw">
-        Show
-      </button>
+      <div class="card border rounded shadow-sm" style="max-width: 14rem; background: #f7f9fc;">
+        <div class="card-body text-center">
+          <h2 class="card-title mb-3" style="color: #333;">BMW</h2>
+          <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#msw">
+            Show
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -784,20 +802,19 @@ License: You must have a valid license purchased only from themeforest(the above
 
 
 
-
  
- <div class="modal fade" id="bmw" tabindex="-1" aria-labelledby="bmw_report" aria-hidden="true">
+ <div class="modal fade" id="bmw" tabindex="-1" aria-labelledby="msw_report" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-xl">
     <div class="modal-content">
       <div class="modal-header bg-transparent">
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body pb-3 px-sm-3">
-        <h1 class="text-center mb-1" id="bmw_report">BMW Report</h1>
+        <h1 class="text-center mb-1" id="msw_report">MSW Report</h1>
 
         <div class="bs-stepper vertical wizard-modern create-app-wizard">
           <div class="bs-stepper-header" role="tablist">
-            <div class="step" data-target="#bmw_water_edit" role="tab" id="bmw_water">
+            <div class="step" data-target="#fresh_water_edit" role="tab" id="fresh_water">
               <button type="button" class="step-trigger py-75">
                 <span class="bs-stepper-box">
                   <i data-feather="credit-card" class="font-medium-3"></i>
@@ -807,7 +824,7 @@ License: You must have a valid license purchased only from themeforest(the above
                 </span>
               </button>
             </div>
-            <div class="step" data-target="#bmw_electrical_energy_edit" role="tab" id="bmw_electrical_energy">
+            <div class="step" data-target="#electrical_energy_edit" role="tab" id="electrical_energy">
               <button type="button" class="step-trigger py-75">
                 <span class="bs-stepper-box">
                   <i data-feather="credit-card" class="font-medium-3"></i>
@@ -817,7 +834,7 @@ License: You must have a valid license purchased only from themeforest(the above
                 </span>
               </button>
             </div>
-            <div class="step" data-target="#bmw_thermal_energy_edit" role="tab" id="bmw_thermal_energy">
+            <div class="step" data-target="#thermal_energy_edit" role="tab" id="thermal_energyr">
               <button type="button" class="step-trigger py-75">
                 <span class="bs-stepper-box">
                   <i data-feather="credit-card" class="font-medium-3"></i>
@@ -827,7 +844,7 @@ License: You must have a valid license purchased only from themeforest(the above
                 </span>
               </button>
             </div>
-            <div class="step" data-target="#bmw_sbu_goal_edit" role="tab" id="bmw_sbu_goal">
+            <div class="step" data-target="#sbu_goal_edit" role="tab" id="sbu_goal">
               <button type="button" class="step-trigger py-75">
                 <span class="bs-stepper-box">
                   <i data-feather="credit-card" class="font-medium-3"></i>
@@ -838,7 +855,7 @@ License: You must have a valid license purchased only from themeforest(the above
               </button>
             </div>
             
-             <div class="step" data-target="#bmw_greenbelt" role="tab" id="bmw_greenbelt_development">
+             <div class="step" data-target="#greenbelt" role="tab" id="greenbelt_development">
               <button type="button" class="step-trigger py-75">
                 <span class="bs-stepper-box">
                   <i data-feather="credit-card" class="font-medium-3"></i>
@@ -849,7 +866,7 @@ License: You must have a valid license purchased only from themeforest(the above
               </button>
             </div>
             
-            <div class="step" data-target="#bmw_training" role="tab" id="bmw_training_development">
+            <div class="step" data-target="#training" role="tab" id="training_development">
               <button type="button" class="step-trigger py-75">
                 <span class="bs-stepper-box">
                   <i data-feather="credit-card" class="font-medium-3"></i>
@@ -861,7 +878,7 @@ License: You must have a valid license purchased only from themeforest(the above
             </div>
             
             
-             <div class="step" data-target="#bmw_sscompliance" role="tab" id="bmw_compliance">
+             <div class="step" data-target="#sscompliance" role="tab" id="compliance">
               <button type="button" class="step-trigger py-75">
                 <span class="bs-stepper-box">
                   <i data-feather="credit-card" class="font-medium-3"></i>
@@ -872,7 +889,7 @@ License: You must have a valid license purchased only from themeforest(the above
               </button>
             </div>
             
-            <div class="step" data-target="#bmwsubmit" role="tab" id="submit">
+            <div class="step" data-target="#create-app-submit" role="tab" id="create-appmit-trigger">
               <button type="button" class="step-trigger py-75">
                 <span class="bs-stepper-box">
                   <i data-feather="check" class="font-medium-3"></i>
@@ -885,7 +902,7 @@ License: You must have a valid license purchased only from themeforest(the above
           </div>
 
         <div class="bs-stepper-content shadow-none " style="width: 80%;">           
-           <div id="bmw_water_edit" class="content" role="tabpanel" aria-labelledby="bmw_water">
+           <div id="fresh_water_edit" class="content" role="tabpanel" aria-labelledby="fresh_water">
               <h5 class="card-title">Fresh Water</h5>
             <div class="abc-container">
         <div class="abc-card">
@@ -936,10 +953,10 @@ License: You must have a valid license purchased only from themeforest(the above
               </div>
             </div>
             <div
-              id="bmw_electrical_energy_edit"
+              id="electrical_energy_edit"
               class="content"
               role="tabpanel"
-              aria-labelledby="bmw_electrical_energy">
+              aria-labelledby="electrical_energy">
                               <h5 class="card-title"> Electrical Energy (within the facility)
                               </h5>
                  <div class="abc-container">
@@ -1022,7 +1039,7 @@ License: You must have a valid license purchased only from themeforest(the above
                 </button>
               </div>
             </div>
-            <div id="bmw_thermal_energy_edit" class="content" role="tabpanel" aria-labelledby="bmw_thermal_energy">
+            <div id="thermal_energy_edit" class="content" role="tabpanel" aria-labelledby="thermal_energy">
             
              <h5 class="card-title"> Thermal Energy (within the facility)  </h5>
               <div class="abc-container">
@@ -1159,7 +1176,7 @@ License: You must have a valid license purchased only from themeforest(the above
             </div>
             
             
-            <div id="bmw_sbu_goal_edit" class="content" role="tabpanel" aria-labelledby="bmw_sbu_goal">
+            <div id="sbu_goal_edit" class="content" role="tabpanel" aria-labelledby="sbu_goal">
                 <h5 class="card-title"> Sector Specific Goals</h5>
                     <div class="abc-container">
         <div class="abc-card">
@@ -1202,7 +1219,7 @@ License: You must have a valid license purchased only from themeforest(the above
                 </button>
               </div>
             </div>
-               <div id="bmw_greenbelt" class="content" role="tabpanel" aria-labelledby="bmw_greenbelt_development">
+               <div id="greenbelt" class="content" role="tabpanel" aria-labelledby="greenbelt_development">
                   <h5 class="card-title"> Greenbelt Development </h5>
                       <div class="abc-container">
         <div class="abc-card">
@@ -1235,7 +1252,7 @@ License: You must have a valid license purchased only from themeforest(the above
             
             
                 
-             <div id="bmw_training" class="content" role="tabpanel" aria-labelledby="bmw_training_development">
+             <div id="training" class="content" role="tabpanel" aria-labelledby="training_development">
    <h5 class="card-title"> Training and Development </h5>
      <div class="abc-container">
         <div class="abc-card">
@@ -1264,7 +1281,7 @@ License: You must have a valid license purchased only from themeforest(the above
                 </button>
               </div>
             </div>            
-             <div id="bmw_sscompliance" class="content" role="tabpanel" aria-labelledby="bmw_compliance">
+             <div id="sscompliance" class="content" role="tabpanel" aria-labelledby="compliance">
           <h5 class="card-title"> Compliance</h5>
               <div class="abc-container">
         <div class="abc-card">
@@ -1295,10 +1312,10 @@ License: You must have a valid license purchased only from themeforest(the above
             </div>
             
            <div
-              id="bmw_submit"
+              id="create-app-submit"
               class="content text-center"
               role="tabpanel"
-              aria-labelledby="submit">
+              aria-labelledby="create-app-submit-trigger">
               <h3>Submit 🥳</h3>
               <p>Submit your app to kickstart your project.</p>
               <img
@@ -1328,16 +1345,6 @@ License: You must have a valid license purchased only from themeforest(the above
 
 
 
-
-
-
-
-
-
- 
-  
- 
- 
  
 
 <!-- / create app modal -->
