@@ -208,21 +208,33 @@ License: You must have a valid license purchased only from themeforest(the above
   <div class="row">
     <!-- create app card-->
 
-
-<c:forEach var="obj" items="${pList }" varStatus="index">
-<div class="col-md-4">
-  <div class="card border rounded">
-    <div class="card-body text-center"        <c:if test="${obj.project_code ne sessionScope.BASE_PROJECT_CODE  }">  style="background: #ccc!important;"</c:if> >
-      <h2 class="card-title mb-2"  <c:if test="${obj.project_code ne sessionScope.BASE_PROJECT_CODE  }">  style="color: #a28e8e!important;"</c:if>>${obj.project_name }</h2>
-     <c:if test="${obj.project_code eq sessionScope.BASE_PROJECT_CODE  }">   <button type="button" class="btn btn-primary waves-effect waves-float waves-light" data-bs-toggle="modal"
-      data-bs-target="#sbu">
-        Show
-      </button></c:if> 
-    </div>
-  </div>
-</div>
-
+<c:forEach var="obj" items="${pList}" varStatus="index">
+    <c:if test="${obj.project_code eq sessionScope.BASE_PROJECT_CODE}">
+        <div class="col-md-4">
+            <div class="card border rounded">
+                <div class="card-body text-center bg-transparent border-secondary">
+                    <h2 class="card-title mb-2">${obj.project_name}</h2>
+                    <button type="button" class="btn btn-primary waves-effect waves-float waves-light" data-bs-toggle="modal"
+                        data-bs-target="#sbu">
+                        Show
+                    </button>
+                </div>
+            </div>
+        </div>
+    </c:if>
 </c:forEach>
+<c:forEach var="obj" items="${pList}" varStatus="index">
+    <c:if test="${obj.project_code ne sessionScope.BASE_PROJECT_CODE}">
+        <div class="col-md-4">
+            <div class="card border rounded">
+                <div class="card-body text-center bg-transparent border-secondary" style="background: #ccc!important;">
+                    <h2 class="card-title mb-2" style="color: #a28e8e!important;">${obj.project_name}</h2>
+                </div>
+            </div>
+        </div>
+    </c:if>
+</c:forEach>
+
 
 
 
