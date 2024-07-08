@@ -189,7 +189,6 @@ License: You must have a valid license purchased only from themeforest(the above
              <span id="select2-base_sbu-containerError" class="error-msg" ></span>
           </div>
           
-          
            <div class="col-12 col-md-6">
             <label class="form-label" for="select2-basic">Project</label><span class="required"> *</span>
             <select 
