@@ -66,7 +66,7 @@ div.main-menu-content {
 			</li>
 			
 			<li class="dropdown nav-item " data-menu id="help" url="help">
-			    <a class="dropdown-item d-flex align-items-center" href="<%=request.getContextPath() %>/reone/help-center" data-bs-toggle=""
+			    <a class="dropdown-item d-flex align-items-center" href="<%=request.getContextPath() %>/reone/report" data-bs-toggle=""
 			     data-i18n="Analytics"><i data-feather='help-circle'></i>
 			      <span data-i18n="Analytics">Help Center</span></a>
 			</li>

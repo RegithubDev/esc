@@ -2,74 +2,159 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <!DOCTYPE html>
+<!--
+Template Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
+Author: PixInvent
+Website: http://www.pixinvent.com/
+Contact: hello@pixinvent.com
+Follow: www.twitter.com/pixinvents 
+Like: www.facebook.com/pixinvents
+Purchase: https://1.envato.market/vuexy_admin
+Renew Support: https://1.envato.market/vuexy_admin
+License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
 
+-->
 <html class="loading" lang="en" data-textdirection="ltr">
+  <!-- BEGIN: Head-->
+  
+<!-- Mirrored from pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/horizontal-menu-template/modal-examples.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Aug 2022 05:37:22 GMT -->
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
-    <meta name="description" content="Safety admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 BrainBox with unlimited possibilities.">
-    <meta name="keywords" content="admin template,BrainBox , Safety admin template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
+    <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="PIXINVENT">
-  <title>Help Center </title>
-        <link rel="icon" type="image/png" sizes="96x96" href="/reirm/resources/images/protect-favicon.png" >
+       <title>Report</title>
+        <link rel="icon" type="image/png" sizes="96x96" href="/esc/resources/images/protect-favicon.png" >
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
 
-	<script src="/reirm/resources/js/jQuery-v.3.5.min.js"  ></script>
     <!-- BEGIN: Vendor CSS-->
-      <link rel="apple-touch-icon" href="/reirm/resources/images/ico/apple-icon-120.html">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
-    <!-- BEGIN: Vendor CSS-->
-            <link rel="stylesheet" type="text/css" href="/reirm/resources/vendors/css/extensions/toastr.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/css/plugins/extensions/ext-component-toastr.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/vendors/css/vendors.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/vendors/css/tables/datatable/dataTables.bootstrap5.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/vendors/css/tables/datatable/responsive.bootstrap5.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/vendors/css/tables/datatable/buttons.bootstrap5.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/vendors/css/tables/datatable/rowGroup.bootstrap5.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/vendors/css/pickers/pickadate/pickadate.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/vendors/css/pickers/flatpickr/flatpickr.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/forms/wizard/bs-stepper.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/forms/select/select2.min.css">
     <!-- END: Vendor CSS-->
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-	  <link rel="stylesheet" href="<c:url value="/resources/css/font-awesome-v.4.7.css" />">
+
     <!-- BEGIN: Theme CSS-->
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/css/bootstrap-extended.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/css/colors.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/css/components.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/css/themes/dark-layout.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/css/themes/bordered-layout.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/css/themes/semi-dark-layout.min.css">
-   <link rel="stylesheet" type="text/css" href="/reirm/resources/vendors/css/forms/select/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/css/bootstrap-extended.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/css/colors.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/css/components.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/css/themes/dark-layout.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/css/themes/bordered-layout.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/css/themes/semi-dark-layout.min.css">
+
     <!-- BEGIN: Page CSS-->
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/css/core/menu/menu-types/horizontal-menu.min.css">
-        <link rel="stylesheet" type="text/css" href="/reirm/resources/css/plugins/forms/pickers/form-flat-pickr.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/css/plugins/forms/pickers/form-pickadate.min.css">
-     <link rel="stylesheet" type="text/css" href="/reirm/resources/css/pages/page-knowledge-base.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/css/core/menu/menu-types/horizontal-menu.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/css/plugins/forms/form-validation.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/css/plugins/forms/form-wizard.min.css">
     <!-- END: Page CSS-->
 
     <!-- BEGIN: Custom CSS-->
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/css/style.css">
-    <style>
-    
-		.knowledge-base-bg .card-body {
-		    padding: 8rem !important;
-		    }
-		    
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/style.css">
+    <!-- END: Custom CSS-->
+  <style>
+  
+  .card {
+    border: 1px solid #dee2e6;
+  }
+  .card-body {
+    padding: 1.5rem;
+  }
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+        .abc.body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;       
+          }
+        
+        
+    .abc-container {
+    border: 2px solid #DAE1E7;
+    border-radious:10px;
+    background-color: #DAE1E7;
+    padding: 15px;
+    display: flex;
+    gap: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     }
+
+        .abc-card {
+                background-color: white;
+            border: 2px solid #64c7bc;
+            padding: 35px; /* Increased padding */
+            width: 100%; /* Increased width */
+            border-radius: 10px;
+            transition: border-color 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .abc-card:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .abc-card-text {
+           margin-bottom: 4px;
+    font-size: 12px;
+    color: #333333;
+        }
+        .abc-badge-input-container {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+        .abc-badge {
+           background-color: #4a90e2;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            margin-right: 10px;
+        }
+        .abc-input-box input {
+             width: calc(100% - 70px);
+            padding: 5px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            transition: border-color 0.3s;
+        }
+        .abc-input-box input:focus {
+             border-color: #4a90e2;
+            outline: none;
+        }
+          .abc-card-section {
+            margin-bottom: 15px;
+        }
     </style>
-  </head>
+</head>
   <!-- END: Head-->
 
   <!-- BEGIN: Body-->
   <body class="horizontal-layout horizontal-menu  navbar-floating footer-static  " data-open="hover" data-menu="horizontal-menu" data-col="">
 
-    <!-- BEGIN: Header-->
- 	<jsp:include page="../views/layout/header.jsp"></jsp:include> 
-    <!-- END: Header-->
+   
+ <!-- BEGIN: Header-->
+	<jsp:include page="../views/layout/header.jsp"></jsp:include> 
 
 
-    <!-- BEGIN: Main Menu-->
-        <!-- BEGIN: Main Menu-->
-    <div class="horizontal-menu-wrapper">
+    <!-- END: Header-->>
+
+<!-- BEGIN: Main Menu-->
+      <div class="horizontal-menu-wrapper">
       <div class="header-navbar navbar-expand-sm navbar navbar-horizontal floating-nav navbar-light navbar-shadow menu-border container-xxl" role="navigation" data-menu="menu-wrapper" data-menu-type="floating-nav">
         <div class="navbar-header">
           <ul class="nav navbar-nav flex-row">
@@ -112,485 +197,530 @@
           <div class="content-header-left col-md-9 col-12 mb-2">
             <div class="row breadcrumbs-top">
               <div class="col-12">
-                <h2 class="content-header-title float-start mb-0">Help Center</h2>
-                <div class="breadcrumb-wrapper">
-                  <ol class="breadcrumb">
-                    <li class="breadcrumb-item active">Help Center
-                    </li>
-                  </ol>
-                </div>
+                <h2 class="content-header-title float-start mb-0">Annual Report</h2>
+              
               </div>
             </div>
           </div>
-          <div class="content-header-right text-md-end col-md-3 col-12 d-md-block d-none">
-            
-          </div>
+         
         </div>
-        <div class="content-body"><!-- Knowledge base Jumbotron -->
- <section id="knowledge-base-search">
-  <div class="row">
-    <div class="col-12">
-      <div
-        class="card knowledge-base-bg text-center" style="background-image: url('/reirm/resources/images/banner/banner.png')"
-      >
-         <div class="card-body">
-          <h2 class="text-primary"></h2>
-     <!--     <p class="card-text mb-2">
-            <span>Popular searches: </span><span class="fw-bolder">Sales automation, Email marketing</span>
-          </p>
-          <form class="kb-search-input">
-            <div class="input-group input-group-merge">
-              <span class="input-group-text"><i data-feather="search"></i></span>
-              <input type="text" class="form-control" id="searchbar" placeholder="Search Ideas..." />
-            </div> -->
+        <div class="content-body"><!-- Horizontal Wizard -->
+
+
+<!-- Modern Horizontal Wizard -->
+<section class="modern-horizontal-wizard">
+  <div class="bs-stepper wizard-modern modern-wizard-example">
+    <div class="bs-stepper-header">
+      <div class="step" data-target="#fresh_water_edit" role="tab" id="fresh_water">
+        <button type="button" class="step-trigger">
+          <span class="bs-stepper-label">
+            <span class="bs-stepper-title">Fresh Water</span>
+          </span>
+        </button>
+      </div>
+      <div class="line">
+        <i data-feather="chevron-right" class="font-medium-2"></i>
+      </div>
+      <div class="step" data-target="#electrical_energy_edit" role="tab" id="electrical_energy">
+        <button type="button" class="step-trigger">
+          <span class="bs-stepper-label">
+            <span class="bs-stepper-title">Electrical Energy <br> (within the facility)</span>
+          </span>
+        </button>
+      </div>
+      <div class="line">
+        <i data-feather="chevron-right" class="font-medium-2"></i>
+      </div>
+      <div class="step" data-target="#thermal_energy_edit" role="tab" id="thermal_energyr">
+        <button type="button" class="step-trigger">
+          <span class="bs-stepper-label">
+            <span class="bs-stepper-title">Thermal Energy <br> (within the facility)</span>
+          </span>
+        </button>
+      </div>
+      <div class="line">
+        <i data-feather="chevron-right" class="font-medium-2"></i>
+      </div>
+      <div class="step" data-target="#sbu_goal_edit" role="tab" id="sbu_goal">
+        <button type="button" class="step-trigger">
+          <span class="bs-stepper-label">
+            <span class="bs-stepper-title">Sector Specific <br> Points</span>
+          </span>
+        </button>
+      </div>
+      <div class="line">
+        <i data-feather="chevron-right" class="font-medium-2"></i>
+      </div>
+      <div class="step" data-target="#greenbelt" role="tab" id="greenbelt_development">
+        <button type="button" class="step-trigger">
+          <span class="bs-stepper-label">
+            <span class="bs-stepper-title">Green<br> Development</span>
+          </span>
+        </button>
+      </div>
+      <div class="line">
+        <i data-feather="chevron-right" class="font-medium-2"></i>
+      </div>
+      <div class="step" data-target="#training" role="tab" id="training_development">
+        <button type="button" class="step-trigger">
+          <span class="bs-stepper-label">
+            <span class="bs-stepper-title">Training<br> Development</span>
+          </span>
+        </button>
+      </div>
+      <div class="line">
+        <i data-feather="chevron-right" class="font-medium-2"></i>
+      </div>
+      <div class="step" data-target="#sscompliance" role="tab" id="compliance">
+        <button type="button" class="step-trigger">
+          <span class="bs-stepper-label">
+            <span class="bs-stepper-title">Compliance</span>
+          </span>
+        </button>
+      </div>
+    </div>
+    
+    
+    
+    <div >
+      <div id="fresh_water_edit" class="content" role="tabpanel" aria-labelledby="fresh_water">        
+         <div class="abc-container">
+        <div class="abc-card">
+        <span class="badge bg-dark">Site Level Sustainability Goals (FY 2024-25)</span><br>
+        <div class="abc-card-section">
+            <div class="abc-card-text">Reduction in Specific Fresh Water Consumption in FY 2024-25 compared to the Baseline FY 2023-24</div>
+            <div class="abc-badge-input-container">
+            
+                <div class="abc-badge">%</div>
+                <div class="abc-input-box">
+                 <span class="badge badge-glow bg-dark">100</span>            
+                </div>
+            </div>
+            </div>
+            
+        </div>
+        <div class="abc-card">
+        <span class="badge bg-dark">REPORTING PERIOD </span><br>
+            <div class="abc-card-text">Total Net Fresh Water Consumption</div>
+            <div class="abc-badge-input-container">
+                <div class="abc-badge">KL</div>
+                <div class="abc-input-box">
+                    <input type="text" placeholder="Enter ">
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="d-flex justify-content-between">
+          <button class="btn btn-outline-secondary btn-prev" disabled>
+            <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
+            <span class="align-middle d-sm-inline-block d-none">Previous</span>
+          </button>
+          <button class="btn btn-primary btn-next">
+            <span class="align-middle d-sm-inline-block d-none">Next</span>
+            <i data-feather="arrow-right" class="align-middle ms-sm-25 ms-0"></i>
+          </button>
         </div>
       </div>
+      <div id="electrical_energy_edit" class="content" role="tabpanel" aria-labelledby="electrical_energy">
+        
+        
+      <div class="abc-container">
+        <div class="abc-card">
+        <span class="badge bg-dark">Site Level Sustainability Goals (FY 2024-25)</span><br>
+        <div class="abc-card-section">
+            <div class="abc-card-text">Renewable Energy in Total Energy Consumption</div>
+            <div class="abc-badge-input-container">
+                <div class="abc-badge">% </div>
+               <div class="abc-input-box">
+                 <span class="badge badge-glow bg-dark">100</span>            
+                </div>
+            </div>
+            </div>
+            
+            
+            <div class="abc-card-section">
+             <div class="abc-card-text">Reduction in Specific Electricity Consumption in FY 2024-25 compared to the Baseline FY 2023-24</div>
+            <div class="abc-badge-input-container">
+                <div class="abc-badge">%
+                </div>
+                <div class="abc-input-box">
+                 <span class="badge badge-glow bg-dark">100</span>            
+                </div>
+            </div>
+            </div>
+            
+        </div>
+      
+        <div class="abc-card">
+        <span class="badge bg-dark">REPORTING PERIOD </span><br>
+        <div class="abc-card-section">
+            <div class="abc-card-text">Electricity consumption from Grid</div>
+            <div class="abc-badge-input-container">
+                <div class="abc-badge">KWh</div>
+                <div class="abc-input-box">
+                    <input type="text" placeholder="Enter ">
+                </div>
+            </div>
+            </div>
+            
+            
+            <div class="abc-card-section">
+             <div class="abc-card-text">Electricity consumption from Renewable (Solar)</div>
+            <div class="abc-badge-input-container">
+                <div class="abc-badge">KWh</div>
+                <div class="abc-input-box">
+                    <input type="text" placeholder="Enter ">
+                </div>
+            </div>
+            </div>
+            
+            
+         
+        </div>
+      
+    </div>
+        <div class="d-flex justify-content-between">
+          <button class="btn btn-primary btn-prev">
+            <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
+            <span class="align-middle d-sm-inline-block d-none">Previous</span>
+          </button>
+          <button class="btn btn-primary btn-next">
+            <span class="align-middle d-sm-inline-block d-none">Next</span>
+            <i data-feather="arrow-right" class="align-middle ms-sm-25 ms-0"></i>
+          </button>
+        </div>
+      </div>
+      <div id="thermal_energy_edit" class="content" role="tabpanel" aria-labelledby="thermal_energy">
+       
+      <div class="abc-container">
+        <div class="abc-card">
+        <span class="badge bg-dark">Site Level Sustainability Goals (FY 2024-25)</span><br>
+       
+            
+            
+            <div class="abc-card-section">
+             <div class="abc-card-text">Reduction in Specific Thermal Energy Consumption in FY 2024-25 compared to the Baseline FY 2023-24 </div>
+            <div class="abc-badge-input-container">
+                <div class="abc-badge">%</div>
+                <div class="abc-input-box">
+                 <span class="badge badge-glow bg-dark">100</span>            
+                </div>
+            </div>
+            </div>
+            
+            
+        </div>
+      
+          <div class="abc-card">
+        <span class="badge bg-dark">REPORTING PERIOD </span><br>
+        <div class="abc-card-section">
+            <div class="abc-card-text">HSD consumption
+            </div>
+            <div class="abc-badge-input-container">
+                <div class="abc-badge">Liters
+                </div>
+                <div class="abc-input-box">
+                    <input type="text" placeholder="Enter ">
+                </div>
+            </div>
+            </div>
+            
+            
+            <div class="abc-card-section">
+             <div class="abc-card-text">LDO consumption
+             </div>
+            <div class="abc-badge-input-container">
+                <div class="abc-badge">Liters</div>
+                <div class="abc-input-box">
+                    <input type="text" placeholder="Enter ">
+                </div>
+            </div>
+            </div>
+            
+             <div class="abc-card-section">
+             <div class="abc-card-text">PNG consumption
+             </div>
+            <div class="abc-badge-input-container">
+                <div class="abc-badge">Kg</div>
+                <div class="abc-input-box">
+                    <input type="text" placeholder="Enter ">
+                </div>
+            </div>
+            </div>
+            
+             <div class="abc-card-section">
+             <div class="abc-card-text">CNG/CBG consumption
+             </div>
+            <div class="abc-badge-input-container">
+                <div class="abc-badge">Kg</div>
+                <div class="abc-input-box">
+                    <input type="text" placeholder="Enter ">
+                </div>
+            </div>
+            </div>
+            
+             <div class="abc-card-section">
+             <div class="abc-card-text">Coal consumption
+             </div>
+            <div class="abc-badge-input-container">
+                <div class="abc-badge">Kg</div>
+                <div class="abc-input-box">
+                    <input type="text" placeholder="Enter ">
+                </div>
+            </div>
+            </div>
+            
+             <div class="abc-card-section">
+             <div class="abc-card-text">Furnace Oil consumption</div>
+            <div class="abc-badge-input-container">
+                <div class="abc-badge">Liters</div>
+                <div class="abc-input-box">
+                    <input type="text" placeholder="Enter ">
+                </div>
+            </div>
+            </div>
+            
+             <div class="abc-card-section">
+             <div class="abc-card-text">Biomass
+             </div>
+            <div class="abc-badge-input-container">
+                <div class="abc-badge">Kg</div>
+                <div class="abc-input-box">
+                    <input type="text" placeholder="Enter ">
+                </div>
+            </div>
+            </div>
+            
+        </div>
+    </div>
+        <div class="d-flex justify-content-between">
+          <button class="btn btn-primary btn-prev">
+            <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
+            <span class="align-middle d-sm-inline-block d-none">Previous</span>
+          </button>
+          <button class="btn btn-primary btn-next">
+            <span class="align-middle d-sm-inline-block d-none">Next</span>
+            <i data-feather="arrow-right" class="align-middle ms-sm-25 ms-0"></i>
+          </button>
+        </div>
+      </div>
+      <div id="sbu_goal_edit" class="content" role="tabpanel" aria-labelledby="sbu_goal">
+ <div class="abc-container">
+        <div class="abc-card">
+        <span class="badge bg-dark">Site Level Sustainability Goals (FY 2024-25)</span><br>
+        <div class="abc-card-section">
+            <div class="abc-card-text">MSW: Quantity of RDF to Cement Industries (FY 2025)
+            </div>
+            <div class="abc-badge-input-container">
+                <div class="abc-badge">%
+                </div>
+                <div class="abc-input-box">
+                 <span class="badge badge-glow bg-dark">100</span>            
+                </div>
+            </div>
+            </div>
+            </div>
+        <div class="abc-card">
+        <span class="badge bg-dark">REPORTING PERIOD </span><br>
+        <div class="abc-card-section">
+            <div class="abc-card-text">MSW: Quantity of RDF to Cement Industries</div>
+            <div class="abc-badge-input-container">
+                <div class="abc-badge">Tons</div>
+                <div class="abc-input-box">
+                    <input type="text" placeholder="Enter ">
+                </div>
+            </div>
+            </div>
+            </div>
+             </div>
+        <div class="d-flex justify-content-between">
+          <button class="btn btn-primary btn-prev">
+            <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
+            <span class="align-middle d-sm-inline-block d-none">Previous</span>
+          </button>
+          <button class="btn btn-primary btn-next">
+            <span class="align-middle d-sm-inline-block d-none">Next</span>
+            <i data-feather="arrow-right" class="align-middle ms-sm-25 ms-0"></i>
+          </button>
+        </div>
+      </div>
+      
+      
+      <div id="greenbelt" class="content" role="tabpanel" aria-labelledby="greenbelt_development">
+       <div class="abc-container">
+        <div class="abc-card">
+        <span class="badge bg-dark">Site Level Sustainability Goals (FY 2024-25)</span><br>
+        <div class="abc-card-section">
+            <div class="abc-card-text">Plantation of New Trees (either w/in or outside the facility)
+
+            </div>
+          
+            
+             <div class="abc-badge-input-container">
+                <div class="abc-badge">Absolute Number</div>
+                <div class="abc-input-box">
+                 <span class="badge badge-glow bg-dark">50</span>            
+                </div>
+            </div>
+            
+            </div>
+            </div>
+        <div class="abc-card">
+        <span class="badge bg-dark">REPORTING PERIOD </span><br>
+        <div class="abc-card-section">
+            <div class="abc-card-text">Plantation of New Trees (either w/in or outside the facility)</div>
+            <div class="abc-badge-input-container">
+                <div class="abc-badge">Absolute Number</div>
+                <div class="abc-input-box">
+                    <input type="text" placeholder="Enter ">
+                </div>
+            </div>
+            </div>
+            </div>
+             </div>
+        <div class="d-flex justify-content-between">
+          <button class="btn btn-outline-secondary btn-prev" disabled>
+            <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
+            <span class="align-middle d-sm-inline-block d-none">Previous</span>
+          </button>
+          <button class="btn btn-primary btn-next">
+            <span class="align-middle d-sm-inline-block d-none">Next</span>
+            <i data-feather="arrow-right" class="align-middle ms-sm-25 ms-0"></i>
+          </button>
+        </div>
+      </div> 
+      
+        <div id="training" class="content" role="tabpanel" aria-labelledby="training_development">        
+         <div class="abc-container">
+        <div class="abc-card">
+        <span class="badge bg-dark">Site Level Sustainability Goals (FY 2024-25)</span><br>
+        <div class="abc-card-section">
+            <div class="abc-card-text">Total Training Hours (excluding mandatory training) for All Employees at the Facility</div>
+            <div class="abc-badge-input-container">
+            
+                <div class="abc-badge">No. of hours
+                </div>
+                <div class="abc-input-box">
+                 <span class="badge badge-glow bg-dark">16</span>            
+                </div>
+            </div>
+            </div>
+            
+        </div>
+        <div class="abc-card">
+        <span class="badge bg-dark">REPORTING PERIOD </span><br>
+            <div class="abc-card-text">Total Training Hours (excluding mandatory training) for All Employees at the Facility</div>
+            <div class="abc-badge-input-container">
+                <div class="abc-badge">No. of hours
+                </div>
+                <div class="abc-input-box">
+                    <input type="text" placeholder="Enter ">
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="d-flex justify-content-between">
+          <button class="btn btn-outline-secondary btn-prev" disabled>
+            <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
+            <span class="align-middle d-sm-inline-block d-none">Previous</span>
+          </button>
+          <button class="btn btn-primary btn-next">
+            <span class="align-middle d-sm-inline-block d-none">Next</span>
+            <i data-feather="arrow-right" class="align-middle ms-sm-25 ms-0"></i>
+          </button>
+        </div>
+      </div>
+      
+      
+        <div id="sscompliance" class="content" role="tabpanel" aria-labelledby="compliance">        
+         <div class="abc-container">
+        <div class="abc-card">
+        <span class="badge bg-dark">Site Level Sustainability Goals (FY 2024-25)</span><br>
+        <div class="abc-card-section">
+            <div class="abc-card-text">Number of Violations and Non-Compliances</div>
+            <div class="abc-badge-input-container">
+            
+                <div class="abc-badge">Number
+                </div>
+                <div class="abc-input-box">
+                 <span class="badge badge-glow bg-dark">30</span>            
+                </div>
+            </div>
+            </div>
+            
+        </div>
+        <div class="abc-card">
+        <span class="badge bg-dark">REPORTING PERIOD </span><br>
+            <div class="abc-card-text">In the Reporting Period: Are there any known violations or non-compliances (or) Are there any pending show-cause notices (or) Any explanation to be submitted to regulatory/statutory bodies (or) Any penalties levied or Bank Guarantees submitted?</div>
+            <div class="abc-badge-input-container">
+                <div class="abc-badge">Number
+                </div>
+                <div class="abc-input-box">
+                    <input type="text" placeholder="Enter ">
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="d-flex justify-content-between">
+          <button class="btn btn-primary btn-prev">
+            <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
+            <span class="align-middle d-sm-inline-block d-none">Previous</span>
+          </button>
+          <button class="btn btn-success btn-submit">Submit</button>
+        </div>
+      </div>
+      
+      
+      
+      
     </div>
   </div>
 </section>
-<!--/ Knowledge base Jumbotron -->
+<!-- /Modern Horizontal Wizard -->
 
-<!-- Knowledge base -->
-<section id="faq-tabs"  >
-  <!-- vertical tab pill -->
-  <div class="row" >
-    <div class="col-lg-3 col-md-4 col-sm-12"> 
-      <div class="faq-navigation d-flex justify-content-between flex-column mb-2 mb-md-0">
-        <!-- pill tabs navigation -->
-        <ul class="nav nav-pills nav-left flex-column" role="tablist">
-          <!-- payment -->
-          <li class="nav-item">
-            <a class="nav-link active"  data-bs-toggle="pill" href="#faq-payment" aria-expanded="true" role="tab" >
-<i data-feather='pen-tool'></i>              <span class="fw-bold">Raise IT Help</span>
-            </a>
-          </li>
-
-          <!-- delivery -->
-       <!--   <li class="nav-item">
-            <a class="nav-link" id="delivery" data-bs-toggle="pill" href="#faq-delivery" aria-expanded="false" role="tab" aria-selected="false">
-				<i data-feather='file-text'></i>      
-				        <span class="fw-bold">User Manual</span>
-            </a>
-          </li> -->
-
-          <!-- cancellation and return -->
-          <li class="nav-item">
-            <a class="nav-link" id="cancellation-return" data-bs-toggle="pill" href="#faq-cancellation-return" aria-expanded="false" role="tab" aria-selected="false">
-				<i data-feather='help-circle'></i>
-              <span class="fw-bold">Frequently Asked Questions</span>
-            </a>
-          </li>
-        </ul>
-
-        <!-- FAQ image -->
-<!--         <img src="https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/app-assets/images/illustration/faq-illustrations.svg" class="img-fluid d-none d-md-block" alt="demand img">
- -->      </div>
-    </div>
-
-    <div class="col-lg-9 col-md-8 col-sm-12">
-      <!-- pill tabs tab content -->
-      <div class="tab-content">
-        <!-- payment panel -->
-        <div role="tabpanel" class="tab-pane active" id="faq-payment" aria-labelledby="payment" aria-expanded="true">
-          <!-- icon and header -->
-          <div class="d-flex align-items-center">
-            
-            <div>
-              <h4 class="mb-0">Raise any Technical Issue</h4>
-            </div>
-          </div>
-
-          <!-- frequent answer and question  collapse  -->
-          <div class="accordion accordion-margin mt-2" id="faq-payment-qna">
-      			<div class="card accordion-item">
-              <h2 class="accordion-header" id="deliveryOne">
-                <button class="accordion-button collapsed">
-             <span>Click <a href="https://ithelpdesk.resustainability.com/app/itdesk/ui/requests/add?reqTemplate=127594000003785173" target="_blank" style=" 
-             color: red !important;" title="Click here to raise an issue">Raise Issue</a> to Report an Issue </span>
-
-                </button>
-              </h2>
-            </div>
-          </div>
-        </div>
-
-        <!-- delivery panel -->
-        <div class="tab-pane" id="faq-delivery" role="tabpanel" aria-labelledby="delivery" aria-expanded="false">
-          <!-- icon and header -->
-          <div class="d-flex align-items-center">
-            <div class="avatar avatar-tag bg-light-primary me-1">
-              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag font-medium-4"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
-            </div>
-            <div>
-              <h4 class="mb-0">Delivery</h4>
-              <span>Which license do I need?</span>
-            </div>
-          </div>
-
-          <!-- frequent answer and question  collapse  -->
-          <div class="accordion accordion-margin mt-2" id="faq-delivery-qna">
-            <div class="card accordion-item">
-              <h2 class="accordion-header" id="deliveryOne">
-                <button class="accordion-button collapsed" data-bs-toggle="collapse" role="button" data-bs-target="#faq-delivery-one" aria-expanded="false" aria-controls="faq-delivery-one">
-                  Where has my order reached?
-                </button>
-              </h2>
-
-              <div id="faq-delivery-one" class="collapse accordion-collapse" aria-labelledby="deliveryOne" data-bs-parent="#faq-delivery-qna">
-                <div class="accordion-body">
-                  Pastry pudding cookie toffee bonbon jujubes jujubes powder topping. Jelly beans gummi bears sweet roll
-                  bonbon muffin liquorice. Wafer lollipop sesame snaps. Brownie macaroon cookie muffin cupcake candy
-                  caramels tiramisu. Oat cake chocolate cake sweet jelly-o brownie biscuit marzipan. Jujubes donut
-                  marzipan chocolate bar. Jujubes sugar plum jelly beans tiramisu icing cheesecake.
-                </div>
-              </div>
-            </div>
-            <div class="card accordion-item">
-              <h2 class="accordion-header" id="deliveryTwo">
-                <button class="accordion-button collapsed" data-bs-toggle="collapse" role="button" data-bs-target="#faq-delivery-two" aria-expanded="false" aria-controls="faq-delivery-two">
-                  The shipment status shows that it has been returned/cancelled. What does it mean and who do I contact?
-                </button>
-              </h2>
-              <div id="faq-delivery-two" class="collapse accordion-collapse" aria-labelledby="deliveryTwo" data-bs-parent="#faq-delivery-qna">
-                <div class="accordion-body">
-                  Sweet pie candy jelly. Sesame snaps biscuit sugar plum. Sweet roll topping fruitcake. Caramels
-                  liquorice biscuit ice cream fruitcake cotton candy tart. Donut caramels gingerbread jelly-o
-                  gingerbread pudding. Gummi bears pastry marshmallow candy canes pie. Pie apple pie carrot cake.
-                </div>
-              </div>
-            </div>
-            <div class="card accordion-item">
-              <h2 class="accordion-header" id="deliveryThree">
-                <button class="accordion-button collapsed" data-bs-toggle="collapse" role="button" data-bs-target="#faq-delivery-three" aria-expanded="false" aria-controls="faq-delivery-three">
-                  What if my shipment is marked as lost?
-                </button>
-              </h2>
-              <div id="faq-delivery-three" class="collapse" aria-labelledby="deliveryThree" data-bs-parent="#faq-delivery-qna">
-                <div class="accordion-body">
-                  Tart gummies dragée lollipop fruitcake pastry oat cake. Cookie jelly jelly macaroon icing jelly beans
-                  soufflé cake sweet. Macaroon sesame snaps cheesecake tart cake sugar plum. Dessert jelly-o sweet
-                  muffin chocolate candy pie tootsie roll marzipan. Carrot cake marshmallow pastry. Bonbon biscuit
-                  pastry topping toffee dessert gummies. Topping apple pie pie croissant cotton candy dessert tiramisu.
-                </div>
-              </div>
-            </div>
-            <div class="card accordion-item">
-              <h2 class="accordion-header" id="deliveryFour">
-                <button class="accordion-button collapsed" data-bs-toggle="collapse" role="button" data-bs-target="#faq-delivery-four" aria-expanded="false" aria-controls="faq-delivery-four">
-                  My shipment status shows that it’s out for delivery. By when will I receive it?
-                </button>
-              </h2>
-              <div id="faq-delivery-four" class="collapse" aria-labelledby="deliveryFour" data-bs-parent="#faq-delivery-qna">
-                <div class="accordion-body">
-                  Cheesecake muffin cupcake dragée lemon drops tiramisu cake gummies chocolate cake. Marshmallow tart
-                  croissant. Tart dessert tiramisu marzipan lollipop lemon drops. Cake bonbon bonbon gummi bears topping
-                  jelly beans brownie jujubes muffin. Donut croissant jelly-o cake marzipan. Liquorice marzipan cookie
-                  wafer tootsie roll. Tootsie roll sweet cupcake.
-                </div>
-              </div>
-            </div>
-            <div class="card accordion-item">
-              <h2 class="accordion-header" id="deliveryFive">
-                <button class="accordion-button collapsed" data-bs-toggle="collapse" role="button" data-bs-target="#faq-delivery-five" aria-expanded="false" aria-controls="faq-delivery-five">
-                  What do I need to do to get the shipment delivered within a specific timeframe?
-                </button>
-              </h2>
-              <div id="faq-delivery-five" class="collapse" aria-labelledby="deliveryFive" data-bs-parent="#faq-delivery-qna">
-                <div class="accordion-body">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                  officia deserunt mollit anim id est laborum.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- cancellation return  -->
-        <div class="tab-pane" id="faq-cancellation-return" role="tabpanel" aria-labelledby="cancellation-return" aria-expanded="false">
-          <!-- icon and header -->
-          <div class="d-flex align-items-center">
-           
-            <div>
-              <h4 class="mb-0">Frequently Asked Questions</h4>
-            </div>
-          </div>
- 
-          <!-- frequent answer and question  collapse  -->
-          <div class="accordion accordion-margin mt-2" id="faq-cancellation-qna">
-            <div class="card accordion-item">
-              <h2 class="accordion-header" id="cancellationOne">
-                <button class="accordion-button collapsed" data-bs-toggle="collapse" role="button" data-bs-target="#faq-cancellation-one" aria-expanded="false" aria-controls="faq-cancellation-one">
-                  Can any incident can be Raised?
-                </button>
-              </h2>
-            </div>
-            
-           
-           
-            
-           
-          </div>
-        </div>
-
-        <!-- my order -->
-        <div class="tab-pane" id="faq-my-order" role="tabpanel" aria-labelledby="my-order" aria-expanded="false">
-          <!-- icon and header -->
-          <div class="d-flex align-items-center">
-            <div class="avatar avatar-tag bg-light-primary me-1">
-              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-package font-medium-4"><line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
-            </div>
-            <div>
-              <h4 class="mb-0">My Orders</h4>
-              <span>Which license do I need?</span>
-            </div>
-          </div>
-
-          <!-- frequent answer and question  collapse  -->
-          <div class="accordion accordion-margin mt-2" id="faq-my-order-qna">
-            <div class="card accordion-item">
-              <h2 class="accordion-header" id="myOrderOne">
-                <button class="accordion-button collapsed" data-bs-toggle="collapse" role="button" data-bs-target="#faq-my-order-one" aria-expanded="false" aria-controls="faq-my-order-one">
-                  Can I avail of an open delivery?
-                </button>
-              </h2>
-
-              <div id="faq-my-order-one" class="collapse accordion-collapse" aria-labelledby="myOrderOne" data-bs-parent="#faq-my-order-qna">
-                <div class="accordion-body">
-                  Pastry pudding cookie toffee bonbon jujubes jujubes powder topping. Jelly beans gummi bears sweet roll
-                  bonbon muffin liquorice. Wafer lollipop sesame snaps. Brownie macaroon cookie muffin cupcake candy
-                  caramels tiramisu. Oat cake chocolate cake sweet jelly-o brownie biscuit marzipan. Jujubes donut
-                  marzipan chocolate bar. Jujubes sugar plum jelly beans tiramisu icing cheesecake.
-                </div>
-              </div>
-            </div>
-            <div class="card accordion-item">
-              <h2 class="accordion-header" id="myOrderTwo">
-                <button class="accordion-button collapsed" data-bs-toggle="collapse" role="button" data-bs-target="#faq-my-order-two" aria-expanded="false" aria-controls="faq-my-order-two">
-                  I haven’t received the refund of my returned shipment. What do I do?
-                </button>
-              </h2>
-              <div id="faq-my-order-two" class="collapse accordion-collapse" aria-labelledby="myOrderTwo" data-bs-parent="#faq-my-order-qna">
-                <div class="accordion-body">
-                  Sweet pie candy jelly. Sesame snaps biscuit sugar plum. Sweet roll topping fruitcake. Caramels
-                  liquorice biscuit ice cream fruitcake cotton candy tart. Donut caramels gingerbread jelly-o
-                  gingerbread pudding. Gummi bears pastry marshmallow candy canes pie. Pie apple pie carrot cake.
-                </div>
-              </div>
-            </div>
-            <div class="card accordion-item">
-              <h2 class="accordion-header" id="myOrderThree">
-                <button class="accordion-button collapsed" data-bs-toggle="collapse" role="button" data-bs-target="#faq-my-order-three" aria-expanded="false" aria-controls="faq-my-order-three">
-                  How can I ship my order to an international location?
-                </button>
-              </h2>
-              <div id="faq-my-order-three" class="collapse" aria-labelledby="myOrderThree" data-bs-parent="#faq-my-order-qna">
-                <div class="accordion-body">
-                  Tart gummies dragée lollipop fruitcake pastry oat cake. Cookie jelly jelly macaroon icing jelly beans
-                  soufflé cake sweet. Macaroon sesame snaps cheesecake tart cake sugar plum. Dessert jelly-o sweet
-                  muffin chocolate candy pie tootsie roll marzipan. Carrot cake marshmallow pastry. Bonbon biscuit
-                  pastry topping toffee dessert gummies. Topping apple pie pie croissant cotton candy dessert tiramisu.
-                </div>
-              </div>
-            </div>
-            <div class="card accordion-item">
-              <h2 class="accordion-header" id="myOrderFour">
-                <button class="accordion-button collapsed" data-bs-toggle="collapse" role="button" data-bs-target="#faq-my-order-four" aria-expanded="false" aria-controls="faq-my-order-four">
-                  I missed the delivery of my order today. What should I do?
-                </button>
-              </h2>
-              <div id="faq-my-order-four" class="collapse" aria-labelledby="myOrderFour" data-bs-parent="#faq-my-order-qna">
-                <div class="accordion-body">
-                  Cheesecake muffin cupcake dragée lemon drops tiramisu cake gummies chocolate cake. Marshmallow tart
-                  croissant. Tart dessert tiramisu marzipan lollipop lemon drops. Cake bonbon bonbon gummi bears topping
-                  jelly beans brownie jujubes muffin. Donut croissant jelly-o cake marzipan. Liquorice marzipan cookie
-                  wafer tootsie roll. Tootsie roll sweet cupcake.
-                </div>
-              </div>
-            </div>
-            <div class="card accordion-item">
-              <h2 class="accordion-header" id="myOrderFive">
-                <button class="accordion-button collapsed" data-bs-toggle="collapse" role="button" data-bs-target="#faq-my-order-five" aria-expanded="false" aria-controls="faq-my-order-five">
-                  The delivery of my order is delayed. What should I do?
-                </button>
-              </h2>
-              <div id="faq-my-order-five" class="collapse" aria-labelledby="myOrderFive" data-bs-parent="#faq-my-order-qna">
-                <div class="accordion-body">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                  officia deserunt mollit anim id est laborum.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- product services -->
-        <div class="tab-pane" id="faq-product-services" role="tabpanel" aria-labelledby="product-services" aria-expanded="false">
-          <!-- icon and header -->
-          <div class="d-flex align-items-center">
-            <div class="avatar avatar-tag bg-light-primary me-1">
-              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings font-medium-4"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
-            </div>
-            <div>
-              <h4 class="mb-0">Product &amp; Services</h4>
-              <span>Which license do I need?</span>
-            </div>
-          </div>
-
-          <!-- frequent answer and question  collapse  -->
-          <div class="accordion accordion-margin mt-2" id="faq-product-qna">
-            <div class="card accordion-item">
-              <h2 class="accordion-header" id="productOne">
-                <button class="accordion-button collapsed" data-bs-toggle="collapse" role="button" data-bs-target="#faq-product-one" aria-expanded="false" aria-controls="faq-product-one">
-                  How can I register a complaint against the courier executive who came to deliver my order?
-                </button>
-              </h2>
-
-              <div id="faq-product-one" class="collapse accordion-collapse" aria-labelledby="productOne" data-bs-parent="#faq-product-qna">
-                <div class="accordion-body">
-                  Pastry pudding cookie toffee bonbon jujubes jujubes powder topping. Jelly beans gummi bears sweet roll
-                  bonbon muffin liquorice. Wafer lollipop sesame snaps. Brownie macaroon cookie muffin cupcake candy
-                  caramels tiramisu. Oat cake chocolate cake sweet jelly-o brownie biscuit marzipan. Jujubes donut
-                  marzipan chocolate bar. Jujubes sugar plum jelly beans tiramisu icing cheesecake.
-                </div>
-              </div>
-            </div>
-            <div class="card accordion-item">
-              <h2 class="accordion-header" id="productTwo">
-                <button class="accordion-button collapsed" data-bs-toggle="collapse" role="button" data-bs-target="#faq-product-two" aria-expanded="false" aria-controls="faq-product-two">
-                  The status for my shipment shows as ‘not picked up’. What do I do?
-                </button>
-              </h2>
-              <div id="faq-product-two" class="collapse accordion-collapse" aria-labelledby="productTwo" data-bs-parent="#faq-product-qna">
-                <div class="accordion-body">
-                  Sweet pie candy jelly. Sesame snaps biscuit sugar plum. Sweet roll topping fruitcake. Caramels
-                  liquorice biscuit ice cream fruitcake cotton candy tart. Donut caramels gingerbread jelly-o
-                  gingerbread pudding. Gummi bears pastry marshmallow candy canes pie. Pie apple pie carrot cake.
-                </div>
-              </div>
-            </div>
-            <div class="card accordion-item">
-              <h2 class="accordion-header" id="productThree">
-                <button class="accordion-button collapsed" data-bs-toggle="collapse" role="button" data-bs-target="#faq-product-three" aria-expanded="false" aria-controls="faq-product-three">
-                  How can I get a proof of delivery for my shipment?
-                </button>
-              </h2>
-              <div id="faq-product-three" class="collapse" aria-labelledby="productThree" data-bs-parent="#faq-product-qna">
-                <div class="accordion-body">
-                  Tart gummies dragée lollipop fruitcake pastry oat cake. Cookie jelly jelly macaroon icing jelly beans
-                  soufflé cake sweet. Macaroon sesame snaps cheesecake tart cake sugar plum. Dessert jelly-o sweet
-                  muffin chocolate candy pie tootsie roll marzipan. Carrot cake marshmallow pastry. Bonbon biscuit
-                  pastry topping toffee dessert gummies. Topping apple pie pie croissant cotton candy dessert tiramisu.
-                </div>
-              </div>
-            </div>
-            <div class="card accordion-item">
-              <h2 class="accordion-header" id="productFour">
-                <button class="accordion-button collapsed" data-bs-toggle="collapse" role="button" data-bs-target="#faq-product-four" aria-expanded="false" aria-controls="faq-product-four">
-                  How can I avail your services?
-                </button>
-              </h2>
-              <div id="faq-product-four" class="collapse accordion-collapse" aria-labelledby="productFour" data-bs-parent="#faq-product-qna">
-                <div class="accordion-body">
-                  Cheesecake muffin cupcake dragée lemon drops tiramisu cake gummies chocolate cake. Marshmallow tart
-                  croissant. Tart dessert tiramisu marzipan lollipop lemon drops. Cake bonbon bonbon gummi bears topping
-                  jelly beans brownie jujubes muffin. Donut croissant jelly-o cake marzipan. Liquorice marzipan cookie
-                  wafer tootsie roll. Tootsie roll sweet cupcake.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-  </div>
-</section>
-<!-- Knowledge base ends -->
 
         </div>
       </div>
     </div>
     <!-- END: Content-->
-    <!-- BEGIN: Customizer-->
-    <!-- End: Customizer-->
-    <!-- Buynow Button-->
-    <div class="sidenav-overlay"></div>
 
-    <!-- BEGIN: Footer-->
-   <footer class="footer footer-static footer-light">
-      <p class="clearfix mb-0"><span class="float-md-start d-block d-md-inline-block mt-25">COPYRIGHT  &copy;  <span id="currentYear"></span> | Powered by<a class="ms-25" href="https://resustainability.com/" target="_blank">Re Sustainability Limited</a><span class="d-none d-sm-inline-block"> . All Rights Reserved.</span></span></p>
-    </footer>
-    <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
-    <!-- END: Footer-->
-   <script src="/reirm/resources/vendors/js/vendors.min.js"></script>
+
+
+
+    </div>
+ 
+
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="/esc/resources/vendors/js/vendors.min.js"></script>
     <!-- BEGIN Vendor JS-->
- <form action="<%=request.getContextPath()%>/update-bb-form" name="updateIRM" id="updateIRM" method="post">	
-        <input type="hidden" name=idea_no id="document_codeUpdate" />
-	</form>
+
     <!-- BEGIN: Page Vendor JS-->
-    <script src="/reirm/resources/vendors/js/ui/jquery.sticky.js"></script>
-    <script src="/reirm/resources/vendors/js/forms/select/select2.full.min.js"></script>
-    <script src="/reirm/resources/vendors/js/charts/apexcharts.min.js"></script>
-    <script src="/reirm/resources/vendors/js/extensions/toastr.min.js"></script>
-    <script src="/reirm/resources/vendors/js/extensions/moment.min.js"></script>
-    <script src="/reirm/resources/vendors/js/tables/datatable/jquery.dataTables.min.js"></script>
-    <script src="/reirm/resources/vendors/js/tables/datatable/datatables.buttons.min.js"></script>
-    <script src="/reirm/resources/vendors/js/tables/datatable/dataTables.bootstrap5.min.js"></script>
-    <script src="/reirm/resources/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
-    <script src="/reirm/resources/vendors/js/tables/datatable/responsive.bootstrap5.js"></script>
+    <script src="/esc/resources/vendors/js/ui/jquery.sticky.js"></script>
+    <script src="/esc/resources/vendors/js/forms/wizard/bs-stepper.min.js"></script>
+    <script src="/esc/resources/vendors/js/forms/select/select2.full.min.js"></script>
+    <script src="/esc/resources/vendors/js/forms/validation/jquery.validate.min.js"></script>
     <!-- END: Page Vendor JS-->
- <script src="/reirm/resources/js/materialize-v.1.0.min.js "  ></script>
-    <script src="/reirm/resources/js/jquery-validation-1.19.1.min.js"  ></script>
-    <script src="/reirm/resources/js/jquery.dataTables-v.1.10.min.js"  ></script>
-     <script src="/reirm/resources/js/datetime-moment-v1.10.12.js"  ></script>
-         <script src="/reirm/resources/js/dataTables.material.min.js"  ></script>
-      <script src="/reirm/resources/js/moment-v2.8.4.min.js"  ></script>
+
     <!-- BEGIN: Theme JS-->
-    <script src="/reirm/resources/js/core/app-menu.min.js"></script>
-    <script src="/reirm/resources/js/core/app.min.js"></script>
-    <script src="/reirm/resources/js/scripts/customizer.min.js"></script>
-     <script src="/reirm/resources/js/scripts/forms/form-select2.min.js"></script>
+    <script src="/esc/resources/js/core/app-menu.min.js"></script>
+    <script src="/esc/resources/js/core/app.min.js"></script>
+    <script src="/esc/resources/js/scripts/customizer.min.js"></script>
     <!-- END: Theme JS-->
-   <script src="/reirm/resources/js/scripts/pages/modal-add-new-cc.min.js"></script>
-    <script src="/reirm/resources/js/scripts/pages/page-pricing.min.js"></script>
-    <script src="/reirm/resources/js/scripts/pages/modal-add-new-address.min.js"></script>
-    <script src="/reirm/resources/js/scripts/pages/modal-create-app.min.js"></script>
-    <script src="/reirm/resources/js/scripts/pages/modal-two-factor-auth.min.js"></script>
-    <script src="/reirm/resources/js/scripts/pages/modal-edit-user.min.js"></script>
-    <script src="/reirm/resources/js/scripts/pages/modal-share-project.min.js"></script>
+
     <!-- BEGIN: Page JS-->
-     <script src="/reirm/resources/js/scripts/pages/dashboard-analytics.min.js"></script>
-    <script src="/reirm/resources/js/scripts/pages/app-invoice-list.min.js"></script>
-    
-        <script src="/reirm/resources/vendors/js/pickers/pickadate/picker.js"></script>
-    <script src="/reirm/resources/vendors/js/pickers/pickadate/picker.date.js"></script>
-    <script src="/reirm/resources/vendors/js/pickers/pickadate/picker.time.js"></script>
-    <script src="/reirm/resources/vendors/js/pickers/pickadate/legacy.js"></script>
-    <script src="/reirm/resources/vendors/js/pickers/flatpickr/flatpickr.min.js"></script>
-     <script src="/reirm/resources/js/scripts/forms/pickers/form-pickers.min.js"></script>
- <script src="/reirm/resources/js/scripts/pages/page-knowledge-base.min.js"></script>
+    <script src="/esc/resources/js/scripts/forms/form-wizard.min.js"></script>
+    <!-- END: Page JS-->
+
     <script>
       $(window).on('load',  function(){
         if (feather) {
           feather.replace({ width: 14, height: 14 });
         }
       })
-      function getIdea(idea_no){
-	    	
-	    	$('#document_codeUpdate').val($.trim(idea_no));
-	    
-	    	$("#updateIRM ").submit();
-	    	
-      }
     </script>
   </body>
   <!-- END: Body-->
 
-<!-- Mirrored from pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/horizontal-menu-template/page-knowledge-base.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Aug 2022 05:37:19 GMT -->
+<!-- Mirrored from pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/horizontal-menu-template/form-wizard.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Aug 2022 05:37:14 GMT -->
 </html>

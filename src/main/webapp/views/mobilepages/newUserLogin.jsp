@@ -26,38 +26,38 @@ License: You must have a valid license purchased only from themeforest(the above
     <meta name="keywords" content="admin template,IRM, Safety admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="PIXINVENT">
   <title>IRM - Submit</title>
-       <link rel="icon" type="image/png" sizes="96x96" href="/reirm/resources/images/protect-favicon.png" >
-	<script src="/reirm/resources/js/jQuery-v.3.5.min.js"  ></script>
+       <link rel="icon" type="image/png" sizes="96x96" href="/esc/resources/images/protect-favicon.png" >
+	<script src="/esc/resources/js/jQuery-v.3.5.min.js"  ></script>
     <!-- BEGIN: Vendor CSS-->
-    <link rel="stylesheet" href="/reirm/resources/vendor/css/pages/page-auth.css">
-      <link rel="apple-touch-icon" href="/reirm/resources/images/ico/apple-icon-120.html">
+    <link rel="stylesheet" href="/esc/resources/vendor/css/pages/page-auth.css">
+      <link rel="apple-touch-icon" href="/esc/resources/images/ico/apple-icon-120.html">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
     <!-- BEGIN: Vendor CSS-->
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/vendors/css/vendors.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/vendors/css/tables/datatable/dataTables.bootstrap5.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/vendors/css/tables/datatable/responsive.bootstrap5.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/vendors/css/tables/datatable/buttons.bootstrap5.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/vendors/css/tables/datatable/rowGroup.bootstrap5.min.css">
-     <link rel="stylesheet" type="text/css" href="/reirm/resources/css/bootstrap-extended.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/vendors/css/pickers/flatpickr/flatpickr.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/tables/datatable/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/tables/datatable/responsive.bootstrap5.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/tables/datatable/buttons.bootstrap5.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/tables/datatable/rowGroup.bootstrap5.min.css">
+     <link rel="stylesheet" type="text/css" href="/esc/resources/css/bootstrap-extended.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/pickers/flatpickr/flatpickr.min.css">
     <!-- END: Vendor CSS-->
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <!-- BEGIN: Theme CSS-->
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/css/bootstrap-extended.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/css/colors.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/css/components.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/css/themes/dark-layout.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/css/themes/bordered-layout.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/css/themes/semi-dark-layout.min.css">
-   <link rel="stylesheet" type="text/css" href="/reirm/resources/vendors/css/forms/select/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/css/bootstrap-extended.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/css/colors.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/css/components.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/css/themes/dark-layout.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/css/themes/bordered-layout.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/css/themes/semi-dark-layout.min.css">
+   <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/forms/select/select2.min.css">
     <!-- BEGIN: Page CSS-->
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/css/core/menu/menu-types/horizontal-menu.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/css/core/menu/menu-types/horizontal-menu.min.css">
     <!-- END: Page CSS-->
-      <link rel="stylesheet" type="text/css" href="/reirm/resources/vendors/css/file-uploaders/dropzone.min.css">
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/css/plugins/forms/form-file-uploader.min.css">
+      <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/file-uploaders/dropzone.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/css/plugins/forms/form-file-uploader.min.css">
     <!-- BEGIN: Custom CSS-->
-    <link rel="stylesheet" type="text/css" href="/reirm/resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/css/style.css">
     <!-- END: Custom CSS-->
     <!-- END: Custom CSS-->
 <style>
@@ -100,32 +100,7 @@ License: You must have a valid license purchased only from themeforest(the above
     <!-- Register basic -->
     <div class="card mb-0">
       <div class="card-body">
-        <a  class="brand-logo">
-          <svg
-                  viewBox="0 0 139 95"
-                  version="1.1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  height="24"
-                >
-         	 	<defs>
-                    <lineargradient id="linearGradient-1" x1="100%" y1="10.5120544%" x2="50%" y2="89.4879456%">
-                      <stop stop-color="#000000" offset="0%"></stop>
-                      <stop stop-color="#FFFFFF" offset="100%"></stop>
-                    </lineargradient>
-                    <lineargradient id="linearGradient-2" x1="64.0437835%" y1="46.3276743%" x2="37.373316%" y2="100%">
-                      <stop stop-color="#EEEEEE" stop-opacity="0" offset="0%"></stop>
-                      <stop stop-color="#FFFFFF" offset="100%"></stop>
-                    </lineargradient>
-                  </defs>
-                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="Artboard" transform="translate(-400.000000, -178.000000)">
-			         <img src="<%=request.getContextPath() %>/resources/images/logo/P2-LoginPage.png" width="" height="40" class="card-imgs" >
-                    </g>
-                  </g>
-                </svg>
-          <h2 class="brand-text text-primary ms-1 text-center">IRM User Creation </h2>
-        </a>
+       
 
        <!--  <p class="card-text mb-2">Make your app management easy and fun!</p> -->
 <div class="col-lg-12 col-sm-12 col-12" style="box-sizing:border-box; display:table;">
@@ -272,45 +247,45 @@ License: You must have a valid license purchased only from themeforest(the above
     <!-- END: Content-->
 
 
-        <script src="/reirm/resources/vendors/js/vendors.min.js"></script>
+        <script src="/esc/resources/vendors/js/vendors.min.js"></script>
     <!-- BEGIN Vendor JS-->
 
     <!-- BEGIN: Page Vendor JS-->
-    <script src="/reirm/resources/vendors/js/ui/jquery.sticky.js"></script>
-    <script src="/reirm/resources/vendors/js/forms/select/select2.full.min.js"></script>
-    <script src="/reirm/resources/vendors/js/charts/apexcharts.min.js"></script>
-    <script src="/reirm/resources/vendors/js/extensions/toastr.min.js"></script>
-    <script src="/reirm/resources/vendors/js/extensions/moment.min.js"></script>
-    <script src="/reirm/resources/vendors/js/tables/datatable/jquery.dataTables.min.js"></script>
-    <script src="/reirm/resources/vendors/js/tables/datatable/datatables.buttons.min.js"></script>
-    <script src="/reirm/resources/vendors/js/tables/datatable/dataTables.bootstrap5.min.js"></script>
-    <script src="/reirm/resources/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
-    <script src="/reirm/resources/vendors/js/tables/datatable/responsive.bootstrap5.js"></script>
+    <script src="/esc/resources/vendors/js/ui/jquery.sticky.js"></script>
+    <script src="/esc/resources/vendors/js/forms/select/select2.full.min.js"></script>
+    <script src="/esc/resources/vendors/js/charts/apexcharts.min.js"></script>
+    <script src="/esc/resources/vendors/js/extensions/toastr.min.js"></script>
+    <script src="/esc/resources/vendors/js/extensions/moment.min.js"></script>
+    <script src="/esc/resources/vendors/js/tables/datatable/jquery.dataTables.min.js"></script>
+    <script src="/esc/resources/vendors/js/tables/datatable/datatables.buttons.min.js"></script>
+    <script src="/esc/resources/vendors/js/tables/datatable/dataTables.bootstrap5.min.js"></script>
+    <script src="/esc/resources/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
+    <script src="/esc/resources/vendors/js/tables/datatable/responsive.bootstrap5.js"></script>
     <!-- END: Page Vendor JS-->
- <script src="/reirm/resources/js/materialize-v.1.0.min.js "  ></script>
-    <script src="/reirm/resources/js/jquery-validation-1.19.1.min.js"  ></script>
-    <script src="/reirm/resources/js/jquery.dataTables-v.1.10.min.js"  ></script>
-     <script src="/reirm/resources/js/datetime-moment-v1.10.12.js"  ></script>
-         <script src="/reirm/resources/js/dataTables.material.min.js"  ></script>
-      <script src="/reirm/resources/js/moment-v2.8.4.min.js"  ></script>
+ <script src="/esc/resources/js/materialize-v.1.0.min.js "  ></script>
+    <script src="/esc/resources/js/jquery-validation-1.19.1.min.js"  ></script>
+    <script src="/esc/resources/js/jquery.dataTables-v.1.10.min.js"  ></script>
+     <script src="/esc/resources/js/datetime-moment-v1.10.12.js"  ></script>
+         <script src="/esc/resources/js/dataTables.material.min.js"  ></script>
+      <script src="/esc/resources/js/moment-v2.8.4.min.js"  ></script>
     <!-- BEGIN: Theme JS-->
-    <script src="/reirm/resources/js/core/app-menu.min.js"></script>
-    <script src="/reirm/resources/js/core/app.min.js"></script>
-    <script src="/reirm/resources/js/scripts/customizer.min.js"></script>
-     <script src="/reirm/resources/js/scripts/forms/form-select2.min.js"></script>
+    <script src="/esc/resources/js/core/app-menu.min.js"></script>
+    <script src="/esc/resources/js/core/app.min.js"></script>
+    <script src="/esc/resources/js/scripts/customizer.min.js"></script>
+     <script src="/esc/resources/js/scripts/forms/form-select2.min.js"></script>
     <!-- END: Theme JS-->
-   <script src="/reirm/resources/js/scripts/pages/modal-add-new-cc.min.js"></script>
-    <script src="/reirm/resources/js/scripts/pages/page-pricing.min.js"></script>
-    <script src="/reirm/resources/js/scripts/pages/modal-add-new-address.min.js"></script>
-    <script src="/reirm/resources/js/scripts/pages/modal-create-app.min.js"></script>
-    <script src="/reirm/resources/js/scripts/pages/modal-two-factor-auth.min.js"></script>
-    <script src="/reirm/resources/js/scripts/pages/modal-edit-user.min.js"></script>
-    <script src="/reirm/resources/js/scripts/pages/modal-share-project.min.js"></script>
+   <script src="/esc/resources/js/scripts/pages/modal-add-new-cc.min.js"></script>
+    <script src="/esc/resources/js/scripts/pages/page-pricing.min.js"></script>
+    <script src="/esc/resources/js/scripts/pages/modal-add-new-address.min.js"></script>
+    <script src="/esc/resources/js/scripts/pages/modal-create-app.min.js"></script>
+    <script src="/esc/resources/js/scripts/pages/modal-two-factor-auth.min.js"></script>
+    <script src="/esc/resources/js/scripts/pages/modal-edit-user.min.js"></script>
+    <script src="/esc/resources/js/scripts/pages/modal-share-project.min.js"></script>
     <!-- BEGIN: Page JS-->
-     <script src="/reirm/resources/js/scripts/pages/dashboard-analytics.min.js"></script>
-    <script src="/reirm/resources/js/scripts/pages/app-invoice-list.min.js"></script>
-    <script src="/reirm/resources/vendors/js/file-uploaders/dropzone.min.js"></script>
-    <script src="/reirm/resources/js/scripts/forms/form-file-uploader.min.js"></script>
+     <script src="/esc/resources/js/scripts/pages/dashboard-analytics.min.js"></script>
+    <script src="/esc/resources/js/scripts/pages/app-invoice-list.min.js"></script>
+    <script src="/esc/resources/vendors/js/file-uploaders/dropzone.min.js"></script>
+    <script src="/esc/resources/js/scripts/forms/form-file-uploader.min.js"></script>
 
     <!-- BEGIN: Page JS-->
     <script src="/reisp/resources/js/scripts/pages/auth-register.min.js"></script>

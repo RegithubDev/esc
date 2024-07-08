@@ -26,7 +26,7 @@ public class HelpDeskController {
     }
 	Logger logger = Logger.getLogger(HelpDeskController.class);
 	
-	@RequestMapping(value = "/help-center", method = {RequestMethod.POST, RequestMethod.GET})
+	@RequestMapping(value = "/report", method = {RequestMethod.POST, RequestMethod.GET})
 	public ModelAndView department(@ModelAttribute User user, HttpSession session) {
 		ModelAndView model = new ModelAndView(PageConstants.helpCenter);
 		Department obj = null;
