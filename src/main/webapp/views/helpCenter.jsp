@@ -70,7 +70,7 @@ License: You must have a valid license purchased only from themeforest(the above
     background-color: #0056b3;
     border-color: #0056b3;
   }
-        .abc.body {
+   .abc.body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f0f0f0;
             display: flex;
@@ -79,7 +79,6 @@ License: You must have a valid license purchased only from themeforest(the above
             height: 100vh;
             margin: 0;       
           }
-        
         
     .abc-container {
     border: 2px solid #DAE1E7;
@@ -103,13 +102,14 @@ License: You must have a valid license purchased only from themeforest(the above
             flex-direction: column;
             align-items: flex-start;
         }
-        .abc-card:hover {
+        
+      .abc-card:hover {
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
         .abc-card-text {
            margin-bottom: 4px;
-    font-size: 12px;
-    color: #333333;
+           font-size: 12px;
+           color: #333333;
         }
         .abc-badge-input-container {
             display: flex;
@@ -117,7 +117,7 @@ License: You must have a valid license purchased only from themeforest(the above
             width: 100%;
         }
         .abc-badge {
-           background-color: #4a90e2;
+            background-color: #4a90e2;
             color: white;
             padding: 5px 10px;
             border-radius: 5px;
@@ -198,15 +198,11 @@ License: You must have a valid license purchased only from themeforest(the above
             <div class="row breadcrumbs-top">
               <div class="col-12">
                 <h2 class="content-header-title float-start mb-0">Annual Report</h2>
-              
               </div>
             </div>
           </div>
-         
         </div>
         <div class="content-body"><!-- Horizontal Wizard -->
-
-
 <!-- Modern Horizontal Wizard -->
 <section class="modern-horizontal-wizard">
   <div class="bs-stepper wizard-modern modern-wizard-example">
@@ -280,8 +276,6 @@ License: You must have a valid license purchased only from themeforest(the above
       </div>
     </div>
     
-    
-    
     <div >
       <div id="fresh_water_edit" class="content" role="tabpanel" aria-labelledby="fresh_water">        
          <div class="abc-container">
@@ -290,14 +284,12 @@ License: You must have a valid license purchased only from themeforest(the above
         <div class="abc-card-section">
             <div class="abc-card-text">Reduction in Specific Fresh Water Consumption in FY 2024-25 compared to the Baseline FY 2023-24</div>
             <div class="abc-badge-input-container">
-            
                 <div class="abc-badge">%</div>
                 <div class="abc-input-box">
                  <span class="badge badge-glow bg-dark">100</span>            
                 </div>
             </div>
             </div>
-            
         </div>
         <div class="abc-card">
         <span class="badge bg-dark">REPORTING PERIOD </span><br>
@@ -348,7 +340,6 @@ License: You must have a valid license purchased only from themeforest(the above
                 </div>
             </div>
             </div>
-            
         </div>
       
         <div class="abc-card">
