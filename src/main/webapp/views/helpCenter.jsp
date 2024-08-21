@@ -189,7 +189,7 @@ License: You must have a valid license purchased only from themeforest(the above
     <!-- END: Main Menu-->
 
     <!-- BEGIN: Content-->
-    <div class="app-content content ">
+<div class="app-content content ">
       <div class="content-overlay"></div>
       <div class="header-navbar-shadow"></div>
       <div class="content-wrapper container-xxl p-0">
@@ -197,478 +197,249 @@ License: You must have a valid license purchased only from themeforest(the above
           <div class="content-header-left col-md-9 col-12 mb-2">
             <div class="row breadcrumbs-top">
               <div class="col-12">
-                <h2 class="content-header-title float-start mb-0">Annual Report</h2>
+                <h2 class="content-header-title float-start mb-0">Form Wizard</h2>
+                <div class="breadcrumb-wrapper">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index-2.html">Home</a>
+                    </li>
+                    <li class="breadcrumb-item"><a href="#">Forms</a>
+                    </li>
+                    <li class="breadcrumb-item active">Form Wizard
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-header-right text-md-end col-md-3 col-12 d-md-block d-none">
+            <div class="mb-1 breadcrumb-right">
+              <div class="dropdown">
+                <button class="btn-icon btn btn-primary btn-round btn-sm dropdown-toggle waves-effect waves-float waves-light" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-grid"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></button>
+                <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item" href="app-todo.html"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-square me-1"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg><span class="align-middle">Todo</span></a><a class="dropdown-item" href="app-chat.html"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square me-1"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg><span class="align-middle">Chat</span></a><a class="dropdown-item" href="app-email.html"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail me-1"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg><span class="align-middle">Email</span></a><a class="dropdown-item" href="app-calendar.html"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar me-1"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg><span class="align-middle">Calendar</span></a></div>
               </div>
             </div>
           </div>
         </div>
-        <div class="content-body"><!-- Horizontal Wizard -->
-<!-- Modern Horizontal Wizard -->
-<section class="modern-horizontal-wizard">
-  <div class="bs-stepper wizard-modern modern-wizard-example">
-    <div class="bs-stepper-header">
-      <div class="step" data-target="#fresh_water_edit" role="tab" id="fresh_water">
-        <button type="button" class="step-trigger">
-          <span class="bs-stepper-label">
-            <span class="bs-stepper-title">Fresh Water</span>
-          </span>
-        </button>
-      </div>
-      <div class="line">
-        <i data-feather="chevron-right" class="font-medium-2"></i>
-      </div>
-      <div class="step" data-target="#electrical_energy_edit" role="tab" id="electrical_energy">
-        <button type="button" class="step-trigger">
-          <span class="bs-stepper-label">
-            <span class="bs-stepper-title">Electrical Energy <br> (within the facility)</span>
-          </span>
-        </button>
-      </div>
-      <div class="line">
-        <i data-feather="chevron-right" class="font-medium-2"></i>
-      </div>
-      <div class="step" data-target="#thermal_energy_edit" role="tab" id="thermal_energyr">
-        <button type="button" class="step-trigger">
-          <span class="bs-stepper-label">
-            <span class="bs-stepper-title">Thermal Energy <br> (within the facility)</span>
-          </span>
-        </button>
-      </div>
-      <div class="line">
-        <i data-feather="chevron-right" class="font-medium-2"></i>
-      </div>
-      <div class="step" data-target="#sbu_goal_edit" role="tab" id="sbu_goal">
-        <button type="button" class="step-trigger">
-          <span class="bs-stepper-label">
-            <span class="bs-stepper-title">Sector Specific <br> Points</span>
-          </span>
-        </button>
-      </div>
-      <div class="line">
-        <i data-feather="chevron-right" class="font-medium-2"></i>
-      </div>
-      <div class="step" data-target="#greenbelt" role="tab" id="greenbelt_development">
-        <button type="button" class="step-trigger">
-          <span class="bs-stepper-label">
-            <span class="bs-stepper-title">Green<br> Development</span>
-          </span>
-        </button>
-      </div>
-      <div class="line">
-        <i data-feather="chevron-right" class="font-medium-2"></i>
-      </div>
-      <div class="step" data-target="#training" role="tab" id="training_development">
-        <button type="button" class="step-trigger">
-          <span class="bs-stepper-label">
-            <span class="bs-stepper-title">Training<br> Development</span>
-          </span>
-        </button>
-      </div>
-      <div class="line">
-        <i data-feather="chevron-right" class="font-medium-2"></i>
-      </div>
-      <div class="step" data-target="#sscompliance" role="tab" id="compliance">
-        <button type="button" class="step-trigger">
-          <span class="bs-stepper-label">
-            <span class="bs-stepper-title">Compliance</span>
-          </span>
-        </button>
-      </div>
-    </div>
-    
-    <div >
-      <div id="fresh_water_edit" class="content" role="tabpanel" aria-labelledby="fresh_water">        
-         <div class="abc-container">
-        <div class="abc-card">
-        <span class="badge bg-dark">Site Level Sustainability Goals (FY 2024-25)</span><br>
-        <div class="abc-card-section">
-            <div class="abc-card-text">Reduction in Specific Fresh Water Consumption in FY 2024-25 compared to the Baseline FY 2023-24</div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">%</div>
-                <div class="abc-input-box">
-                 <span class="badge badge-glow bg-dark">100</span>            
-                </div>
-            </div>
-            </div>
-        </div>
-        <div class="abc-card">
-        <span class="badge bg-dark">REPORTING PERIOD </span><br>
-            <div class="abc-card-text">Total Net Fresh Water Consumption</div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">KL</div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter ">
-                </div>
-            </div>
-        </div>
-    </div>
-        <div class="d-flex justify-content-between">
-          <button class="btn btn-outline-secondary btn-prev" disabled>
-            <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
-            <span class="align-middle d-sm-inline-block d-none">Previous</span>
-          </button>
-          <button class="btn btn-primary btn-next">
-            <span class="align-middle d-sm-inline-block d-none">Next</span>
-            <i data-feather="arrow-right" class="align-middle ms-sm-25 ms-0"></i>
-          </button>
-        </div>
-      </div>
-      <div id="electrical_energy_edit" class="content" role="tabpanel" aria-labelledby="electrical_energy">
-        
-        
-      <div class="abc-container">
-        <div class="abc-card">
-        <span class="badge bg-dark">Site Level Sustainability Goals (FY 2024-25)</span><br>
-        <div class="abc-card-section">
-            <div class="abc-card-text">Renewable Energy in Total Energy Consumption</div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">% </div>
-               <div class="abc-input-box">
-                 <span class="badge badge-glow bg-dark">100</span>            
-                </div>
-            </div>
-            </div>
-            
-            
-            <div class="abc-card-section">
-             <div class="abc-card-text">Reduction in Specific Electricity Consumption in FY 2024-25 compared to the Baseline FY 2023-24</div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">%
-                </div>
-                <div class="abc-input-box">
-                 <span class="badge badge-glow bg-dark">100</span>            
-                </div>
-            </div>
-            </div>
-        </div>
-      
-        <div class="abc-card">
-        <span class="badge bg-dark">REPORTING PERIOD </span><br>
-        <div class="abc-card-section">
-            <div class="abc-card-text">Electricity consumption from Grid</div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">KWh</div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter ">
-                </div>
-            </div>
-            </div>
-            
-            
-            <div class="abc-card-section">
-             <div class="abc-card-text">Electricity consumption from Renewable (Solar)</div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">KWh</div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter ">
-                </div>
-            </div>
-            </div>
-            
-            
-         
-        </div>
-      
-    </div>
-        <div class="d-flex justify-content-between">
-          <button class="btn btn-primary btn-prev">
-            <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
-            <span class="align-middle d-sm-inline-block d-none">Previous</span>
-          </button>
-          <button class="btn btn-primary btn-next">
-            <span class="align-middle d-sm-inline-block d-none">Next</span>
-            <i data-feather="arrow-right" class="align-middle ms-sm-25 ms-0"></i>
-          </button>
-        </div>
-      </div>
-      <div id="thermal_energy_edit" class="content" role="tabpanel" aria-labelledby="thermal_energy">
-       
-      <div class="abc-container">
-        <div class="abc-card">
-        <span class="badge bg-dark">Site Level Sustainability Goals (FY 2024-25)</span><br>
-       
-            
-            
-            <div class="abc-card-section">
-             <div class="abc-card-text">Reduction in Specific Thermal Energy Consumption in FY 2024-25 compared to the Baseline FY 2023-24 </div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">%</div>
-                <div class="abc-input-box">
-                 <span class="badge badge-glow bg-dark">100</span>            
-                </div>
-            </div>
-            </div>
-            
-            
-        </div>
-      
-          <div class="abc-card">
-        <span class="badge bg-dark">REPORTING PERIOD </span><br>
-        <div class="abc-card-section">
-            <div class="abc-card-text">HSD consumption
-            </div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">Liters
-                </div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter ">
-                </div>
-            </div>
-            </div>
-            
-            
-            <div class="abc-card-section">
-             <div class="abc-card-text">LDO consumption
-             </div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">Liters</div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter ">
-                </div>
-            </div>
-            </div>
-            
-             <div class="abc-card-section">
-             <div class="abc-card-text">PNG consumption
-             </div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">Kg</div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter ">
-                </div>
-            </div>
-            </div>
-            
-             <div class="abc-card-section">
-             <div class="abc-card-text">CNG/CBG consumption
-             </div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">Kg</div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter ">
-                </div>
-            </div>
-            </div>
-            
-             <div class="abc-card-section">
-             <div class="abc-card-text">Coal consumption
-             </div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">Kg</div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter ">
-                </div>
-            </div>
-            </div>
-            
-             <div class="abc-card-section">
-             <div class="abc-card-text">Furnace Oil consumption</div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">Liters</div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter ">
-                </div>
-            </div>
-            </div>
-            
-             <div class="abc-card-section">
-             <div class="abc-card-text">Biomass
-             </div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">Kg</div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter ">
-                </div>
-            </div>
-            </div>
-            
-        </div>
-    </div>
-        <div class="d-flex justify-content-between">
-          <button class="btn btn-primary btn-prev">
-            <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
-            <span class="align-middle d-sm-inline-block d-none">Previous</span>
-          </button>
-          <button class="btn btn-primary btn-next">
-            <span class="align-middle d-sm-inline-block d-none">Next</span>
-            <i data-feather="arrow-right" class="align-middle ms-sm-25 ms-0"></i>
-          </button>
-        </div>
-      </div>
-      <div id="sbu_goal_edit" class="content" role="tabpanel" aria-labelledby="sbu_goal">
- <div class="abc-container">
-        <div class="abc-card">
-        <span class="badge bg-dark">Site Level Sustainability Goals (FY 2024-25)</span><br>
-        <div class="abc-card-section">
-            <div class="abc-card-text">MSW: Quantity of RDF to Cement Industries (FY 2025)
-            </div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">%
-                </div>
-                <div class="abc-input-box">
-                 <span class="badge badge-glow bg-dark">100</span>            
-                </div>
-            </div>
-            </div>
-            </div>
-        <div class="abc-card">
-        <span class="badge bg-dark">REPORTING PERIOD </span><br>
-        <div class="abc-card-section">
-            <div class="abc-card-text">MSW: Quantity of RDF to Cement Industries</div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">Tons</div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter ">
-                </div>
-            </div>
-            </div>
-            </div>
-             </div>
-        <div class="d-flex justify-content-between">
-          <button class="btn btn-primary btn-prev">
-            <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
-            <span class="align-middle d-sm-inline-block d-none">Previous</span>
-          </button>
-          <button class="btn btn-primary btn-next">
-            <span class="align-middle d-sm-inline-block d-none">Next</span>
-            <i data-feather="arrow-right" class="align-middle ms-sm-25 ms-0"></i>
-          </button>
-        </div>
-      </div>
-      
-      
-      <div id="greenbelt" class="content" role="tabpanel" aria-labelledby="greenbelt_development">
-       <div class="abc-container">
-        <div class="abc-card">
-        <span class="badge bg-dark">Site Level Sustainability Goals (FY 2024-25)</span><br>
-        <div class="abc-card-section">
-            <div class="abc-card-text">Plantation of New Trees (either w/in or outside the facility)
+        <div class="content-body">
+		<!-- Horizontal Wizard -->
 
-            </div>
-          
-            
-             <div class="abc-badge-input-container">
-                <div class="abc-badge">Absolute Number</div>
-                <div class="abc-input-box">
-                 <span class="badge badge-glow bg-dark">50</span>            
-                </div>
-            </div>
-            
-            </div>
-            </div>
-        <div class="abc-card">
-        <span class="badge bg-dark">REPORTING PERIOD </span><br>
-        <div class="abc-card-section">
-            <div class="abc-card-text">Plantation of New Trees (either w/in or outside the facility)</div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">Absolute Number</div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter ">
-                </div>
-            </div>
-            </div>
-            </div>
-             </div>
-        <div class="d-flex justify-content-between">
-          <button class="btn btn-outline-secondary btn-prev" disabled>
-            <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
-            <span class="align-middle d-sm-inline-block d-none">Previous</span>
-          </button>
-          <button class="btn btn-primary btn-next">
-            <span class="align-middle d-sm-inline-block d-none">Next</span>
-            <i data-feather="arrow-right" class="align-middle ms-sm-25 ms-0"></i>
-          </button>
-        </div>
-      </div> 
-      
-        <div id="training" class="content" role="tabpanel" aria-labelledby="training_development">        
-         <div class="abc-container">
-        <div class="abc-card">
-        <span class="badge bg-dark">Site Level Sustainability Goals (FY 2024-25)</span><br>
-        <div class="abc-card-section">
-            <div class="abc-card-text">Total Training Hours (excluding mandatory training) for All Employees at the Facility</div>
-            <div class="abc-badge-input-container">
-            
-                <div class="abc-badge">No. of hours
-                </div>
-                <div class="abc-input-box">
-                 <span class="badge badge-glow bg-dark">16</span>            
-                </div>
-            </div>
-            </div>
-            
-        </div>
-        <div class="abc-card">
-        <span class="badge bg-dark">REPORTING PERIOD </span><br>
-            <div class="abc-card-text">Total Training Hours (excluding mandatory training) for All Employees at the Facility</div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">No. of hours
-                </div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter ">
-                </div>
-            </div>
-        </div>
+<!-- /Horizontal Wizard -->
+
+<!-- Vertical Wizard -->
+
+<!-- /Vertical Wizard -->
+
+<!-- Modern Horizontal Wizard -->
+
+<!-- /Modern Horizontal Wizard -->
+
+<!-- Modern Vertical Wizard -->
+<section class="modern-vertical-wizard">
+  <div class="bs-stepper vertical wizard-modern modern-vertical-wizard-example">
+    <div class="bs-stepper-header">
+      <div class="step active" data-target="#account-details-vertical-modern" role="tab" id="account-details-vertical-modern-trigger">
+        <button type="button" class="step-trigger" aria-selected="true">
+          <span class="bs-stepper-box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text font-medium-3"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          </span>
+          <span class="bs-stepper-label">
+            <span class="bs-stepper-title">Fresh water</span>
+            <span class="bs-stepper-subtitle"></span>
+          </span>
+        </button>
+      </div>
+      <div class="step" data-target="#personal-info-vertical-modern" role="tab" id="personal-info-vertical-modern-trigger">
+        <button type="button" class="step-trigger" aria-selected="false">
+          <span class="bs-stepper-box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user font-medium-3"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          </span>
+          <span class="bs-stepper-label">
+            <span class="bs-stepper-title">Electrical Energy </span>
+            <span class="bs-stepper-subtitle"> (within the facility)</span>
+          </span>
+        </button>
+      </div>
+      <div class="step" data-target="#address-step-vertical-modern" role="tab" id="address-step-vertical-modern-trigger">
+        <button type="button" class="step-trigger" aria-selected="false">
+          <span class="bs-stepper-box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin font-medium-3"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          </span>
+          <span class="bs-stepper-label">
+            <span class="bs-stepper-title">Thermal Energy</span>
+            <span class="bs-stepper-subtitle">(within the facility)</span>
+          </span>
+        </button>
+      </div>
+      <div class="step" data-target="#social-links-vertical-modern" role="tab" id="social-links-vertical-modern-trigger">
+        <button type="button" class="step-trigger" aria-selected="false">
+          <span class="bs-stepper-box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link font-medium-3"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+          </span>
+          <span class="bs-stepper-label">
+            <span class="bs-stepper-title">Sector Specific Goals</span>
+            <span class="bs-stepper-subtitle">Add Social Links</span>
+          </span>
+        </button>
+      </div>
     </div>
+    <div class="bs-stepper-content">
+      <div id="account-details-vertical-modern" class="content active dstepper-block" role="tabpanel" aria-labelledby="account-details-vertical-modern-trigger">
+        <div class="content-header">
+          <h5 class="mb-0">Account Details</h5>
+          <small class="text-muted">Enter Your Account Details.</small>
+        </div>
+        <div class="row">
+          <div class="mb-1 col-md-6">
+            <label class="form-label" for="vertical-modern-username">Username</label>
+            <input type="text" id="vertical-modern-username" class="form-control" placeholder="johndoe">
+          </div>
+          <div class="mb-1 col-md-6">
+            <label class="form-label" for="vertical-modern-email">Email</label>
+            <input type="email" id="vertical-modern-email" class="form-control" placeholder="john.doe@email.com" aria-label="john.doe">
+          </div>
+        </div>
+        <div class="row">
+          <div class="mb-1 form-password-toggle col-md-6">
+            <label class="form-label" for="vertical-modern-password">Password</label>
+            <input type="password" id="vertical-modern-password" class="form-control" placeholder="············">
+          </div>
+          <div class="mb-1 form-password-toggle col-md-6">
+            <label class="form-label" for="vertical-modern-confirm-password">Confirm Password</label>
+            <input type="password" id="vertical-modern-confirm-password" class="form-control" placeholder="············">
+          </div>
+        </div>
         <div class="d-flex justify-content-between">
-          <button class="btn btn-outline-secondary btn-prev" disabled>
-            <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
+          <button class="btn btn-outline-secondary btn-prev waves-effect" disabled="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left align-middle me-sm-25 me-0"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
             <span class="align-middle d-sm-inline-block d-none">Previous</span>
           </button>
-          <button class="btn btn-primary btn-next">
+          <button class="btn btn-primary btn-next waves-effect waves-float waves-light">
             <span class="align-middle d-sm-inline-block d-none">Next</span>
-            <i data-feather="arrow-right" class="align-middle ms-sm-25 ms-0"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right align-middle ms-sm-25 ms-0"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
           </button>
         </div>
       </div>
-      
-      
-        <div id="sscompliance" class="content" role="tabpanel" aria-labelledby="compliance">        
-         <div class="abc-container">
-        <div class="abc-card">
-        <span class="badge bg-dark">Site Level Sustainability Goals (FY 2024-25)</span><br>
-        <div class="abc-card-section">
-            <div class="abc-card-text">Number of Violations and Non-Compliances</div>
-            <div class="abc-badge-input-container">
-            
-                <div class="abc-badge">Number
-                </div>
-                <div class="abc-input-box">
-                 <span class="badge badge-glow bg-dark">30</span>            
-                </div>
-            </div>
-            </div>
-            
+      <div id="personal-info-vertical-modern" class="content" role="tabpanel" aria-labelledby="personal-info-vertical-modern-trigger">
+        <div class="content-header">
+          <h5 class="mb-0">Personal Info</h5>
+          <small>Enter Your Personal Info.</small>
         </div>
-        <div class="abc-card">
-        <span class="badge bg-dark">REPORTING PERIOD </span><br>
-            <div class="abc-card-text">In the Reporting Period: Are there any known violations or non-compliances (or) Are there any pending show-cause notices (or) Any explanation to be submitted to regulatory/statutory bodies (or) Any penalties levied or Bank Guarantees submitted?</div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">Number
-                </div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter ">
-                </div>
-            </div>
+        <div class="row">
+          <div class="mb-1 col-md-6">
+            <label class="form-label" for="vertical-modern-first-name">First Name</label>
+            <input type="text" id="vertical-modern-first-name" class="form-control" placeholder="John">
+          </div>
+          <div class="mb-1 col-md-6">
+            <label class="form-label" for="vertical-modern-last-name">Last Name</label>
+            <input type="text" id="vertical-modern-last-name" class="form-control" placeholder="Doe">
+          </div>
         </div>
-    </div>
+        <div class="row">
+          <div class="mb-1 col-md-6">
+            <label class="form-label" for="vertical-modern-country">Country</label>
+            <div class="position-relative"><select class="select2 w-100 select2-hidden-accessible" id="vertical-modern-country" data-select2-id="vertical-modern-country" tabindex="-1" aria-hidden="true">
+              <option label=" " data-select2-id="11"></option>
+              <option>UK</option>
+              <option>USA</option>
+              <option>Spain</option>
+              <option>France</option>
+              <option>Italy</option>
+              <option>Australia</option>
+            </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="10" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-vertical-modern-country-container"><span class="select2-selection__rendered" id="select2-vertical-modern-country-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">Select value</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span></div>
+          </div>
+          <div class="mb-1 col-md-6">
+            <label class="form-label" for="vertical-modern-language">Language</label>
+            <div class="position-relative"><select class="select2 w-100 select2-hidden-accessible" id="vertical-modern-language" multiple="" data-select2-id="vertical-modern-language" tabindex="-1" aria-hidden="true">
+              <option>English</option>
+              <option>French</option>
+              <option>Spanish</option>
+            </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="12" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false"><ul class="select2-selection__rendered"><li class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="searchbox" aria-autocomplete="list" placeholder="Select value" style="width: 0px;"></li></ul></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span></div>
+          </div>
+        </div>
         <div class="d-flex justify-content-between">
-          <button class="btn btn-primary btn-prev">
-            <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
+          <button class="btn btn-primary btn-prev waves-effect waves-float waves-light">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left align-middle me-sm-25 me-0"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
             <span class="align-middle d-sm-inline-block d-none">Previous</span>
           </button>
-          <button class="btn btn-success btn-submit">Submit</button>
+          <button class="btn btn-primary btn-next waves-effect waves-float waves-light">
+            <span class="align-middle d-sm-inline-block d-none">Next</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right align-middle ms-sm-25 ms-0"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </button>
         </div>
       </div>
-      
-      
-      
-      
+      <div id="address-step-vertical-modern" class="content" role="tabpanel" aria-labelledby="address-step-vertical-modern-trigger">
+        <div class="content-header">
+          <h5 class="mb-0">Address</h5>
+          <small>Enter Your Address.</small>
+        </div>
+        <div class="row">
+          <div class="mb-1 col-md-6">
+            <label class="form-label" for="vertical-modern-address">Address</label>
+            <input type="text" id="vertical-modern-address" class="form-control" placeholder="98  Borough bridge Road, Birmingham">
+          </div>
+          <div class="mb-1 col-md-6">
+            <label class="form-label" for="vertical-modern-landmark">Landmark</label>
+            <input type="text" id="vertical-modern-landmark" class="form-control" placeholder="Borough bridge">
+          </div>
+        </div>
+        <div class="row">
+          <div class="mb-1 col-md-6">
+            <label class="form-label" for="pincode4">Pincode</label>
+            <input type="text" id="pincode4" class="form-control" placeholder="658921">
+          </div>
+          <div class="mb-1 col-md-6">
+            <label class="form-label" for="city4">City</label>
+            <input type="text" id="city4" class="form-control" placeholder="Birmingham">
+          </div>
+        </div>
+        <div class="d-flex justify-content-between">
+          <button class="btn btn-primary btn-prev waves-effect waves-float waves-light">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left align-middle me-sm-25 me-0"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            <span class="align-middle d-sm-inline-block d-none">Previous</span>
+          </button>
+          <button class="btn btn-primary btn-next waves-effect waves-float waves-light">
+            <span class="align-middle d-sm-inline-block d-none">Next</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right align-middle ms-sm-25 ms-0"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </button>
+        </div>
+      </div>
+      <div id="social-links-vertical-modern" class="content" role="tabpanel" aria-labelledby="social-links-vertical-modern-trigger">
+        <div class="content-header">
+          <h5 class="mb-0">Social Links</h5>
+          <small>Enter Your Social Links.</small>
+        </div>
+        <div class="row">
+          <div class="mb-1 col-md-6">
+            <label class="form-label" for="vertical-modern-twitter">Twitter</label>
+            <input type="text" id="vertical-modern-twitter" class="form-control" placeholder="https://twitter.com/abc">
+          </div>
+          <div class="mb-1 col-md-6">
+            <label class="form-label" for="vertical-modern-facebook">Facebook</label>
+            <input type="text" id="vertical-modern-facebook" class="form-control" placeholder="https://facebook.com/abc">
+          </div>
+        </div>
+        <div class="row">
+          <div class="mb-1 col-md-6">
+            <label class="form-label" for="vertical-modern-google">Google+</label>
+            <input type="text" id="vertical-modern-google" class="form-control" placeholder="https://plus.google.com/abc">
+          </div>
+          <div class="mb-1 col-md-6">
+            <label class="form-label" for="vertical-modern-linkedin">Linkedin</label>
+            <input type="text" id="vertical-modern-linkedin" class="form-control" placeholder="https://linkedin.com/abc">
+          </div>
+        </div>
+        <div class="d-flex justify-content-between">
+          <button class="btn btn-primary btn-prev waves-effect waves-float waves-light">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left align-middle me-sm-25 me-0"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            <span class="align-middle d-sm-inline-block d-none">Previous</span>
+          </button>
+          <button class="btn btn-success btn-submit waves-effect waves-float waves-light">Submit</button>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-<!-- /Modern Horizontal Wizard -->
-
+<!-- /Modern Vertical Wizard -->
 
         </div>
       </div>

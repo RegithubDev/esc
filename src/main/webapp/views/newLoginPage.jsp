@@ -171,7 +171,7 @@
                 <div class="col-12 col-sm-8 col-md-6 col-lg-12 px-xl-2 mx-auto">
                       <!-- <h2 class="badge bg-dark card-title fw-bold mb-1">WELCOME</h2> -->
                    
-                      <h2 class="badge badge-glow  bg-info card-title fw-bold mb-1" style="text-align: center;">WELCOME</h2>
+                      <h2 class="badge badge-glow  bg-info card-title fw-bold mb-1" style="text-align: center;">Sustainable Scorecard</h2>
                       
                       
                   <form class="auth-login-form mt-2" action="<%=request.getContextPath() %>/login" method="POST" novalidate="novalidate">
@@ -179,14 +179,14 @@
                       <label class="form-label" for="login-email">Email</label>
                       <input class="form-control" id="login-email" type="text" name="email_id" placeholder="john@example.com" aria-describedby="login-email" autofocus="" tabindex="1">
                     </div>
-                 <%--    <div class="mb-1">
+                    <div class="mb-1">
                       <div class="d-flex justify-content-between">
-                        <label class="form-label" for="login-password">Password</label><a href="auth-forgot-password-cover.html"><small>Forgot Password?</small></a>
+                        <label class="form-label" for="login-password">Password</label>
                       </div>
                       <div class="input-group input-group-merge form-password-toggle">
-                        <input class="form-control form-control-merge" id="login-password" type="password" name="login-password" placeholder="············" aria-describedby="login-password" tabindex="2"><span class="input-group-text cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></span>
+                        <input class="form-control form-control-merge" id="login-password" type="password" name="login-password" placeholder="Enter PSWD" aria-describedby="login-password" tabindex="2"><span class="input-group-text cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></span>
                       </div>
-                    </div> --%>
+                    </div> 
                     <div class="mb-1">
                       <div class="form-check">
                         <input class="form-check-input" id="remember-me" type="checkbox" tabindex="3">
