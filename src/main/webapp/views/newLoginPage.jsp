@@ -176,19 +176,19 @@
                      <h2 class="badge badge-glow bg-info card-title fw-bold mb-0" style="text-align: center;">
                      <i class="fas fa-leaf" style="font-size: 2rem;margin-right: 18px;"></i>Sustainable Scorecard  </h2>
                       
-                  <form class="auth-login-form mt-2" action="<%=request.getContextPath() %>/login" method="POST" novalidate="novalidate">
+                 <form class="auth-login-form mt-2" action="<%=request.getContextPath() %>/login" method="POST" novalidate="novalidate">
                     <div class="mb-1">
                       <label class="form-label" for="login-email">Email</label>
                       <input class="form-control" id="login-email" type="text" name="email_id" placeholder="john@example.com" aria-describedby="login-email" autofocus="" tabindex="1">
                     </div>
-                 <!--    <div class="mb-1">
+                  <div class="mb-1">
                       <div class="d-flex justify-content-between">
-                        <label class="form-label" for="login-password">Password</label>
+                        <label class="form-label" for="login-password">Password</label><!-- <a href="auth-forgot-password-cover.html"><small>Forgot Password?</small></a> -->
                       </div>
                       <div class="input-group input-group-merge form-password-toggle">
-                        <input class="form-control form-control-merge" id="login-password" type="password" name="login-password" placeholder="Enter PSWD" aria-describedby="login-password" tabindex="2"><span class="input-group-text cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></span>
-                      </div>   !-->
-                    
+                        <input class="form-control form-control-merge" id="login-password" type="password" name="login-password" placeholder="············" aria-describedby="login-password" tabindex="2"><span class="input-group-text cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></span>
+                      </div>
+                    </div> 
                     <div class="mb-1">
                       <div class="form-check">
                         <input class="form-check-input" id="remember-me" type="checkbox" tabindex="3">
@@ -212,10 +212,7 @@
     <!-- END: Content-->
 	<form action="<%=request.getContextPath() %>/login" name="loginForm" id="loginForm" method="post">
 		<input type="hidden" name="email_id" id="email_id"/>
-		<input type="hidden" name="user_name" id="user_name"/>
-		<input id="profileImg" name="profileImg" type="hidden" />
-		<input id="gToken" name="user_session_id" type="hidden" />
-		<input id="device_type" name="device_type" type="hidden" />
+		<input type="hidden" name="password" id="password"/>
 	</form>
 	
     <!-- BEGIN: Vendor JS-->
@@ -238,153 +235,7 @@
     <!-- END: Page JS-->
 
     <script>
-    $.getJSON("https://api.ipify.org?format=json",  function(data) { 
-		$(".page-loader-2").hide();
-		//$("#publicIPA").html(data.ip); 
-		console.log(data.ip); 
-		
-    }); 
-   $(window).on('load',  function(){
-     if (feather) {
-       feather.replace({ width: 14, height: 14 });
-     }
-     var ua = navigator.userAgent;
-	    var checker = {
-	      iphone: ua.match(/(iPhone|iPod|iPad)/),
-	      blackberry: ua.match(/BlackBerry/),
-	      android: ua.match(/Android/),
-	       Mozilla: ua.match(/Mozilla/),
-	       Chrome: ua.match(/Chrome/)
-	    };
-	    if (checker.android){
-	        console.log("android")
-	        $("#device_type").val("mobile");
-	    }
-	    else if (checker.iphone){
-	    	 $("#device_type").val("mobile");
-	    }
-	    else if (checker.blackberry){
-	    	 $("#device_type").val("mobile");
-	    }
-	    else if (checker.Mozilla){
-	    	 $("#device_type").val("desktop");
-	    	 
-	    }
-	    else if (checker.Chrome){
-	    	 $("#device_type").val("desktop");
-	    }
-	    else {
-	    	 $("#device_type").val("desktop");
-	    } 
-   })
-
-    var client;
-      var access_token;
-
-      function initClient() { 
-    	  
-        client = google.accounts.oauth2.initTokenClient({
-          client_id: '180023549420-4araucipo8cil4matp902f64cte57md9.apps.googleusercontent.com',
-          scope: 'https://www.googleapis.com/auth/calendar.readonly \
-                  https://www.googleapis.com/auth/contacts.readonly',
-          callback: (tokenResponse) => {
-            access_token = tokenResponse.access_token;
-          },
-        });
-      }
-    	function decodeJwtResponse(token) {
-            let base64Url = token.split('.')[1]
-            let base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
-            let jsonPayload = decodeURIComponent(atob(base64).split('').map(function(c) {
-                return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
-            }).join(''));
-            return JSON.parse(jsonPayload)
-        }
-
-        let responsePayload;
-        
-    	window.handleCredentialResponse = (response) => {
-    		  // decodeJwtResponse() is a custom function defined by you
-    		  // to decode the credential response.
-    		  responsePayload = decodeJwtResponse(response.credential);
-    		  var idToken = response.credential;
-    		  console.log("ID: " + responsePayload.sub);
-    		  console.log('Full Name: ' + responsePayload.name);
-    		  console.log('Given Name: ' + responsePayload.given_name);
-    		  console.log('Family Name: ' + responsePayload.family_name);
-    		  console.log("Image URL: " + responsePayload.picture);
-    		  console.log("Email: " + responsePayload.email);
-    		  if('${success}' == null || '${success}' == ''){
-	    		  if('${invalidEmail}' == null || '${invalidEmail}' == ''){
-	    			  $("#email_id").val(responsePayload.email);
-	    			  $("#user_name").val(responsePayload.name);
-	    			  $("#profileImg").val(responsePayload.picture);
-	    			  $("#gToken").val(idToken);
-		    		  $("#loginForm").submit();
-	    		  }else{
-	    			 alert(profile.getEmail()+" do not have access to login. Please try with registered mail account (or) contact to admin.");
-	    			 signOut();
-			      }
-		      }else if('${success}' == 'Successfully logged out'){
-		    	  if('${invalidEmail}' == null || '${invalidEmail}' == ''){
-		    		  $("#email_id").val(responsePayload.email);
-	    			  $("#user_name").val(responsePayload.name);
-	    			  $("#profileImg").val(responsePayload.picture);
-	    			  $("#gToken").val(idToken);
-		    		  $("#loginForm").submit();
-	    		  }
-		      }else{
-			      signOut();
-		      }
-    		}
-  
-  // OLD METHOD FOR AUTH 2
-/* 	function onSignIn(googleUser) {
-		  if (clicked) {
-			
-			  var profile = googleUser.getBasicProfile();
-			  $("#signout-container").show();
-			  $("#signin-container").hide();
-			  $("#loggedUserImage").attr("src", profile.getImageUrl());
-			  $("#loggedUsername").html(profile.getName());
-			  $("#loggedUserEmail").html(profile.getEmail());
-			  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-			  console.log('Name: ' + profile.getName());
-			  console.log('Image URL: ' + profile.getImageUrl());
-			  console.log('Email: ' + profile.getEmail()); // This is null if the 'email_id' scope is not present.
-			  window.localStorage.setItem("selectedOption", 'undefined');
-			  if('${success}' == null || '${success}' == ''){
-	    		  if('${invalidEmail}' == null || '${invalidEmail}' == ''){
-	    			  $("#email_id").val(profile.getEmail());
-	    			  $("#profileImg").val(profile.getImageUrl());
-	    			  $("#gToken").val(profile.getId());
-		    		  $("#loginForm").submit();
-	    		  }else{
-	    			 alert(profile.getEmail()+" do not have access to login. Please try with registered mail account (or) contact to admin.");
-	    			 signOut();
-			      }
-		      }else if('${success}' == 'Successfully logged out'){
-		    	  if('${invalidEmail}' == null || '${invalidEmail}' == ''){
-	    			  $("#email_id").val(profile.getEmail());
-	    			  $("#profileImg").val(profile.getImageUrl());
-	    			  $("#gToken").val(profile.getId());
-		    		  $("#loginForm").submit();
-	    		  }
-		      }else{
-			      signOut();
-		      }
-		  }
-		}
-  
-    function onLoad() {
-      gapi.load('auth2', function() {
-        gapi.auth2.getAuthInstance();
-      });
-    } 
-  
-  
-  */
-
+ 
     </script>
   </body>
   <!-- END: Body-->

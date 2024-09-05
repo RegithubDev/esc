@@ -443,7 +443,7 @@ public class UserDao {
 		User userDetails = null;
 		try{  
 			con = dataSource.getConnection();
-			String qry = "select up.id,up.user_id,up.user_name,up.base_role,up.contact_number,up.email_id,up.base_department,department_name,up.base_sbu,up.base_project,"
+			String qry = "select up.id,up.user_id,up.user_name,up.base_role,up.password,up.contact_number,up.email_id,up.base_department,department_name,up.base_sbu,up.base_project,"
 					+ "up.reward_points,p.project_name,s.sbu_name,up.reporting_to,up1.user_name as reporting_user_name,up.version_no from [user_profile] up "
 					+ "LEFT JOIN project p on up.base_project = p.project_code  "
 					+ "LEFT JOIN sbu s on up.base_sbu = s.sbu_code  "
@@ -451,12 +451,13 @@ public class UserDao {
 					+ "LEFT JOIN user_accounts ua on up.user_id = ua.user_id  "
 					+ "LEFT JOIN user_profile up1 on up.reporting_to = up1.user_id  "
 					+ "where  up.user_name <> '' and ua.status = 'Active' and (Format( CURRENT_TIMESTAMP,'yyyy-MM-dd') <= up.end_date or up.end_date is null) ";
-			if(!StringUtils.isEmpty(user.getEmail_id())){
-				qry = qry + "AND up.email_id = ? "; 
+			if(!StringUtils.isEmpty(user.getEmail_id()) && !StringUtils.isEmpty(user.getPassword())){
+				qry = qry + "AND up.email_id = ? and up.password = ? "; 
 			}
 			stmt = con.prepareStatement(qry);
-			if(!StringUtils.isEmpty(user.getEmail_id())){
+			if(!StringUtils.isEmpty(user.getEmail_id()) && !StringUtils.isEmpty(user.getPassword())){
 				stmt.setString(1, user.getEmail_id());;
+				stmt.setString(2, user.getPassword());;
 			}
 			rs = stmt.executeQuery();  
 			if(rs.next()) {
