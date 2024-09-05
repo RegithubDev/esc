@@ -186,7 +186,7 @@
                         <label class="form-label" for="login-password">Password</label><!-- <a href="auth-forgot-password-cover.html"><small>Forgot Password?</small></a> -->
                       </div>
                       <div class="input-group input-group-merge form-password-toggle">
-                        <input class="form-control form-control-merge" id="login-password" type="password" name="login-password" placeholder="············" aria-describedby="login-password" tabindex="2"><span class="input-group-text cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></span>
+                        <input class="form-control form-control-merge" id="login-password" type="password" name="password" placeholder="············" aria-describedby="login-password" tabindex="2"><span class="input-group-text cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></span>
                       </div>
                     </div> 
                     <div class="mb-1">
@@ -210,10 +210,7 @@
      <!-- footer included -->
    <%--  <jsp:include page="../views/layout/footer.jsp"></jsp:include>  --%> 
     <!-- END: Content-->
-	<form action="<%=request.getContextPath() %>/login" name="loginForm" id="loginForm" method="post">
-		<input type="hidden" name="email_id" id="email_id"/>
-		<input type="hidden" name="password" id="password"/>
-	</form>
+	
 	
     <!-- BEGIN: Vendor JS-->
     <script src="<c:url value="/resources/vendors/js/vendors.min.js"/>"></script>

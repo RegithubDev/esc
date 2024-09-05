@@ -76,7 +76,6 @@ public class HomeController {
 			User uBoj = new User();
 			uBoj.setEmail_id(email);
 			User userDetails = service.validateUser(uBoj);
-			companiesList = service2.getIRMLAzyList(obj, 0, 10, email);
 			user.setUser_id(userId);
 			user.setRole(role);
 			List<User> rewardsList = service.getRewardsHistory(user);
