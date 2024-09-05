@@ -22,6 +22,8 @@
 
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="<c:url value="/resources/vendors/css/vendors.min.css"/>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <!-- END: Vendor CSS-->
 
     <!-- BEGIN: Theme CSS-->
@@ -115,7 +117,7 @@
 				            </ol>
 				            <div class="carousel-inner">
 				              <div class="carousel-item active">
-				                <img class="img-fluid" src="<c:url value="/resources/images/iwm.png"/>" alt="First slide" />
+				                <img class="img-fluid" src="https://idbinvest.org/sites/default/files/styles/size936x656/public/blog_post/Ilustraci%C3%B3n-FINAL.jpg.webp?itok=gCIq1dcH" alt="First slide" />
 				                <div class="carousel-caption d-none d-md-block">
 				                  <!-- <h3 class="text-white">First Slide Label</h3> -->
 				                
@@ -123,20 +125,20 @@
 				              </div>
 				  
 				                <div class="carousel-item">
-				                <img class="img-fluid" src="<c:url value="/resources/images/msw.png"/>" alt="Second slide" />
+				                <img class="img-fluid" src="https://img.freepik.com/free-vector/gradient-sdg-infographic_23-2149396367.jpg"> alt="Second slide" />
 				                <div class="carousel-caption d-none d-md-block">
 				                  
 				                </div>
 				              </div>
 				                <div class="carousel-item">
-				                <img class="img-fluid" src="<c:url value="/resources/images/bmw.png"/>" alt="Third slide" />
+				                <img class="img-fluid" src="https://assets.euromoneydigital.com/dims4/default/485c8a4/2147483647/strip/true/crop/600x338+0+31/resize/1200x675!/quality/90/?url=http%3A%2F%2Feuromoney-brightspot.s3.amazonaws.com%2Fde%2Fb6%2F9411438240a791a3bf4e36c5cca1%2Fesg.jpg"  alt="Third slide" />
 				                <div class="carousel-caption d-none d-md-block">
 				                 
 				                </div>
 				              </div>
 				              
 				              <div class="carousel-item">
-				                <img class="img-fluid" src="<c:url value="/resources/images/water.png"/>" alt="Fourth slide" />
+				                <img class="img-fluid" src="https://reportyak.com/wp-content/uploads/2024/05/Sustainable-Development-Index-Report-Yak-Blog.webp" alt="Fourth slide" />
 				                <div class="carousel-caption d-none d-md-block">
 				                 
 				                </div>
@@ -171,22 +173,22 @@
                 <div class="col-12 col-sm-8 col-md-6 col-lg-12 px-xl-2 mx-auto">
                       <!-- <h2 class="badge bg-dark card-title fw-bold mb-1">WELCOME</h2> -->
                    
-                      <h2 class="badge badge-glow  bg-info card-title fw-bold mb-1" style="text-align: center;">Sustainable Scorecard</h2>
-                      
+                     <h2 class="badge badge-glow bg-info card-title fw-bold mb-0" style="text-align: center;">
+                     <i class="fas fa-leaf" style="font-size: 2rem;margin-right: 18px;"></i>Sustainable Scorecard  </h2>
                       
                   <form class="auth-login-form mt-2" action="<%=request.getContextPath() %>/login" method="POST" novalidate="novalidate">
                     <div class="mb-1">
                       <label class="form-label" for="login-email">Email</label>
                       <input class="form-control" id="login-email" type="text" name="email_id" placeholder="john@example.com" aria-describedby="login-email" autofocus="" tabindex="1">
                     </div>
-                    <div class="mb-1">
+                 <!--    <div class="mb-1">
                       <div class="d-flex justify-content-between">
                         <label class="form-label" for="login-password">Password</label>
                       </div>
                       <div class="input-group input-group-merge form-password-toggle">
                         <input class="form-control form-control-merge" id="login-password" type="password" name="login-password" placeholder="Enter PSWD" aria-describedby="login-password" tabindex="2"><span class="input-group-text cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></span>
-                      </div>
-                    </div> 
+                      </div>   !-->
+                    
                     <div class="mb-1">
                       <div class="form-check">
                         <input class="form-check-input" id="remember-me" type="checkbox" tabindex="3">
