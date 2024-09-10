@@ -153,7 +153,7 @@ License: You must have a valid license purchased only from themeforest(the above
               name="email_id"
               class="form-control"
               placeholder="eg : email@gmail.com"
-              value="${email }" readonly
+              value="${email }"
               data-msg="Please enter your first name"
             />
              <span id="email_addError" class="error-msg" ></span>

@@ -37,6 +37,6 @@ public class PageConstants {
 	public static final String irmUpdate = "irmUpdate";
 	public static final String test = "test";
 	public static final String bbForm = "bbForm";
-	public static final String helpCenter = "helpCenter";
+	public static final String reportFOrm = "reportFOrm";
 	
 }

@@ -19,16 +19,16 @@ import com.resustainability.reisp.model.Department;
 import com.resustainability.reisp.model.User;
 
 @Controller
-public class HelpDeskController {
+public class ReportController {
 	@InitBinder
     public void initBinder(WebDataBinder binder) { 
         binder.registerCustomEditor(String.class, new StringTrimmerEditor(true));
     }
-	Logger logger = Logger.getLogger(HelpDeskController.class);
+	Logger logger = Logger.getLogger(ReportController.class);
 	
 	@RequestMapping(value = "/report", method = {RequestMethod.POST, RequestMethod.GET})
 	public ModelAndView department(@ModelAttribute User user, HttpSession session) {
-		ModelAndView model = new ModelAndView(PageConstants.helpCenter);
+		ModelAndView model = new ModelAndView(PageConstants.reportFOrm);
 		Department obj = null;
 		try {
 			
