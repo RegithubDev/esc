@@ -106,7 +106,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
        <!--  <p class="card-text mb-2">Make your app management easy and fun!</p> -->
 <div class="col-lg-12 col-sm-12 col-12" style="box-sizing:border-box; display:table;">
-        <form id="addUserForm" class="row gy-1 pt-75" action="<%=request.getContextPath() %>/add-new-user" method="post" class="form-horizontal" role="form" >
+        <form id="addUserForm" class="row gy-1 pt-75 mt-2" action="<%=request.getContextPath() %>/add-new-user" method="post" class="form-horizontal" role="form" >
         <input name="newUser" type="hidden" value="new"/>
           <div class="col-12 col-md-6">
             <label class="form-label" for="modalEditUserLastName">User id</label><span class="required"> *</span>
@@ -132,6 +132,25 @@ License: You must have a valid license purchased only from themeforest(the above
               data-msg="Please enter your first name"
             />
              <span id="user_name_addError" class="error-msg" ></span>
+          </div>
+          
+          <div class="col-12 col-md-6">
+            <div class="d-flex justify-content-between">
+              <label class="form-label" for="reset-password-new">New Password</label>
+            </div>
+            <div class="input-group input-group-merge form-password-toggle">
+              <input type="password" class="form-control form-control-merge validate-equalTo-blur" id="password" name="password" placeholder="············" aria-describedby="reset-password-new reset-password-new-error" tabindex="1" autofocus="" aria-invalid="false">
+              <span class="input-group-text cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></span>
+            </div><span id="reset-password-new-error" class="error" style="display: none;"></span>
+          </div>
+             <div class="col-12 col-md-6">
+                <div class="d-flex justify-content-between">
+              <label class="form-label" for="reset-password-confirm">Confirm Password</label>
+            </div>
+            <div class="input-group input-group-merge form-password-toggle">
+              <input type="password" class="form-control form-control-merge" id="password_confirm" name="password_confirm" placeholder="············" aria-describedby="reset-password-confirm" tabindex="2">
+              <span class="input-group-text cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></span>
+            </div><span id="password_confirm-error" class="error" style="display: none;"></span>
           </div>
     <div class="col-12 col-md-6">
             <label class="form-label" for="modalEditUserLastName">Mobile number</label><span class="required"> </span>
@@ -327,7 +346,14 @@ License: You must have a valid license purchased only from themeforest(the above
 		    			 		required: true
 		  			 	  },"reporting_to": {
 	    		 			required: false
-	    		 	  	  }
+	    		 	  	  },"password": {
+	    		 	  		    required: true,
+	    		 	            minlength: 5,
+	    		 	      },"password_confirm": {
+	    		 	    	 	required: true,
+	    		 	            minlength: 5,
+	    		 	            equalTo: "#password"
+	    		 	        }
 		  		 	},
 		  		    messages: {
 		  		 		 "user_name": {
@@ -346,7 +372,13 @@ License: You must have a valid license purchased only from themeforest(the above
 		  		 			required: 'Required'
 		  		 	  	  },"reporting_to": {
 	    		 			required: 'Required'
-	    		 	  	  }
+	    		 	  	  },"password": { 
+	    		            required:"the password is required"
+
+	    	              },"password_confirm": { 
+	    		            required:"password should match!"
+
+	    	               }
 			       		},
 	       		errorPlacement:function(error, element){
 	       		 	if (element.attr("id") == "user_name_add" ){
@@ -373,6 +405,12 @@ License: You must have a valid license purchased only from themeforest(the above
 	    			}else if(element.attr("id") == "select2-reporting_to_add-container" ){
 	    				document.getElementById("select2-reporting_to_add-containerError").innerHTML="";
 	    			 	error.appendTo('#select2-reporting_to_add-containerError');
+	    			}else if(element.attr("id") == "password" ){
+	    				document.getElementById("password-error").innerHTML="";
+	    			 	error.appendTo('#password-error');
+	    			}else if(element.attr("id") == "password_confirm" ){
+	    				document.getElementById("password_confirm-error").innerHTML="";
+	    			 	error.appendTo('#password_confirm-error');
 	    			}else{
 	    					error.insertAfter(element);
 	    	        } 

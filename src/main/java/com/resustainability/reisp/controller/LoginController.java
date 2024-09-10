@@ -128,22 +128,8 @@ public class LoginController {
 						//model.setViewName(PageConstants.login); 
 					//}
 				}else{
-					model.addObject("invalidEmail",invalidUserName);
-					model.setViewName(PageConstants.newUserLogin);
-					List<RoleMapping> projectsList = service4.getProjectsList(null);
-					model.addObject("projectsList", projectsList);
-					
-					List<RoleMapping> deptList = service.getDeptsList();
-					model.addObject("deptList", deptList);
-					
-					List<Project> sbuList = service5.getSBUsList(null);
-					model.addObject("sbuList", sbuList);
-					
-					List<User> userList = service.getUserFilterList(null);
-					model.addObject("userList", userList);
-					
-					model.addObject("email", user.getEmail_id());
-					model.addObject("name", user.getUser_name());
+					model.addObject("invalidEmail","Email or password incorrect!");
+					model.setViewName(PageConstants.login);
 				}
 			}else {
 				model.addObject("message", "");

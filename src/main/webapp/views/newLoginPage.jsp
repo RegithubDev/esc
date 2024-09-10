@@ -179,6 +179,7 @@
              <h2 class="badge bg-dark card-title fw-bold mb-1">WELCOME to Score Card</h2>
                       <p class="card-text mb-2 text-white">Please sign-in to your account and start the adventure</p>
                  <form class="auth-login-form mt-2" action="<%=request.getContextPath() %>/login" method="POST" novalidate="novalidate">
+                 		<span class="text-danger">${invalidEmail }</span>
                     <div class="mb-1">
                       <label class="form-label text-white" for="login-email">Email</label>
                       <input class="form-control" id="login-email" type="text" name="email_id" placeholder="john@example.com" aria-describedby="login-email" autofocus="" tabindex="1">
@@ -203,7 +204,7 @@
                    <p class="text-center mt-2 text-white">
 			          <span>New on our platform?</span>
 			          <a href="<%=request.getContextPath() %>/add-new-user-form">
-			            <span>Create an account</span>
+			            <span class="text-warning">Create an account</span>
 			          </a>
 			        </p>
                 </div>

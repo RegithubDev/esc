@@ -339,13 +339,13 @@ public class UserDao {
 			NamedParameterJdbcTemplate namedParamJdbcTemplate = new NamedParameterJdbcTemplate(dataSource);
 			if(!StringUtils.isEmpty(obj.getPassword())) {
 				String encryptPwd = EncryptDecrypt.encrypt(obj.getPassword());	
-				obj.setPassword(encryptPwd);
+				//obj.setPassword(encryptPwd);
 			}
 			obj.setReward_points("100");
 			String insertQry = "INSERT INTO [user_profile] "
-					+ "(user_id,user_name,email_id,contact_number,base_role,base_project,base_sbu,base_department,reporting_to,created_by,end_date,created_date,reward_points)"
+					+ "(user_id,user_name,email_id,contact_number,password,base_role,base_project,base_sbu,base_department,reporting_to,created_by,end_date,created_date,reward_points)"
 					+ " VALUES "
-					+ "(:user_id,:user_name,:email_id,:contact_number,:base_role,:base_project,:base_sbu,:base_department,:reporting_to,:created_by,:end_date,getdate(),:reward_points)";
+					+ "(:user_id,:user_name,:email_id,:contact_number,:password,:base_role,:base_project,:base_sbu,:base_department,:reporting_to,:created_by,:end_date,getdate(),:reward_points)";
 			BeanPropertySqlParameterSource paramSource = new BeanPropertySqlParameterSource(obj);		 
 		    count = namedParamJdbcTemplate.update(insertQry, paramSource);
 		    if(count > 0) {
@@ -359,21 +359,6 @@ public class UserDao {
 		    }
 			if(count > 0) {
 				flag = true;
-				EMailSender emailSender = new EMailSender();
-				String login_url = CommonConstants.HOME ;
-				Mail mail = new Mail();
-				mail.setMailTo(obj.getEmail_id());
-				mail.setMailSubject("Welcome to ReOne");
-				String body = "Dear "+obj.getUser_name()+"<br>"
-						+ "Congratulations and a warm welcome to <b>ReOne</b> that brings all your work place apps together in one place! You are now Rewarded with <b>100 Reward PSoints</b>."
-						+ "<br>Thank you for joining <b>ReOne</b> Application, "
-						+ "<br>To explore more Please follow the link <a href="+login_url+"><button>Get Started</button></a>"
-						+ "<br><br>"
-						+ "Best regards,"
-						+ "<p style='color : red'><b>ReOne</b></p>"
-						+ "<b>Re Sustainability</b>";
-				String subject = "Thank You for Registering in ReOne";
-				emailSender.send(mail.getMailTo(), mail.getMailSubject(), body,obj,subject);
 			}
 			transactionManager.commit(status);
 		}catch (Exception e) {
@@ -455,6 +440,7 @@ public class UserDao {
 				qry = qry + "AND up.email_id = ? and up.password = ? "; 
 			}
 			stmt = con.prepareStatement(qry);
+		
 			if(!StringUtils.isEmpty(user.getEmail_id()) && !StringUtils.isEmpty(user.getPassword())){
 				stmt.setString(1, user.getEmail_id());;
 				stmt.setString(2, user.getPassword());;
