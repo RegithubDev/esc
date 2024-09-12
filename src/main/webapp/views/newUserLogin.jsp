@@ -82,6 +82,31 @@ License: You must have a valid license purchased only from themeforest(the above
 .my-valid-class {
  	 color:green;
 }
+
+.bg {
+    position: relative;
+    z-index: 1; /* Ensures the content stays on top */
+}
+
+.bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://t3.ftcdn.net/jpg/05/42/79/16/360_F_542791638_t9Qf1E0CyMESFB5a7JagAaTzQJF0JGzM.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(5px); /* Blurs the image */
+    z-index: -1; /* Ensures the blurred image stays behind the content */
+    
+}
+
+.form-label{
+	color :white!important; 
+}
 </style>
   </head>
   <!-- END: Head-->
@@ -95,11 +120,11 @@ License: You must have a valid license purchased only from themeforest(the above
       <div class="content-wrapper">
         <div class="content-header row">
         </div>
-        <div class="content-body"><div class="auth-wrapper auth-basic px-2">
+        <div class="content-body"><div class="auth-wrapper auth-basic px-2" style="background-image: url('https://news.sap.com/belgie/files/2022/01/13/289135_GettyImages-1214827275-1.jpg');">
   <div class="auth-inner my-2">
     <!-- Register basic -->
     <div class="card mb-0">
-      <div class="card-body">
+      <div class="card-body bg" >
         
           <h2 class="brand-text text-primary ms-1 text-center"> User Creation </h2>
         
