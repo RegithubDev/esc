@@ -33,6 +33,9 @@ $(function () {
         },
         'login-password': {
           required: true
+        },
+        'total_quantity_of_waste_handled': {
+          required: true
         }
       }
     });

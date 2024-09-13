@@ -110,6 +110,7 @@ License: You must have a valid license purchased only from themeforest(the above
         <div class="shadow-bottom"></div>
         <!-- Horizontal menu content-->
  			<jsp:include page="../views/layout/menu.jsp"></jsp:include> 
+ 				
       </div>
     </div>    <!-- END: Main Menu-->
 
@@ -129,6 +130,7 @@ License: You must have a valid license purchased only from themeforest(the above
             </div>
           </div>
         </div>
+        <jsp:include page="../views/layout/msg.jsp"></jsp:include> 
         <div class="content-body"><!-- Dashboard Ecommerce Starts -->
 <section id="dashboard-ecommerce">
    <div class="row match-height">

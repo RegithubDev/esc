@@ -63,6 +63,7 @@ License: You must have a valid license purchased only from themeforest(the above
     <link rel="stylesheet" type="text/css" href="/esc/resources/css/plugins/forms/form-validation.css">
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="/esc/resources/css/style.css">
+     <link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/pages/authentication.css"/>">
     <!-- END: Custom CSS-->
 <style>
 @media (min-width: 1200px){
@@ -93,28 +94,7 @@ License: You must have a valid license purchased only from themeforest(the above
     background-repeat: no-repeat;
     background-position: center;
     opacity : 75%;
-     filter: blur(5px); /* Blurs the image */
-    z-index: -1; /* Ensures the blurred image stays behind the content */
-    
-}
-.body {
-    position: relative;
-    z-index: 1; /* Ensures the content stays on top */
-}
-
-.body::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('https://i.pinimg.com/736x/72/91/0b/72910b438834b8fea590e60ed0620035.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity : 75%;
-     filter: blur(5px); /* Blurs the image */
+     filter: blur(1px); /* Blurs the image */
     z-index: -1; /* Ensures the blurred image stays behind the content */
     
 }
@@ -123,7 +103,7 @@ License: You must have a valid license purchased only from themeforest(the above
   <!-- END: Head-->
 
   <!-- BEGIN: Body-->
-  <body class="horizontal-layout horizontal-menu  navbar-floating footer-static body " data-open="hover" data-menu="horizontal-menu" data-col="">
+  <body class="horizontal-layout horizontal-menu  navbar-floating footer-static  " data-open="hover" data-menu="horizontal-menu" data-col="">
  	<!-- BEGIN: Header-->
 	<jsp:include page="../views/layout/header.jsp"></jsp:include>
     <!-- END: Header-->
@@ -201,8 +181,8 @@ License: You must have a valid license purchased only from themeforest(the above
         <div class="content-body">
         <!-- Collapse start -->
 <section id="section-block" style="position: static; zoom: 1;">
-<form class="needs-validation" action="<%=request.getContextPath() %>/add-data" method="POST" novalidate="">
-	<div class="row " >
+	<form class="auth-login-form mt-2" action="<%=request.getContextPath() %>/login" method="POST" novalidate="novalidate">
+		<div class="row " >
 		  <div class="col-md-6">
 		      <div class="card">
 		        <div class="card-header">
@@ -210,7 +190,7 @@ License: You must have a valid license purchased only from themeforest(the above
 		        </div>
 		        <div class="card-body">
 		 			<div class="input-group mb-2">
-		            	<input type="number" class="form-control" name="total_quantity_of_waste_handled" id="total_quantity_of_waste_handled"
+		            	<input type="text" class="form-control" name="total_quantity_of_waste_handled" id="total_quantity_of_waste_handled"
 		            	 placeholder="Enter Total Quantity of Waste Handled" aria-label="Enter Total Quantity of Waste Handled" aria-describedby="basic-addon2" required="">
 		            	<span class="input-group-text" id="basic-addon2">Tons</span>
 		            	
@@ -225,19 +205,16 @@ License: You must have a valid license purchased only from themeforest(the above
 		      
 		        <div class="card-body">
 		          <blockquote class="blockquote ps-1 border-start-primary border-start-3">
-		 			<span class="badge badge-light-warning">Note: Please check the values while entering   </span>
+		 			<span class="badge badge-light-dark">Note: </span>
 		 		  </blockquote>
 		        </div>
 		      </div>
    		 </div>
     </div>
-    <div class=" bg" >
-  <div class="row card " >
+  <div class="row card bg" >
  	 <div class="text-center">
-	       <a class="btn btn-relief-primary fw-bolder btn-3d me-1 waves-effect waves-float waves-light my-1 rotate" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-	    		Fresh Water  
-	    		<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
-	    		stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+	       <a class="btn btn-relief-primary fw-bolder btn-3d me-1 waves-effect waves-float waves-light my-1" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+	    		Fresh Water <i class="fa-solid fa-water"></i>
 			</a>
      </div>
     </div>
@@ -263,7 +240,7 @@ License: You must have a valid license purchased only from themeforest(the above
           <div class="col-md-6 col-12 mb-1">
               <div class="input-group">
              
-                <input type="number" class="form-control" placeholder="Button on right" aria-describedby="button-addon2">
+                <input type="text" class="form-control" placeholder="Button on right" aria-describedby="button-addon2">
                 <button class="btn btn-outline-primary waves-effect" id="button-addon2" type="button">KL</button>
               </div>
             </div>
@@ -303,7 +280,7 @@ License: You must have a valid license purchased only from themeforest(the above
            </label>
           <div class="col-md-6 col-12 mb-1">
               <div class="input-group">
-                <input type="number" class="form-control" placeholder="Button on right" aria-describedby="button-addon2">
+                <input type="text" class="form-control" placeholder="Button on right" aria-describedby="button-addon2">
                 <button class="btn btn-outline-primary waves-effect" id="button-addon2" type="button">%</button>
               </div>
             </div>
@@ -315,8 +292,8 @@ License: You must have a valid license purchased only from themeforest(the above
     </div>
   </div>
    </div>
-</div>
-  <button type="submit" class="btn btn-primary waves-effect waves-float waves-light">Submit</button>
+
+  <button  class="btn btn-primary w-100 waves-effect waves-float waves-light" type="submit">Submit</button>
   </form>
   
 </section>
@@ -387,7 +364,7 @@ License: You must have a valid license purchased only from themeforest(the above
      <script src="/esc/resources/js/scripts/extensions/ext-component-blockui.js"></script>
       <script src="/esc/resources/js/scripts/pages/dashboard-ecommerce.min.js"></script>
     <!-- END: Theme JS-->
-   <script src="/esc/resources/js/scripts/forms/form-validation.js"></script>
+     <script src="<c:url value="/resources/js/scripts/pages/auth-login.js"/>"></script>
     <!-- BEGIN: Page JS-->
     <script src="/esc/resources/js/scripts/pages/dashboard-ecommerce.min.js"></script>
     <!-- END: Page JS-->

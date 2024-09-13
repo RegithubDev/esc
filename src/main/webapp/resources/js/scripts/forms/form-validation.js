@@ -48,9 +48,10 @@ $(function () {
       form.addEventListener('submit', function (event) {
         if (form.checkValidity() === false) {
           form.classList.add('invalid');
+		   event.preventDefault();
         }
         form.classList.add('was-validated');
-        event.preventDefault();
+       
         // if (inputGroupValidation) {
         //   inputGroupValidation(form);
         // }
@@ -77,6 +78,9 @@ $(function () {
         'basic-default-email': {
           required: true,
           email: true
+        },
+        'total_quantity_of_waste_handled': {
+          required: true
         },
         'basic-default-password': {
           required: true

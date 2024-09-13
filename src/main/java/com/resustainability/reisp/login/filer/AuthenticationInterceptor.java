@@ -70,7 +70,7 @@ public class AuthenticationInterceptor extends HandlerInterceptorAdapter{
 				 	      
 					    	if(request.getRequestURI().contains("/"+context_path+"/")){
 					    	//	request.getSession().invalidate();
-					    		response.sendRedirect("/"+context_path+"/login/{email_id}");
+					    		response.sendRedirect("/"+context_path+"/login/");
 					    		return true;
 					    	}else{
 					    		response.sendRedirect("/login");
