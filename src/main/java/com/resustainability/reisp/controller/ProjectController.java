@@ -97,6 +97,22 @@ public class ProjectController {
 		return model;
 	}
 	
+	@RequestMapping(value = "/form-data", method = {RequestMethod.POST, RequestMethod.GET})
+	public ModelAndView formData(@ModelAttribute User user, HttpSession session) {
+		ModelAndView model = new ModelAndView(PageConstants.formData);
+		Project obj = null;
+		try {
+			List<SBU> objList = service.getCompaniesList(obj);
+			model.addObject("objList", objList);
+			
+			List<SBU> sbuList = service.getSbuList(obj);
+			model.addObject("sbuList", sbuList);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return model;
+	}
+	
 	
 	@RequestMapping(value = "/ajax/getProjects", method = {RequestMethod.GET,RequestMethod.POST},produces=MediaType.APPLICATION_JSON_VALUE)
 	@ResponseBody

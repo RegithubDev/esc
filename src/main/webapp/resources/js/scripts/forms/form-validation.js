@@ -82,6 +82,12 @@ $(function () {
         'total_quantity_of_waste_handled': {
           required: true
         },
+        'total_fresh_water_past': {
+          required: true
+        },
+        'total_fresh_water_future': {
+          required: true
+        },
         'basic-default-password': {
           required: true
         },
