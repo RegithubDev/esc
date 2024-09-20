@@ -82,12 +82,37 @@ $(function () {
         'total_quantity_of_waste_handled': {
           required: true
         },
+		
         'total_fresh_water_past': {
           required: true
         },
         'total_fresh_water_future': {
           required: true
         },
+		'total_electric_consumption': {
+		  required: true
+		},
+		'total_electric_consumption_rewnable': {
+		  required: true
+		},
+		
+		'Quantity_of_RDF': {
+		  required: true
+		},
+		'Quantity_of_RDF_sent_to_Cement': {
+		  required: true
+		},
+		
+		'Plantation_of_New_Trees': {
+		  required: true
+		},
+		'total_training_Hours': {
+	     required: true
+		},
+		'number_of_violations': {
+	      required: true
+		},
+								
         'basic-default-password': {
           required: true
         },
