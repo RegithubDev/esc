@@ -7,7 +7,7 @@ Template Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
 Author: PixInvent
 Website: http://www.pixinvent.com/
 Contact: hello@pixinvent.com
-Follow: www.twitter.com/pixinvents 
+Follow: www.twitter.com/pixinvents
 Like: www.facebook.com/pixinvents
 Purchase: https://1.envato.market/vuexy_admin
 Renew Support: https://1.envato.market/vuexy_admin
@@ -17,7 +17,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <html class="loading" lang="en" data-textdirection="ltr">
   <!-- BEGIN: Head-->
   
-<!-- Mirrored from pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/horizontal-menu-template/modal-examples.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Aug 2022 05:37:22 GMT -->
+<!-- Mirrored from pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/horizontal-menu-template/dashboard-ecommerce.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Aug 2022 05:36:10 GMT -->
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,17 +25,28 @@ License: You must have a valid license purchased only from themeforest(the above
     <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="PIXINVENT">
-       <title>Report</title>
-        <link rel="icon" type="image/png" sizes="96x96" href="/esc/resources/images/protect-favicon.png" >
-    <link rel="shortcut icon" type="image/x-icon" href="https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/resources/images/ico/favicon.ico">
+    <title>Dashboard analytics - esc</title>
+    <link rel="apple-touch-icon" href="/esc/resources/images/ico/apple-icon-120.html">
+   <link rel="icon" type="image/png" sizes="96x96" href="/esc/resources/images/protect-favicon.png" >
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
-
+	    <meta name="google-signin-client_id" content="46521935412-0pl18k3a2mq7fs8nrl1853qcie9h5fjb.apps.googleusercontent.com">
+<script src="/esc/resources/js/jQuery-v.3.5.min.js"></script>
     <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/extensions/sweetalert2.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/esc/resources/css/plugins/extensions/ext-component-sweet-alerts.min.css"/>
     <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/vendors.min.css">
-    <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/forms/wizard/bs-stepper.min.css">
-    <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/forms/select/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/tables/datatable/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/tables/datatable/responsive.bootstrap5.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/tables/datatable/buttons.bootstrap5.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/tables/datatable/rowGroup.bootstrap5.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/pickers/pickadate/pickadate.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/pickers/flatpickr/flatpickr.min.css">
+        <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/extensions/toastr.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/css/plugins/extensions/ext-component-toastr.min.css">
     <!-- END: Vendor CSS-->
-
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	  <link rel="stylesheet" href="/esc/resources/css/font-awesome-v.4.7.css" />
     <!-- BEGIN: Theme CSS-->
     <link rel="stylesheet" type="text/css" href="/esc/resources/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/esc/resources/css/bootstrap-extended.min.css">
@@ -44,118 +55,128 @@ License: You must have a valid license purchased only from themeforest(the above
     <link rel="stylesheet" type="text/css" href="/esc/resources/css/themes/dark-layout.min.css">
     <link rel="stylesheet" type="text/css" href="/esc/resources/css/themes/bordered-layout.min.css">
     <link rel="stylesheet" type="text/css" href="/esc/resources/css/themes/semi-dark-layout.min.css">
-
+   <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/forms/select/select2.min.css">
     <!-- BEGIN: Page CSS-->
     <link rel="stylesheet" type="text/css" href="/esc/resources/css/core/menu/menu-types/horizontal-menu.min.css">
-    <link rel="stylesheet" type="text/css" href="/esc/resources/css/plugins/forms/form-wizard.min.css">
+        <link rel="stylesheet" type="text/css" href="/esc/resources/css/plugins/forms/pickers/form-flat-pickr.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/css/plugins/forms/pickers/form-pickadate.min.css">
     <link rel="stylesheet" type="text/css" href="/esc/resources/css/plugins/forms/form-validation.css">
-    <link rel="stylesheet" type="text/css" href="/esc/resources/css/pages/modal-create-app.min.css">
-    <!-- END: Page CSS-->
-
     <!-- BEGIN: Custom CSS-->
-    <link rel="stylesheet" type="text/css" href="/esc/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/css/style.css">
     <!-- END: Custom CSS-->
-  <style>
-  
-  .card {
-    border: 1px solid #dee2e6;
-  }
-  .card-body {
-    padding: 1.5rem;
-  }
-  .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-    transition: background-color 0.3s, border-color 0.3s;
-  }
-  .btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
-  }
-        .abc.body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f0f0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;       
-          }
-        
-        
-        .abc-container {
-    border: 2px solid #DAE1E7;
-    border-radious:10px;
-    background-color: #DAE1E7;
-    padding: 20px;
-    display: flex;
-    gap: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-     }
+<style>
+@media (min-width: 1200px){
+	.modal-xl {
+	    margin-left: 10%!important;;
+	    margin-right: 3%!important;;
+	     max-width: 80%!important;;
+	}
+}
+.modal {
+    width: 100% !important;
+}
 
-        .abc-card {
-                background-color: white;
-            border: 2px solid #64c7bc;
-            padding: 35px; /* Increased padding */
-            width: 439px; /* Increased width */
-            border-radius: 10px;
-            transition: border-color 0.3s, box-shadow 0.3s;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-        }
-        .abc-card:hover {
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
-        .abc-card-text {
-           margin-bottom: 4px;
-    font-size: 12px;
-    color: #333333;
-        }
-        .abc-badge-input-container {
-            display: flex;
-            align-items: center;
-            width: 100%;
-        }
-        .abc-badge {
-           background-color: #4a90e2;
-            color: white;
-            padding: 5px 10px;
-            border-radius: 5px;
-            font-size: 14px;
-            margin-right: 10px;
-        }
-        .abc-input-box input {
-             width: calc(100% - 70px);
-            padding: 5px;
-            font-size: 14px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            transition: border-color 0.3s;
-        }
-        .abc-input-box input:focus {
-             border-color: #4a90e2;
-            outline: none;
-        }
-          .abc-card-section {
-            margin-bottom: 15px;
-        }
-    </style>
-</head>
+.bg {
+    position: relative;
+    z-index: 1; /* Ensures the content stays on top */
+}
+
+.bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/016/402/596/large_2x/blue-cylinder-podium-with-water-surface-texture-on-blue-background-stand-to-show-products-fresh-and-healthy-concept-pedestal-with-copy-space-banner-size-website-cover-template-3d-rendering-free-photo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity : 75%;
+     filter: blur(5px); /* Blurs the image */
+    z-index: -1; /* Ensures the blurred image stays behind the content */
+    
+}
+.body {
+    position: relative;
+    z-index: 1; /* Ensures the content stays on top */
+}
+
+.body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://img.freepik.com/premium-vector/green-grunge-detailed-texture-white-background_1148645-181.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity : 75%;
+     filter: blur(10px); /* Blurs the image */
+    z-index: -1; /* Ensures the blurred image stays behind the content */
+    
+}
+
+.bge {
+    position: relative;
+    z-index: 1; /* Ensures the content stays on top */
+}
+
+.bge::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://www.repsol.com/content/dam/repsol-corporate/es/energia-e-innovacion/energia%20electrica%20cables%20alta%20tension.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity : 75%;
+     filter: blur(5px); /* Blurs the image */
+    z-index: -1; /* Ensures the blurred image stays behind the content */
+    
+}
+
+.bgcard {
+    position: relative;
+    z-index: 1; /* Ensures the content stays on top */
+}
+
+.bgcard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr5V_ixOo-26kVfypKldmp_Ftjc0hebpaqLw&s');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity : 75%;
+     filter: blur(2px); /* Blurs the image */
+    z-index: -1; /* Ensures the blurred image stays behind the content */
+    
+}
+
+</style>
+  </head>
   <!-- END: Head-->
 
   <!-- BEGIN: Body-->
-  <body class="horizontal-layout horizontal-menu  navbar-floating footer-static  " data-open="hover" data-menu="horizontal-menu" data-col="">
+  <body class="horizontal-layout horizontal-menu  navbar-floating footer-static body " data-open="hover" data-menu="horizontal-menu" data-col="">
+ 	<!-- BEGIN: Header-->
+	<jsp:include page="../views/layout/header.jsp"></jsp:include>
+    <!-- END: Header-->
 
- <!-- BEGIN: Header-->
-	<jsp:include page="../views/layout/header.jsp"></jsp:include> 
+ <jsp:include page="../views/layout/userActivityCheck.jsp"></jsp:include>
 
-
-    <!-- END: Header-->>
-
-<!-- BEGIN: Main Menu-->
-      <div class="horizontal-menu-wrapper">
+    <!-- BEGIN: Main Menu-->
+    <div class="horizontal-menu-wrapper">
       <div class="header-navbar navbar-expand-sm navbar navbar-horizontal floating-nav navbar-light navbar-shadow menu-border container-xxl" role="navigation" data-menu="menu-wrapper" data-menu-type="floating-nav">
         <div class="navbar-header">
           <ul class="nav navbar-nav flex-row">
@@ -173,7 +194,7 @@ License: You must have a valid license purchased only from themeforest(the above
                     </defs>
                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                       <g id="Artboard" transform="translate(-400.000000, -178.000000)">
-                       			         <img src="<%=request.getContextPath() %>/resources/images/logo/protect-main.jpeg" width="50" height="40" class="card-img">
+                                             			         <img src="<%=request.getContextPath() %>/resources/images/logo/protect-main.jpeg" width="50" height="40" class="card-img">
 
                       </g>
                     </g>
@@ -186,643 +207,871 @@ License: You must have a valid license purchased only from themeforest(the above
         <!-- Horizontal menu content-->
  			<jsp:include page="../views/layout/menu.jsp"></jsp:include> 
       </div>
-    </div>
-    <!-- END: Main Menu-->
+    </div>    <!-- END: Main Menu-->
 
     <!-- BEGIN: Content-->
     <div class="app-content content ">
       <div class="content-overlay"></div>
       <div class="header-navbar-shadow"></div>
-      <div class="content-wrapper container-xxl p-0">
+   <div class="content-wrapper container-xxl p-0">
         <div class="content-header row">
           <div class="content-header-left col-md-9 col-12 mb-2">
-            <div class="row breadcrumbs-top">
+            <div class="row breadcrumbs-top" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">
               <div class="col-12">
-                <h2 class=" badge badge-glow bg-dark">Report</h2>
+                <h2 class="content-header-title float-start mb-0">Reports</h2>
+                <div class="breadcrumb-wrapper">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="<%=request.getContextPath() %>/home">Site Level&Reporting period</a>
+                    </li>
+                    <li class="breadcrumb-item"><a href="#">Forms</a>
+                    </li>
+                   
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-header-right text-md-end col-md-3 col-12 d-md-block d-none">
+   <jsp:include page="../views/layout/msg.jsp"></jsp:include>
+            <div class="mb-1 breadcrumb-right">
+              <div class="dropdown">
+              <a type="button" data-action="reload" aria-haspopup="true" aria-expanded="false"  class="btn btn-primary btn-round waves-effect waves-float waves-light btn-section-block-multiple waves-effect">
+			<i data-feather='save'></i>             
+			 <span>Save</span>
+            </a>
+            
+         
               </div>
             </div>
           </div>
         </div>
         <div class="content-body">
-          <section id="modal-examples">
-  <div class="row">
-    <!-- create app card-->
+        <!-- Collapse start -->
+<section id="section-block" style="position: static; zoom: 1;">
+<blockquote class="blockquote ps-1 border-start-primary border-start-3">
+		 			<span class="badge badge-light-dark">Note: Please check the values while entering   </span>
+		 		  </blockquote>
+<form class="needs-validation pt-2" action="<%=request.getContextPath() %>/add-data" method="POST" novalidate="">
+	
+	
+	
 
-<c:forEach var="obj" items="${pList}" varStatus="index">
-    <c:if test="${obj.project_code eq sessionScope.BASE_PROJECT_CODE}">
-        <div class="col-md-4">
-            <div class="card border rounded">
-                <div class="card-body text-center bg-transparent border-secondary">
-                    <h2 class="card-title mb-2">${obj.project_name}</h2>
-                    <button type="button" class="btn btn-primary waves-effect waves-float waves-light" data-bs-toggle="modal"
-                        data-bs-target="#sbu">
-                        Show
-                    </button>
-                </div>
-            </div>
-        </div>
-    </c:if>
-</c:forEach>
-<c:forEach var="obj" items="${pList}" varStatus="index">
-    <c:if test="${obj.project_code ne sessionScope.BASE_PROJECT_CODE}">
-        <div class="col-md-4">
-            <div class="card border rounded">
-                <div class="card-body text-center bg-transparent border-secondary" style="background: #ccc!important;">
-                    <h2 class="card-title mb-2" style="color: #a28e8e!important;">${obj.project_name}</h2>
-                </div>
-            </div>
-        </div>
-    </c:if>
-</c:forEach>
-
-
-
-
-<!-- badge badge-light-secondary
- -->
-
-    <!-- / create app card-->
-  </div>
-</section>
-<!-- / share project modal -->
- <!-- create app modal -->
-
- 
- <div class="modal fade" id="sbu" tabindex="-1" aria-labelledby="msw_report" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-xl">
-    <div class="modal-content">
-      <div class="modal-header bg-transparent">
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body pb-3 px-sm-3">
-        <h1 class="text-center mb-1" id="msw_report">${sessionScope.project_name } Report</h1>
-
-        <div class="bs-stepper vertical wizard-modern create-app-wizard">
-          <div class="bs-stepper-header" role="tablist">
-            <div class="step" data-target="#fresh_water_edit" role="tab" id="fresh_water">
-              <button type="button" class="step-trigger py-75">
-                <span class="bs-stepper-box">
-                  <i data-feather="credit-card" class="font-medium-3"></i>
-                </span>
-                <span class="bs-stepper-label">
-                  <span class="bs-stepper-title">Fresh Water</span>
-                </span>
-              </button>
-            </div>
-            <div class="step" data-target="#electrical_energy_edit" role="tab" id="electrical_energy">
-              <button type="button" class="step-trigger py-75">
-                <span class="bs-stepper-box">
-                  <i data-feather="credit-card" class="font-medium-3"></i>
-                </span>
-                <span class="bs-stepper-label">
-                  <span class="bs-stepper-title">Electrical Energy<br> (within the facility)</span>
-                </span>
-              </button>
-            </div>
-            <div class="step" data-target="#thermal_energy_edit" role="tab" id="thermal_energyr">
-              <button type="button" class="step-trigger py-75">
-                <span class="bs-stepper-box">
-                  <i data-feather="credit-card" class="font-medium-3"></i>
-                </span>
-                <span class="bs-stepper-label">
-                  <span class="bs-stepper-title">Thermal Energy<br> (within the facility)</span>
-                </span>
-              </button>
-            </div>
-            <div class="step" data-target="#sbu_goal_edit" role="tab" id="sbu_goal">
-              <button type="button" class="step-trigger py-75">
-                <span class="bs-stepper-box">
-                  <i data-feather="credit-card" class="font-medium-3"></i>
-                </span>
-                <span class="bs-stepper-label">
-                  <span class="bs-stepper-title">Sector Specific Goals</span>
-                </span>
-              </button>
-            </div>
-            
-             <div class="step" data-target="#greenbelt" role="tab" id="greenbelt_development">
-              <button type="button" class="step-trigger py-75">
-                <span class="bs-stepper-box">
-                  <i data-feather="credit-card" class="font-medium-3"></i>
-                </span>
-                <span class="bs-stepper-label">
-                  <span class="bs-stepper-title">Green Development</span>
-                </span>
-              </button>
-            </div>
-            
-            <div class="step" data-target="#training" role="tab" id="training_development">
-              <button type="button" class="step-trigger py-75">
-                <span class="bs-stepper-box">
-                  <i data-feather="credit-card" class="font-medium-3"></i>
-                </span>
-                <span class="bs-stepper-label">
-                  <span class="bs-stepper-title">Training Development</span>
-                </span>
-              </button>
-            </div>
-            
-            
-             <div class="step" data-target="#sscompliance" role="tab" id="compliance">
-              <button type="button" class="step-trigger py-75">
-                <span class="bs-stepper-box">
-                  <i data-feather="credit-card" class="font-medium-3"></i>
-                </span>
-                <span class="bs-stepper-label">
-                  <span class="bs-stepper-title">Compliance</span>
-                </span>
-              </button>
-            </div>
-            
-            <div class="step" data-target="#create-app-submit" role="tab" id="create-appmit-trigger">
-              <button type="button" class="step-trigger py-75">
-                <span class="bs-stepper-box">
-                  <i data-feather="check" class="font-medium-3"></i>
-                </span>
-                <span class="bs-stepper-label">
-                  <span class="bs-stepper-title">Submit</span>
-                </span>
-              </button>
-            </div>
-          </div>
-
-        <div class="bs-stepper-content shadow-none " style="width: 80%;">           
-           <div id="fresh_water_edit" class="content" role="tabpanel" aria-labelledby="fresh_water">
-              <h5 class="card-title">Fresh Water</h5>
-            <div class="abc-container">
-        <div class="abc-card">
-        <span class="badge bg-dark">Baseline Information (FY 2023-24)</span><br>
-        <div class="abc-card-section">
-            <div class="abc-card-text">Total Net Fresh Water Consumption, in KLt</div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">KL
-                </div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div>
-            </div>
-            
-            
-            <div class="abc-card-section">
-             <div class="abc-card-text">Total Net Fresh Water Consumption, in KLt</div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">KL/Ton
-                </div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div>
-            </div>
-        </div>
-        <div class="abc-card">
-        <span class="badge bg-dark">Site Level Sustainability Goals (FY 2024-25)</span><br>
-            <div class="abc-card-text">Reduction in Specific Fresh Water Consumption in FY 2024-25 compared to the Baseline FY 2023-24</div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">%</div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div>
-        </div>
+    <div class="card bg" >
+  <div class="row card " >
+ 	 <div class="text-center">
+	       <a class="btn btn-relief-primary fw-bolder btn-3d me-1 waves-effect waves-float waves-light my-1 rotate" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+	    		Fresh Water  
+	    		<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+	    		stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+			</a>
+     </div>
     </div>
-              <div class="d-flex justify-content-between mt-2">
-                <button class="btn btn-outline-secondary btn-prev" disabled>
-                  <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
-                  <span class="align-middle d-sm-inline-block d-none">Previous</span>
-                </button>
-                <button class="btn btn-primary btn-next">
-                  <span class="align-middle d-sm-inline-block d-none">Next</span>
-                  <i data-feather="arrow-right" class="align-middle ms-sm-25 ms-0"></i>
-                </button>
-              </div>
-            </div>
-            <div
-              id="electrical_energy_edit"
-              class="content"
-              role="tabpanel"
-              aria-labelledby="electrical_energy">
-                              <h5 class="card-title"> Electrical Energy (within the facility)
-                              </h5>
-                 <div class="abc-container">
-        <div class="abc-card">
-        <span class="badge bg-dark">Baseline Information (FY 2023-24)</span><br>
-        <div class="abc-card-section">
-            <div class="abc-card-text">Electricity Consumption from Grid</div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">kWh
-                </div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div>
-            </div>
-            
-            
-            <div class="abc-card-section">
-             <div class="abc-card-text">Specific Electricity Consumption</div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">kWh
-                </div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div>
-            </div>
-            
-            
-             <div class="abc-card-section">
-             <div class="abc-card-text">Electricity Consumption from Renewable (Solar) Source</div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">kWh/ton
-                </div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div>
-            </div>
+    <div class="collapse" id="collapseExample">
+  <div class="row"  style="zoom: 1;">
+    <div class="col-md-6 col-sm-12">
+      <div class="card">
+        <div class="card-header badge badge-light-primary  py-1">
+          <h4 class="card-title fw-bolder">Site Level Sustainability Goals(FY <span id="financial-year"></span>)</h4>
+          <div class="heading-elements">
+            <ul class="list-inline mb-0">
+              <li>
+                <a data-action="collapse" class=""><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+              </li>
+            </ul>
+          </div>
         </div>
-      
-        <div class="abc-card">
-        <span class="badge bg-dark">Site Level Sustainability Goals (FY 2024-25)</span><br>
-        <div class="abc-card-section">
-            <div class="abc-card-text">Renewable Energy in Total Energy Consumption</div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">%</div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div>
-            </div>
-            
-            
-            <div class="abc-card-section">
-             <div class="abc-card-text">Reduction in Specific Electricity Consumption in FY 2024-25 compared to the Baseline FY 2023-24
-             </div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">%</div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div>
-            </div>
-            
-            
+        <div class="card-content collapse show my-2" >
+              <div class="card-body">
          
-        </div>
-      
-    </div>
-              
-       <div class="d-flex justify-content-between mt-2">
-                <button class="btn btn-primary btn-prev">
-                  <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
-                  <span class="align-middle d-sm-inline-block d-none">Previous</span>
-                </button>
-                <button class="btn btn-primary btn-next">
-                  <span class="align-middle d-sm-inline-block d-none">Next</span>
-                  <i data-feather="arrow-right" class="align-middle ms-sm-25 ms-0"></i>
-                </button>
-              </div>
-            </div>
-            <div id="thermal_energy_edit" class="content" role="tabpanel" aria-labelledby="thermal_energy">
-            
-             <h5 class="card-title"> Thermal Energy (within the facility)  </h5>
-              <div class="abc-container">
-        <div class="abc-card">
-        <span class="badge bg-dark">Baseline Information (FY 2023-24)</span><br>
-        <div class="abc-card-section">
-            <div class="abc-card-text">HSD consumption
-            </div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">Liters
-                </div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div>
-            </div>
-            
-            
-            <div class="abc-card-section">
-             <div class="abc-card-text">LDO consumption
-             </div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">Liters</div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div>
-            </div>
-            
-             <div class="abc-card-section">
-             <div class="abc-card-text">PNG consumption
-             </div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">Kg</div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div>
-            </div>
-            
-             <div class="abc-card-section">
-             <div class="abc-card-text">CNG/CBG consumption
-             </div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">Kg</div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div>
-            </div>
-            
-             <div class="abc-card-section">
-             <div class="abc-card-text">Coal consumption
-             </div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">Kg</div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div>
-            </div>
-            
-             <div class="abc-card-section">
-             <div class="abc-card-text">Furnace Oil consumption</div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">Liters</div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div>
-            </div>
-            
-             <div class="abc-card-section">
-             <div class="abc-card-text">Biomass
-             </div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">Kg</div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div>
-            </div>
-            
-            
-             <div class="abc-card-section">
-             <div class="abc-card-text">Total Energy, in GJ</div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">GJ</div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div>
-            
-            </div>
-            
-            
-             <div class="abc-card-section">
-            <div class="abc-card-text">Specific Thermal Energy Consumption, in GJ/ton (FY 2023-24)
-            
-            </div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">GJ/Ton</div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div>
-            </div>
-        </div>
-      
-        <div class="abc-card">
-        <span class="badge bg-dark">Site Level Sustainability Goals (FY 2024-25)</span><br>
-        <div class="abc-card-section">
-            <div class="abc-card-text">Reduction in Specific Thermal Energy Consumption in FY 2024-25 compared to the Baseline FY 2023-24</div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">%</div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div>
-            </div>
-            </div>
-    </div>
-             
-              <div class="d-flex justify-content-between mt-2">
-                <button class="btn btn-primary btn-prev">
-                  <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
-                  <span class="align-middle d-sm-inline-block d-none">Previous</span>
-                </button>
-                <button class="btn btn-primary btn-next">
-                  <span class="align-middle d-sm-inline-block d-none">Next</span>
-                  <i data-feather="arrow-right" class="align-middle ms-sm-25 ms-0"></i>
-                </button>
-              </div>
-            </div>
-            
-            
-            <div id="sbu_goal_edit" class="content" role="tabpanel" aria-labelledby="sbu_goal">
-                <h5 class="card-title"> Sector Specific Goals</h5>
-                    <div class="abc-container">
-        <div class="abc-card">
-        <span class="badge bg-dark">Baseline Information (FY 2023-24)</span><br>
-        <div class="abc-card-section">
-            <div class="abc-card-text">Quantity of RDF sent to Cement Industries
-            </div>
-            <div class="abc-badge-input-container">
-                <div class="">
-                </div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div>
-            </div>
-            </div>
-        <div class="abc-card">
-        <span class="badge bg-dark">Site Level Sustainability Goals (FY 2024-25)</span><br>
-        <div class="abc-card-section">
-            <div class="abc-card-text">Quantity of RDF to Cement Industries (FY 2025)</div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">Tons</div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div>
-            </div>
-            </div>
-             </div>
+          <div class="row">
+            <div class="col-md-6 col-12 mb-1">
+             <p class="card-text">
+        Reduction in Specific Fresh Water Consumption in FY 2024-25 compared to the Baseline FY 2023-24
 
-
-  <div class="d-flex justify-content-between mt-5 pt-1">
-                <button class="btn btn-primary btn-prev">
-                  <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
-                  <span class="align-middle d-sm-inline-block d-none">Previous</span>
-                </button>
-                <button class="btn btn-primary btn-next">
-                  <span class="align-middle d-sm-inline-block d-none">Next</span>
-                  <i data-feather="arrow-right" class="align-middle ms-sm-25 ms-0"></i>
-                </button>
-              </div>
-            </div>
-               <div id="greenbelt" class="content" role="tabpanel" aria-labelledby="greenbelt_development">
-                  <h5 class="card-title"> Greenbelt Development </h5>
-                      <div class="abc-container">
-        <div class="abc-card">
-        <span class="badge bg-dark">Site Level Sustainability Goals (FY 2024-25)</span><br>
-        <div class="abc-card-section">
-            <div class="abc-card-text">Plantation of New Trees (either w/in or outside the facility)</div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">Number</div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div>
-            </div>
-            </div>
-              </div>
-
-
-         <div class="d-flex justify-content-between mt-5 pt-1">
-                <button class="btn btn-primary btn-prev">
-                  <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
-                  <span class="align-middle d-sm-inline-block d-none">Previous</span>
-                </button>
-                <button class="btn btn-primary btn-next">
-                  <span class="align-middle d-sm-inline-block d-none">Next</span>
-                  <i data-feather="arrow-right" class="align-middle ms-sm-25 ms-0"></i>
-                </button>
-              </div>
+          </p>
+              <div class="input-group">
+                <input type="number" class="form-control" name="total_fresh_water_past" id="total_fresh_water_past" 
+                placeholder="Enter Reduction in Specific Fresh Water" aria-label="Enter Reduction in Specific Fresh Water" 
+                aria-describedby="basic-addon2" required=""> 
+		            	<span class="input-group-text" id="basic-addon2">KL</span>
+	              <div class="valid-feedback">OK!</div>
+	              <div class="invalid-feedback">Please Enter Total Net Fresh Water Consumption.</div>
+		      </div>
+ 			</div>
+ 		
             </div>
             
-            
-            
-                
-             <div id="training" class="content" role="tabpanel" aria-labelledby="training_development">
-   <h5 class="card-title"> Training and Development </h5>
-     <div class="abc-container">
-        <div class="abc-card">
-        <span class="badge bg-dark">Site Level Sustainability Goals (FY 2024-25)</span><br>
-        <div class="abc-card-section">
-            <div class="abc-card-text">Total Training Hours (excluding mandatory training) for All Employees at the Facility</div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">No. of hours</div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div>
-            </div>
-            </div>
-            </div>
-
-
-  <div class="d-flex justify-content-between mt-5 pt-1">
-                <button class="btn btn-primary btn-prev">
-                  <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
-                  <span class="align-middle d-sm-inline-block d-none">Previous</span>
-                </button>
-                <button class="btn btn-primary btn-next">
-                  <span class="align-middle d-sm-inline-block d-none">Next</span>
-                  <i data-feather="arrow-right" class="align-middle ms-sm-25 ms-0"></i>
-                </button>
-              </div>
-            </div>            
-             <div id="sscompliance" class="content" role="tabpanel" aria-labelledby="compliance">
-          <h5 class="card-title"> Compliance</h5>
-              <div class="abc-container">
-        <div class="abc-card">
-        <span class="badge bg-dark">Site Level Sustainability Goals (FY 2024-25)</span><br>
-        <div class="abc-card-section">
-            <div class="abc-card-text">Number of Violations and Non-Compliances</div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">Number</div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div>
-            </div>
-            </div>
-             </div>
-
-
-  <div class="d-flex justify-content-between mt-5 pt-1">
-                <button class="btn btn-primary btn-prev">
-                  <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
-                  <span class="align-middle d-sm-inline-block d-none">Previous</span>
-                </button>
-                <button class="btn btn-primary btn-next">
-                  <span class="align-middle d-sm-inline-block d-none">Next</span>
-                  <i data-feather="arrow-right" class="align-middle ms-sm-25 ms-0"></i>
-                </button>
-              </div>
-            </div>
-            
-           <div
-              id="create-app-submit"
-              class="content text-center"
-              role="tabpanel"
-              aria-labelledby="create-app-submit-trigger">
-              <h3>Submit 🥳</h3>
-              <p>Submit your app to kickstart your project.</p>
-              <img
-                src="https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/resources/images/illustration/pricing-Illustration.svg"
-                height="218"
-                alt="illustration"
-              />
-              <div class="d-flex justify-content-between mt-3">
-                <button class="btn btn-primary btn-prev">
-                  <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
-                  <span class="align-middle d-sm-inline-block d-none">Previous</span>
-                </button>
-                <button class="btn btn-success btn-submit">
-                  <span class="align-middle d-sm-inline-block d-none">Submit</span>
-                  <i data-feather="check" class="align-middle ms-sm-25 ms-0"></i>
-                </button>
-              </div>
-            </div>
           </div>
+        </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+      <div class="card">
+        <div class="card-header badge badge-light-primary py-1">
+                  <h4 class="card-title fw-bolder">REPORTING PERIOD(FY <span id="financial-year-next"></span>)</h4>
+
+          <div class="heading-elements">
+            <ul class="list-inline mb-0">
+              <li>
+                <a data-action="collapse" class=""><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-content collapse show my-2">
+              <div class="card-body">
+         <label class="form-label" for="basic-default-password1">Total Net Fresh Water Consumption <span id="financial-year-next"></span> compared to the Baseline FY <span id="financial-year"></span>
+           </label>
+          <div class="col-md-6 col-12 mb-1">
+           <div class="input-group">
+                <input type="number" class="form-control" name="total_fresh_water_future" id="total_fresh_water_future" 
+                placeholder="Enter total Net Fresh Water Consumption" aria-label="Enter total Net Fresh Water Consumption" 
+                aria-describedby="basic-addon2" required=""> 
+		            	<span class="input-group-text" id="basic-addon2">KL</span>
+	              <div class="valid-feedback">OK!</div>
+	              <div class="invalid-feedback">Please Enter total Net Fresh Water Consumption.</div>
+		      </div>
+		    
+            </div>
+
+
+        </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    
+  </div>
+   </div>
+
+
+<div class="card bge" >
+  <div class="row card " >
+ 	 <div class="text-center">
+	       <a class="btn btn-relief-primary fw-bolder btn-3d me-1 waves-effect waves-float waves-light my-1 rotate" data-bs-toggle="collapse" href="#electric" role="button" aria-expanded="false" aria-controls="collapseExample">
+	    		Electrical Energy (within the facility)
+	    		<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+	    		stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+			</a>
+     </div>
+    </div>
+    <div class="collapse" id="electric">
+  <div class="row"  style="zoom: 1;">
+    <div class="col-md-6 col-sm-12">
+      <div class="card">
+        <div class="card-header badge badge-light-primary  py-1">
+          <h4 class="card-title fw-bolder">Site Level Sustainability Goals(FY <span id="financial-year"></span>)</h4>
+          <div class="heading-elements">
+            <ul class="list-inline mb-0">
+              <li>
+                <a data-action="collapse" class=""><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-content collapse show my-2" >
+              <div class="card-body">
+      
+            <label class="form-label" for="basic-default-password1">Renewable Energy in Total Energy Consumption</label>
+     
+          <div class="col-md-6 col-12 mb-1">
+             <div class="input-group">
+                <input type="number" class="form-control" name="total_electrical_consumption" id="total_electrical_consumption" 
+                placeholder="Enter Renewable Energy in Total Energy Consumption" aria-label="Enter Renewable Energy in Total Energy Consumption" 
+                aria-describedby="basic-addon2" required=""> 
+		            	<span class="input-group-text" id="basic-addon2">KL</span>
+	              <div class="valid-feedback">OK!</div>
+	              <div class="invalid-feedback">Please Enter Renewable Energy in Total Energy Consumption
+.</div>
+		      </div>
+            </div>
+          <label class="form-label" for="basic-default-password">Reduction in Specific Electricity Consumption in FY 2024-25 compared to the Baseline FY 2023-24</label>
+          <div class="col-md-6 col-12 mb-1">
+              <div class="input-group">
+                <input type="number" class="form-control" name="total_electrical_consumption" id="total_electrical_consumption" 
+                placeholder="Enter Reduction in Specific Electricity Consumption" aria-label="Enter Reduction in Specific Electricity Consumption" 
+                aria-describedby="basic-addon2" required=""> 
+		            	<span class="input-group-text" id="basic-addon2">KL</span>
+	              <div class="valid-feedback">OK!</div>
+	              <div class="invalid-feedback">Please Enter Reduction in Specific Electricity Consumption.</div>
+		      </div>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-sm-12">
+      <div class="card">
+        <div class="card-header badge badge-light-primary py-1">
+                  <h4 class="card-title fw-bolder">Reporting Period (FY <span id="financial-year-next"></span>)</h4>
+          <div class="heading-elements">
+            <ul class="list-inline mb-0">
+              <li>
+                <a data-action="collapse" class=""><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-content collapse show my-2">
+              <div class="card-body">
+         <label class="form-label" for="basic-default-password1">Electricity consumption from Grid
+
+
+           </label>
+          <div class="col-md-6 col-12 mb-1">
+            <div class="input-group">
+                <input type="number" class="form-control" name="total_electrical_consumption_rewnable" id="total_electrical_consumption_rewnable" 
+                placeholder="Enter Electricity consumption from Grid " aria-label="Enter Electricity consumption from Grid " 
+                aria-describedby="basic-addon2" required=""> 
+		            	<span class="input-group-text" id="basic-addon2">%</span>
+	              <div class="valid-feedback">OK!</div>
+	              <div class="invalid-feedback">Please Enter Electricity consumption from Grid .</div>
+		      </div>
+            
+            </div>
+ 		<label class="form-label" for="basic-default-password1">Electricity consumption from Renewable (Solar <span id="financial-year-next"></span> compared to the Baseline FY <span id="financial-year"></span>
+           </label>
+         <div class="input-group">
+                <input type="number" class="form-control" name="total_electrical_consumption_rewnable" id="total_electrical_consumption_rewnable" 
+                placeholder="Enter Electricity consumption from Renewable " aria-label="Enter Electricity consumption from Renewable " 
+                aria-describedby="basic-addon2" required=""> 
+		            	<span class="input-group-text" id="basic-addon2">%</span>
+	              <div class="valid-feedback">OK!</div>
+	              <div class="invalid-feedback">Please Enter Electricity consumption from Renewable .</div>
+		      </div>
+
+        </div>
         </div>
       </div>
     </div>
   </div>
+   </div>
 </div>
 
+  <div class="card bg" >
+  <div class="row card " >
+ 	 <div class="text-center">
+	       <a class="btn btn-relief-primary fw-bolder btn-3d me-1 waves-effect waves-float waves-light my-1 rotate" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
+	    		Thermal Energy (within the facility)
+	    		
+	    		<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+	    		stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+			</a>
+     </div>
+    </div>
+    <div class="collapse" id="collapseExample1">
+  <div class="row"  style="zoom: 1;">
+    <div class="col-md-6 col-sm-12">
+      <div class="card">
+        <div class="card-header badge badge-light-primary  py-1">
+          <h4 class="card-title fw-bolder">Site Level Sustainability Goals (FY <span id="financial-year"></span>)</h4>
+          <div class="heading-elements">
+            <ul class="list-inline mb-0">
+              <li>
+                <a data-action="collapse1" class=""><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-content collapse show my-2" >
+              <div class="card-body">
+         
+          <div class="row">
+            <div class="col-md-6 col-12 mb-1">
+             <p class="card-text">
+        Reduction in Specific Thermal Energy Consumption in FY 2024-25 compared to the Baseline FY 2023-24
+
+          </p>
+              <div class="input-group">
+                <input type="number" class="form-control" name="total_fresh_water_past" id="total_fresh_water_past" 
+                placeholder="Enter Reduction in Specific Thermal Energy " aria-label="EnterReduction in Specific Thermal Energy " 
+                aria-describedby="basic-addon2" required=""> 
+		            	<span class="input-group-text" id="basic-addon2">KL</span>
+	              <div class="valid-feedback">OK!</div>
+	              <div class="invalid-feedback">Please Enter Reduction in Specific Thermal Energy .</div>
+		      </div>
+ 			</div>
+ 		
+            </div>
+            
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+      <div class="card">
+        <div class="card-header badge badge-light-primary py-1">
+                  <h4 class="card-title fw-bolder">Reporting Period (FY <span id="financial-year-next"></span>)</h4>
+
+          <div class="heading-elements">
+            <ul class="list-inline mb-0">
+              <li>
+                <a data-action="collapse1" class=""><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-content collapse show my-2">
+              <div class="card-body">
+         <label class="form-label" for="basic-default-password1">Reduction in Specific Fresh Water Consumption in FY <span id="financial-year-next"></span> compared to the Baseline FY <span id="financial-year"></span>
+           </label>
+          <div class="col-md-6 col-12 mb-1">
+           <div class="input-group">
+                <input type="number" class="form-control" name="total_fresh_water_future" id="total_fresh_water_future" 
+                placeholder="Enter Specific Fresh Water Consumption" aria-label="Enter Specific Fresh Water Consumption" 
+                aria-describedby="basic-addon2" required=""> 
+		            	<span class="input-group-text" id="basic-addon2">KL</span>
+	              <div class="valid-feedback">OK!</div>
+	              <div class="invalid-feedback">Please Enter Specific Fresh Water Consumption.</div>
+		      </div>
+		    
+            </div>
 
 
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
- 
-  
- 
- 
- 
-
-<!-- / create app modal -->
-
-
- 
-      
+        </div>
         </div>
       </div>
     </div>
-    <!-- END: Content-->
+    </div>
+    
+  </div>
+   </div>
+   
+   <div class="card bge" >
+  <div class="row card " >
+ 	 <div class="text-center">
+	       <a class="btn btn-relief-primary fw-bolder btn-3d me-1 waves-effect waves-float waves-light my-1 rotate" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+	    		Sector Specific Goals
 
+	    		<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+	    		stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+			</a>
+     </div>
+    </div>
+    <div class="collapse" id="collapseExample2">
+  <div class="row"  style="zoom: 1;">
+    <div class="col-md-6 col-sm-12">
+      <div class="card">
+        <div class="card-header badge badge-light-primary  py-1">
+          <h4 class="card-title fw-bolder">Site Level Sustainability Goals (FY  <span id="financial-year"></span>)</h4>
+          <div class="heading-elements">
+            <ul class="list-inline mb-0">
+              <li>
+                <a data-action="collapse2" class=""><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-content collapse show my-2" >
+            <div class="card-body">
+         
+          <div class="row">
+            <div class="col-md-6 col-12 mb-1">
+            <h5 class="fw-bolder" style="
+    color: red;">MSW</h5>
+             <p class="card-text">
+   
+         Quantity of RDF to Cement Industries (FY 2025)
+
+          </p>
+              <div class="input-group">
+                <input type="number" class="form-control" name="Quantity of RDF" id="Quantity_of_RDF"
+                 placeholder="Enter Quantity of RDF" aria-label="Enter Total Net Fresh Water Consumption" aria-describedby="basic-addon2" required=""> 
+		            	<span class="input-group-text" id="basic-addon2">Ton</span>
+	              <div class="valid-feedback">OK!</div>
+	              <div class="invalid-feedback">Please Enter Quantity of RDF.</div>
+		      </div>
+ 			</div>
+ 		
+            </div>
+            
+          <div class="row">
+            
+ 			
+            <div class="col-md-6 col-12 mb-1">
+             <h5 class="fw-bolder" style="
+    color: red;">WTE</h5>
+             <p class="card-text">
+          Auxiliary Consumption to be less than: 
+
+
+          </p>
+              <div class="input-group">
+                <input type="number" class="form-control" name="Quantity of RDF" id="Quantity of RDF" 
+                placeholder="Enter Auxiliary Consumption to be less than: " aria-label="Enter Auxiliary Consumption to be less than: " aria-describedby="basic-addon2" required=""> 
+		            	<span class="input-group-text" id="basic-addon2">KWh</span>
+	              <div class="valid-feedback">OK!</div>
+	              <div class="invalid-feedback">Please Enter Auxiliary Consumption to be less than: 
+ .</div>
+		      </div>
+		    
+ 			</div>
+ 			</div>
+ 			<div class="row">
+            
+ 			
+            <div class="col-md-6 col-12 mb-1">
+            <h5 class="fw-bolder" style="
+    color: red;">IWM</h5>
+             <p class="card-text">
+         Quantity of AFR to Cement Industries (FY 2025)
+          </p>
+              <div class="input-group">
+                <input type="number" class="form-control" name="Quantity of RDF" id="Quantity of RDF" placeholder=" Enter Quantity of AFR" aria-label="Enter Total Net Fresh Water Consumption" aria-describedby="basic-addon2" required=""> 
+		            	<span class="input-group-text" id="basic-addon2">TONS</span>
+	              <div class="valid-feedback">OK!</div>
+	              <div class="invalid-feedback">Please Enter Quantity of AFR.</div>
+		      </div>
+		      
+ 			</div>
+ 			</div>
+ 			
+ 			<div class="row">
+            
+            <div class="col-md-6 col-12 mb-1">
+            <h5 class="fw-bolder" style="
+    color: red;">BMW</h5>
+             <p class="card-text">
+         Number of BMW Incinerators with Dry Scrubbing
+
+          
+          </p>
+              <div class="input-group">
+                <input type="number" class="form-control" name="Quantity of RDF" id="Quantity of RDF" 
+                placeholder="Enter  Number of BMW Incinerators" aria-label="Enter Total Net Fresh Water Consumption" aria-describedby="basic-addon2" required=""> 
+		            	<span class="input-group-text" id="basic-addon2">NO.</span>
+	              <div class="valid-feedback">OK!</div>
+	              <div class="invalid-feedback">Please Enter  Number of BMW Incinerators .</div>
+		      </div>
+ 			</div>
+ 			</div>
+ 			</div>
+        </div>
+        </div>
+      </div>
+     
+      <div class="col-md-6 col-sm-12">
+      <div class="card">
+        <div class="card-header badge badge-light-primary py-1">
+                  <h4 class="card-title fw-bolder">Reporting Period(FY <span id="financial-year-next"></span>)</h4>
+
+          <div class="heading-elements">
+            <ul class="list-inline mb-0">
+              <li>
+                <a data-action="collapse2" class=""><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-content collapse show my-2">
+            <div class="card-body">
+         
+          <div class="row">
+            <div class="col-md-6 col-12 mb-1">
+            <h5 class="fw-bolder" style="
+    color: red;">MSW</h5>
+             <label class="card-text">
+   
+         Quantity of RDF to Cement Industries
+
+          </label>
+              <div class="input-group">
+                <input type="number" class="form-control" name="Quantity_of_RDF_sent_to_Cement" id="Quantity_of_RDF_sent_to_Cement" placeholder="Enter Quantity of RDF sent to Cement Industries." aria-label="Enter Total Net Fresh Water Consumption" aria-describedby="basic-addon2" required=""> 
+		            	<span class="input-group-text" id="basic-addon2">Ton</span>
+	              <div class="valid-feedback">OK!</div>
+	              <div class="invalid-feedback">Please Enter Quantity of RDF sent to Cement Industries.</div>
+		      </div>
+ 			</div>
+ 			
+            </div>
+          
+            
+          <div class="row">
+            <div class="col-md-6 col-12 mb-1">
+             <h5 class="fw-bolder" style="
+    color: red;">WTE</h5>
+             <p class="card-text">
+        Auxiliary Consumption 
+          </p>
+              <div class="input-group">
+                <input type="number" class="form-control" name="Quantity_of_RDF_sent_to_Cement" id="Quantity_of_RDF_sent_to_Cement" placeholder="Enter Auxiliary Consumption." aria-describedby="basic-addon2" required=""> 
+		           <span class="input-group-text" id="basic-addon2">%</span>
+	              <div class="valid-feedback">OK!</div>
+	              <div class="invalid-feedback">Please Enter Auxiliary Consumption.</div>
+		      </div>
+		 
+		
+ 			</div>
+ 			</div>
+ 			<div class="row">
+            
+ 			
+            <div class="col-md-6 col-12 mb-1">
+            <h5 class="fw-bolder" style="
+    color: red;">IWM</h5>
+             <p class="card-text">
+       Quantity of AFR to Cement Industries
+
+          </p>
+              <div class="input-group">
+                <input type="number" class="form-control" name="Quantity_of_RDF_sent_to_Cement" id="Quantity_of_RDF_sent_to_Cement" placeholder="Enter Quantity of AFR to Cement Industries" aria-label="Enter Total Net Fresh Water Consumption" aria-describedby="basic-addon2" required=""> 
+		            	<span class="input-group-text" id="basic-addon2">TONS</span>
+	              <div class="valid-feedback">OK!</div>
+	              <div class="invalid-feedback">Please Enter Quantity of AFR to Cement Industries .</div>
+		      </div>
+		      
+ 			</div>
+ 			</div>
+ 			
+ 			<div class="row">
+            
+            <div class="col-md-6 col-12 mb-1">
+            <h5 class="fw-bolder" style="
+    color: red;">BMW</h5>
+             <p class="card-text">
+          : Number of BMW Incinerators with Dry Scrubbing
+
+          </p>
+              <div class="input-group">
+                <input type="number" class="form-control" name="Quantity_of_RDF_sent_to_Cement" id="Quantity_of_RDF_sent_to_Cement" placeholder="Enter Number of BMW Incinerators" aria-label="Enter Total Net Fresh Water Consumption" aria-describedby="basic-addon2" required=""> 
+		            	<span class="input-group-text" id="basic-addon2">NO.</span>
+	              <div class="valid-feedback">OK!</div>
+	              <div class="invalid-feedback">Please Enter Number of BMW Incinerators .</div>
+		      </div>
+ 			</div></div></div>
+        </div>
+      </div>
+    </div>
+    </div>
+    
+  </div>
+   </div>
+   
+     <div class="card bg" >
+  <div class="row card " >
+ 	 <div class="text-center">
+	       <a class="btn btn-relief-primary fw-bolder btn-3d me-1 waves-effect waves-float waves-light my-1 rotate" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
+	    		Greenbelt Development
+
+	    		
+	    		<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+	    		stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+			</a>
+     </div>
+    </div>
+    <div class="collapse" id="collapseExample3">
+  <div class="row"  style="zoom: 1;">
+    <div class="col-md-6 col-sm-12">
+      <div class="card">
+        <div class="card-header badge badge-light-primary  py-1">
+          <h4 class="card-title fw-bolder">Site Level Sustainability Goals(FY <span id="financial-year"></span>)</h4>
+          <div class="heading-elements">
+            <ul class="list-inline mb-0">
+              <li>
+                <a data-action="collapse3" class=""><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-content collapse show my-2" >
+              <div class="card-body">
+         
+          <div class="row">
+            <div class="col-md-6 col-12 mb-1">
+             <p class="card-text">
+        Plantation of New Trees (either w/in or outside the facility)
+
+          </p>
+              <div class="input-group">
+                <input type="number" class="form-control" name=" Plantation_of_New_Trees " id=" Plantation_of_New_Trees" 
+                placeholder="Enter Plantation of New Trees" aria-label="Enter Total Net Fresh Water Consumption" 
+                aria-describedby="basic-addon2" required=""> 
+		            	<span class="input-group-text" id="basic-addon2">Absolute Number</span>
+	              <div class="valid-feedback">OK!</div>
+	              <div class="invalid-feedback">Please Enter Plantation of New Trees.</div>
+		      </div>
+ 			</div>
+ 			
+ 			
+            </div>
+            
+            
+          </div>
+        </div>
+        </div>
+      </div>
+      
+      
+      <div class="col-md-6 col-sm-12">
+      <div class="card">
+        <div class="card-header badge badge-light-primary py-1">
+                  <h4 class="card-title fw-bolder">REPORTING PERIOD(FY <span id="financial-year-next"></span>)</h4>
+
+          <div class="heading-elements">
+            <ul class="list-inline mb-0">
+              <li>
+                <a data-action="collapse" class=""><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-content collapse show my-2">
+              <div class="card-body">
+         <label class="form-label" for="basic-default-password1">Plantation of New Trees (either w/in or outside the facility) <span id="financial-year-next"></span> compared to the Baseline FY <span id="financial-year"></span>
+           </label>
+          <div class="col-md-6 col-12 mb-1">
+           <div class="input-group">
+                <input type="number" class="form-control" name="total_fresh_water_future" id="total_fresh_water_future" 
+                placeholder="Enter Plantation of New Trees" aria-label="Enter Plantation of New Trees" 
+                aria-describedby="basic-addon2" required=""> 
+		            	<span class="input-group-text" id="basic-addon2">AbsoluteNumber</span>
+	              <div class="valid-feedback">OK!</div>
+	              <div class="invalid-feedback">Please Enter Plantation of New Trees.</div>
+		      </div>
+		    
+            </div>
+
+
+        </div>
+        </div>
+      </div>
+    </div>
+  
+    </div>
+    
+  </div>
+   </div>
+   
+      <div class="card bge" >
+  <div class="row card " >
+ 	 <div class="text-center">
+	       <a class="btn btn-relief-primary fw-bolder btn-3d me-1 waves-effect waves-float waves-light my-1 rotate" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">
+	    		Training and Development
+
+
+	    		
+	    		<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+	    		stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+			</a>
+     </div>
+    </div>
+    <div class="collapse" id="collapseExample4">
+  <div class="row"  style="zoom: 1;">
+    <div class="col-md-6 col-sm-12">
+      <div class="card">
+        <div class="card-header badge badge-light-primary  py-1">
+          <h4 class="card-title fw-bolder">Site Level Sustainability Goals(FY) <span id="financial-year"></span>)</h4>
+          <div class="heading-elements">
+            <ul class="list-inline mb-0">
+              <li>
+                <a data-action="collapse5" class=""><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-content collapse show my-2" >
+              <div class="card-body">
+         
+          <div class="row">
+            <div class="col-md-6 col-12 mb-1">
+             <p class="card-text">
+        Total Training Hours (excluding mandatory training) for All Employees at the Facility
+
+              <div class="input-group">
+                <input type="number" class="form-control" name="total_training_Hours" id="total_training_Hours" 
+                placeholder="Enter Total Training Hours" aria-label="Enter Total Net Fresh Water Consumption" 
+                aria-describedby="basic-addon2" required=""> 
+		            	<span class="input-group-text" id="basic-addon2">No.hours</span>
+	              <div class="valid-feedback">OK!</div>
+	              <div class="invalid-feedback">Please Enter Total Training Hours.</div>
+		      </div>
+ 			</div>
+ 			
+            </div>
+            
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+      <div class="card">
+        <div class="card-header badge badge-light-primary py-1">
+                  <h4 class="card-title fw-bolder">REPORTING PERIOD(FY <span id="financial-year-next"></span>)</h4>
+
+          <div class="heading-elements">
+            <ul class="list-inline mb-0">
+              <li>
+                <a data-action="collapse" class=""><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-content collapse show my-2">
+              <div class="card-body">
+         <label class="form-label" for="basic-default-password1">Total Training Hours (excluding mandatory training) for All Employees at the Facility </label>
+          <div class="col-md-6 col-12 mb-1">
+           <div class="input-group">
+                <input type="number" class="form-control" name="total_fresh_water_future" id="total_fresh_water_future" 
+                placeholder="Enter Total Training Hours" aria-label="Enter Total Training Hours" 
+                aria-describedby="basic-addon2" required=""> 
+		            	<span class="input-group-text" id="basic-addon2">No.hours</span>
+	              <div class="valid-feedback">OK!</div>
+	              <div class="invalid-feedback">Please Enter Total Training Hours.</div>
+		      </div>
+		    
+            </div>
+
+
+        </div>
+        </div>
+      </div>
+    </div>
+  
+    </div>
+    
+  </div>
+   </div>
+   
+      <div class="card bg" >
+  <div class="row card " >
+ 	 <div class="text-center">
+	       <a class="btn btn-relief-primary fw-bolder btn-3d me-1 waves-effect waves-float waves-light my-1 rotate" data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample5">
+	    		Compliance
+
+	    		<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+	    		stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+			</a>
+     </div>
+    </div>
+    <div class="collapse" id="collapseExample5">
+  <div class="row"  style="zoom: 1;">
+    <div class="col-md-6 col-sm-12">
+      <div class="card">
+        <div class="card-header badge badge-light-primary  py-1">
+          <h4 class="card-title fw-bolder">Site Level Sustainability Goals(FY <span id="financial-year"></span>)</h4>
+          <div class="heading-elements">
+            <ul class="list-inline mb-0">
+              <li>
+                <a data-action="collapse5" class=""><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-content collapse show my-2" >
+              <div class="card-body">
+         
+          <div class="row">
+            <div class="col-md-6 col-12 mb-1">
+             <p class="card-text">
+        Number of Violations and Non-Compliances
+
+          </p>
+              <div class="input-group">
+                <input type="number" class="form-control" name="number_of_violations" id="number_of_violations" 
+                placeholder="Enter Number of Violations & Non-Compliances." aria-label="Enter Total Net Fresh Water Consumption" 
+                aria-describedby="basic-addon2" required=""> 
+		            	<span class="input-group-text" id="basic-addon2">Number</span>
+	              <div class="valid-feedback">OK!</div>
+	              <div class="invalid-feedback">Please Enter Number of Violations & Non-Compliances.</div>
+		      </div>
+ 			</div>
+ 			
+            </div>
+            
+          </div>
+        </div>
+        </div>
+      </div>
+      
+          <div class="col-md-6 col-sm-12">
+      <div class="card">
+        <div class="card-header badge badge-light-primary  py-1">
+          <h4 class="card-title fw-bolder">Reporting Period(FY <span id="financial-year"></span>)</h4>
+          <div class="heading-elements">
+            <ul class="list-inline mb-0">
+              <li>
+                <a data-action="collapse5" class=""><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-content collapse show my-2" >
+              <div class="card-body">
+         
+          <div class="row">
+            <div class="col-md-6 col-12 mb-1">
+             <p class="card-text">
+        In the Reporting Period: Are there any known violations or non-compliances (or) Are there any pending show-cause notices
+         (or) Any explanation to be submitted to regulatory/statutory bodies
+          (or) Any penalties levied or Bank Guarantees submitted?
+
+
+          </p>
+              <div class="input-group">
+                <input type="number" class="form-control" name="number_of_violations" id="number_of_violations" 
+                placeholder="Enter Number of Violations & Non-Compliances." aria-label="Enter Total Net Fresh Water Consumption" 
+                aria-describedby="basic-addon2" required=""> 
+		            	<span class="input-group-text" id="basic-addon2">Number</span>
+	              <div class="valid-feedback">OK!</div>
+	              <div class="invalid-feedback">Please Enter  In the Reporting Period:field.</div>
+		      </div>
+ 			</div>
+ 			
+            </div>
+            
+          </div>
+        </div>
+        </div>
+      </div>
+  
+    </div>
+    
+  </div>
+   </div>
+   
+<hr>
+<div class="row">
+		  <div class="col-md-6">
+		      <div class="card">
+		        <div class="card-header">
+		          <h4 class="card-title">Total Quantity of Waste Handled</h4>
+		        </div>
+		        <div class="card-body">
+		 			<div class="input-group mb-2">
+		            	<input type="number" class="form-control" name="total_quantity_of_waste_handled" id="total_quantity_of_waste_handled"
+		            	 placeholder="Enter Total Quantity of Waste Handled" aria-label="Enter Total Quantity of Waste Handled" aria-describedby="basic-addon2" required="">
+		            	<span class="input-group-text" id="basic-addon2">Tons</span>
+		            	
+              <div class="valid-feedback">OK!</div>
+              <div class="invalid-feedback">Please Enter Total Quantity of Waste Handled.</div>
+		          </div>
+		        </div>
+		      </div>
+   		 </div>
+   		 </div>
+    </div>
+  <button type="submit" class="btn btn-primary waves-effect waves-float waves-light">Submit</button>
+  </form>
+  
+</section>
+<!-- Collapse end -->
+
+
+
+        </div>
+      </div>
+    </div>
+  
     <div class="sidenav-overlay"></div>
     <div class="drag-target"></div>
 
- 
+    <!-- BEGIN: Footer-->
+   <footer class="footer footer-static footer-light">
+      <p class="clearfix mb-0"><span class="float-md-start d-block d-md-inline-block mt-25">COPYRIGHT  &copy;  <span id="currentYear"></span> | Powered by<a class="ms-25" href="https://resustainability.com/" target="_blank">Re Sustainability Limited</a><span class="d-none d-sm-inline-block"> . All Rights Reserved.</span></span></p>
+    </footer>
+    <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
+    <!-- END: Footer-->
+
 
     <!-- BEGIN: Vendor JS-->
     <script src="/esc/resources/vendors/js/vendors.min.js"></script>
@@ -830,38 +1079,117 @@ License: You must have a valid license purchased only from themeforest(the above
 
     <!-- BEGIN: Page Vendor JS-->
     <script src="/esc/resources/vendors/js/ui/jquery.sticky.js"></script>
-    <script src="/esc/resources/vendors/js/forms/wizard/bs-stepper.min.js"></script>
     <script src="/esc/resources/vendors/js/forms/select/select2.full.min.js"></script>
-    <script src="/esc/resources/vendors/js/forms/cleave/cleave.min.js"></script>
-    <script src="/esc/resources/vendors/js/forms/cleave/addons/cleave-phone.us.js"></script>
-    <script src="/esc/resources/vendors/js/forms/validation/jquery.validate.min.js"></script>
+    <script src="/esc/resources/vendors/js/charts/apexcharts.min.js"></script>
+    <script src="/esc/resources/vendors/js/extensions/toastr.min.js"></script>
+    <script src="/esc/resources/vendors/js/extensions/moment.min.js"></script>
+    <script src="/esc/resources/vendors/js/tables/datatable/jquery.dataTables.min.js"></script>
+    <script src="/esc/resources/vendors/js/tables/datatable/datatables.buttons.min.js"></script>
+    <script src="/esc/resources/vendors/js/tables/datatable/dataTables.bootstrap5.min.js"></script>
+    <script src="/esc/resources/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
+    <script src="/esc/resources/vendors/js/tables/datatable/responsive.bootstrap5.js"></script>
     <!-- END: Page Vendor JS-->
-
+ <script src="/esc/resources/js/materialize-v.1.0.min.js "  ></script>
+    <script src="/esc/resources/js/jquery-validation-1.19.1.min.js"  ></script>
+    <script src="/esc/resources/js/jquery.dataTables-v.1.10.min.js"  ></script>
+     <script src="/esc/resources/js/datetime-moment-v1.10.12.js"  ></script>
+         <script src="/esc/resources/js/dataTables.material.min.js"  ></script>
+      <script src="/esc/resources/js/moment-v2.8.4.min.js"  ></script>
     <!-- BEGIN: Theme JS-->
     <script src="/esc/resources/js/core/app-menu.min.js"></script>
     <script src="/esc/resources/js/core/app.min.js"></script>
     <script src="/esc/resources/js/scripts/customizer.min.js"></script>
+     <script src="/esc/resources/js/scripts/forms/form-select2.min.js"></script>
     <!-- END: Theme JS-->
-
-    <!-- BEGIN: Page JS-->
-    <script src="/esc/resources/js/scripts/pages/modal-add-new-cc.min.js"></script>
+   <script src="/esc/resources/js/scripts/pages/modal-add-new-cc.min.js"></script>
     <script src="/esc/resources/js/scripts/pages/page-pricing.min.js"></script>
     <script src="/esc/resources/js/scripts/pages/modal-add-new-address.min.js"></script>
     <script src="/esc/resources/js/scripts/pages/modal-create-app.min.js"></script>
     <script src="/esc/resources/js/scripts/pages/modal-two-factor-auth.min.js"></script>
     <script src="/esc/resources/js/scripts/pages/modal-edit-user.min.js"></script>
     <script src="/esc/resources/js/scripts/pages/modal-share-project.min.js"></script>
+    <!-- BEGIN: Page JS-->
+     <script src="/esc/resources/js/scripts/pages/dashboard-analytics.min.js"></script>
+    <script src="/esc/resources/js/scripts/pages/app-invoice-list.min.js"></script>
+    
+        <script src="/esc/resources/vendors/js/pickers/pickadate/picker.js"></script>
+    <script src="/esc/resources/vendors/js/pickers/pickadate/picker.date.js"></script>
+    <script src="/esc/resources/vendors/js/pickers/pickadate/picker.time.js"></script>
+    <script src="/esc/resources/vendors/js/pickers/pickadate/legacy.js"></script>
+    <script src="/esc/resources/vendors/js/pickers/flatpickr/flatpickr.min.js"></script>
+     <script src="/esc/resources/js/scripts/forms/pickers/form-pickers.min.js"></script>
+     <script src="/esc/resources/js/scripts/extensions/ext-component-blockui.js"></script>
+      <script src="/esc/resources/js/scripts/pages/dashboard-ecommerce.min.js"></script>
+    <!-- END: Theme JS-->
+   <script src="/esc/resources/js/scripts/forms/form-validation.js"></script>
+    <!-- BEGIN: Page JS-->
+    <script src="/esc/resources/js/scripts/pages/dashboard-ecommerce.min.js"></script>
     <!-- END: Page JS-->
-
+ <form action="<%=request.getContextPath() %>/logout" name="logoutForm" id="logoutForm" method="post">
+		<input type="hidden" name="email" id="email"/>
+	</form>
     <script>
+    $(document).ready(function() {
+        const today = new Date();
+        const year = today.getFullYear();
+        const month = today.getMonth() + 1;  // getMonth() returns 0-11 for Jan-Dec, so add 1
+        
+        let startYear, endYear;
+        
+        // If current month is January to March, financial year starts from the previous year
+        if (month >= 4) {
+            startYear = year;
+            endYear = year + 1;
+        } else {
+            startYear = year - 1;
+            endYear = year;
+        }
+        
+        // Display financial year as 2023-24 or <span id="financial-year-next"></span> format
+        $('#financial-year-next').text(startYear + '-' + endYear.toString().slice(-2));
+        $('#financial-year').text(startYear-1 + '-' + (endYear-1).toString().slice(-2));
+    });
+
       $(window).on('load',  function(){
+    	
         if (feather) {
           feather.replace({ width: 14, height: 14 });
         }
       })
+       document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+
+      function historyRE(document_code,approver_type,status,approver_code){
+       	  $('#historyRE').modal('show');
+      }
+      
+      function calculateSWC(input){
+    	  // Check if input is not null and is a numeric value
+    	    if (input !== null && !isNaN(input) && input.trim() !== "") {
+    	        // Calculate the input divided by 1000
+    	         var result = (parseFloat(input) / 1000) * 100;
+    	        
+    	        // Store the result in the span with id 'waterP'
+    	        document.getElementById("waterP").innerHTML = result.toFixed(2); // Format to 2 decimal places
+    	    } else {
+    	        // If input is invalid, show an error or clear the result
+    	        document.getElementById("waterP").innerHTML = "Invalid input";
+    	    }
+      }
+      
+      
     </script>
+    
+    
+     <script async>
+        var link = document.createElement( 'link' );
+        link.href = 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atelier-cave-light.min.css';
+        link.rel = 'stylesheet';document.getElementsByTagName( 'head' )[0].appendChild( link );
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+      <script async>hljs.initHighlightingOnLoad();</script>
+       
   </body>
   <!-- END: Body-->
 
-<!-- Mirrored from pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/horizontal-menu-template/modal-examples.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Aug 2022 05:37:24 GMT -->
+<!-- Mirrored from pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/horizontal-menu-template/dashboard-ecommerce.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Aug 2022 05:36:10 GMT -->
 </html>
