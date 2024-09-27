@@ -231,9 +231,13 @@ body {
     <!-- Subscribers Chart Card starts -->
 
     <div class="col-lg-3 col-sm-3 col-6">
-      <div class="card">
+      <div class="card" style="
+        background-color: #e1f1ee;
+        border: 2px solid #26232414;
+        border-radius: 8px;
+    ">
         <div class="card-header flex-column align-items-start pb-0">
-          <div class="avatar bg-light-primary p-50 m-0">
+          <div class="avatar bg-light-warning p-50 m-0">
             <div class="avatar-content">
               <i data-feather="users" class="font-medium-5"></i>
             </div>
@@ -245,9 +249,13 @@ body {
     </div>
     <!-- Subscribers Chart Card starts -->
     <div class="col-lg-3 col-sm-3 col-6">
-      <div class="card">
+     <div class="card" style="
+        background-color: #e1f1ee;
+        border: 2px solid #26232414;
+        border-radius: 8px;
+    ">
         <div class="card-header flex-column align-items-start pb-0">
-          <div class="avatar bg-light-primary p-50 m-0">
+          <div class="avatar bg-light-warning p-50 m-0">
             <div class="avatar-content">
               <i data-feather="zap" class="font-medium-5"></i>
             </div>
@@ -261,9 +269,13 @@ body {
 
     <!-- Orders Chart Card starts -->
     <div class="col-lg-3 col-sm-3 col-6">
-      <div class="card">
+     <div class="card" style="
+        background-color: #e1f1ee;
+        border: 2px solid #26232414;
+        border-radius: 8px;
+    ">
         <div class="card-header flex-column align-items-start pb-0">
-          <div class="avatar bg-light-warning p-50 m-0">
+          <div class="avatar bg-light-danger p-50 m-0">
             <div class="avatar-content">
               <i data-feather="zap-off" class="font-medium-5"></i>
             </div>
@@ -285,7 +297,11 @@ body {
     <div class="col-12">
     
       <div class="card invoice-list-wrapper">
-        <div class="card-datatable table-responsive">
+         <div class="card-datatable table-responsive" style="
+    background-color: #da0d1412;
+    border: 2px solid #da0d1412;
+    border-radius: 8px;
+">
        <div class="dt-buttons" style="height : 0.5em;">
       
         </div>

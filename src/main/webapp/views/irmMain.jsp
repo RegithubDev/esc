@@ -109,7 +109,7 @@ License: You must have a valid license purchased only from themeforest(the above
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('https://img.freepik.com/premium-vector/green-grunge-detailed-texture-white-background_1148645-181.jpg');
+  <!--  background-image: url('https://img.freepik.com/premium-vector/green-grunge-detailed-texture-white-background_1148645-181.jpg');-->
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -235,7 +235,7 @@ License: You must have a valid license purchased only from themeforest(the above
    <jsp:include page="../views/layout/msg.jsp"></jsp:include>
             <div class="mb-1 breadcrumb-right">
               <div class="dropdown">
-              <a type="button" data-action="reload" aria-haspopup="true" aria-expanded="false"  class="btn btn-primary btn-round waves-effect waves-float waves-light btn-section-block-multiple waves-effect">
+              <a type="button" data-action="reload" aria-haspopup="true" aria-expanded="false"  class="btn btn-success btn-round waves-effect waves-float waves-light btn-section-block-multiple waves-effect">
 			<i data-feather='save'></i>             
 			 <span>Save</span>
             </a>
@@ -259,11 +259,11 @@ License: You must have a valid license purchased only from themeforest(the above
     <div class="card bg" >
   <div class="row card " >
  	 <div class="text-center">
-	       <a class="btn btn-relief-primary fw-bolder btn-3d me-1 waves-effect waves-float waves-light my-1 rotate" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+	       <a class="btn btn-relief-danger fw-bolder btn-3d me-1 waves-effect waves-float waves-light my-1 rotate" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
 	    		Fresh Water  
-	    		<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
-	    		stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
-			</a>
+	    		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+	 stroke-linecap="round" stroke-linejoin="round" class="feather feather-droplet">
+	 <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg> </a>
      </div>
     </div>
     <div class="collapse" id="collapseExample">
@@ -348,11 +348,12 @@ License: You must have a valid license purchased only from themeforest(the above
 <div class="card bge" >
   <div class="row card " >
  	 <div class="text-center">
-	       <a class="btn btn-relief-primary fw-bolder btn-3d me-1 waves-effect waves-float waves-light my-1 rotate" data-bs-toggle="collapse" href="#electric" role="button" aria-expanded="false" aria-controls="collapseExample">
+	       <a class="btn btn-relief-danger fw-bolder btn-3d me-1 waves-effect waves-float waves-light my-1 rotate" data-bs-toggle="collapse" href="#electric" role="button" aria-expanded="false" aria-controls="collapseExample">
 	    		Electrical Energy (within the facility)
-	    		<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
-	    		stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
-			</a>
+	    		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+	    		 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-power">
+	    		 <path d="M18.36 6.64a9 9 0 1 1-12.73 0"></path><line x1="12" y1="2" x2="12" y2="12"></line></svg>
+		</a>
      </div>
     </div>
     <div class="collapse" id="electric">
@@ -451,11 +452,12 @@ License: You must have a valid license purchased only from themeforest(the above
   <div class="card bg" >
   <div class="row card " >
  	 <div class="text-center">
-	       <a class="btn btn-relief-primary fw-bolder btn-3d me-1 waves-effect waves-float waves-light my-1 rotate" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
+	       <a class="btn btn-relief-danger fw-bolder btn-3d me-1 waves-effect waves-float waves-light my-1 rotate" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
 	    		Thermal Energy (within the facility)
 	    		
-	    		<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
-	    		stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+	    		 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+	    stroke-linejoin="round" class="feather feather-battery-charging"><path d="M5 18H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3.19M15 6h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-3.19">
+	    </path><line x1="23" y1="13" x2="23" y2="11"></line><polyline points="11 6 7 12 13 12 9 18"></polyline></svg>
 			</a>
      </div>
     </div>
@@ -540,12 +542,13 @@ License: You must have a valid license purchased only from themeforest(the above
    <div class="card bge" >
   <div class="row card " >
  	 <div class="text-center">
-	       <a class="btn btn-relief-primary fw-bolder btn-3d me-1 waves-effect waves-float waves-light my-1 rotate" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+	       <a class="btn btn-relief-danger fw-bolder btn-3d me-1 waves-effect waves-float waves-light my-1 rotate" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
 	    		Sector Specific Goals
 
-	    		<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
-	    		stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
-			</a>
+	    		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+	stroke-linejoin="round" class="feather feather-globe"><circle cx="12" cy="12" r="10">
+	</circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+		</a>
      </div>
     </div>
     <div class="collapse" id="collapseExample2">
@@ -750,13 +753,11 @@ License: You must have a valid license purchased only from themeforest(the above
      <div class="card bg" >
   <div class="row card " >
  	 <div class="text-center">
-	       <a class="btn btn-relief-primary fw-bolder btn-3d me-1 waves-effect waves-float waves-light my-1 rotate" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
+	       <a class="btn btn-relief-danger fw-bolder btn-3d me-1 waves-effect waves-float waves-light my-1 rotate" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
 	    		Greenbelt Development
-
-	    		
-	    		<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
-	    		stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
-			</a>
+ <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" 
+ stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+ </a>
      </div>
     </div>
     <div class="collapse" id="collapseExample3">
@@ -845,14 +846,12 @@ License: You must have a valid license purchased only from themeforest(the above
       <div class="card bge" >
   <div class="row card " >
  	 <div class="text-center">
-	       <a class="btn btn-relief-primary fw-bolder btn-3d me-1 waves-effect waves-float waves-light my-1 rotate" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">
+	       <a class="btn btn-relief-danger fw-bolder btn-3d me-1 waves-effect waves-float waves-light my-1 rotate" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">
 	    		Training and Development
 
-
-	    		
-	    		<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
-	    		stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
-			</a>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+	  stroke-linejoin="round" class="feather feather-tool"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>	</a>
+   
      </div>
     </div>
     <div class="collapse" id="collapseExample4">
@@ -935,12 +934,11 @@ License: You must have a valid license purchased only from themeforest(the above
       <div class="card bg" >
   <div class="row card " >
  	 <div class="text-center">
-	       <a class="btn btn-relief-primary fw-bolder btn-3d me-1 waves-effect waves-float waves-light my-1 rotate" data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample5">
+	       <a class="btn btn-relief-danger fw-bolder btn-3d me-1 waves-effect waves-float waves-light my-1 rotate" data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample5">
 	    		Compliance
 
-	    		<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
-	    		stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
-			</a>
+	<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" 
+	 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>	</a>
      </div>
     </div>
     <div class="collapse" id="collapseExample5">

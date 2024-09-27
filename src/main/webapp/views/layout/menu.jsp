@@ -18,8 +18,9 @@ div.main-menu-content {
 </style>
 </head>
 <body>
-		<div class="navbar-container main-menu-content" data-menu="menu-container" id="menu">
-          <ul class="nav navbar-nav" id="main-menu-navigation" data-menu="menu-navigation" >
+		<div class="navbar-container main-menu-content" data-menu="menu-container" id="menu" style="
+    background-color: #da0d14;
+"> <ul class="nav navbar-nav" id="main-menu-navigation" data-menu="menu-navigation" >
           
        <%--  <c:if test="${sessionScope.BASE_ROLE ne 'User' }"> --%>
            
@@ -38,7 +39,9 @@ div.main-menu-content {
 			
 			<li class="" data-menu  id="homeChild0" url = "/home" onClick="exFunction('homeChild0')">
 					    <a class="dropdown-item d-flex align-items-center" href="<%=request.getContextPath() %>/home" data-bs-toggle=""
-					     data-i18n="home"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle"><circle cx="12" cy="12" r="10"></circle></svg>
+					     data-i18n="home"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" 
+					     stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers">
+					     <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
 					      <span data-i18n="home">Dashboard</span></a> 
 					</li>
 			<%-- <li class="" data-menu  id="homeChild1" url = "/dash-sd" onClick="exFunction('homeChild1')">
@@ -68,9 +71,9 @@ div.main-menu-content {
         </c:if>
              <li class="dropdown nav-item " data-menu id="irm" url="irm">
 			    <a class="dropdown-item d-flex align-items-center" href="<%=request.getContextPath() %>/irm" data-bs-toggle=""
-			     data-i18n="Analytics"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
-			      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity">
-			      <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+			     data-i18n="Analytics"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" 
+			     stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart"><line x1="12" y1="20" x2="12" y2="10">
+			     </line><line x1="18" y1="20" x2="18" y2="4"></line><line x1="6" y1="20" x2="6" y2="16"></line></svg>
 			      <span data-i18n="Analytics">Report</span></a>
 	         </li>
 			<%-- <c:if test="${sessionScope.R_DASHBOARD eq 'Yes' }">
@@ -90,7 +93,9 @@ div.main-menu-content {
 			
 			<li class="dropdown nav-item " data-menu id="help" url="help">
 			    <a class="dropdown-item d-flex align-items-center" href="<%=request.getContextPath() %>/report" data-bs-toggle=""
-			     data-i18n="Analytics"><i data-feather='help-circle'></i>
+			     data-i18n="Analytics"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" 
+			     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pie-chart">
+			     <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path></svg>
 			      <span data-i18n="Analytics">Annual Report</span></a>
 			</li> 
 			

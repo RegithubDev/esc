@@ -298,13 +298,17 @@ body {
     <!-- Subscribers Chart Card starts -->
 
     <div class="col-lg-3 col-sm-6 col-12">
-      <div class="card">
+      <div class="card" style="
+        background-color: #e1f1ee;
+        border: 2px solid #26232414;
+        border-radius: 8px;
+    ">
         <div class="card-header">
           <div>
             <h2 class="fw-bolder mb-0"><span id="days">0 </span></h2>
             <p class="card-text">Days Logged In</p>
           </div>
-          <div class="avatar bg-light-danger p-50 m-0">
+          <div class="avatar bg-light-warning p-50 m-0">
             <div class="avatar-content">
               <i data-feather="activity" class="font-medium-5"></i>
             </div>
@@ -313,13 +317,17 @@ body {
       </div>
     </div>
     <div class="col-lg-3 col-sm-6 col-12">
-      <div class="card">
+ <div class="card" style="
+        background-color: #e1f1ee;
+        border: 2px solid #26232414;
+        border-radius: 8px;
+    ">
         <div class="card-header">
           <div>
             <h2 class="fw-bolder mb-0"><span id="hours">0 </span></h2>
             <p class="card-text">Hours Spent</p>
           </div>
-          <div class="avatar bg-light-danger p-50 m-0">
+          <div class="avatar bg-light-warning p-50 m-0">
             <div class="avatar-content">
               <i data-feather="activity" class="font-medium-5"></i>
             </div> 
@@ -328,13 +336,17 @@ body {
       </div>
     </div>
     <div class="col-lg-3 col-sm-6 col-12">
-      <div class="card">
+      <div class="card" style="
+        background-color: #e1f1ee;
+        border: 2px solid #26232414;
+        border-radius: 8px;
+    ">
         <div class="card-header">
           <div>
             <h2 class="fw-bolder mb-0"><span id="active">0 </span></h2>
             <p class="card-text">Active Users</p>
           </div>
-          <div class="avatar bg-light-danger p-50 m-0">
+          <div class="avatar bg-light-warning p-50 m-0">
             <div class="avatar-content">
               <i data-feather="activity" class="font-medium-5"></i>
             </div>
@@ -343,7 +355,11 @@ body {
       </div>
     </div>
     <div class="col-lg-3 col-sm-6 col-12">
-      <div class="card">
+     <div class="card" style="
+        background-color: #e1f1ee;
+        border: 2px solid #26232414;
+        border-radius: 8px;
+    ">
         <div class="card-header">
           <div>
             <h2 class="fw-bolder mb-0"><span id="inactive">0 </span></h2>
@@ -371,7 +387,11 @@ body {
     <div class="col-12">
     
       <div class="card invoice-list-wrapper">
-        <div class="card-datatable table-responsive">
+         <div class="card-datatable table-responsive" style="
+    background-color: #da0d1412;
+    border: 2px solid #da0d1412;
+    border-radius: 8px;
+">
        <div class="dt-buttons" style="height : 0.5em;">
       
         </div>
@@ -1256,8 +1276,7 @@ body {
 	    								})
 	    								$('.dataTables_filter').append(
 	    										'<div class="right-btns"></div>');
-	    								$('.dataTables_filter div').append(
-	    										$searchButton, $clearButton);
+	    								
 	    								rowLen = $('#datatable-user tbody tr:visible').length
 	    								/* var input = $('.dataTables_filter input').unbind(),
 	    								self = this.api(),

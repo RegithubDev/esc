@@ -3,11 +3,11 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <!DOCTYPE html>
 <!--
-Template Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
+Template Name: Safety - Vuejs, HTML & Laravel Admin Dashboard Template
 Author: PixInvent
 Website: http://www.pixinvent.com/
 Contact: hello@pixinvent.com
-Follow: www.twitter.com/pixinvents 
+Follow: www.twitter.com/pixinvents
 Like: www.facebook.com/pixinvents
 Purchase: https://1.envato.market/vuexy_admin
 Renew Support: https://1.envato.market/vuexy_admin
@@ -15,28 +15,85 @@ License: You must have a valid license purchased only from themeforest(the above
 
 -->
 <html class="loading" lang="en" data-textdirection="ltr">
-  <!-- BEGIN: Head-->
+  <!-- BEGIN: Head--> 
   
-<!-- Mirrored from pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/horizontal-menu-template/modal-examples.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Aug 2022 05:37:22 GMT -->
+<!-- Mirrored from pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/horizontal-menu-template/table-datatable-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Aug 2022 05:37:16 GMT -->
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   
+<style>
+.select2-container--open{
+        z-index:9999999         
+    }
+.mdl-grid{
+	display: flex !important;
+    padding: 4px;
+    justify-content: space-between;
+    height: 4.5rem;
+} 
+.dt-table{
+display: block !important;
+height: 100%;
+}
+.modal {
+    width: 100% !important;
+}
+.required{
+	color:red;
+}
+.my-error-class {
+ 	 color:red;
+}
+.my-valid-class {
+ 	 color:green;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+     left: -25% !important;
+    margin-top: 1p% !important;
+}
+body {
+    font-family: var(--bs-body-font-family) !important;
+}
+.dark-layout h1, .dark-layout h2, .dark-layout h3, .dark-layout h4, .dark-layout h5, .dark-layout h6, .dark-layout span  {
+    color: #D0D2D6;
+}
+.select2-container--classic .select2-selection--single .select2-selection__arrow b, .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    background-image: url(data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%23d8d6de\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-chevron-down\'%3E%3Cpolyline points=\'6 9 12 15 18 9\'%3E%3C/polyline%3E%3C/svg%3E);
+    background-size: 18px 14px,18px 14px !important;
+    background-repeat: no-repeat !important;
+    height: 1rem !important;
+    padding-right: 1.5rem !important;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+    left: -8px !important;
+    border-style: none !important;
+}
+</style>
+ 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
-    <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
-    <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="description" content="Safety admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 Department with unlimited possibilities.">
+    <meta name="keywords" content="admin template,Department, Safety admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="PIXINVENT">
-       <title>Report</title>
+  <title>Department</title>
         <link rel="icon" type="image/png" sizes="96x96" href="/esc/resources/images/protect-favicon.png" >
-    <link rel="shortcut icon" type="image/x-icon" href="https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/resources/images/ico/favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
 
+	<script src="/esc/resources/js/jQuery-v.3.5.min.js"  ></script>
+    <!-- BEGIN: Vendor CSS-->
+      <link rel="apple-touch-icon" href="/esc/resources/images/ico/apple-icon-120.html">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/vendors.min.css">
-    <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/forms/wizard/bs-stepper.min.css">
-    <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/forms/select/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/tables/datatable/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/tables/datatable/responsive.bootstrap5.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/tables/datatable/buttons.bootstrap5.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/tables/datatable/rowGroup.bootstrap5.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/pickers/flatpickr/flatpickr.min.css">
     <!-- END: Vendor CSS-->
-
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	  <link rel="stylesheet" href="<c:url value="/resources/css/font-awesome-v.4.7.css" />">
     <!-- BEGIN: Theme CSS-->
+            <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/extensions/toastr.min.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/css/plugins/extensions/ext-component-toastr.min.css">
     <link rel="stylesheet" type="text/css" href="/esc/resources/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/esc/resources/css/bootstrap-extended.min.css">
     <link rel="stylesheet" type="text/css" href="/esc/resources/css/colors.min.css">
@@ -44,102 +101,28 @@ License: You must have a valid license purchased only from themeforest(the above
     <link rel="stylesheet" type="text/css" href="/esc/resources/css/themes/dark-layout.min.css">
     <link rel="stylesheet" type="text/css" href="/esc/resources/css/themes/bordered-layout.min.css">
     <link rel="stylesheet" type="text/css" href="/esc/resources/css/themes/semi-dark-layout.min.css">
-
+   <link rel="stylesheet" type="text/css" href="/esc/resources/vendors/css/forms/select/select2.min.css">
     <!-- BEGIN: Page CSS-->
     <link rel="stylesheet" type="text/css" href="/esc/resources/css/core/menu/menu-types/horizontal-menu.min.css">
-    <link rel="stylesheet" type="text/css" href="/esc/resources/css/plugins/forms/form-wizard.min.css">
-    <link rel="stylesheet" type="text/css" href="/esc/resources/css/plugins/forms/form-validation.css">
-    <link rel="stylesheet" type="text/css" href="/esc/resources/css/pages/modal-create-app.min.css">
     <!-- END: Page CSS-->
 
     <!-- BEGIN: Custom CSS-->
-    <link rel="stylesheet" type="text/css" href="/esc/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/esc/resources/css/style.css">
     <!-- END: Custom CSS-->
-  <style>
-        .abc.body {
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f0f0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;        }
-        
-        
-        .abc-container {
-    border: 2px solid #ccc;
-    border-radious:10px;
-    background-color: #ccc;
-    padding: 20px;
-    display: flex;
-    gap: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
 
-        .abc-card {
-                background-color: white;
-            border: 2px solid #00796b;
-            padding: 35px; /* Increased padding */
-            width: 439px; /* Increased width */
-            border-radius: 10px;
-            transition: border-color 0.3s, box-shadow 0.3s;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-        }
-        .abc-card:hover {
-            border-color: #357abd;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
-        .abc-card-text {
-           margin-bottom: 4px;
-    font-size: 12px;
-    color: #333333;
-        }
-        .abc-badge-input-container {
-            display: flex;
-            align-items: center;
-            width: 100%;
-        }
-        .abc-badge {
-           background-color: #4a90e2;
-            color: white;
-            padding: 5px 10px;
-            border-radius: 5px;
-            font-size: 14px;
-            margin-right: 10px;
-        }
-        .abc-input-box input {
-             width: calc(100% - 70px);
-            padding: 5px;
-            font-size: 14px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            transition: border-color 0.3s;
-        }
-        .abc-input-box input:focus {
-             border-color: #4a90e2;
-            outline: none;
-        }
-          .abc-card-section {
-            margin-bottom: 15px;
-        }
-    </style>
-</head>
+  </head>
   <!-- END: Head-->
 
   <!-- BEGIN: Body-->
   <body class="horizontal-layout horizontal-menu  navbar-floating footer-static  " data-open="hover" data-menu="horizontal-menu" data-col="">
 
- <!-- BEGIN: Header-->
+    <!-- BEGIN: Header-->
 	<jsp:include page="../views/layout/header.jsp"></jsp:include> 
 
 
-    <!-- END: Header-->>
-
-<!-- BEGIN: Main Menu-->
-      <div class="horizontal-menu-wrapper">
+    <!-- END: Header-->
+    <!-- BEGIN: Main Menu-->
+    <div class="horizontal-menu-wrapper">
       <div class="header-navbar navbar-expand-sm navbar navbar-horizontal floating-nav navbar-light navbar-shadow menu-border container-xxl" role="navigation" data-menu="menu-wrapper" data-menu-type="floating-nav">
         <div class="navbar-header">
           <ul class="nav navbar-nav flex-row">
@@ -175,710 +158,989 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
     <!-- BEGIN: Content-->
     <div class="app-content content ">
-      <div class="content-overlay"></div>
+      <div class="content-overlay"></div> 
       <div class="header-navbar-shadow"></div>
       <div class="content-wrapper container-xxl p-0">
         <div class="content-header row">
-          <div class="content-header-left col-md-9 col-12 mb-2">
+           <div class="content-header-left col-md-9 col-12 mb-2">
             <div class="row breadcrumbs-top">
               <div class="col-12">
-                <h2 class="content-header-title float-start mb-0">Modal Examples</h2>
-               
+                <h2 class="content-header-title float-start mb-0">Departments </h2>
+                <div class="breadcrumb-wrapper">
+                  <ol class="breadcrumb">
+                    <%--   <li class="breadcrumb-item"><a href="<%=request.getContextPath() %>/home">Home</a>
+                    </li> --%>
+                    <li class="breadcrumb-item">Masters
+                    </li>
+                    <li class="breadcrumb-item active">Department
+                    </li>
+                  </ol>
+                </div>
               </div>
             </div>
           </div>
-       
         </div>
-        <div class="content-body">
-          <section id="modal-examples">
-  <div class="row">
+        <div class="content-body"><!-- Dashboard Analytics Start -->
+<section id="dashboard-analytics">
+<div class="row match-height" >
+<div class="col-lg-6 col-sm-6 col-12"  style="box-sizing:border-box; display:table;">
+   <!--   <div class="col-lg-3 col-sm-3 col-6"  style="padding: 1rem;display:table-cell;">
+       <div class="col-md-12 mb-1">
+              <select class="select2 form-select" id="select2-assigned_to_sbu_filter-container"  >
+                <option value="">Select SBU</option>
+              </select>
+ 				          </div>
+          <h2 class="fw-bolder mt-1"></h2> 
+    </div> -->
+  <div class="col-lg-3 col-sm-3 col-6"  style="padding: 1rem;display:table-cell;">
+       <div class="col-md-12 mb-1">
+              <select class="select2 form-select" id="select2-department_filter-container" name="department_code" >
+                <option value="">Select Department</option>
+              </select>
+ 	   </div>
+          <h2 class="fw-bolder mt-1"></h2>
+    </div>
+      <div class="col-lg-3 col-sm-3 col-6"  style="padding: 1rem;display:table-cell;">
+       <div class="col-md-12 mb-1">
+              <select class="select2 form-select" id="select2-status_filter-container" >
+                <option value="">Select Status</option>
+              </select>
+ 	   </div>
+          <h2 class="fw-bolder mt-1"></h2>
+    </div>
+</div>
+<div class="col-lg-2 col-sm-2 col-12"  style="box-sizing:border-box; display:table;">
+    <div class="col-lg-3 col-sm-3 col-6"  style="padding: .5rem;display:table-cell;">
+     	 <button class="btn btn-primary col-md-12" style="margin-top: 10px; width: 45%;     background-color: gainsboro"  onclick="getDepartmentList();"><i class="fa fa-search" aria-hidden="true"></i></button>
+         <button class="btn btn-primary col-md-12" style="margin-top: 10px; width: 45%;     background-color: gainsboro"  onclick="clearFilter();"><i class="fa fa-undo" aria-hidden="true"></i></button>
+     </div>
+</div>
+  <div class="col-lg-4 col-sm-4 col-12"style="
+    display: flex;
+    align-items: center;
+	">																				<!-- 	onclick="exportDepartment();" -->
+    <div class="col-lg-4 col-sm-6 col-6">
+    <button type="button" class="btn " data-bs-toggle="modal" onclick="addBox();"  data-bs-target="#addDepartment"style="margin-top: 17px; color: white !important; background-color: orange !important; width: 42%;"><i class="fa fa-add" aria-hidden="true"></i></button>
+         <button class="btn col-md-12" style="margin-top: 17px; width: 42%;     background-color: #14e014 !important;color: white !important;"  ><i class="fa fa-download" aria-hidden="true"></i></button>
+     </div>
+  
+  </div>
+     
+</div> 
+  <div class="row match-height" style=" display: flex;  justify-content: left ">
+    <!-- Greetings Card starts -->
 
+    <!-- Greetings Card ends -->
+    <!-- Subscribers Chart Card starts -->
 
-    <!-- create app card-->
-    <div class="col-md-4">
-      <div class="card">
-        <div class="card-body text-center">
-          <i data-feather="package" class="font-large-2 mb-1"></i>
-          <h1 class="card-title">BMW</h1>
-          <!-- modal trigger button -->
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createAppModal">
-            Show
-          </button>
+    <div class="col-lg-3 col-sm-3 col-6">
+   <div class="card" style="
+        background-color: #e1f1ee;
+        border: 2px solid #26232414;
+        border-radius: 8px;
+    ">
+        <div class="card-header flex-column align-items-start pb-0">
+          <div class="avatar bg-light-warning p-50 m-0">
+            <div class="avatar-content">
+              <i data-feather="users" class="font-medium-5"></i>
+            </div>
+          </div>
+          <h3 class="fw-bolder mt-1"><span id= "allDepartment"><%-- ${sessionScope.ALL_COMPANIES} --%></span></h3>
+          <p class="card-text">Total Department</p>
         </div>
       </div>
     </div>
-    <!-- / create app card-->
+    <!-- Subscribers Chart Card starts -->
+    <div class="col-lg-3 col-sm-3 col-6">
+  <div class="card" style="
+        background-color: #e1f1ee;
+        border: 2px solid #26232414;
+        border-radius: 8px;
+    ">
+        <div class="card-header flex-column align-items-start pb-0">
+          <div class="avatar bg-light-warning p-50 m-0">
+            <div class="avatar-content">
+              <i data-feather="zap" class="font-medium-5"></i>
+            </div>
+          </div>
+          <h3 class="fw-bolder mt-1"><span id= "activeDepartment"><%-- ${sessionScope.ACTIVE_COMPANIES} --%></span></h3>
+          <p class="card-text">Active Department</p>
+        </div>
+      </div>
+    </div>
+    <!-- Subscribers Chart Card ends -->
+
+    <!-- Orders Chart Card starts -->
+    <div class="col-lg-3 col-sm-3 col-6">
+     <div class="card" style="
+        background-color: #e1f1ee;
+        border: 2px solid #26232414;
+        border-radius: 8px;
+    ">
+        <div class="card-header flex-column align-items-start pb-0">
+          <div class="avatar bg-light-danger p-50 m-0">
+            <div class="avatar-content">
+              <i data-feather="zap-off" class="font-medium-5"></i>
+            </div>
+          </div>
+          <h3 class="fw-bolder mt-1"><span id= "inActiveDepartment"></span></h3>
+          <p class="card-text">Inactive Department</p>
+        </div>
+      </div>
+    </div> 
+    
+    <!-- Orders Chart Card ends -->
   </div>
-</section>
+  <!-- List DataTable -->
+  <div>
+  	
+  </div>
+   
+  <div class="row">
+  
+    <div class="col-12">
+    
+      <div class="card invoice-list-wrapper">
+        <div class="card-datatable table-responsive" style="
+    background-color: #da0d1412;
+    border: 2px solid #da0d1412;
+    border-radius: 8px;
+">
+       <div class="dt-buttons" style="height : 0.5em;">
+      
+        </div>
+        
+          <table id="datatable-department" class="invoice-list-table table">
+            <thead>
+           
+              <tr>
+                <th>#</th>
+                <th>Action</th>
+                <th>Department Code</th> 
+                <th >Department Name</th>
+                <th>Status </th>
+                <th>Created By </th>
+                <th>Created Date </th>
+                <th>Modified By </th>
+                <th>Modified Date </th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ List DataTable -->
 
-<!-- / share project modal -->
-
-
-
-
-
-          <!-- create app modal -->
-<div class="modal fade" id="createAppModal" tabindex="-1" aria-labelledby="createAppTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-xl">
+  																				 <!--  model -->
+    
+<div class="modal fade" id="addDepartment" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-edit-user">
     <div class="modal-content">
       <div class="modal-header bg-transparent">
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body pb-3 px-sm-3">
-<!--         <h1 class="text-center mb-1" id="createAppTitle">Create App</h1>
- -->
-        <div class="bs-stepper vertical wizard-modern create-app-wizard">
-          <div class="bs-stepper-header" role="tablist">
-            <div class="step" data-target="#create-app-details" role="tab" id="create-app-details-trigger">
-              <button type="button" class="step-trigger py-75">
-                <span class="bs-stepper-box">
-                  <i data-feather="book" class="font-medium-3"></i>
-                </span>
-                <span class="bs-stepper-label">
-                  <span class="bs-stepper-title">Fresh Water</span>
-                </span>
-              </button>
-            </div>
-            <div class="step" data-target="#create-app-frameworks" role="tab" id="create-app-frameworks-trigger">
-              <button type="button" class="step-trigger py-75">
-                <span class="bs-stepper-box">
-                  <i data-feather="package" class="font-medium-3"></i>
-                </span>
-                <span class="bs-stepper-label">
-                  <span class="bs-stepper-title">Electrical Energy<br> (within the facility)
-</span>
-                </span>
-              </button>
-            </div>
-            <div class="step" data-target="#create-app-database" role="tab" id="create-app-database-trigger">
-              <button type="button" class="step-trigger py-75">
-                <span class="bs-stepper-box">
-                  <i data-feather="command" class="font-medium-3"></i>
-                </span>
-                <span class="bs-stepper-label">
-                  <span class="bs-stepper-title">Thermal Energy<br> (within the facility)
-</span>
-                </span>
-              </button>
-            </div>
-            <div class="step" data-target="#create-app-billing" role="tab" id="create-app-billing-trigger">
-              <button type="button" class="step-trigger py-75">
-                <span class="bs-stepper-box">
-                  <i data-feather="credit-card" class="font-medium-3"></i>
-                </span>
-                <span class="bs-stepper-label">
-                  <span class="bs-stepper-title">Sector Specific Goals
-</span>
-                </span>
-              </button>
-            </div>
-            
-             <div class="step" data-target="#greenbelt" role="tab" id="greenbelt_development">
-              <button type="button" class="step-trigger py-75">
-                <span class="bs-stepper-box">
-                  <i data-feather="credit-card" class="font-medium-3"></i>
-                </span>
-                <span class="bs-stepper-label">
-                  <span class="bs-stepper-title">Green Development</span>
-                </span>
-              </button>
-            </div>
-            
-            <div class="step" data-target="#training" role="tab" id="training_development">
-              <button type="button" class="step-trigger py-75">
-                <span class="bs-stepper-box">
-                  <i data-feather="credit-card" class="font-medium-3"></i>
-                </span>
-                <span class="bs-stepper-label">
-                  <span class="bs-stepper-title">Training Development</span>
-                </span>
-              </button>
-            </div>
-            
-            
-             <div class="step" data-target="#sscompliance" role="tab" id="compliance">
-              <button type="button" class="step-trigger py-75">
-                <span class="bs-stepper-box">
-                  <i data-feather="credit-card" class="font-medium-3"></i>
-                </span>
-                <span class="bs-stepper-label">
-                  <span class="bs-stepper-title">Compliance</span>
-                </span>
-              </button>
-            </div>
-            
-            <div class="step" data-target="#create-app-submit" role="tab" id="create-appmit-trigger">
-              <button type="button" class="step-trigger py-75">
-                <span class="bs-stepper-box">
-                  <i data-feather="check" class="font-medium-3"></i>
-                </span>
-                <span class="bs-stepper-label">
-                  <span class="bs-stepper-title">Submit</span>
-                </span>
-              </button>
-            </div>
-          </div>
-
-          <!-- content -->
-<div class="bs-stepper-content shadow-none " style="width: 80%;">           
- <div id="create-app-details" class="content" role="tabpanel" aria-labelledby="create-app-details-trigger">
-              <h5 class="card-title">Fresh Water</h5>
-            <div class="abc-container">
-        <div class="abc-card">
-        <div class="abc-card-section">
-            <div class="abc-card-text">Total Net Fresh Water Consumption, in KLt</div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">KL
-                </div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div>
-            </div>
-            
-            
-            <div class="abc-card-section">
-             <div class="abc-card-text">Total Net Fresh Water Consumption, in KLt</div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">KL/Ton
-                </div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div>
-            </div>
+      <div class="modal-body pb-5 px-sm-5 pt-50">
+        <div class="text-center mb-2">
+          <h1 class="mb-1">Add Department</h1>
         </div>
-        <div class="abc-card">
-            <div class="abc-card-text">Reduction in Specific Fresh Water Consumption in FY 2024-25 compared to the Baseline FY 2023-24</div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">%</div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div>
-        </div>
-    </div>
-              <div class="d-flex justify-content-between mt-2">
-                <button class="btn btn-outline-secondary btn-prev" disabled>
-                  <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
-                  <span class="align-middle d-sm-inline-block d-none">Previous</span>
-                </button>
-                <button class="btn btn-primary btn-next">
-                  <span class="align-middle d-sm-inline-block d-none">Next</span>
-                  <i data-feather="arrow-right" class="align-middle ms-sm-25 ms-0"></i>
-                </button>
-              </div>
-            </div>
-            <div
-              id="create-app-frameworks"
-              class="content"
-              role="tabpanel"
-              aria-labelledby="create-app-frameworks-trigger"
-            >
-                
-                              <h5 class="card-title"> Electrical Energy (within the facility)
-                              </h5>
-                
-                 <div class="abc-container">
-        <div class="abc-card">
-        <div class="abc-card-section">
-            <div class="abc-card-text">Electricity Consumption from Grid</div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">kWh
-                </div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div>
-            </div>
-            
-            
-            <div class="abc-card-section">
-             <div class="abc-card-text">Specific Electricity Consumption</div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">kWh
-                </div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div>
-            </div>
-            
-            
-             <div class="abc-card-section">
-             <div class="abc-card-text">Electricity Consumption from Renewable (Solar) Source</div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">kWh/ton
-                </div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div>
-            </div>
-        </div>
-      
-        <div class="abc-card">
-        <div class="abc-card-section">
-            <div class="abc-card-text">Renewable Energy in Total Energy Consumption</div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">%</div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div>
-            </div>
-            
-            
-            <div class="abc-card-section">
-             <div class="abc-card-text">Reduction in Specific Electricity Consumption in FY 2024-25 compared to the Baseline FY 2023-24
-             </div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">%</div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div>
-            </div>
-            
-            
+        <form id="addDepartmentForm" class="row gy-1 pt-75" action="<%=request.getContextPath() %>/add-department" method="post" class="form-horizontal" role="form" >
+        
          
-        </div>
-      
-    </div>
-              
-       <div class="d-flex justify-content-between mt-2">
-                <button class="btn btn-primary btn-prev">
-                  <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
-                  <span class="align-middle d-sm-inline-block d-none">Previous</span>
-                </button>
-                <button class="btn btn-primary btn-next">
-                  <span class="align-middle d-sm-inline-block d-none">Next</span>
-                  <i data-feather="arrow-right" class="align-middle ms-sm-25 ms-0"></i>
-                </button>
-              </div>
-            </div>
-            <div id="create-app-database" class="content" role="tabpanel" aria-labelledby="create-app-database-trigger">
-            
-             <h5 class="card-title"> Thermal Energy (within the facility)  </h5>
-              <div class="abc-container">
-        <div class="abc-card">
-        <div class="abc-card-section">
-            <div class="abc-card-text">HSD consumption
-            </div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">Liters
-                </div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div>
-            </div>
-            
-            
-            <div class="abc-card-section">
-             <div class="abc-card-text">LDO consumption
-             </div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">Liters
-</div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div>
-            </div>
-            
-             <div class="abc-card-section">
-             <div class="abc-card-text">PNG consumption
-             </div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">Kg
-</div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div>
-            </div>
-            
-             <div class="abc-card-section">
-             <div class="abc-card-text">CNG/CBG consumption
-             </div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">Kg
-</div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div>
-            </div>
-            
-             <div class="abc-card-section">
-             <div class="abc-card-text">Coal consumption
-             </div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">Kg
-</div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div>
-            </div>
-            
-             <div class="abc-card-section">
-             <div class="abc-card-text">Furnace Oil consumption
-</div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">Liters
-</div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div>
-            </div>
-            
-             <div class="abc-card-section">
-             <div class="abc-card-text">Biomass
-             </div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">Kg
-</div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div>
-            </div>
-            
-            
-             <div class="abc-card-section">
-             <div class="abc-card-text">Total Energy, in GJ
-</div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">GJ
-</div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div>
-            
-            </div>
-            
-            
-             <div class="abc-card-section">
-            <div class="abc-card-text">Specific Thermal Energy Consumption, in GJ/ton (FY 2023-24)
-            
-            </div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">GJ/Ton</div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div>
-            </div>
-        </div>
-      
-        <div class="abc-card">
-        <div class="abc-card-section">
-            <div class="abc-card-text">Reduction in Specific Thermal Energy Consumption in FY 2024-25 compared to the Baseline FY 2023-24
-
-            
-            </div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">%</div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div>
-            </div>
-            
-          
-            
-            
-         
-        </div>
-      
-    </div>
-              
-             
-              <div class="d-flex justify-content-between mt-2">
-                <button class="btn btn-primary btn-prev">
-                  <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
-                  <span class="align-middle d-sm-inline-block d-none">Previous</span>
-                </button>
-                <button class="btn btn-primary btn-next">
-                  <span class="align-middle d-sm-inline-block d-none">Next</span>
-                  <i data-feather="arrow-right" class="align-middle ms-sm-25 ms-0"></i>
-                </button>
-              </div>
-            </div>
-            
-            
-            <div id="create-app-billing" class="content" role="tabpanel" aria-labelledby="create-app-billing-trigger">
-  
-   <h5 class="card-title"> Sector Specific Goals
-
-                              </h5>
-                             
-  <div class="abc-container">
-        <div class="abc-card">
-        <div class="abc-card-section">
-            <div class="abc-card-text">Quantity of RDF sent to Cement Industries
-            </div>
-            <div class="abc-badge-input-container">
-                <div class="">
-                </div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div>
-            </div>
-            </div>
-        <div class="abc-card">
-        <div class="abc-card-section">
-            <div class="abc-card-text">Quantity of RDF to Cement Industries (FY 2025)
-</div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">Tons</div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div>
-            </div>
-            </div>
-    </div>
-
-
-  <div class="d-flex justify-content-between mt-5 pt-1">
-                <button class="btn btn-primary btn-prev">
-                  <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
-                  <span class="align-middle d-sm-inline-block d-none">Previous</span>
-                </button>
-                <button class="btn btn-primary btn-next">
-                  <span class="align-middle d-sm-inline-block d-none">Next</span>
-                  <i data-feather="arrow-right" class="align-middle ms-sm-25 ms-0"></i>
-                </button>
-              </div>
-            </div>
-            
-            
-             <div id="greenbelt" class="content" role="tabpanel" aria-labelledby="greenbelt_development">
-  
-   <h5 class="card-title"> Greenbelt Development </h5>
-                             
-  <div class="abc-container">
-        <div class="abc-card">
-        <div class="abc-card-section">
-            <!-- <div class="abc-card-text">Quantity of RDF sent to Cement Industries
-            </div>
-            <div class="abc-badge-input-container">
-                <div class="">
-                </div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div> -->
-            </div>
-            </div>
-        <div class="abc-card">
-        <div class="abc-card-section">
-            <div class="abc-card-text">Plantation of New Trees (either w/in or outside the facility)</div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">Number</div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div>
-            </div>
-            </div>
-    </div>
-
-
-  <div class="d-flex justify-content-between mt-5 pt-1">
-                <button class="btn btn-primary btn-prev">
-                  <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
-                  <span class="align-middle d-sm-inline-block d-none">Previous</span>
-                </button>
-                <button class="btn btn-primary btn-next">
-                  <span class="align-middle d-sm-inline-block d-none">Next</span>
-                  <i data-feather="arrow-right" class="align-middle ms-sm-25 ms-0"></i>
-                </button>
-              </div>
-            </div>
-            
-            
-            
-                
-             <div id="training" class="content" role="tabpanel" aria-labelledby="training_development">
-  
-   <h5 class="card-title"> Training and Development </h5>
-                             
-  <div class="abc-container">
-        <div class="abc-card">
-        <div class="abc-card-section">
-            <!-- <div class="abc-card-text">Quantity of RDF sent to Cement Industries
-            </div>
-            <div class="abc-badge-input-container">
-                <div class="">
-                </div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div> -->
-            </div>
-            </div>
-        <div class="abc-card">
-        <div class="abc-card-section">
-            <div class="abc-card-text">Total Training Hours (excluding mandatory training) for All Employees at the Facility</div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">No. of hours</div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div>
-            </div>
-            </div>
-    </div>
-
-
-  <div class="d-flex justify-content-between mt-5 pt-1">
-                <button class="btn btn-primary btn-prev">
-                  <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
-                  <span class="align-middle d-sm-inline-block d-none">Previous</span>
-                </button>
-                <button class="btn btn-primary btn-next">
-                  <span class="align-middle d-sm-inline-block d-none">Next</span>
-                  <i data-feather="arrow-right" class="align-middle ms-sm-25 ms-0"></i>
-                </button>
-              </div>
-            </div>
-            
-            
-             <div id="sscompliance" class="content" role="tabpanel" aria-labelledby="compliance">
-  
-   <h5 class="card-title"> Compliance</h5>
-                             
-  <div class="abc-container">
-        <div class="abc-card">
-        <div class="abc-card-section">
-            <!-- <div class="abc-card-text">Quantity of RDF sent to Cement Industries
-            </div>
-            <div class="abc-badge-input-container">
-                <div class="">
-                </div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div> -->
-            </div>
-            </div>
-        <div class="abc-card">
-        <div class="abc-card-section">
-            <div class="abc-card-text">Number of Violations and Non-Compliances
-</div>
-            <div class="abc-badge-input-container">
-                <div class="abc-badge">Number</div>
-                <div class="abc-input-box">
-                    <input type="text" placeholder="Enter code">
-                </div>
-            </div>
-            </div>
-            </div>
-    </div>
-
-
-  <div class="d-flex justify-content-between mt-5 pt-1">
-                <button class="btn btn-primary btn-prev">
-                  <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
-                  <span class="align-middle d-sm-inline-block d-none">Previous</span>
-                </button>
-                <button class="btn btn-primary btn-next">
-                  <span class="align-middle d-sm-inline-block d-none">Next</span>
-                  <i data-feather="arrow-right" class="align-middle ms-sm-25 ms-0"></i>
-                </button>
-              </div>
-            </div>
-            
-          
-          
-    <div
-              id="create-app-submit"
-              class="content text-center"
-              role="tabpanel"
-              aria-labelledby="create-app-submit-trigger"
-            >
-              <h3>Submit 🥳</h3>
-              <p>Submit your app to kickstart your project.</p>
-              <img
-                src="https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/resources/images/illustration/pricing-Illustration.svg"
-                height="218"
-                alt="illustration"
-              />
-              <div class="d-flex justify-content-between mt-3">
-                <button class="btn btn-primary btn-prev">
-                  <i data-feather="arrow-left" class="align-middle me-sm-25 me-0"></i>
-                  <span class="align-middle d-sm-inline-block d-none">Previous</span>
-                </button>
-                <button class="btn btn-success btn-submit">
-                  <span class="align-middle d-sm-inline-block d-none">Submit</span>
-                  <i data-feather="check" class="align-middle ms-sm-25 ms-0"></i>
-                </button>
-              </div>
-            </div>
+          <div class="col-12 col-md-6">
+            <label class="form-label" for="modalEditUserLastName">Department Code</label><span class="required"> *</span>
+            <input
+              type="text"
+              id="department_code_add"
+              name="department_code"
+              class="form-control"
+              placeholder="eg : RE" onkeyup="checkUniqueID()"
+              value=""
+              data-msg="Please enter your last name"
+            />
+             <span id="department_code_addError" class="invalid-feedback" ></span>
           </div>
-        </div>
+		<div class="col-12 col-md-6">
+            <label class="form-label" for="modalEditUserFirstName">Department Name</label><span class="required"> *</span>
+            <input
+              type="text"
+              id="department_name_add"
+              name="department_name"
+              class="form-control"
+              placeholder="eg : Re Sustainablity"
+              value=""
+              data-msg="Please enter your first name"
+            />
+             <span id="department_name_addError" class="error-msg" ></span>
+          </div>
+   		  <div class="col-12 col-md-6">
+            <label class="form-label" for="select2-basic">Status</label><span class="required"> *</span>
+            <select 
+              id="select2-status_add-container"
+              name="status"
+              class="select2 form-select formSelect"
+              aria-label="Default select example"
+            >
+              <option value="">Select Status</option>
+             	<option value="Active">Active</option>
+             	<option value="Inactive">Inactive</option>
+            </select>
+             <span id="select2-status_add-containerError" class="error-msg" ></span>
+          </div>
+           <!-- Multiple -->
+               <div class="col-12 col-md-6">
+              <label class="form-label" for="select2-multiple">Select Assigned to SBU</label>
+              <select class="select2 form-select formSelect" multiple data-placeholder="Yours Placeholder"  id="select2-select2-multiple-assigned_to_sbu_add-container"
+              name="assigned_to_sbu">
+                 <option value="">Select SBU</option>
+              <c:forEach var="obj" items="${objList}">
+					<option value="${obj.sbu_code }" >[${obj.sbu_code }] - ${obj.sbu_name }</option>
+				</c:forEach>
+              </select>
+            </div>
+          <div class="col-12 text-center mt-2 pt-50">
+            <button type="submit" class="btn btn-primary me-1" id="addBtn" onclick="addDepartment();">Add</button>
+            <button type="reset" class="btn btn-outline-secondary" data-bs-dismiss="modal" aria-label="Close">
+              Discard
+            </button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
 </div>
-<!-- / create app modal -->
- 
-      
+ 																					<!--  model end -->
+ 																					
+ 																					
+ 																			
+ 																			
+ 																			
+
+  																				 <!-- Update model -->
+    
+<div class="modal fade" id="updateDepartment"  aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-edit-user">
+    <div class="modal-content">
+      <div class="modal-header bg-transparent">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body pb-5 px-sm-5 pt-50">
+        <div class="text-center mb-2">
+          <h1 class="mb-1">Edit Department</h1>
+        </div>
+        <form id="updateDepartmentForm" class="row gy-1 pt-75" action="<%=request.getContextPath() %>/update-department" method="post" class="form-horizontal" role="form" >
+        <input type="hidden" id="id" name="id" />
+            <div class="col-12 col-md-6">
+            <label class="form-label" for="modalEditUserLastName">Department Code</label><span class="required"> *</span>
+            <input
+              type="text"
+              id="department_code_edit"
+              name="department_code"
+              class="form-control"
+              placeholder="eg : RE"
+              value="" readonly
+              data-msg="Please enter your last name" 
+            />
+             <span id="department_code_editError" class="error-msg" ></span>
+          </div>
+		<div class="col-12 col-md-6">
+            <label class="form-label" for="modalEditUserFirstName">Department Name</label><span class="required"> *</span>
+            <input
+              type="text"
+              id="department_name_edit"
+              name="department_name"
+              class="form-control"
+              placeholder="eg : Re Sustainablity"
+              value=""
+              data-msg="Please enter your first name"
+            />
+             <span id="department_name_editError" class="error-msg" ></span>
+          </div>
+          <div class="col-12 col-md-6">
+            <label class="form-label" for="select2-basic">Status</label><span class="required"> *</span>
+            <select 
+              id="select2-status_edit-container"
+              name="status"
+              class="select2 form-select formSelect"
+              aria-label="Default select example"
+            >
+              <option value="">Select Status</option>
+             	<option value="Active">Active</option>
+             	<option value="Inactive">Inactive</option>
+            </select>
+             <span id="select2-status_edit-containerError" class="error-msg" ></span>
+          </div>
+               <!-- Multiple -->
+               <div class="col-12 col-md-6">
+              <label class="form-label" for="select2-multiple">Select Assigned to SBU</label>
+              <select class="select2 form-select formSelect" multiple data-placeholder="Yours Placeholder"  id="select2-select2-multiple-assigned_to_sbu_edit-container"
+              name="assigned_to_sbu">
+                 <option value="">Select SBU</option>
+              <c:forEach var="obj" items="${objList}">
+					<option value="${obj.sbu_code }" >[${obj.sbu_code }] - ${obj.sbu_name }</option>
+				</c:forEach>
+              </select>
+            </div>
+          <div class="col-12 text-center mt-2 pt-50">
+            <button type="submit" class="btn btn-primary me-1" onclick="updateDepartment();">Update</button>
+            <button type="reset" class="btn btn-outline-secondary" data-bs-dismiss="modal" aria-label="Close">
+              Discard
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+ 																					<!--  model end -->		
+ 																					
+ 																					
+ 																					
+ 										
+</section>
+
+											
+ 																					
+ 																					
+ 																					
+<!-- Dashboard Analytics end -->
+
         </div>
       </div>
     </div>
     <!-- END: Content-->
 
+
+    <!-- BEGIN: Customizer-->     <!--
+    <div class="customizer d-none d-md-block"><a class="customizer-toggle d-flex align-items-center justify-content-center" href="#"><i class="spinner" data-feather="settings"></i></a><div class="customizer-content">
+  <!-- Customizer header -->
+  <!-- <div class="customizer-header px-2 pt-1 pb-0 position-relative">
+    <h4 class="mb-0">Theme Customizer</h4>
+    <p class="m-0">Customize & Preview in Real Time</p>
+
+    <a class="customizer-close" href="#"><i data-feather="x"></i></a>
+  </div>
+
+  <hr />
+
+  <!-- Styling & Text Direction -->
+  <!-- <div class="customizer-styling-direction px-2">
+    <p class="fw-bold">Skin</p>
+    <div class="d-flex">
+      <div class="form-check me-1">
+        <input
+          type="radio"
+          id="skinlight"
+          name="skinradio"
+          class="form-check-input layout-name"
+          checked
+          data-layout=""
+        />
+        <label class="form-check-label" for="skinlight">Light</label>
+      </div>
+      <div class="form-check me-1">
+        <input
+          type="radio"
+          id="skinbordered"
+          name="skinradio"
+          class="form-check-input layout-name"
+          data-layout="bordered-layout"
+        />
+        <label class="form-check-label" for="skinbordered">Bordered</label>
+      </div>
+      <div class="form-check me-1">
+        <input
+          type="radio"
+          id="skindark"
+          name="skinradio"
+          class="form-check-input layout-name"
+          data-layout="dark-layout"
+        />
+        <label class="form-check-label" for="skindark">Dark</label>
+      </div>
+      <div class="form-check">
+        <input
+          type="radio"
+          id="skinsemidark"
+          name="skinradio"
+          class="form-check-input layout-name"
+          data-layout="semi-dark-layout"
+        />
+        <label class="form-check-label" for="skinsemidark">Semi Dark</label>
+      </div>
+    </div>
+  </div>
+
+  <hr />
+
+  <!-- Menu --> <!--
+  <div class="customizer-menu px-2">
+    <div id="customizer-menu-collapsible" class="d-flex">
+      <p class="fw-bold me-auto m-0">Menu Collapsed</p>
+      <div class="form-check form-check-primary form-switch">
+        <input type="checkbox" class="form-check-input" id="collapse-sidebar-switch" />
+        <label class="form-check-label" for="collapse-sidebar-switch"></label>
+      </div>
+    </div>
+  </div>
+  <hr />
+
+  --> <!-- Layout Width --> <!--
+  <div class="customizer-footer px-2">
+    <p class="fw-bold">Layout Width</p>
+    <div class="d-flex">
+      <div class="form-check me-1">
+        <input type="radio" id="layout-width-full" name="layoutWidth" class="form-check-input" checked />
+        <label class="form-check-label" for="layout-width-full">Full Width</label>
+      </div>
+      <div class="form-check me-1">
+        <input type="radio" id="layout-width-boxed" name="layoutWidth" class="form-check-input" />
+        <label class="form-check-label" for="layout-width-boxed">Boxed</label>
+      </div>
+    </div>
+  </div>
+  <hr />
+
+  <!-- Navbar --> <!-- 
+  <div class="customizer-navbar px-2">
+    <div id="customizer-navbar-colors">
+      <p class="fw-bold">Navbar Color</p>
+      <ul class="list-inline unstyled-list">
+        <li class="color-box bg-white border selected" data-navbar-default=""></li>
+        <li class="color-box bg-primary" data-navbar-color="bg-primary"></li>
+        <li class="color-box bg-secondary" data-navbar-color="bg-secondary"></li>
+        <li class="color-box bg-success" data-navbar-color="bg-success"></li>
+        <li class="color-box bg-danger" data-navbar-color="bg-danger"></li>
+        <li class="color-box bg-info" data-navbar-color="bg-info"></li>
+        <li class="color-box bg-warning" data-navbar-color="bg-warning"></li>
+        <li class="color-box bg-dark" data-navbar-color="bg-dark"></li>
+      </ul>
+    </div>
+
+    <p class="navbar-type-text fw-bold">Navbar Type</p>
+    <div class="d-flex">
+      <div class="form-check me-1">
+        <input type="radio" id="nav-type-floating" name="navType" class="form-check-input" checked />
+        <label class="form-check-label" for="nav-type-floating">Floating</label>
+      </div>
+      <div class="form-check me-1">
+        <input type="radio" id="nav-type-sticky" name="navType" class="form-check-input" />
+        <label class="form-check-label" for="nav-type-sticky">Sticky</label>
+      </div>
+      <div class="form-check me-1">
+        <input type="radio" id="nav-type-static" name="navType" class="form-check-input" />
+        <label class="form-check-label" for="nav-type-static">Static</label>
+      </div>
+      <div class="form-check">
+        <input type="radio" id="nav-type-hidden" name="navType" class="form-check-input" />
+        <label class="form-check-label" for="nav-type-hidden">Hidden</label>
+      </div>
+    </div>
+  </div>
+  <hr />
+
+  --> <!-- Footer --> <!-- 
+  <div class="customizer-footer px-2">
+    <p class="fw-bold">Footer Type</p>
+    <div class="d-flex">
+      <div class="form-check me-1">
+        <input type="radio" id="footer-type-sticky" name="footerType" class="form-check-input" />
+        <label class="form-check-label" for="footer-type-sticky">Sticky</label>
+      </div>
+      <div class="form-check me-1">
+        <input type="radio" id="footer-type-static" name="footerType" class="form-check-input" checked />
+        <label class="form-check-label" for="footer-type-static">Static</label>
+      </div>
+      <div class="form-check me-1">
+        <input type="radio" id="footer-type-hidden" name="footerType" class="form-check-input" />
+        <label class="form-check-label" for="footer-type-hidden">Hidden</label>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+    --> <!-- End: Customizer-->
+
     <div class="sidenav-overlay"></div>
     <div class="drag-target"></div>
 
- 
+    <!-- BEGIN: Footer-->
+    <footer class="footer footer-static footer-light">
+      <p class="clearfix mb-0"><span class="float-md-start d-block d-md-inline-block mt-25">COPYRIGHT  &copy;  <span id="currentYear"></span> | Powered by<a class="ms-25" href="https://resustainability.com/" target="_blank">Re Sustainability Limited</a><span class="d-none d-sm-inline-block"> . All Rights Reserved.</span></span></p>
+    </footer>
+    <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
+    <!-- END: Footer-->
 
+ 
     <!-- BEGIN: Vendor JS-->
     <script src="/esc/resources/vendors/js/vendors.min.js"></script>
     <!-- BEGIN Vendor JS-->
 
     <!-- BEGIN: Page Vendor JS-->
     <script src="/esc/resources/vendors/js/ui/jquery.sticky.js"></script>
-    <script src="/esc/resources/vendors/js/forms/wizard/bs-stepper.min.js"></script>
     <script src="/esc/resources/vendors/js/forms/select/select2.full.min.js"></script>
-    <script src="/esc/resources/vendors/js/forms/cleave/cleave.min.js"></script>
-    <script src="/esc/resources/vendors/js/forms/cleave/addons/cleave-phone.us.js"></script>
-    <script src="/esc/resources/vendors/js/forms/validation/jquery.validate.min.js"></script>
+    <script src="/esc/resources/vendors/js/charts/apexcharts.min.js"></script>
+    <script src="/esc/resources/vendors/js/extensions/toastr.min.js"></script>
+    <script src="/esc/resources/vendors/js/extensions/moment.min.js"></script>
+    <script src="/esc/resources/vendors/js/tables/datatable/jquery.dataTables.min.js"></script>
+    <script src="/esc/resources/vendors/js/tables/datatable/datatables.buttons.min.js"></script>
+    <script src="/esc/resources/vendors/js/tables/datatable/dataTables.bootstrap5.min.js"></script>
+    <script src="/esc/resources/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
+    <script src="/esc/resources/vendors/js/tables/datatable/responsive.bootstrap5.js"></script>
     <!-- END: Page Vendor JS-->
-
+ <script src="/esc/resources/js/materialize-v.1.0.min.js "  ></script>
+    <script src="/esc/resources/js/jquery-validation-1.19.1.min.js"  ></script>
+    <script src="/esc/resources/js/jquery.dataTables-v.1.10.min.js"  ></script>
+     <script src="/esc/resources/js/datetime-moment-v1.10.12.js"  ></script>
+         <script src="/esc/resources/js/dataTables.material.min.js"  ></script>
+      <script src="/esc/resources/js/moment-v2.8.4.min.js"  ></script>
     <!-- BEGIN: Theme JS-->
     <script src="/esc/resources/js/core/app-menu.min.js"></script>
     <script src="/esc/resources/js/core/app.min.js"></script>
     <script src="/esc/resources/js/scripts/customizer.min.js"></script>
+     <script src="/esc/resources/js/scripts/forms/form-select2.min.js"></script>
     <!-- END: Theme JS-->
-
-    <!-- BEGIN: Page JS-->
-    <script src="/esc/resources/js/scripts/pages/modal-add-new-cc.min.js"></script>
+   <script src="/esc/resources/js/scripts/pages/modal-add-new-cc.min.js"></script>
     <script src="/esc/resources/js/scripts/pages/page-pricing.min.js"></script>
     <script src="/esc/resources/js/scripts/pages/modal-add-new-address.min.js"></script>
     <script src="/esc/resources/js/scripts/pages/modal-create-app.min.js"></script>
     <script src="/esc/resources/js/scripts/pages/modal-two-factor-auth.min.js"></script>
     <script src="/esc/resources/js/scripts/pages/modal-edit-user.min.js"></script>
     <script src="/esc/resources/js/scripts/pages/modal-share-project.min.js"></script>
+    <!-- BEGIN: Page JS-->
+     <script src="/esc/resources/js/scripts/pages/dashboard-analytics.min.js"></script>
+    <script src="/esc/resources/js/scripts/pages/app-invoice-list.min.js"></script>
     <!-- END: Page JS-->
-
+    
+  <form action="<%=request.getContextPath()%>/export-department" name="exportDepartmentForm" id="exportDepartmentForm" target="_blank" method="post">	
+      
+        <input type="hidden" name="department_code" id="exportDepartment_filter" />
+        <input type="hidden" name="assigned_to_sbu" id="exportSBU_Code_filter" />
+            <input type="hidden" name="status" id="exportStatus_filter" />
+	</form>
     <script>
-      $(window).on('load',  function(){
-        if (feather) {
-          feather.replace({ width: 14, height: 14 });
+    $('#addDepartment').on('show.bs.modal', function (event) {
+        $(document).ready(function() {
+            $('.select2').select2({
+                dropdownParent: $('#addDepartment')
+            });
+        });
+    });
+    $('#updateDepartment').on('show.bs.modal', function (event) {
+        $(document).ready(function() {
+            $('.select2').select2({
+                dropdownParent: $('#updateDepartment')
+            });
+        });
+    });
+
+      $(window).on("load",(function(){
+    	  //$(".select2").select2({ dropdownParent: "#modal-container" });?
+          if (feather) {
+            feather.replace({ width: 14, height: 14 });
+          }
+          //$('.modal').modal({ dismissible: false });
+          getDepartmentList();
+      
+         }));
+      document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+      
+      function clearFilter(){
+		    	$("#select2-department_filter-container").val(""); 
+		    	$("#select2-assigned_to_sbu_filter-container").val("");
+		    	$("#select2-status_filter-container").val("");
+		    	window.location = "<%=request.getContextPath()%>/department";
+	    }
+      
+      function getDepartmentFilterList() {
+	        var department_code = $("#select2-department_filter-container").val();
+	        var sbu_code = $("#select2-assigned_to_sbu_filter-container").val();
+	        var status = $("#select2-status_filter-container").val();
+	        if ($.trim(department_code) == "") {
+	        	$("#select2-department_filter-container option:not(:first)").remove();
+	        	var myParams = { department_code: department_code, sbu_code: sbu_code, status :status };
+	            $.ajax({
+	                url: "<%=request.getContextPath()%>/ajax/getDepartmentFilterList",
+	                data: myParams, cache: false,async: false,
+	                success: function (data) {
+	                    if (data.length > 0) {
+	                        $.each(data, function (i, val) {
+	                             $("#select2-department_filter-container").append('<option value="' + val.department_code + '">'+ "[ "+$.trim(val.department_code) +" ]"+" - " + $.trim(val.department_name) +'</option>');
+	                        });
+	                    }
+	                },error: function (jqXHR, exception) {
+	    	   			      $(".page-loader").hide();
+	       	          	  getErrorMessage(jqXHR, exception);
+	       	     	  }
+	            });
+	        }
+	    }
+      function getSBUFilterList() {
+    	  var department_code = $("#select2-department_filter-container").val();
+	        var sbu_code = $("#select2-assigned_to_sbu_filter-container").val();
+	        var status = $("#select2-status_filter-container").val();
+	        if ($.trim(sbu_code) == "") {
+	        	$("#select2-assigned_to_sbu_filter-container option:not(:first)").remove();
+	        	var myParams = { department_code: department_code, sbu_code: sbu_code, status : status };
+	            $.ajax({
+	                url: "<%=request.getContextPath()%>/ajax/getSBUsFilterListFromDepartment",
+	                data: myParams, cache: false,async: false,
+	                success: function (data) {
+	                    if (data.length > 0) {
+	                        $.each(data, function (i, val) {
+	                             $("#select2-assigned_to_sbu_filter-container").append('<option value="' + val.sbu_code + '">' + "[ "+$.trim(val.sbu_code) +" ]"+" - " + $.trim(val.sbu_name)  +'</option>');
+	                        });
+	                    }
+	                },error: function (jqXHR, exception) {
+	    	   			      $(".page-loader").hide();
+	       	          	  getErrorMessage(jqXHR, exception);
+	       	     	  }
+	            });
+	        }
+	    }
+
+      function getStatusFilterList() {
+    	  var department_code = $("#select2-department_filter-container").val();
+	        var sbu_code = $("#select2-assigned_to_sbu_filter-container").val();
+	        var status = $("#select2-status_filter-container").val();
+	        if ($.trim(status) == "") {
+	        	$("#select2-status_filter-container option:not(:first)").remove();
+	        	var myParams = { department_code: department_code, sbu_code: sbu_code, status : status };
+	            $.ajax({
+	                url: "<%=request.getContextPath()%>/ajax/getStatusFilterListFromDepartment",
+	                data: myParams, cache: false,async: false,
+	                success: function (data) {
+	                    if (data.length > 0) {
+	                        $.each(data, function (i, val) {
+	                             $("#select2-status_filter-container").append('<option value="' + val.status + '">' + $.trim(val.status) +'</option>');
+	                        });
+	                    }
+	                },error: function (jqXHR, exception) {
+	    	   			      $(".page-loader").hide();
+	       	          	  getErrorMessage(jqXHR, exception);
+	       	     	  }
+	            });
+	        }
+	    }
+
+      
+	    function exportDepartment(){
+	    	 var department_code = $("#select2-department_filter-container").val();
+	         var assigned_to_sbu = $("#select2-assigned_to_sbu_filter-container").val();
+	         var status = $("#select2-status_filter-container").val();
+	    	
+	    	 $("#exportDepartment_filter").val(department_code);
+	     	 $("#exportSBU_Code_filter").val(assigned_to_sbu);
+	     	$("#exportStatus_filter").val(assigned_to_sbu);
+	     	 $("#exportDepartmentForm ").submit();
+	  	}
+	    
+	    function getDepartmentList(){
+	    	getDepartmentFilterList('');
+	    	getSBUFilterList('');
+	    	getStatusFilterList('');
+	    	var department_code = $("#select2-department_filter-container").val();
+	        var sbu_code = $("#select2-assigned_to_sbu_filter-container").val();
+	        var status = $("#select2-status_filter-container").val();
+	    	$('#allDepartment').html(0)
+    		$('#activeDepartment').html(0)
+    		$('#inActiveDepartment').html(0)
+	     	table = $('#datatable-department').DataTable();
+			table.destroy();
+			$.fn.dataTable.moment('DD-MMM-YYYY');
+			table = $('#datatable-department').DataTable({
+				"bStateSave": true,  
+	     		fixedHeader: true,
+	         	//Default: Page display length
+					"iDisplayLength" : 10,
+					"iData" : {
+						"start" : 52
+					},"iDisplayStart" : 0,
+					"drawCallback" : function() {
+					},
+	            columnDefs: [],
+	            // "ScrollX": true,
+	            //"scrollCollapse": true,
+	            "sScrollX": "100%",
+	            "sScrollXInner": "100%",
+	            "bScrollCollapse": true,
+	            "initComplete" : function() {
+				/* 		$('.dataTables_filter input[type="search"]')
+								.attr('placeholder', 'Search')
+								.css({
+									'width' : '300px ',
+									'display' : 'inline-block'
+								});
+						var input = $('.dataTables_filter input')
+								.unbind()
+								.bind('keyup',function(e){
+							    if (e.which == 13){
+							    	self.search(input.val()).draw();
+							    }
+							}), self = this.api(), $searchButton = $('<i class="fa fa-search" title="Go" >')
+						.click(function() {
+							self.search(input.val()).draw();
+						}), 
+						$clearButton = $('<i class="fa fa-close" title="Reset">')
+						.click(function() {
+							input.val('');
+							$searchButton.click();
+						})
+						$('.dataTables_filter').append( '<div class="right-btns"></div>');
+						$('.dataTables_filter div').append( $searchButton, $clearButton); */ 					
+					}
+	        }).rows().remove().draw();
+			table.state.clear();		
+		 	var myParams = {department_code: department_code, sbu_code: sbu_code, status : status};
+			$.ajax({url : "<%=request.getContextPath()%>/ajax/getDepartmentList",type:"POST",data:myParams,success : function(data){    				
+					if(data != null && data != '' && data.length > 0){    					
+		         		$.each(data,function(key,val){
+		         			var department_data = "'"+val.department_code+"','"+val.assigned_to_sbu_multiple+"','"+val.department_name+"','"+val.id+"','"+val.status+"'";
+		                    var actions = '<a href="javascript:void(0);"  onclick="getDepartment('+department_data+');setSearchble();" class="btn btn-primary"  title="Edit"><i class="fa fa-pencil"></i></a>';    	                   	
+		                   	var rowArray = [];    	                 
+		                   	$('#allDepartment').html(val.all_department)
+		            		$('#activeDepartment').html(val.active_department)
+		            		$('#inActiveDepartment').html(val.inActive_department)
+		                   	rowArray.push($.trim(val.id));
+		                	rowArray.push($.trim(actions));  
+		                	//rowArray.push("["+ $.trim(val.assigned_to_sbu)+"]"+" - ");
+		                   	rowArray.push($.trim(val.department_code));
+		                   	rowArray.push($.trim(val.department_name));
+		                   	
+		                   	rowArray.push($.trim(val.status));
+		                	rowArray.push($.trim(val.user_name));
+		                   	rowArray.push($.trim(val.created_date));
+		                	rowArray.push($.trim(val.modified_by));
+		                   	rowArray.push($.trim(val.modified_date));
+		                   
+		                    table.row.add(rowArray).draw( true );
+						});
+					}
+				},error: function (jqXHR, exception) {
+		         	getErrorMessage(jqXHR, exception);
+		     }});
+	    } 
+	    
+	    function getDepartment(department_code,assigned_to_sbu,department_name,id,status){
+	    	 $('#department_name_edit').val('');
+			 $('#department_code_edit').val('');
+			 $('select[name^="assigned_to_sbu"] option:selected').removeAttr("selected");
+			 $('select[name^="status"] option:selected').removeAttr("selected");
+		      $('#id').val($.trim(id));
+		      $('#updateDepartment').modal('show');
+		      $('#updateDepartment #department_name_edit').val($.trim(department_name)).focus();
+		      $('#updateDepartment #department_code_edit').val($.trim(department_code)).focus();
+		      if(assigned_to_sbu != null && assigned_to_sbu != ''  && assigned_to_sbu != "undefined"){
+		    	  var assigned_to_sbu_array = assigned_to_sbu.split(',');
+		    	  jQuery.each(assigned_to_sbu_array, function(index, item) {
+		    		  $('select[name^="assigned_to_sbu"] option[value="'+ item +'"]').attr("selected",true);
+		    		  $('select').select2();
+		    		});
+		    	  $('select[name^="status"] option[value="'+ status +'"]').attr("selected",true);
+		    	  $('select').select2();
+		      }
+	   }
+	    
+	    function getErrorMessage(jqXHR, exception) {
+	  	    var msg = '';
+	  	    if (jqXHR.assigned_to_sbu === 0) {
+	  	        msg = 'Not connect.\n Verify Network.';
+	  	    } else if (jqXHR.assigned_to_sbu == 404) {
+	  	        msg = 'Requested page not found. [404]';
+	  	    } else if (jqXHR.assigned_to_sbu == 500) {
+	  	        msg = 'Internal Server Error [500].';
+	  	    } else if (exception === 'parsererror') {
+	  	        msg = 'Requested JSON parse failed.';
+	  	    } else if (exception === 'timeout') {
+	  	        msg = 'Time out error.';
+	  	    } else if (exception === 'abort') {
+	  	        msg = 'Ajax request aborted.';
+	  	    } else {
+	  	        msg = 'Uncaught Error.\n' + jqXHR.responseText;
+	  	    }
+	  	    console.log(msg);
         }
-      })
+	    
+	    function addDepartment(){
+	    	if(validator.form()){ // validation perform
+	        	document.getElementById("addDepartmentForm").submit();	
+	    	}
+	    }
+	    function updateDepartment(){
+	    	if(validator1.form()){ // validation perform
+	        	document.getElementById("updateDepartmentForm").submit();	
+	    	}
+	    }
+	    var validator1 =	$('#updateDepartmentForm').validate({
+		   	 errorClass: "my-error-class",
+		   	 validClass: "my-valid-class",
+		   	 ignore: ":hidden:not(.select2 form-select)",
+		   		    rules: {
+		   		 		  "department_name": {
+		   			 			required: true
+		   			 	  },"department_code": {										
+		   			 			required: true
+		   			 	  },"assigned_to_sbu": {
+		   	                 	required: true,
+		   			 	  },"status": {
+		   	                 	required: true,
+		   			 	  }
+		   		 	},
+		   		    messages: {
+		   		 		 "department_name": {
+		   				 	required: 'Required',
+		   			 	  },"department_code": {
+		   			 		required: 'Required'
+		   			 	  },"assigned_to_sbu": {
+		   		 			required: 'Required'
+		   		 	  	  },"status": {
+		   		 			required: 'Required'
+		   		 	  	  }
+		      		},
+		      		errorPlacement:function(error, element){
+		      		 	if (element.attr("id") == "department_name_edit" ){
+		   				 document.getElementById("department_name_editError").innerHTML="";
+		   		 		 error.appendTo('#department_name_editError');
+		   			}else if(element.attr("id") == "department_code_edit" ){
+		   			   document.getElementById("department_code_editError").innerHTML="";
+		   		 	   error.appendTo('#department_code_editError');
+		   			}else if(element.attr("id") == "select2-assigned_to_sbu_edit-container" ){
+		   				document.getElementById("select2-assigned_to_sbu_edit-containerError").innerHTML="";
+		   			 	error.appendTo('#select2-assigned_to_sbu_edit-containerError');
+		   			}else if(element.attr("id") == "select2-status_edit-container" ){
+		   				document.getElementById("select2-status_edit-containerError").innerHTML="";
+		   			 	error.appendTo('#select2-status_edit-containerError');
+		   			}else{
+		   					error.insertAfter(element);
+		   	        } 
+		      		},invalidHandler: function (form, validator) {
+		               var errors = validator.numberOfInvalids();
+		               if (errors) {
+		                   var position = validator.errorList[0].element;
+		                   jQuery('html, body').animate({
+		                       scrollTop:jQuery(validator.errorList[0].element).offset().top - 100
+		                   }, 1000);
+		               }
+		           },submitHandler:function(form){
+		   	    	//form.submit();
+		   	    }
+		   	});
+	    var validator =	$('#addDepartmentForm').validate({
+	   	 errorClass: "my-error-class",
+	   	 validClass: "my-valid-class",
+	   	 ignore: ":hidden:not(.select2 form-select)",
+	   		    rules: {
+	   		 		  "department_name": {
+	   			 			required: true
+	   			 	  },"department_code": {										
+	   			 			required: true
+	   			 	  },"assigned_to_sbu": {
+	   	                 	required: true,
+	   			 	  },"status": {
+	   	                 	required: true,
+	   			 	  }
+	   		 	},
+	   		    messages: {
+	   		 		 "department_name": {
+	   				 	required: 'Required',
+	   			 	  },"department_code": {
+	   			 		required: 'Required'
+	   			 	  },"assigned_to_sbu": {
+	   		 			required: 'Required'
+	   		 	  	  },"status": {
+		   		 		required: 'Required'
+	   		 	  	  }
+	      		},
+	      		errorPlacement:function(error, element){
+	      		 	if (element.attr("id") == "department_name_add" ){
+	   				 document.getElementById("department_name_addError").innerHTML="";
+	   		 		 error.appendTo('#department_name_addError');
+	   			}else if(element.attr("id") == "department_code_add" ){
+	   			   document.getElementById("department_code_addError").innerHTML="";
+	   		 	   error.appendTo('#department_code_addError');
+	   			}else if(element.attr("id") == "select2-assigned_to_sbu_add-container" ){
+	   				document.getElementById("select2-assigned_to_sbu_add-containerError").innerHTML="";
+	   			 	error.appendTo('#select2-assigned_to_sbu_add-containerError');
+	   			}else if(element.attr("id") == "select2-status_add-container" ){
+	   				document.getElementById("select2-status_add-containerError").innerHTML="";
+	   			 	error.appendTo('#select2-status_add-containerError');
+	   			}else{
+	   					error.insertAfter(element);
+	   	        } 
+	      		},invalidHandler: function (form, validator) {
+	               var errors = validator.numberOfInvalids();
+	               if (errors) {
+	                   var position = validator.errorList[0].element;
+	                   jQuery('html, body').animate({
+	                       scrollTop:jQuery(validator.errorList[0].element).offset().top - 100
+	                   }, 1000);
+	               }
+	           },submitHandler:function(form){
+	   	    	//form.submit();
+	   	    }
+	   	}); 
+	   	$('.formSelect').change(function(){
+	   	    if ($(this).val() != ""){
+	   	        $(this).valid();
+	   	    }
+	   	});
+	   	
+	    	$('input').change(function(){
+	   	    if ($(this).val() != ""){
+	   	        $(this).valid();
+	   	    }
+	   	}); 
+	   
+	   	function checkUniqueID(){
+	   		var department_code = $('#department_code_add').val();
+	        if ($.trim(department_code) != "" ) {
+	        	var myParams = {department_code: department_code };
+	            $.ajax({
+	                url: "<%=request.getContextPath()%>/ajax/checkUniqueIfForDept",
+	                data: myParams, cache: false,async: false,
+	                success: function (data) {
+	                    if (data.length > 0) {
+	                        $.each(data, function (i, val) {
+		                      $("#department_code_addError").html(department_code+" Already Exists!");
+		                      $('#department_code_add').removeClass("is-valid")
+		                      $('#department_code_add').addClass("is-invalid")
+		                      $("#addBtn").prop("disabled",true);
+	                    	});
+	                     }else{
+	                    	  $("#department_code_addError").text("");
+	                    	  $('#department_code_add').removeClass("is-invalid")
+		                      $('#department_code_add').addClass("is-valid")
+		                      $("#addBtn").prop("disabled",false);
+	                     }           
+	                    
+	                    },error: function (jqXHR, exception) {
+	    	   			      $(".page-loader").hide();
+	       	          	  getErrorMessage(jqXHR, exception);
+	       	     	  }
+	            });
+	        }
+	   		
+	   	}
+	   	
+
+		function setSearchble(){
+			//$(".select2").select2({ dropdownParent: "#modal-container" });?
+		}
+		function addBox(){
+	   		//$(".select2").select2({ dropdownParent: "#modal-body" });?
+	   		$('select[name^="assigned_to_sbu"] option:selected').removeAttr("selected");
+	   		$('select[name^="status"] option:selected').removeAttr("selected");
+	   		$('select').select2();
+	   	}
+    </script>
+    
+    <script type="text/javascript">
+
+	
     </script>
   </body>
   <!-- END: Body-->
 
-<!-- Mirrored from pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/horizontal-menu-template/modal-examples.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Aug 2022 05:37:24 GMT -->
+<!-- Mirrored from pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/horizontal-menu-template/dashboard-analytics.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Aug 2022 05:36:10 GMT -->
 </html>
