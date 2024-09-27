@@ -18,9 +18,8 @@ div.main-menu-content {
 </style>
 </head>
 <body>
-		<div class="navbar-container main-menu-content" data-menu="menu-container" id="menu" style="
-    background-color: #da0d14;
-"> <ul class="nav navbar-nav" id="main-menu-navigation" data-menu="menu-navigation" >
+		<div class="navbar-container main-menu-content" data-menu="menu-container" id="menu"> 
+		<ul class="nav navbar-nav" id="main-menu-navigation" data-menu="menu-navigation" >
           
        <%--  <c:if test="${sessionScope.BASE_ROLE ne 'User' }"> --%>
            
