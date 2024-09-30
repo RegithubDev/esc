@@ -461,14 +461,9 @@ body {
           </div>
     <div class="col-12 col-md-6">
             <label class="form-label" for="modalEditUserLastName">Mobile number</label><span class="required"> </span>
-            <input
-              type="number"
-              id="contact_number_add"
-              name="contact_number"
-              class="form-control"
-              placeholder="eg : +91 ##########"
-              value=""
-            />
+           <input type="tel" id="contact_number_add" name="contact_number" class="form-control" 
+           placeholder="eg: +91 ##########" value="" maxlength="10"  required>
+
              <span id="contact_number_addError" class="error-msg" ></span>
           </div>
 		<div class="col-12 col-md-6">
@@ -637,14 +632,9 @@ body {
           </div>
     <div class="col-12 col-md-6">
             <label class="form-label" for="modalEditUserLastName">Mobile number</label><span class="required"> </span>
-            <input
-              type="number"
-              id="contact_number_edit"
-              name="contact_number"
-              class="form-control"
-               placeholder="eg : +91 ##########"
-              value=""
-            />
+            <input type="tel" id="contact_number_add" name="contact_number" class="form-control" 
+            placeholder="eg: +91 ##########" value="" maxlength="10" required>
+
              <span id="contact_number_editError" class="error-msg" ></span>
           </div>
 		<div class="col-12 col-md-6">

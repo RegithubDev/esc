@@ -409,7 +409,7 @@ License: You must have a valid license purchased only from themeforest(the above
              <label class="form-label" for="basic-default-password1">Total Net Fresh Water Consumption, in KL<span id="financial-year-next"></span><span id="financial-year"></span>
            </label>
               <div class="input-group">
-                <input type="number" class="form-control" name="total_fresh_water_past" id="total_fresh_water_past" placeholder="Enter Total Net Fresh Water Consumption" aria-label="Enter Total Net Fresh Water Consumption" aria-describedby="basic-addon2" required=""> 
+                <input type="number" class="form-control" name="total_fresh_water_last_year" id="total_fresh_water_last_year" placeholder="Enter Total Net Fresh Water Consumption" aria-label="Enter Total Net Fresh Water Consumption" aria-describedby="basic-addon2" required=""> 
 		            	<span class="input-group-text" id="basic-addon2">KL</span>
 	              <div class="valid-feedback">OK!</div>
 	              <div class="invalid-feedback">Please Enter Total Net Fresh Water Consumption.</div>
@@ -453,7 +453,7 @@ License: You must have a valid license purchased only from themeforest(the above
            </label>
           <div class="col-md-6 col-12 mb-1">
            <div class="input-group">
-                <input type="number" class="form-control" name="total_fresh_water_future" id="total_fresh_water_future" placeholder="Enter Specific Fresh Water Consumption" aria-label="Enter Specific Fresh Water Consumption" aria-describedby="basic-addon2" required=""> 
+                <input type="number" class="form-control" name="total_fresh_water_next_year" id="total_fresh_water_next_year" placeholder="Enter Specific Fresh Water Consumption" aria-label="Enter Specific Fresh Water Consumption" aria-describedby="basic-addon2" required=""> 
 		            	<span class="input-group-text" id="basic-addon2">KL</span>
 	              <div class="valid-feedback">OK!</div>
 	              <div class="invalid-feedback">Please Enter Specific Fresh Water Consumption.</div>

@@ -83,10 +83,10 @@ $(function () {
           required: true
         },
 		
-        'total_fresh_water_past': {
+        'total_fresh_water_last_year': {
           required: true
         },
-        'total_fresh_water_future': {
+        'total_fresh_water_next_year': {
           required: true
         },
 		'total_electric_consumption': {
