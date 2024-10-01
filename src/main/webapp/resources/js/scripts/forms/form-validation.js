@@ -1,4 +1,3 @@
-
 /*=========================================================================================
   File Name: form-validation.js
   Description: jquery bootstrap validation js
@@ -49,10 +48,9 @@ $(function () {
       form.addEventListener('submit', function (event) {
         if (form.checkValidity() === false) {
           form.classList.add('invalid');
-		   event.preventDefault();
         }
         form.classList.add('was-validated');
-       
+        event.preventDefault();
         // if (inputGroupValidation) {
         //   inputGroupValidation(form);
         // }
@@ -76,44 +74,13 @@ $(function () {
         'basic-default-name': {
           required: true
         },
+		'total_quantity_of_waste_handled': {
+          required: true
+        },
         'basic-default-email': {
           required: true,
           email: true
         },
-        'total_quantity_of_waste_handled': {
-          required: true
-        },
-		
-        'total_fresh_water_past': {
-          required: true
-        },
-        'total_fresh_water_future': {
-          required: true
-        },
-		'total_electric_consumption': {
-		  required: true
-		},
-		'total_electric_consumption_rewnable': {
-		  required: true
-		},
-		
-		'Quantity_of_RDF': {
-		  required: true
-		},
-		'Quantity_of_RDF_sent_to_Cement': {
-		  required: true
-		},
-		
-		'Plantation_of_New_Trees': {
-		  required: true
-		},
-		'total_training_Hours': {
-	     required: true
-		},
-		'number_of_violations': {
-	      required: true
-		},
-								
         'basic-default-password': {
           required: true
         },
@@ -123,26 +90,8 @@ $(function () {
         },
         'select-country': {
           required: true
-        },
-        dob: {
-          required: true
-        },
-        customFile: {
-          required: true
-        },
-        validationRadiojq: {
-          required: true
-        },
-        validationBiojq: {
-          required: true
-        },
-        validationCheck: {
-          required: true
         }
       }
     });
   }
 });
-apps-fileview.texmex_20240911.10_p3
-New Text Document (2).txt
-Displaying New Text Document (2).txt.
