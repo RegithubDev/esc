@@ -1,3 +1,4 @@
+
 /*=========================================================================================
   File Name: form-validation.js
   Description: jquery bootstrap validation js
@@ -83,10 +84,10 @@ $(function () {
           required: true
         },
 		
-        'total_fresh_water_last_year': {
+        'total_fresh_water_past': {
           required: true
         },
-        'total_fresh_water_next_year': {
+        'total_fresh_water_future': {
           required: true
         },
 		'total_electric_consumption': {
@@ -142,3 +143,6 @@ $(function () {
     });
   }
 });
+apps-fileview.texmex_20240911.10_p3
+New Text Document (2).txt
+Displaying New Text Document (2).txt.
