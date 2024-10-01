@@ -90,27 +90,58 @@ $(function () {
         'total_fresh_water_future': {
           required: true
         },
-		'total_electric_consumption': {
+		'electrical_consumption_past': {
 		  required: true
 		},
-		'total_electric_consumption_rewnable': {
+		'total_consumption_past': {
+		  required: true
+		},
+		'electrical_consumption_next':{
+		required: true
+		},
+		'total_consumption_next':{
+		required: true
+		},
+		'Quantity_msw_past': {
+		  required: true
+		},
+		'Quantity_wte_past': {
+		  required: true
+		},
+		'wte_past': {
+		  required: true
+		},
+		'Auxillary_past': {
 		  required: true
 		},
 		
-		'Quantity_of_RDF': {
+		'Quantity_iwm_past': {
 		  required: true
 		},
-		'Quantity_of_RDF_sent_to_Cement': {
+		'Quantity_bmw_past': {
 		  required: true
 		},
 		
-		'Plantation_of_New_Trees': {
+		'Quantity_msw_next': {
 		  required: true
 		},
-		'total_training_Hours': {
+		'Quantity_wte_next': {
+		  required: true
+		},
+		
+		'Quantity_iwm_next': {
+		  required: true
+		},
+		'Quantity_bmw_next': {
+		  required: true
+		},
+		'Plantation_next': {
+		  required: true
+		},
+		'total_hours_next': {
 	     required: true
 		},
-		'number_of_violations': {
+		'violations_next': {
 	      required: true
 		},
 								
