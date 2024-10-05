@@ -20,4 +20,10 @@ public class ReportService {
 		return dao.addData(obj);
 	}
 
+
+	public List<Baseline> getData(Baseline obj)throws Exception {
+		return dao.getData(obj);
+	}
+
+
 }

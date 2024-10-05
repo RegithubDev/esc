@@ -70,10 +70,10 @@ public class AuthenticationInterceptor extends HandlerInterceptorAdapter{
 				 	      
 					    	if(request.getRequestURI().contains("/"+context_path+"/")){
 					    	//	request.getSession().invalidate();
-					    		response.sendRedirect("/"+context_path+"/login/");
+					    		response.sendRedirect("/"+context_path+"/");
 					    		return true;
 					    	}else{
-					    		response.sendRedirect("/login");
+					    		response.sendRedirect("/");
 					    	}
 					    }
 				 	
@@ -102,7 +102,7 @@ public class AuthenticationInterceptor extends HandlerInterceptorAdapter{
 							// session_count =  checkUserLoginDetails(userData);
 							 if(session_count > 1) {
 								 request.getSession().invalidate();
-								 response.sendRedirect("/"+context_path+"/login");
+								 response.sendRedirect("/"+context_path+"/");
 							 }else {
 								 response.sendRedirect("/"+context_path+"/home");
 							 }

@@ -37,11 +37,17 @@ public class ReportController {
 	
 	
 	@RequestMapping(value = "/report", method = {RequestMethod.POST, RequestMethod.GET})
-	public ModelAndView department(@ModelAttribute User user, HttpSession session) {
+	public ModelAndView report(@ModelAttribute User user, HttpSession session) {
 		ModelAndView model = new ModelAndView(PageConstants.reportFOrm);
-		Department obj = null;
+		Baseline obj = new Baseline();
+		String userId = null;
+		String userName = null;
 		try {
-			 
+			userId = (String) session.getAttribute("USER_ID");
+			userName = (String) session.getAttribute("USER_NAME");
+			obj.setCreated_by(userId);
+			List<Baseline> objList = service.getData(obj);
+			model.addObject("objList", objList);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

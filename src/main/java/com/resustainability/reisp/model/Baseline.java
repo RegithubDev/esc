@@ -6,7 +6,23 @@ private String total_fresh_water_past,electrical_consumption_past,total_consumpt
 wte_past,auxillary_past,quantity_iwm_past,quantity_bmw_past,
 total_fresh_water_next,electrical_consumption_next,total_consumption_next,quantity_msw_next,quantity_wte_next,quantity_iwm_next,quantity_bmw_next,plantation_next,total_hours_next,violations_next
 ,created_by,created_date,modified_by,modified_date,
-hds_consumption_past,ldo_consumption_past,png_consumption_past,cng_cbg_consumption_past,coal_consumption_past,furnance_oil_past,biomass_past;
+hds_consumption_past,thermal_energy_consumption_next,total_quantity_of_waste_handled,ldo_consumption_past,png_consumption_past,cng_cbg_consumption_past,coal_consumption_past,furnance_oil_past,biomass_past;
+
+public String getTotal_quantity_of_waste_handled() {
+	return total_quantity_of_waste_handled;
+}
+
+public void setTotal_quantity_of_waste_handled(String total_quantity_of_waste_handled) {
+	this.total_quantity_of_waste_handled = total_quantity_of_waste_handled;
+}
+
+public String getThermal_energy_consumption_next() {
+	return thermal_energy_consumption_next;
+}
+
+public void setThermal_energy_consumption_next(String thermal_energy_consumption_next) {
+	this.thermal_energy_consumption_next = thermal_energy_consumption_next;
+}
 
 public String getTotal_fresh_water_past() {
 	return total_fresh_water_past;

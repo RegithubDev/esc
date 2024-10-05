@@ -291,7 +291,7 @@ License: You must have a valid license purchased only from themeforest(the above
              <label class="form-label" for="basic-default-password1">Total Net Fresh Water Consumption, in KL<span id="financial-year-next"></span><span id="financial-year"></span>
            </label>
               <div class="input-group">
-                <input type="number" class="form-control" name="total_fresh_water_past" id="total_fresh_water_past" placeholder="Enter Total Net Fresh Water Consumption" aria-label="Enter Total Net Fresh Water Consumption" aria-describedby="basic-addon2" required=""> 
+                <input type="number" value="${objList[1].total_fresh_water_past }" class="form-control" name="total_fresh_water_past" id="total_fresh_water_past" placeholder="Enter Total Net Fresh Water Consumption" aria-label="Enter Total Net Fresh Water Consumption" aria-describedby="basic-addon2" required=""> 
 		            	<span class="input-group-text" id="basic-addon2">KL</span>
 	              <div class="valid-feedback">OK!</div>
 	              <div class="invalid-feedback">Please Enter Total Net Fresh Water Consumption.</div>
@@ -335,7 +335,7 @@ License: You must have a valid license purchased only from themeforest(the above
            </label>
           <div class="col-md-6 col-12 mb-1">
            <div class="input-group">
-                <input type="number" class="form-control" name="total_fresh_water_next" id="total_fresh_water_next" 
+                <input type="number"   value="${objList[0].total_fresh_water_next }" class="form-control" name="total_fresh_water_next" id="total_fresh_water_next" 
                 placeholder="Enter Specific Fresh Water Consumption" aria-label="Enter Specific Fresh Water Consumption" 
                 aria-describedby="basic-addon2" required=""> 
 		            	<span class="input-group-text" id="basic-addon2">KL</span>
@@ -388,7 +388,9 @@ License: You must have a valid license purchased only from themeforest(the above
      <div class="row">
     <div class="col-md-8 col-12 mb-1">
              <div class="input-group">
-                <input type="number" class="form-control" name="electrical_consumption_past" id="electrical_consumption_past" placeholder="Enter Total Electric Consumption" aria-label="Enter Total Electrical Consumption" aria-describedby="basic-addon2" required=""> 
+                <input type="number" class="form-control" name="electrical_consumption_past" id="electrical_consumption_past" 
+                placeholder="Enter Total Electric Consumption" aria-label="Enter Total Electrical Consumption" aria-describedby="basic-addon2" 
+                value="${objList[1].electrical_consumption_past }" required=""> 
 		            	<span class="input-group-text" id="basic-addon2">Kwh</span>
 	              <div class="valid-feedback">OK!</div>
 	              <div class="invalid-feedback">Please Enter Total Electrical Consumption.</div>
@@ -415,7 +417,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
          <div class="col-md-8 col-12 mb-1">
              <div class="input-group">
-                <input type="number" class="form-control" name="total_consumption_past" id="total_consumption_past" placeholder="Enter Total Electric Consumption" aria-label="Enter Total Electrical Consumption" aria-describedby="basic-addon2" required=""> 
+                <input type="number" class="form-control" name="total_consumption_past" id="total_consumption_past" value="${objList[1].total_consumption_past }" placeholder="Enter Total Electric Consumption" aria-label="Enter Total Electrical Consumption" aria-describedby="basic-addon2" required=""> 
 		            	<span class="input-group-text" id="basic-addon2">Kwh</span>
 	              <div class="valid-feedback">OK!</div>
 	              <div class="invalid-feedback">Please Enter Total Electrical Consumption.</div>
@@ -448,7 +450,7 @@ License: You must have a valid license purchased only from themeforest(the above
            </label>
           <div class="col-md-6 col-12 mb-1">
             <div class="input-group">
-                <input type="number" class="form-control" name="electrical_consumption_next" id="electrical_consumption_next" 
+                <input type="number" class="form-control" name="electrical_consumption_next" id="electrical_consumption_next" value="${objList[0].electrical_consumption_next }"
                 placeholder="Enter Renewable Energy in Total Energy Consumption " aria-label="Enter Renewable Energy in Total Energy Consumption " 
                 aria-describedby="basic-addon2" required=""> 
 		            	<span class="input-group-text" id="basic-addon2">%</span>
@@ -460,7 +462,7 @@ License: You must have a valid license purchased only from themeforest(the above
  		<label class="form-label" for="basic-default-password1">Reduction in Specific Electricity Consumption in <span id="financial-year-next"></span> compared to the Baseline FY <span id="financial-year"></span>
            </label>
          <div class="input-group">
-                <input type="number" class="form-control" name="total_consumption_next" id="total_consumption_next" 
+                <input type="number" class="form-control" name="total_consumption_next" id="total_consumption_next" value="${objList[0].total_consumption_next }"
                 placeholder="Enter Reduction in Specific Electricity Consumption " aria-label="Enter Reduction in Specific Electricity Consumption " 
                 aria-describedby="basic-addon2" required=""> 
 		            	<span class="input-group-text" id="basic-addon2">%</span>
@@ -511,7 +513,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
 </p>
               <div class="input-group">
-                <input type="number" class="form-control" name="hds_consumption_past" id="hds_consumption_past" placeholder="Enter HSD Consumption" aria-label="Enter HSD Consumption" aria-describedby="basic-addon2" required=""> 
+                <input type="number" class="form-control" name="hds_consumption_past" id="hds_consumption_past" value="${objList[1].hds_consumption_past }" placeholder="Enter HSD Consumption" aria-label="Enter HSD Consumption" aria-describedby="basic-addon2" required=""> 
 		            	<span class="input-group-text" id="basic-addon2">Lit</span>
 	              <div class="valid-feedback">OK!</div>
 	              <div class="invalid-feedback">Please Enter HSD Consumption</div>
@@ -522,7 +524,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
 </p>
               <div class="input-group">
-                <input type="number" class="form-control" name="ldo_consumption_past" id="ldo_consumption_past" placeholder="Enter LDO consumption pastConsumption" aria-label="Enter LDO consumption pastConsumption" aria-describedby="basic-addon2" required=""> 
+                <input type="number" class="form-control" name="ldo_consumption_past" id="ldo_consumption_past" value="${objList[1].ldo_consumption_past}" placeholder="Enter LDO consumption pastConsumption" aria-label="Enter LDO consumption pastConsumption" aria-describedby="basic-addon2" required=""> 
 		            	<span class="input-group-text" id="basic-addon2">Lit</span>
 	              <div class="valid-feedback">OK!</div>
 	              <div class="invalid-feedback">Please Enter LDO consumption pastConsumption.</div>
@@ -536,7 +538,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
 </p>
               <div class="input-group">
-                <input type="number" class="form-control" name="png_consumption_past" id="png_consumption_past" placeholder="Enter PNG consumption" aria-label="Enter PNG consumption past" aria-describedby="basic-addon2" required=""> 
+                <input type="number" class="form-control" name="png_consumption_past" id="png_consumption_past"  value="${objList[1].png_consumption_past}" placeholder="Enter PNG consumption" aria-label="Enter PNG consumption past" aria-describedby="basic-addon2" required=""> 
 		            	<span class="input-group-text" id="basic-addon2">Kg</span>
 	              <div class="valid-feedback">OK!</div>
 	              <div class="invalid-feedback">Please Enter PNG consumption past.</div>
@@ -547,7 +549,8 @@ License: You must have a valid license purchased only from themeforest(the above
 
 </p>
               <div class="input-group">
-                <input type="number" class="form-control" name="cng_cbg_consumption_past" id="cng_cbg_consumption_past" placeholder="Enter CNG/CBG_consumption_past" aria-label="Enter CNG/CBG consumption past" aria-describedby="basic-addon2" required=""> 
+                <input type="number" class="form-control" name="cng_cbg_consumption_past" id="cng_cbg_consumption_past" 
+                placeholder="Enter CNG/CBG_consumption_past" aria-label="Enter CNG/CBG consumption past" aria-describedby="basic-addon2" required=""> 
 		            	<span class="input-group-text" id="basic-addon2">Kg</span>
 	              <div class="valid-feedback">OK!</div>
 	              <div class="invalid-feedback">Please EnterEnter CNG/CBG consumption past.</div>
@@ -559,8 +562,8 @@ License: You must have a valid license purchased only from themeforest(the above
 
 </p>
               <div class="input-group">
-                <input type="number" class="form-control" name="coal_consumption_past" id="coal_consumption_past" placeholder="EnterCoal consumption
-" aria-label="Enter Coal consumption
+                <input type="number" class="form-control" name="coal_consumption_past" value="${objList[1].coal_consumption_past}"
+                id="coal_consumption_past" placeholder="EnterCoal consumption" aria-label="Enter Coal consumption
 " aria-describedby="basic-addon2" required=""> 
 		            	<span class="input-group-text" id="basic-addon2">Kg</span>
 	              <div class="valid-feedback">OK!</div>
@@ -574,7 +577,8 @@ License: You must have a valid license purchased only from themeforest(the above
 
 </p>
               <div class="input-group">
-                <input type="number" class="form-control" name="furnance_oil_past" id="furnance_oil_past" placeholder="Enter Furnace Oil consumption
+                <input type="number" class="form-control" name="furnance_oil_past"  value="${objList[1].furnance_oil_past}"
+                id="furnance_oil_past" placeholder="Enter Furnace Oil consumption
 " aria-label="Enter Furnace Oil consumption
 " aria-describedby="basic-addon2" required=""> 
 		            	<span class="input-group-text" id="basic-addon2">Lit</span>
@@ -590,7 +594,8 @@ License: You must have a valid license purchased only from themeforest(the above
 
 </p>
               <div class="input-group">
-                <input type="number" class="form-control" name="biomass_past" id="biomass_past" placeholder="Enter Biomass
+                <input type="number" class="form-control" name="biomass_past" id="biomass_past" value="${objList[1].biomass_past}"
+                 placeholder="Enter Biomass
 " aria-label="Enter Biomass
 " aria-describedby="basic-addon2" required=""> 
 		            	<span class="input-group-text" id="basic-addon2">Kg</span>
@@ -655,7 +660,8 @@ License: You must have a valid license purchased only from themeforest(the above
            </label>
           <div class="col-md-6 col-12 mb-1">
            <div class="input-group">
-                <input type="number" class="form-control" name="thermal_energy_consumption_next" id="thermal_energy_consumption_next" placeholder="Enter Specific thermal energy Consumption" aria-label="Enter Specific thermal energy Consumption" aria-describedby="basic-addon2" required=""> 
+                <input type="number" class="form-control" name="thermal_energy_consumption_next" id="thermal_energy_consumption_next" value="${objList[0].thermal_energy_consumption_next}"
+                placeholder="Enter Specific thermal energy Consumption" aria-label="Enter Specific thermal energy Consumption" aria-describedby="basic-addon2" required=""> 
 		            	<span class="input-group-text" id="basic-addon2">%</span>
 	              <div class="valid-feedback">OK!</div>
 	              <div class="invalid-feedback">Please Enter Specific thermal energy Consumption</div>
@@ -712,7 +718,8 @@ License: You must have a valid license purchased only from themeforest(the above
 
           </p>
               <div class="input-group">
-                <input type="number" class="form-control" name="quantity_msw_past" id="quantity_msw_past" placeholder="Enter Quantity of RDF" aria-label="Enter Total Net Fresh Water Consumption" aria-describedby="basic-addon2" required=""> 
+                <input type="number" class="form-control" name="quantity_msw_past" id="quantity_msw_past" value="${objList[1].quantity_msw_past}"
+                placeholder="Enter Quantity of RDF" aria-label="Enter Total Net Fresh Water Consumption" aria-describedby="basic-addon2" required=""> 
 		            	<span class="input-group-text" id="basic-addon2">Ton</span>
 	              <div class="valid-feedback">OK!</div>
 	              <div class="invalid-feedback">Please Enter Quantity of RDF.</div>
@@ -744,7 +751,8 @@ License: You must have a valid license purchased only from themeforest(the above
 
           </p>
               <div class="input-group">
-                <input type="number" class="form-control" name="quantity_wte_past" id="quantity_wte_past" placeholder="Enter Total electricity generated in kWh" aria-label="Enter Total Net Fresh Water Consumption" aria-describedby="basic-addon2" required=""> 
+                <input type="number" class="form-control" name="quantity_wte_past" id="quantity_wte_past" value="${objList[1].quantity_wte_past}"
+                 placeholder="Enter Total electricity generated in kWh" aria-label="Enter Total Net Fresh Water Consumption" aria-describedby="basic-addon2" required=""> 
 		            	<span class="input-group-text" id="basic-addon2">KWh</span>
 	              <div class="valid-feedback">OK!</div>
 	              <div class="invalid-feedback">Please Enter Total electricity generated in kWh.</div>
@@ -755,7 +763,8 @@ License: You must have a valid license purchased only from themeforest(the above
 
           </p>
 		      <div class="input-group">
-                <input type="number" class="form-control" name="wte_past" id="wte_past" placeholder="Enter Auxiliary consumption in kWh" aria-label="Enter Total Net Fresh Water Consumption" aria-describedby="basic-addon2" required=""> 
+                <input type="number" class="form-control" name="wte_past" id="wte_past"  value="${objList[1].wte_past}"
+                placeholder="Enter Auxiliary consumption in kWh" aria-label="Enter Total Net Fresh Water Consumption" aria-describedby="basic-addon2" required=""> 
 		            	<span class="input-group-text" id="basic-addon2">KWh</span>
 	              <div class="valid-feedback">OK!</div>
 	              <div class="invalid-feedback">Please Enter Auxiliary consumption in kWh.</div>
@@ -766,7 +775,8 @@ License: You must have a valid license purchased only from themeforest(the above
 
           </p>
 		      <div class="input-group">
-                <input type="number" class="form-control" name="auxillary_past" id="auxillary_past" placeholder="Enter Auxiliary consumption." aria-label="Enter Total Net Fresh Water Consumption" aria-describedby="basic-addon2" required=""> 
+                <input type="number" class="form-control" name="auxillary_past" id="auxillary_past" value="${objList[1].auxillary_past}"
+                placeholder="Enter Auxiliary consumption." aria-label="Enter Total Net Fresh Water Consumption" aria-describedby="basic-addon2" required=""> 
 		            	<span class="input-group-text" id="basic-addon2">%</span>
 	              <div class="valid-feedback">OK!</div>
 	              <div class="invalid-feedback">Please Enter Auxiliary consumption.</div>
@@ -784,7 +794,8 @@ License: You must have a valid license purchased only from themeforest(the above
 
           </p>
               <div class="input-group">
-                <input type="number" class="form-control" name="quantity_iwm_past" id="quantity_iwm_past" placeholder=" Enter Quantity of AFR" aria-label="Enter Total Net Fresh Water Consumption" aria-describedby="basic-addon2" required=""> 
+                <input type="number" class="form-control" name="quantity_iwm_past" id="quantity_iwm_past"  value="${objList[1].quantity_iwm_past}"
+                placeholder=" Enter Quantity of AFR" aria-label="Enter Total Net Fresh Water Consumption" aria-describedby="basic-addon2" required=""> 
 		            	<span class="input-group-text" id="basic-addon2">TONS</span>
 	              <div class="valid-feedback">OK!</div>
 	              <div class="invalid-feedback">Please Enter Quantity of AFR.</div>
@@ -803,7 +814,8 @@ License: You must have a valid license purchased only from themeforest(the above
           
           </p>
               <div class="input-group">
-                <input type="number" class="form-control" name="quantity_bmw_past" id="quantity_bmw_past" placeholder="Enter  Number of BMW Incinerators" aria-label="Enter Total Net Fresh Water Consumption" aria-describedby="basic-addon2" required=""> 
+                <input type="number" class="form-control" name="quantity_bmw_past" id="quantity_bmw_past"  value="${objList[1].quantity_bmw_past}"
+                placeholder="Enter  Number of BMW Incinerators" aria-label="Enter Total Net Fresh Water Consumption" aria-describedby="basic-addon2" required=""> 
 		            	<span class="input-group-text" id="basic-addon2">NO.</span>
 	              <div class="valid-feedback">OK!</div>
 	              <div class="invalid-feedback">Please Enter  Number of BMW Incinerators .</div>
@@ -839,7 +851,8 @@ License: You must have a valid license purchased only from themeforest(the above
 
           </label>
               <div class="input-group">
-                <input type="number" class="form-control" name="quantity_msw_next" id="quantity_msw_next" placeholder="Enter Quantity of RDF sent to Cement Industries." aria-label="Enter Total Net Fresh Water Consumption" aria-describedby="basic-addon2" required=""> 
+                <input type="number" class="form-control" name="quantity_msw_next" id="quantity_msw_next"  value="${objList[0].quantity_msw_next}"
+                placeholder="Enter Quantity of RDF sent to Cement Industries." aria-label="Enter Total Net Fresh Water Consumption" aria-describedby="basic-addon2" required=""> 
 		            	<span class="input-group-text" id="basic-addon2">Ton</span>
 	              <div class="valid-feedback">OK!</div>
 	              <div class="invalid-feedback">Please Enter Quantity of RDF sent to Cement Industries.</div>
@@ -857,7 +870,8 @@ License: You must have a valid license purchased only from themeforest(the above
         Auxiliary Consumption to be less than: 
           </p>
               <div class="input-group">
-                <input type="number" class="form-control" name="quantity_wte_next" id="quantity_wte_next" placeholder="Enter Auxiliary Consumption." aria-describedby="basic-addon2" required=""> 
+                <input type="number" class="form-control" name="quantity_wte_next" id="quantity_wte_next"  value="${objList[0].quantity_wte_next}"
+                placeholder="Enter Auxiliary Consumption." aria-describedby="basic-addon2" required=""> 
 		           <span class="input-group-text" id="basic-addon2">%</span>
 	              <div class="valid-feedback">OK!</div>
 	              <div class="invalid-feedback">Please Enter Auxiliary Consumption.</div>
@@ -878,7 +892,8 @@ License: You must have a valid license purchased only from themeforest(the above
 
           </p>
               <div class="input-group">
-                <input type="number" class="form-control" name="quantity_iwm_next" id="quantity_iwm_next" placeholder="Enter Quantity of AFR to Cement Industries" aria-label="Enter Total Net Fresh Water Consumption" aria-describedby="basic-addon2" required=""> 
+                <input type="number" class="form-control" name="quantity_iwm_next" id="quantity_iwm_next" value="${objList[0].quantity_iwm_next}"
+                placeholder="Enter Quantity of AFR to Cement Industries" aria-label="Enter Total Net Fresh Water Consumption" aria-describedby="basic-addon2" required=""> 
 		            	<span class="input-group-text" id="basic-addon2">TONS</span>
 	              <div class="valid-feedback">OK!</div>
 	              <div class="invalid-feedback">Please Enter Quantity of AFR to Cement Industries .</div>
@@ -899,7 +914,8 @@ License: You must have a valid license purchased only from themeforest(the above
           
           </p>
               <div class="input-group">
-                <input type="number" class="form-control" name="quantity_bmw_next" id="quantity_bmw_next" placeholder="Enter Number of BMW Incinerators" aria-label="Enter Total Net Fresh Water Consumption" aria-describedby="basic-addon2" required=""> 
+                <input type="number" class="form-control" name="quantity_bmw_next" id="quantity_bmw_next" value="${objList[0].quantity_bmw_next}"
+                placeholder="Enter Number of BMW Incinerators" aria-label="Enter Total Net Fresh Water Consumption" aria-describedby="basic-addon2" required=""> 
 		            	<span class="input-group-text" id="basic-addon2">NO.</span>
 	              <div class="valid-feedback">OK!</div>
 	              <div class="invalid-feedback">Please Enter Number of BMW Incinerators .</div>
@@ -947,7 +963,7 @@ License: You must have a valid license purchased only from themeforest(the above
          Plantation of New Trees (either w/in or outside the facility)
           </p>
               <div class="input-group">
-                <input type="number" class="form-control" name="plantation_next" id="plantation_next" 
+                <input type="number" class="form-control" name="plantation_next" id="plantation_next" value="${objList[0].plantation_next}"
                 placeholder="Enter Plantation of New Trees" aria-label="Enter Total Net Fresh Water Consumption" 
                 aria-describedby="basic-addon2" required=""> 
 		            	<span class="input-group-text" id="basic-addon2">Absolute Number</span>
@@ -983,7 +999,7 @@ License: You must have a valid license purchased only from themeforest(the above
         Total Training Hours (excluding mandatory training) for All Employees at the Facility
 
               <div class="input-group">
-                <input type="number" class="form-control" name="total_hours_next" id="total_hours_next" 
+                <input type="number" class="form-control" name="total_hours_next" id="total_hours_next" value="${objList[0].total_hours_next}"
                 placeholder="Enter Total Training Hours" aria-label="Enter Total Net Fresh Water Consumption" 
                 aria-describedby="basic-addon2" required=""> 
 		            	<span class="input-group-text" id="basic-addon2">No.hours</span>
@@ -1021,7 +1037,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
           </p>
               <div class="input-group">
-                <input type="number" class="form-control" name="violations_next" id="violations_next" 
+                <input type="number" class="form-control" name="violations_next" id="violations_next" value="${objList[0].violations_next}"
                 placeholder="Enter Number of Violations & Non-Compliances." aria-label="Enter Total Net Fresh Water Consumption" 
                 aria-describedby="basic-addon2" required=""> 
 		            	<span class="input-group-text" id="basic-addon2">Number</span>
@@ -1057,7 +1073,7 @@ License: You must have a valid license purchased only from themeforest(the above
             <div class="col-md-12 col-12 ">
              <div class="card-body">
 		 			<div class="input-group">
-		            	<input type="number" class="form-control" name="total_quantity_of_waste_handled" id="total_quantity_of_waste_handled"
+		            	<input type="number" class="form-control" name="total_quantity_of_waste_handled" id="total_quantity_of_waste_handled" value="${objList[0].total_quantity_of_waste_handled}"
 		            	 placeholder="Enter Total Quantity of Waste Handled" aria-label="Enter Total Quantity of Waste Handled" aria-describedby="basic-addon2" required="">
 		            	<span class="input-group-text" id="basic-addon2">Tons</span>
 		            	
