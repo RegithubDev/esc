@@ -144,10 +144,45 @@ $(function () {
 		'violations_next': {
 	      required: true
 		},
-								
-        'basic-default-password': {
+			
+		'specific_fresh_water_future': {
+	      required: true
+		},
+		'Grid_consumption_next': {
+	      required: true
+		},	
+		
+		'Rewnable_consumption_next': {
+		  required: true
+		},
+		
+		'Msw_industries__future': {
+		  required: true
+		},
+	    'Wte_consumption_future': {
+		  required: true
+		},
+		'Iwm_industries_future': {
+		  required: true
+		},			
+		'Bmw_incinerators_future': {
+	      required: true
+		},	
+	    'Plantation_trees_future': {
+		  required: true
+		},												
+        'training_hours_future': {
           required: true
         },
+		
+		'Reporting_period_future': {
+		  required: true
+		},
+
+		'basic-default-password': {
+		         required: true
+		       },
+		
         'confirm-password': {
           required: true,
           equalTo: '#basic-default-password'
