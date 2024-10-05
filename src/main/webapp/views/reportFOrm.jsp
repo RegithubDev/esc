@@ -586,9 +586,9 @@ License: You must have a valid license purchased only from themeforest(the above
         </div>
         <div class="card-content collapse show my-2" >
             <div class="card-body">
-         
+           <c:if test="${sessionScope.BASE_SBU eq 'MSW' }">
           <div class="row">
-            <div class="col-md-6 col-12 mb-1">
+            <div class="col-md-8 col-12 mb-1">
             <h5 class="fw-bolder" style="
     color: red;">MSW</h5>
              <p class="card-text">
@@ -603,7 +603,7 @@ License: You must have a valid license purchased only from themeforest(the above
 	              <div class="invalid-feedback">Please Enter Quantity of RDF.</div>
 		      </div>
  			</div>
- 			<div class="col-md-6 col-12 mb-1 text-center">
+ 	<!-- 		<div class="col-md-6 col-12 mb-1 text-center">
              <p class="card-text">
              
           Specific Fresh Water Consumption, in KL
@@ -615,13 +615,13 @@ License: You must have a valid license purchased only from themeforest(the above
 			    <h2 style="display: inline-block; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);"><b> %</b></h2>
 			</div>
 
-            </div>
-            </div>
-            
+            </div> -->
+            </div></c:if>
+             <c:if test="${sessionScope.BASE_SBU eq 'WTE' }">
           <div class="row">
             
  			
-            <div class="col-md-6 col-12 mb-1">
+            <div class="col-md-8 col-12 mb-1">
              <h5 class="fw-bolder" style="
     color: red;">WTE</h5>
              <p class="card-text">
@@ -656,10 +656,12 @@ License: You must have a valid license purchased only from themeforest(the above
 	              <div class="valid-feedback">OK!</div>
 	              <div class="invalid-feedback">Please Enter Auxiliary consumption.</div>
 		      </div>
- 			</div></div><div class="row">
+ 			</div></div></c:if>
+ 			 <c:if test="${sessionScope.BASE_SBU eq 'IWM' }">
+ 			<div class="row">
             
  			
-            <div class="col-md-6 col-12 mb-1">
+            <div class="col-md-8 col-12 mb-1">
             <h5 class="fw-bolder" style="
     color: red;">IWM</h5>
              <p class="card-text">
@@ -674,11 +676,11 @@ License: You must have a valid license purchased only from themeforest(the above
 		      </div>
 		      
  			</div>
- 			</div>
- 			
+ 			</div></c:if>
+ 			 <c:if test="${sessionScope.BASE_SBU eq 'BMW' }">
  			<div class="row">
             
-            <div class="col-md-6 col-12 mb-1">
+            <div class="col-md-8 col-12 mb-1">
             <h5 class="fw-bolder" style="
     color: red;">BMW</h5>
              <p class="card-text">
@@ -691,7 +693,7 @@ License: You must have a valid license purchased only from themeforest(the above
 	              <div class="valid-feedback">OK!</div>
 	              <div class="invalid-feedback">Please Enter  Number of BMW Incinerators .</div>
 		      </div>
- 			</div></div></div>
+ 			</div></div></c:if></div>
         </div>
         </div>
       </div>
@@ -711,9 +713,9 @@ License: You must have a valid license purchased only from themeforest(the above
         </div>
         <div class="card-content collapse show my-2">
             <div class="card-body">
-         
+         <c:if test="${sessionScope.BASE_SBU eq 'MSW' }">
           <div class="row">
-            <div class="col-md-6 col-12 mb-1">
+            <div class="col-md-8 col-12 mb-1">
             <h5 class="fw-bolder" style="
     color: red;">MSW</h5>
              <label class="card-text">
@@ -730,10 +732,10 @@ License: You must have a valid license purchased only from themeforest(the above
  			</div>
  			
             </div>
-          
-            
+          </c:if>
+             <c:if test="${sessionScope.BASE_SBU eq 'WTE' }">
           <div class="row">
-            <div class="col-md-6 col-12 mb-1">
+            <div class="col-md-8 col-12 mb-1">
              <h5 class="fw-bolder" style="
     color: red;">WTE</h5>
              <p class="card-text">
@@ -748,11 +750,12 @@ License: You must have a valid license purchased only from themeforest(the above
 		 
 		
  			</div>
- 			</div>
+ 			</div> </c:if>
+ 			 <c:if test="${sessionScope.BASE_SBU eq 'IWM' }">
  			<div class="row">
             
  			
-            <div class="col-md-6 col-12 mb-1">
+            <div class="col-md-8 col-12 mb-1">
             <h5 class="fw-bolder" style="
     color: red;">IWM</h5>
              <p class="card-text">
@@ -768,10 +771,11 @@ License: You must have a valid license purchased only from themeforest(the above
 		      
  			</div>
  			</div>
- 			
+ 			 </c:if>
+ 			  <c:if test="${sessionScope.BASE_SBU eq 'BMW' }">
  			<div class="row">
             
-            <div class="col-md-6 col-12 mb-1">
+            <div class="col-md-8 col-12 mb-1">
             <h5 class="fw-bolder" style="
     color: red;">BMW</h5>
              <p class="card-text">
@@ -785,7 +789,7 @@ License: You must have a valid license purchased only from themeforest(the above
 	              <div class="valid-feedback">OK!</div>
 	              <div class="invalid-feedback">Please Enter Number of BMW Incinerators .</div>
 		      </div>
- 			</div></div></div>
+ 			</div></div> </c:if></div>
         </div>
       </div>
     </div>
