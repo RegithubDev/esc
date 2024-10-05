@@ -6,7 +6,7 @@ private String total_fresh_water_past,electrical_consumption_past,total_consumpt
 wte_past,Auxillary_past,Quantity_iwm_past,Quantity_bmw_past,
 total_fresh_water_next,electrical_consumption_next,total_consumption_next,Quantity_msw_next,Quantity_wte_next,Quantity_iwm_next,Quantity_bmw_next,Plantation_next,total_hours_next,violations_next
 ,created_by,created_date,modified_by,modified_date;
-
+ 
 public String getTotal_fresh_water_past() {
 	return total_fresh_water_past;
 }

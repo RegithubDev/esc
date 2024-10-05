@@ -41,7 +41,7 @@ public class ReportController {
 		ModelAndView model = new ModelAndView(PageConstants.reportFOrm);
 		Department obj = null;
 		try {
-			
+			 
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
