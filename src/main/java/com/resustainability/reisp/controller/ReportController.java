@@ -55,7 +55,7 @@ public class ReportController {
 		String userName = null;
 		ModelAndView model = new ModelAndView();
 		try {
-			model.setViewName("redirect:/role-mapping");
+			model.setViewName("redirect:/report");
 			userId = (String) session.getAttribute("USER_ID");
 			userName = (String) session.getAttribute("USER_NAME");
 			obj.setCreated_by(userId);

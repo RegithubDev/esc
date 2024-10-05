@@ -102,40 +102,40 @@ $(function () {
 		'total_consumption_next':{
 		required: true
 		},
-		'Quantity_msw_past': {
+		'quantity_msw_past': {
 		  required: true
 		},
-		'Quantity_wte_past': {
+		'quantity_wte_past': {
 		  required: true
 		},
 		'wte_past': {
 		  required: true
 		},
-		'Auxillary_past': {
+		'auxillary_past': {
 		  required: true
 		},
 		
-		'Quantity_iwm_past': {
+		'quantity_iwm_past': {
 		  required: true
 		},
-		'Quantity_bmw_past': {
-		  required: true
-		},
-		
-		'Quantity_msw_next': {
-		  required: true
-		},
-		'Quantity_wte_next': {
+		'quantity_bmw_past': {
 		  required: true
 		},
 		
-		'Quantity_iwm_next': {
+		'quantity_msw_next': {
 		  required: true
 		},
-		'Quantity_bmw_next': {
+		'quantity_wte_next': {
 		  required: true
 		},
-		'Plantation_next': {
+		
+		'quantity_iwm_next': {
+		  required: true
+		},
+		'quantity_bmw_next': {
+		  required: true
+		},
+		'plantation_next': {
 		  required: true
 		},
 		'total_hours_next': {
@@ -148,34 +148,34 @@ $(function () {
 		'specific_fresh_water_future': {
 	      required: true
 		},
-		'Grid_consumption_next': {
+		'grid_consumption_next': {
 	      required: true
 		},	
 		
-		'Rewnable_consumption_next': {
+		'rewnable_consumption_next': {
 		  required: true
 		},
 		
-		'Msw_industries__future': {
+		'msw_industries__future': {
 		  required: true
 		},
-	    'Wte_consumption_future': {
+	    'wte_consumption_future': {
 		  required: true
 		},
-		'Iwm_industries_future': {
+		'iwm_industries_future': {
 		  required: true
 		},			
-		'Bmw_incinerators_future': {
+		'bmw_incinerators_future': {
 	      required: true
 		},	
-	    'Plantation_trees_future': {
+	    'plantation_trees_future': {
 		  required: true
 		},												
         'training_hours_future': {
           required: true
         },
 		
-		'Reporting_period_future': {
+		'reporting_period_future': {
 		  required: true
 		},
 

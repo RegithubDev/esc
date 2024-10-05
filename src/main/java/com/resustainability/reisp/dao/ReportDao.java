@@ -43,22 +43,24 @@ public class ReportDao {
 		try {
 			NamedParameterJdbcTemplate namedParamJdbcTemplate = new NamedParameterJdbcTemplate(dataSource);
 			String insertQry = "INSERT INTO [baseline_info] \r\n"
-					+ "(total_fresh_water_past, electrical_consumption_past, total_consumption_past, Quantity_msw_past, Quantity_wte_past, \r\n"
-					+ "wte_past, Auxillary_past, Quantity_iwm_past, Quantity_bmw_past ,created_by,created_date) \r\n"
+					+ "(total_fresh_water_past, electrical_consumption_past, total_consumption_past, quantity_msw_past, quantity_wte_past, \r\n"
+					+ "wte_past, auxillary_past, quantity_iwm_past, quantity_bmw_past ,created_by,created_date,"
+					+ "hds_consumption_past,ldo_consumption_past,png_consumption_past,cng_cbg_consumption_past,coal_consumption_past,furnance_oil_past,biomass_past) \r\n"
 					+ "VALUES \r\n"
-					+ "(:total_fresh_water_past, :electrical_consumption_past, :total_consumption_past, :Quantity_msw_past, :Quantity_wte_past, \r\n"
-					+ ":wte_past, :Auxillary_past, :Quantity_iwm_past, :Quantity_bmw_past, :created_by,getdate());\r\n"
+					+ "(:total_fresh_water_past, :electrical_consumption_past, :total_consumption_past, :quantity_msw_past, :quantity_wte_past, \r\n"
+					+ ":wte_past, :auxillary_past, :quantity_iwm_past, :quantity_bmw_past, :created_by,getdate(),"
+					+ ":hds_consumption_past,:ldo_consumption_past,:png_consumption_past,:cng_cbg_consumption_past,:coal_consumption_past,:furnance_oil_past,:biomass_past);\r\n"
 					+ "";
 			BeanPropertySqlParameterSource paramSource = new BeanPropertySqlParameterSource(obj);		 
 		    count = namedParamJdbcTemplate.update(insertQry, paramSource);
 		    
 		     namedParamJdbcTemplate = new NamedParameterJdbcTemplate(dataSource);
 			 insertQry = "INSERT INTO [sitelevel_info] \r\n"
-			 		+ "(total_fresh_water_next, electrical_consumption_next, total_consumption_next, Quantity_msw_next, Quantity_wte_next, \r\n"
-			 		+ "Quantity_iwm_next, Quantity_bmw_next, Plantation_next, total_hours_next, violations_next,created_by,created_date) \r\n"
+			 		+ "(total_fresh_water_next, electrical_consumption_next, total_consumption_next, quantity_msw_next, quantity_wte_next, \r\n"
+			 		+ "quantity_iwm_next, quantity_bmw_next, plantation_next, total_hours_next, violations_next,created_by,created_date) \r\n"
 			 		+ "VALUES \r\n"
-			 		+ "(:total_fresh_water_next, :electrical_consumption_next, :total_consumption_next, :Quantity_msw_next, :Quantity_wte_next, \r\n"
-			 		+ ":Quantity_iwm_next, :Quantity_bmw_next, :Plantation_next, :total_hours_next, :violations_next,:created_by,getdate());\r\n"
+			 		+ "(:total_fresh_water_next, :electrical_consumption_next, :total_consumption_next, :quantity_msw_next, :quantity_wte_next, \r\n"
+			 		+ ":quantity_iwm_next, :quantity_bmw_next, :plantation_next, :total_hours_next, :violations_next,:created_by,getdate());\r\n"
 			 		+ ""
 					+ "";
 			paramSource = new BeanPropertySqlParameterSource(obj);		 
