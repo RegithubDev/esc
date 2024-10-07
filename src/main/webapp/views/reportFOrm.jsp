@@ -1098,8 +1098,11 @@ License: You must have a valid license purchased only from themeforest(the above
       
       
 <hr>
+<c:if test="${sessionScope.USER_ID ne objList[0].created_by}">
+ <button type="submit" class="btn btn-primary waves-effect waves-float waves-light">Submit</button>
+</c:if>
 
-  <button type="submit" class="btn btn-primary waves-effect waves-float waves-light">Submit</button>
+ 
   </form>
   
 </section> </div>
