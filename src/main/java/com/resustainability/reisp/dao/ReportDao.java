@@ -45,11 +45,11 @@ public class ReportDao {
 			String insertQry = "INSERT INTO [baseline_info]  "
 					+ "(total_fresh_water_past, electrical_consumption_past, total_consumption_past, quantity_msw_past, quantity_wte_past,  "
 					+ "wte_past, auxillary_past, quantity_iwm_past, quantity_bmw_past ,created_by,created_date,"
-					+ "hds_consumption_past,ldo_consumption_past,png_consumption_past,cng_cbg_consumption_past,coal_consumption_past,furnance_oil_past,biomass_past)  "
+					+ "hds_consumption_past,ldo_consumption_past,png_consumption_past,cng_cbg_consumption_past,coal_consumption_past,furnance_oil_past,biomass_past,total_energy_past)  "
 					+ "VALUES  "
 					+ "(:total_fresh_water_past, :electrical_consumption_past, :total_consumption_past, :quantity_msw_past, :quantity_wte_past,  "
 					+ ":wte_past, :auxillary_past, :quantity_iwm_past, :quantity_bmw_past, :created_by,getdate(),"
-					+ ":hds_consumption_past,:ldo_consumption_past,:png_consumption_past,:cng_cbg_consumption_past,:coal_consumption_past,:furnance_oil_past,:biomass_past); "
+					+ ":hds_consumption_past,:ldo_consumption_past,:png_consumption_past,:cng_cbg_consumption_past,:coal_consumption_past,:furnance_oil_past,:biomass_past,:total_energy_past); "
 					+ "";
 			BeanPropertySqlParameterSource paramSource = new BeanPropertySqlParameterSource(obj);		 
 		    count = namedParamJdbcTemplate.update(insertQry, paramSource);
@@ -100,10 +100,12 @@ public class ReportDao {
 	                + "    [coal_consumption_past], \r\n"
 	                + "    [furnance_oil_past], \r\n"
 	                + "    [biomass_past], \r\n"
+	                + "    [total_energy_past],\r\n"   
 	                + "    [created_date], \r\n"
 	                + "    [modified_date], \r\n"
 	                + "    [created_by], \r\n"
 	                + "    [modified_by]\r\n"
+	                
 	                + "FROM \r\n"
 	                + "    [ESCDB].[dbo].[baseline_info] \r\n"
 	                + "WHERE \r\n"

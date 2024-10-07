@@ -588,14 +588,14 @@ License: You must have a valid license purchased only from themeforest(the above
 </div>
 		      </div>
  			</div>
-            </div><div class="row">
+            </div>
+        <div class="row">
             <div class="col-md-6 col-12 mb-1">
              <p class="card-text">Biomass
 
 </p>
               <div class="input-group">
-                <input type="number" class="form-control" name="biomass_past" id="biomass_past" value="${objList[1].biomass_past}"
-                 placeholder="Enter Biomass
+                <input type="number" class="form-control" name="biomass_past" id="biomass_past" value="" placeholder="Enter Biomass
 " aria-label="Enter Biomass
 " aria-describedby="basic-addon2" required=""> 
 		            	<span class="input-group-text" id="basic-addon2">Kg</span>
@@ -605,21 +605,23 @@ License: You must have a valid license purchased only from themeforest(the above
 </div>
 		      </div>
  			</div>
+            <div class="col-md-6 col-12 mb-1">
+             <p class="card-text">Total Energy
+</p>
+              <div class="input-group">
+                <input type="number" class="form-control" name="total_energy_past" id="total_energy_past" value="" placeholder=" Enter total energy " aria-label="Enter total energy 
+" aria-describedby="basic-addon2" required=""> 
+		            	<span class="input-group-text" id="basic-addon2">Gj</span>
+	              <div class="valid-feedback">OK!</div>
+	              <div class="invalid-feedback">Please Enter total energy past
+
+</div>
+		      </div>
+ 			</div>
  			
             </div>
          <div class="row">
-            <div class="col-md-6 col-12 mb-1 text-center">
-             <p class="card-text">Total Energy, in GJ
-
-</p>
-		    <div class="invoice-total-item">
-			    <h4 class="invoice-total-amount" style="display: inline-block; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">
-			        <span id="waterP"><b>0</b></span>
-			    </h4>
-			    <h2 style="display: inline-block; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);"><b> %</b></h2>
-			</div>
-
-            </div>
+           
  			
             <div class="col-md-6 col-12 mb-1 text-center">
              <p class="card-text" style="
