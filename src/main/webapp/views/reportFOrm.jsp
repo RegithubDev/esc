@@ -383,7 +383,7 @@ License: You must have a valid license purchased only from themeforest(the above
                 <input type="number"   value="${objList[0].total_fresh_water_next }" class="form-control" name="total_fresh_water_next" id="total_fresh_water_next" 
                 placeholder="Enter Specific Fresh Water Consumption" aria-label="Enter Specific Fresh Water Consumption" 
                 aria-describedby="basic-addon2" required=""> 
-		            	<span class="input-group-text" id="basic-addon2">KL</span>
+		            	<span class="input-group-text" id="basic-addon2">%</span>
 	              <div class="valid-feedback">OK!</div>
 	              <div class="invalid-feedback">Please Enter Specific Fresh Water Consumption.</div>
 		      </div>
@@ -450,8 +450,7 @@ License: You must have a valid license purchased only from themeforest(the above
 			    <h4 class="invoice-total-amount" style="display: inline-block; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">
 			        <span id="waterP"><b>0</b></span>
 			    </h4>
-			    <h2 style="display: inline-block; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);"><b> %</b></h2>
-			</div>
+			    	</div>
 
             </div>
             <div class="row">
@@ -678,8 +677,7 @@ License: You must have a valid license purchased only from themeforest(the above
 			    <h4 class="invoice-total-amount" style="display: inline-block; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">
 			        <span id="waterP"><b>0</b></span>
 			    </h4>
-			    <h2 style="display: inline-block; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);"><b> %</b></h2>
-			</div>
+			   	</div>
 
             </div></div>
             </div>
