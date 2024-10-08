@@ -221,10 +221,9 @@ License: You must have a valid license purchased only from themeforest(the above
                 <h2 class="content-header-title float-start mb-0">Masters</h2>
                 <div class="breadcrumb-wrapper">
                   <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="<%=request.getContextPath() %>/home">Home</a>
+                    <li class="breadcrumb-item"><a href="<%=request.getContextPath() %>/report">Annual Report</a>
                     </li>
-                    <li class="breadcrumb-item"><a href="#">Forms</a>
-                    </li>
+                   
                    
                   </ol>
                 </div>
@@ -249,7 +248,7 @@ License: You must have a valid license purchased only from themeforest(the above
         <!-- Collapse start -->
 <section id="section-block" style="position: static; zoom: 1;">
 
-<c:if test="${sessionScope.USER_ID eq objList[0].created_by}">
+<c:if test="${sessionScope.USER_ID ne objList[0].created_by}">
 
 <div class="app-content content ">
       <div class="content-overlay"></div>
@@ -289,7 +288,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
 </c:if>
 
-<c:if test="${sessionScope.USER_ID ne objList[0].created_by}">
+<c:if test="${sessionScope.USER_ID eq objList[0].created_by}">
 
 
 
@@ -349,9 +348,8 @@ License: You must have a valid license purchased only from themeforest(the above
            </label>
 		    <div class="invoice-total-item">
 			    <h4 class="invoice-total-amount" style="display: inline-block; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">
-			        <span id="waterP"><b>0</b></span>
+			        <span id="total_water"><b>0</b></span>
 			    </h4>
-			    <h2 style="display: inline-block; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);"><b> %</b></h2>
 			</div>
 
             </div>
@@ -1250,6 +1248,22 @@ License: You must have a valid license purchased only from themeforest(the above
         // Display financial year as 2023-24 or <span id="financial-year-next"></span> format
         $('#financial-year-next').text(startYear + '-' + endYear.toString().slice(-2));
         $('#financial-year').text(startYear-1 + '-' + (endYear-1).toString().slice(-2));
+        
+        //// Total 1
+          // Get the value from the input field
+          const kLValue = parseFloat($('#total_fresh_water_past').val());
+          
+          // Check if the input is a valid number
+          if (!isNaN(kLValue)) {
+              // Calculate the ton value from kL
+              const tonValue = kLValue * kLToTon;
+              
+              // Update the span with the calculated value
+              document.getElementById('total_water').textContent = tonValue.toFixed(2) + ' Tons';
+          } else {
+              // Clear the span if the input is invalid
+              document.getElementById('total_water').textContent = '';
+          }
     });
 
       $(window).on('load',  function(){
@@ -1277,7 +1291,27 @@ License: You must have a valid license purchased only from themeforest(the above
     	        document.getElementById("waterP").innerHTML = "Invalid input";
     	    }
       }
-      
+   // Conversion factors
+      const kLToTon = 0.3531466672;
+      const tonToKL = 2.8316846592;
+
+      document.getElementById('total_fresh_water_past').addEventListener('keyup', function() {
+          // Get the value from the input field
+          const kLValue = parseFloat(this.value);
+          
+          // Check if the input is a valid number
+          if (!isNaN(kLValue)) {
+              // Calculate the ton value from kL
+              const tonValue = kLValue * kLToTon;
+              
+              // Update the span with the calculated value
+              document.getElementById('total_water').textContent = tonValue.toFixed(2) + ' Tons';
+          } else {
+              // Clear the span if the input is invalid
+              document.getElementById('total_water').textContent = '';
+          }
+      });
+
       
     </script>
     
