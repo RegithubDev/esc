@@ -57,7 +57,7 @@ public class ReportDao {
 		     namedParamJdbcTemplate = new NamedParameterJdbcTemplate(dataSource);
 			 insertQry = "INSERT INTO [sitelevel_info]  "
 			 		+ "(total_fresh_water_next, electrical_consumption_next, total_consumption_next, quantity_msw_next, quantity_wte_next,  "
-			 		+ "quantity_iwm_next,thermal_energy_consumption_next,total_quantity_of_waste_handled, quantity_bmw_next, total_quantity_of_waste_handled,plantation_next, total_hours_next, violations_next,created_by,created_date)  "
+			 		+ "quantity_iwm_next,thermal_energy_consumption_next,total_quantity_of_waste_handled, quantity_bmw_next,plantation_next, total_hours_next, violations_next,created_by,created_date)  "
 			 		+ "VALUES  "
 			 		+ "(:total_fresh_water_next, :electrical_consumption_next, :total_consumption_next, :quantity_msw_next, :quantity_wte_next,  "
 			 		+ ":quantity_iwm_next,:thermal_energy_consumption_next,:total_quantity_of_waste_handled, :quantity_bmw_next, :plantation_next, :total_hours_next, :violations_next,:created_by,getdate()); "
