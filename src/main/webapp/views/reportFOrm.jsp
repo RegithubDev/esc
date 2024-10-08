@@ -248,7 +248,7 @@ License: You must have a valid license purchased only from themeforest(the above
         <!-- Collapse start -->
 <section id="section-block" style="position: static; zoom: 1;">
 
-<c:if test="${sessionScope.USER_ID ne objList[0].created_by}">
+<%-- <c:if test="${sessionScope.USER_ID ne objList[0].created_by}">
 
 <div class="app-content content ">
       <div class="content-overlay"></div>
@@ -287,9 +287,9 @@ License: You must have a valid license purchased only from themeforest(the above
     </div>
 
 </c:if>
-
-<c:if test="${sessionScope.USER_ID eq objList[0].created_by}">
-
+ --%>
+<%-- <c:if test="${sessionScope.USER_ID eq objList[0].created_by}">
+ --%>
 
 
 
@@ -313,7 +313,7 @@ License: You must have a valid license purchased only from themeforest(the above
 			</a>
      </div>
     </div>
-    <div class="collapse" id="collapseExample">
+    <div class="collapse <c:if test="${sessionScope.USER_ID eq objList[0].created_by}">show </c:if> " id="collapseExample">
   <div class="row"  style="zoom: 1;">
     <div class="col-md-6 col-sm-12">
      <div class="card" style="
@@ -1150,7 +1150,7 @@ License: You must have a valid license purchased only from themeforest(the above
  
   </form>
   
-  </c:if>
+<%--   </c:if> --%>
 </section> </div>
 <!-- Collapse end -->
 

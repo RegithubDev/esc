@@ -74,13 +74,13 @@ div.main-menu-content {
             </ul>
            </li>
         </c:if>
-             <li class="dropdown nav-item " data-menu id="irm" url="irm">
+            <%--  <li class="dropdown nav-item " data-menu id="irm" url="irm">
 			    <a class="dropdown-item d-flex align-items-center" href="<%=request.getContextPath() %>/irm" data-bs-toggle=""
 			     data-i18n="Analytics"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" 
 			     stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart"><line x1="12" y1="20" x2="12" y2="10">
 			     </line><line x1="18" y1="20" x2="18" y2="4"></line><line x1="6" y1="20" x2="6" y2="16"></line></svg>
 			      <span data-i18n="Analytics">Report</span></a>
-	         </li>
+	         </li> --%>
 			<%-- <c:if test="${sessionScope.R_DASHBOARD eq 'Yes' }">
 			 <li class="dropdown nav-item " data-menu id="home">
 			    <a class="dropdown-item d-flex align-items-center" href="<%=request.getContextPath() %>/home" data-bs-toggle=""
