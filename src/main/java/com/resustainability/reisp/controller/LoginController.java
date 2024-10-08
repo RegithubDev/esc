@@ -91,7 +91,7 @@ public class LoginController {
 				userDetails = service.validateUser(user);
 				if(!StringUtils.isEmpty(userDetails)) {
 					//if((userDetails.getSession_count()) == 0) {
-						model.setViewName("redirect:/home");
+						model.setViewName("redirect:/report");
 						User permisions = service.getAllPermissions(userDetails.getBase_role());
 						/// USER PERMISISONS
 						session.setAttribute("R_ADD", permisions.getP_add());

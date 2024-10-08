@@ -48,6 +48,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.resustainability.reisp.common.DateParser;
 import com.resustainability.reisp.constants.PageConstants;
+import com.resustainability.reisp.model.Baseline;
 import com.resustainability.reisp.model.Company;
 import com.resustainability.reisp.model.IRM;
 import com.resustainability.reisp.model.IRMPaginationObject;
@@ -58,6 +59,7 @@ import com.resustainability.reisp.model.User;
 import com.resustainability.reisp.model.UserPaginationObject;
 import com.resustainability.reisp.service.IRMService;
 import com.resustainability.reisp.service.ProjectService;
+import com.resustainability.reisp.service.ReportService;
 import com.resustainability.reisp.service.IRMService;
 
 @Controller
@@ -74,6 +76,9 @@ public class IRMController {
 	
 	@Autowired
 	ProjectService serviceP;
+	
+	@Autowired
+	ReportService service1;
 	
 	@Value("${common.error.message}")
 	public String commonError;
@@ -106,16 +111,20 @@ public class IRMController {
 		String sbu = null;
 		List<IRM> companiesList = null;
 		List<Project> pList = null;
+		Baseline objr = new Baseline();
 		try {
 			userId = (String) session.getAttribute("USER_ID");
 			userName = (String) session.getAttribute("USER_NAME");
 			role = (String) session.getAttribute("BASE_ROLE");
 			sbu = (String) session.getAttribute("BASE_SBU");
 			Project p = new Project();
+			obj.setCreated_by(userId);
+			List<Baseline> objList = service1.getData(objr);
+			model.addObject("objList", objList);
 			p.setSbu_code(sbu);
 			obj.setUser(userId);
 			obj.setRole(role);
-			pList = serviceP.getProjectsList(p);
+			//pList = serviceP.getProjectsList(p);
 			model.addObject("pList", pList);
 		} catch (Exception e) {
 			e.printStackTrace();

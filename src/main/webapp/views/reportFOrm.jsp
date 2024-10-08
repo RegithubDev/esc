@@ -234,20 +234,60 @@ License: You must have a valid license purchased only from themeforest(the above
           <div class="content-header-right text-md-end col-md-3 col-12 d-md-block d-none">
    <jsp:include page="../views/layout/msg.jsp"></jsp:include>
             <div class="mb-1 breadcrumb-right">
-              <div class="dropdown">
+              <!-- <div class="dropdown">
               <a type="button" data-action="reload" aria-haspopup="true" aria-expanded="false"  class="btn btn-primary btn-round waves-effect waves-float waves-light btn-section-block-multiple waves-effect">
 			<i data-feather='save'></i>             
 			 <span>Save</span>
             </a>
             
          
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
         <div class="content-body">
         <!-- Collapse start -->
 <section id="section-block" style="position: static; zoom: 1;">
+
+<c:if test="${sessionScope.USER_ID eq objList[0].created_by}">
+
+<div class="app-content content ">
+      <div class="content-overlay"></div>
+      <div class="header-navbar-shadow"></div>
+      <div class="content-wrapper">
+        <div class="content-header row">
+        </div>
+        <div class="content-body"><div class="auth-wrapper auth-basic px-2">
+  <div class="auth-inner my-2">
+    <!-- verify email basic -->
+    <div class="card mb-0">
+      <div class="card-body">
+        
+
+        <h2 class="card-title fw-bolder mb-1">Submission Completed</h2>
+        <p class="card-text mb-2">Your Submission Already Finished for the Financial Year <br>If you wish to make any changes please contact Admin@gamil.com</p>
+
+        <a href="<%=request.getContextPath() %>/irm" class="btn btn-primary w-100 waves-effect waves-float waves-light">Go to Report</a>
+
+        
+      </div>
+    </div>
+    <!-- / verify email basic -->
+  </div>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+</c:if>
+
+<c:if test="${sessionScope.USER_ID ne objList[0].created_by}">
+
+
+
+
+
 <blockquote class="blockquote ps-1 border-start-primary border-start-3">
 		 			<span class="badge badge-light-dark">Note: Please check the values while entering   </span>
 		 		  </blockquote>
@@ -549,7 +589,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
 </p>
               <div class="input-group">
-                <input type="number" class="form-control" name="cng_cbg_consumption_past" id="cng_cbg_consumption_past" 
+                <input type="number" class="form-control" name="cng_cbg_consumption_past" id="cng_cbg_consumption_past"  value="${objList[1].cng_cbg_consumption_past}"
                 placeholder="Enter CNG/CBG_consumption_past" aria-label="Enter CNG/CBG consumption past" aria-describedby="basic-addon2" required=""> 
 		            	<span class="input-group-text" id="basic-addon2">Kg</span>
 	              <div class="valid-feedback">OK!</div>
@@ -595,7 +635,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
 </p>
               <div class="input-group">
-                <input type="number" class="form-control" name="biomass_past" id="biomass_past" value="" placeholder="Enter Biomass
+                <input type="number" class="form-control" name="biomass_past" id="biomass_past" value="${objList[1].biomass_past}" placeholder="Enter Biomass
 " aria-label="Enter Biomass
 " aria-describedby="basic-addon2" required=""> 
 		            	<span class="input-group-text" id="basic-addon2">Kg</span>
@@ -609,7 +649,7 @@ License: You must have a valid license purchased only from themeforest(the above
              <p class="card-text">Total Energy
 </p>
               <div class="input-group">
-                <input type="number" class="form-control" name="total_energy_past" id="total_energy_past" value="" placeholder=" Enter total energy " aria-label="Enter total energy 
+                <input type="number" class="form-control" name="total_energy_past" id="total_energy_past" value="${objList[1].total_energy_past}" placeholder=" Enter total energy " aria-label="Enter total energy 
 " aria-describedby="basic-addon2" required=""> 
 		            	<span class="input-group-text" id="basic-addon2">Gj</span>
 	              <div class="valid-feedback">OK!</div>
@@ -1107,6 +1147,7 @@ License: You must have a valid license purchased only from themeforest(the above
  
   </form>
   
+  </c:if>
 </section> </div>
 <!-- Collapse end -->
 

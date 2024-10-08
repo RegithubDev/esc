@@ -23,26 +23,26 @@ div.main-menu-content {
           
        <%--  <c:if test="${sessionScope.BASE_ROLE ne 'User' }"> --%>
            
-           <c:if test="${sessionScope.BASE_ROLE ne 'Admin' && sessionScope.BASE_ROLE ne 'Management'}">
+     <%--       <c:if test="${sessionScope.BASE_ROLE ne 'Admin' && sessionScope.BASE_ROLE ne 'Management'}">
 					<li class="dropdown nav-item "  data-menu id="home"  url ="/home">
 					    <a class="dropdown-item d-flex align-items-center" href="<%=request.getContextPath() %>/home" data-bs-toggle=""
 					    data-i18n="Analytics"> <i data-feather="home"></i>
 					      <span data-i18n="Dashboards">Dashboard</span></a>
 					</li>
-			</c:if>
+			</c:if> --%>
 				<c:if test="${sessionScope.BASE_ROLE eq 'Admin'|| sessionScope.BASE_ROLE eq 'Management' }">
 <!-- 			<li class="dropdown nav-item " data-menu="dropdown" id="home"><a class="dropdown-toggle nav-link d-flex align-items-center" href="#" data-bs-toggle="dropdown"><i data-feather="package"></i><span data-i18n="Masters">Dashboard</span></a>
  -->         <!--      <ul class="dropdown-menu" data-bs-popper="none">
 					 -->
 			
 			
-			<li class="" data-menu  id="homeChild0" url = "/home" onClick="exFunction('homeChild0')">
+		<%-- 	<li class="" data-menu  id="homeChild0" url = "/home" onClick="exFunction('homeChild0')">
 					    <a class="dropdown-item d-flex align-items-center" href="<%=request.getContextPath() %>/home" data-bs-toggle=""
 					     data-i18n="home"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" 
 					     stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers">
 					     <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
 					      <span data-i18n="home">Dashboard</span></a> 
-					</li>
+					</li> --%>
 			<%-- <li class="" data-menu  id="homeChild1" url = "/dash-sd" onClick="exFunction('homeChild1')">
 					    <a class="dropdown-item d-flex align-items-center" href="<%=request.getContextPath() %>/dash-sd" data-bs-toggle=""
 					     data-i18n="home"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle"><circle cx="12" cy="12" r="10"></circle></svg>
@@ -53,7 +53,13 @@ div.main-menu-content {
           <!--  </li> -->
            </c:if>
           <%--  </c:if>  --%>
-          
+          	<li class="dropdown nav-item " data-menu id="help" url="help">
+			    <a class="dropdown-item d-flex align-items-center" href="<%=request.getContextPath() %>/report" data-bs-toggle=""
+			     data-i18n="Analytics"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" 
+			     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pie-chart">
+			     <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path></svg>
+			      <span data-i18n="Analytics">Annual Report</span></a>
+			</li> 
 	
 		<c:if test="${sessionScope.R_DASHBOARD eq 'Yes' }">
             <li class="dropdown nav-item " data-menu="dropdown" id="masters"><a class="dropdown-toggle nav-link d-flex align-items-center" href="#" data-bs-toggle="dropdown"><i data-feather="package"></i><span data-i18n="Masters">Masters</span></a>
@@ -90,13 +96,7 @@ div.main-menu-content {
 			      <span data-i18n="Analytics">Reports</span></a>
 			</li> --%>
 			
-			<li class="dropdown nav-item " data-menu id="help" url="help">
-			    <a class="dropdown-item d-flex align-items-center" href="<%=request.getContextPath() %>/report" data-bs-toggle=""
-			     data-i18n="Analytics"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" 
-			     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pie-chart">
-			     <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path></svg>
-			      <span data-i18n="Analytics">Annual Report</span></a>
-			</li> 
+		
 			
 	<%-- 	<li class="dropdown nav-item " data-menu id="home">
 			    <a class="dropdown-item d-flex align-items-center" href="<%=request.getContextPath() %>/bb-is" data-bs-toggle=""
@@ -127,7 +127,7 @@ div.main-menu-content {
 		           			$('#home').addClass('active');
 		           			$('#homeChild1 li.active').removeClass('active');
 		           		    $('#homeChild1').addClass('active');
-		           		}else if(url.indexOf('/help') != -1){
+		           		}else if(url.indexOf('/report') != -1){
 		           			$('#help').addClass('active');
 		           		}else if(option.indexOf('masters') != -1 || option == 'irm'){
 		           			$('#masters').addClass('active');
