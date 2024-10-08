@@ -448,7 +448,7 @@ License: You must have a valid license purchased only from themeforest(the above
            </label>
 		    <div class="invoice-total-item">
 			    <h4 class="invoice-total-amount" style="display: inline-block; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">
-			        <span id="waterP"><b>0</b></span>
+			        <span id="total_ele"><b>0</b></span>
 			    </h4>
 			    	</div>
 
@@ -675,7 +675,7 @@ License: You must have a valid license purchased only from themeforest(the above
 </p>
 		    <div class="invoice-total-item">
 			    <h4 class="invoice-total-amount" style="display: inline-block; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">
-			        <span id="waterP"><b>0</b></span>
+			        <span id="thermal"><b>0</b></span>
 			    </h4>
 			   	</div>
 
@@ -1228,9 +1228,9 @@ License: You must have a valid license purchased only from themeforest(the above
 	</form>
     <script>
     $(document).ready(function() {
-        const today = new Date();
-        const year = today.getFullYear();
-        const month = today.getMonth() + 1;  // getMonth() returns 0-11 for Jan-Dec, so add 1
+        var today = new Date();
+        var year = today.getFullYear();
+        var month = today.getMonth() + 1;  // getMonth() returns 0-11 for Jan-Dec, so add 1
         
         let startYear, endYear;
         
@@ -1249,12 +1249,12 @@ License: You must have a valid license purchased only from themeforest(the above
         
         //// Total 1
           // Get the value from the input field
-          const kLValue = parseFloat($('#total_fresh_water_past').val());
+          var kLValue = parseFloat($('#total_fresh_water_past').val());
           
           // Check if the input is a valid number
           if (!isNaN(kLValue)) {
               // Calculate the ton value from kL
-              const tonValue = kLValue * kLToTon;
+              var tonValue = kLValue * kLToTon;
               
               // Update the span with the calculated value
               document.getElementById('total_water').textContent = tonValue.toFixed(2) + ' Tons';
@@ -1262,6 +1262,28 @@ License: You must have a valid license purchased only from themeforest(the above
               // Clear the span if the input is invalid
               document.getElementById('total_water').textContent = '';
           }
+          
+          var kWhToTonHour = 0.2843451361;
+          var tonHourToKWh = 3.5168528421;
+
+              // Get the values from both input fields
+              var electricalConsumption = parseFloat($('#electrical_consumption_past').val());
+              var totalConsumption = parseFloat($('#total_consumption_past').val());
+
+              // Check if the input values are valid numbers
+              if (!isNaN(electricalConsumption) && !isNaN(totalConsumption)) {
+                  // Sum the input values (in kW*h)
+                  var totalKW = electricalConsumption + totalConsumption;
+
+                  // Convert the total kW*h to ton-hours (refrigeration)
+                  var totalTonHour = totalKW * kWhToTonHour;
+
+                  // Update the span with the calculated value
+                  document.getElementById('total_ele').textContent = totalTonHour.toFixed(2) + ' kWh/ton';
+              } else {
+                  // Clear the span if the input is invalid
+                  document.getElementById('total_ele').textContent = '';
+              }
     });
 
       $(window).on('load',  function(){
@@ -1275,38 +1297,92 @@ License: You must have a valid license purchased only from themeforest(the above
       function historyRE(document_code,approver_type,status,approver_code){
        	  $('#historyRE').modal('show');
       }
+  
+      // Conversion factor
+      var GJToTon = 0.23901;
+
+          // Get the value from the input field
+          var GJValue = parseFloat($('#total_energy_past').val());
+          
+          // Check if the input is a valid number
+          if (!isNaN(GJValue)) {
+              // Calculate the ton value from GJ
+              var tonValue = GJValue * GJToTon;
+              
+              // Update the span with the calculated value
+              document.getElementById('thermal').textContent = tonValue.toFixed(2) + ' tons';
+          } else {
+              // Clear the span if the input is invalid
+              document.getElementById('thermal').textContent = '';
+          }
       
-      function calculateSWC(input){
-    	  // Check if input is not null and is a numeric value
-    	    if (input !== null && !isNaN(input) && input.trim() !== "") {
-    	        // Calculate the input divided by 1000
-    	         var result = (parseFloat(input) / 1000) * 100;
-    	        
-    	        // Store the result in the span with id 'waterP'
-    	        document.getElementById("waterP").innerHTML = result.toFixed(2); // Format to 2 decimal places
-    	    } else {
-    	        // If input is invalid, show an error or clear the result
-    	        document.getElementById("waterP").innerHTML = "Invalid input";
-    	    }
-      }
    // Conversion factors
-      const kLToTon = 0.3531466672;
-      const tonToKL = 2.8316846592;
+      var kLToTon = 0.3531466672;
+      var tonToKL = 2.8316846592;
 
       document.getElementById('total_fresh_water_past').addEventListener('keyup', function() {
           // Get the value from the input field
-          const kLValue = parseFloat(this.value);
+          var kLValue = parseFloat(this.value);
           
           // Check if the input is a valid number
           if (!isNaN(kLValue)) {
               // Calculate the ton value from kL
-              const tonValue = kLValue * kLToTon;
+              var tonValue = kLValue * kLToTon;
               
               // Update the span with the calculated value
-              document.getElementById('total_water').textContent = tonValue.toFixed(2) + ' Tons';
+              document.getElementById('total_water').textContent = tonValue.toFixed(2) + ' KL/ons';
           } else {
               // Clear the span if the input is invalid
               document.getElementById('total_water').textContent = '';
+          }
+      });
+
+   // Conversion factors
+      var kWhToTonHour = 0.2843451361;
+      var tonHourToKWh = 3.5168528421;
+
+      function calculateTotal() {
+          // Get the values from both input fields
+          var electricalConsumption = parseFloat(document.getElementById('electrical_consumption_past').value);
+          var totalConsumption = parseFloat(document.getElementById('total_consumption_past').value);
+
+          // Check if the input values are valid numbers
+          if (!isNaN(electricalConsumption) && !isNaN(totalConsumption)) {
+              // Sum the input values (in kW*h)
+              var totalKW = electricalConsumption + totalConsumption;
+
+              // Convert the total kW*h to ton-hours (refrigeration)
+              var totalTonHour = totalKW * kWhToTonHour;
+
+              // Update the span with the calculated value
+              document.getElementById('total_ele').textContent = totalTonHour.toFixed(2) + ' kWh/ton';
+          } else {
+              // Clear the span if the input is invalid
+              document.getElementById('total_ele').textContent = '';
+          }
+      }
+
+      // Add event listeners for both inputs to trigger the calculation on keyup
+      document.getElementById('electrical_consumption_past').addEventListener('keyup', calculateTotal);
+      document.getElementById('total_consumption_past').addEventListener('keyup', calculateTotal);
+      
+   // Conversion factor
+      var GJToTon = 0.23901;
+
+      document.getElementById('total_energy_past').addEventListener('keyup', function() {
+          // Get the value from the input field
+          var GJValue = parseFloat(this.value);
+          
+          // Check if the input is a valid number
+          if (!isNaN(GJValue)) {
+              // Calculate the ton value from GJ
+              var tonValue = GJValue * GJToTon;
+              
+              // Update the span with the calculated value
+              document.getElementById('thermal').textContent = tonValue.toFixed(2) + ' tons';
+          } else {
+              // Clear the span if the input is invalid
+              document.getElementById('thermal').textContent = '';
           }
       });
 
