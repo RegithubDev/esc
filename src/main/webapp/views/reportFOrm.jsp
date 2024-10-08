@@ -1257,7 +1257,7 @@ License: You must have a valid license purchased only from themeforest(the above
               var tonValue = kLValue * kLToTon;
               
               // Update the span with the calculated value
-              document.getElementById('total_water').textContent = tonValue.toFixed(2) + ' Tons';
+              document.getElementById('total_water').textContent = tonValue.toFixed(2) + ' KL/tons';
           } else {
               // Clear the span if the input is invalid
               document.getElementById('total_water').textContent = '';
@@ -1284,6 +1284,24 @@ License: You must have a valid license purchased only from themeforest(the above
                   // Clear the span if the input is invalid
                   document.getElementById('total_ele').textContent = '';
               }
+              
+              var GJToTon = 0.23901;
+
+              // Get the value from the input field
+              var GJValue = parseFloat($('#total_energy_past').val());
+              
+              // Check if the input is a valid number
+              if (!isNaN(GJValue)) {
+                  // Calculate the ton value from GJ
+                  var tonValue = GJValue * GJToTon;
+                  
+                  // Update the span with the calculated value
+                  document.getElementById('thermal').textContent = tonValue.toFixed(2) + ' GJ/Ton';
+              } else {
+                  // Clear the span if the input is invalid
+                  document.getElementById('thermal').textContent = '';
+              }
+          
     });
 
       $(window).on('load',  function(){
@@ -1299,23 +1317,7 @@ License: You must have a valid license purchased only from themeforest(the above
       }
   
       // Conversion factor
-      var GJToTon = 0.23901;
-
-          // Get the value from the input field
-          var GJValue = parseFloat($('#total_energy_past').val());
-          
-          // Check if the input is a valid number
-          if (!isNaN(GJValue)) {
-              // Calculate the ton value from GJ
-              var tonValue = GJValue * GJToTon;
-              
-              // Update the span with the calculated value
-              document.getElementById('thermal').textContent = tonValue.toFixed(2) + ' tons';
-          } else {
-              // Clear the span if the input is invalid
-              document.getElementById('thermal').textContent = '';
-          }
-      
+    
    // Conversion factors
       var kLToTon = 0.3531466672;
       var tonToKL = 2.8316846592;
@@ -1379,7 +1381,7 @@ License: You must have a valid license purchased only from themeforest(the above
               var tonValue = GJValue * GJToTon;
               
               // Update the span with the calculated value
-              document.getElementById('thermal').textContent = tonValue.toFixed(2) + ' tons';
+              document.getElementById('thermal').textContent = tonValue.toFixed(2) + ' GJ/Ton';
           } else {
               // Clear the span if the input is invalid
               document.getElementById('thermal').textContent = '';
