@@ -260,14 +260,21 @@ License: You must have a valid license purchased only from themeforest(the above
         <div class="content-body"><div class="auth-wrapper auth-basic px-2">
   <div class="auth-inner my-2">
     <!-- verify email basic -->
-    <div class="card mb-0">
+  <div class="card mb-0" style="
+    width: 37rem;
+    margin-top: -12rem;
+    margin-left: 23rem;
+    background-color: #ff000012;
+">
       <div class="card-body">
         
 
         <h2 class="card-title fw-bolder mb-1">Submission Completed</h2>
-        <p class="card-text mb-2">Your Submission Already Finished for the Financial Year <br>If you wish to make any changes please contact Admin@gamil.com</p>
+        <p class="card-text mb-2">Your Submission Already Finished for the Financial Year <br>
+        If you wish to make any changes please contact Admin@gamil.com</p>
 
-        <a href="<%=request.getContextPath() %>/irm" class="btn btn-primary w-100 waves-effect waves-float waves-light">Go to Report</a>
+        <a href="/esc/irm" class="btn btn-warning w-100 waves-effect waves-float waves-light" 
+        style="">Go to Report</a>
 
         
       </div>
