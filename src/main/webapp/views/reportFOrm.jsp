@@ -415,7 +415,9 @@ License: You must have a valid license purchased only from themeforest(the above
     <div class="collapse <c:if test="${sessionScope.USER_ID eq objList[0].created_by}">show </c:if> " id="electric">
   <div class="row"  style="zoom: 1;">
     <div class="col-md-6 col-sm-12">
-      <div class="card">
+     <div class="card" style="
+    height: 20.3rem;
+">
         <div class="card-header badge badge-light-primary  py-1">
           <h4 class="card-title fw-bolder">Baseline Information (FY <span id="financial-year"></span>)</h4>
           <div class="heading-elements">
@@ -460,7 +462,7 @@ License: You must have a valid license purchased only from themeforest(the above
 </label>
 
          <div class="col-md-8 col-12 mb-1">
-       <div class="input-group" style="
+         <div class="input-group" style="
     width: 27.4rem;
 ">
                 <input type="number" class="form-control" name="total_consumption_past" id="total_consumption_past" value="${objList[1].total_consumption_past }" placeholder="Enter Total Electric Consumption" aria-label="Enter Total Electrical Consumption" aria-describedby="basic-addon2" required=""> 
@@ -479,7 +481,7 @@ License: You must have a valid license purchased only from themeforest(the above
     </div>
     <div class="col-md-6 col-sm-12">
    <div class="card" style="
-    height: 20.7rem;
+    height: 20.3rem;
 ">
         <div class="card-header badge badge-light-primary py-1">
                   <h4 class="card-title fw-bolder">Site Level Sustainability Goals (FY <span id="financial-year-next"></span>)</h4>
@@ -541,7 +543,10 @@ License: You must have a valid license purchased only from themeforest(the above
     <div class="collapse <c:if test="${sessionScope.USER_ID eq objList[0].created_by}">show </c:if> " id="collapseExample1">
 <div class="row" style="zoom: 1;">
     <div class="col-md-6 col-sm-12">
-      <div class="card">
+      <div class="card" style="
+    height: 40rem;
+">
+    
         <div class="card-header badge badge-light-primary  py-1">
           <h4 class="card-title fw-bolder">Baseline Information (FY <span id="financial-year"></span>)</h4>
           <div class="heading-elements">
@@ -557,24 +562,24 @@ License: You must have a valid license purchased only from themeforest(the above
          
           <div class="row">
             <div class="col-md-6 col-12 mb-1">
-             <label class="form-label" for="basic-default-password1">HSD consumption
-
+           
+<label class="form-label" for="basic-default-password1">HSD consumption
 <span id="financial-year-next"></span><span id="financial-year"></span>
            </label>
+
               <div class="input-group">
-                <input type="number" class="form-control" name="hds_consumption_past" id="hds_consumption_past" value=" " placeholder="Enter HSD Consumption" aria-label="Enter HSD Consumption" aria-describedby="basic-addon2" required=""> 
+                <input type="number" class="form-control" name="hds_consumption_past" id="hds_consumption_past" value="${objList[1].hds_consumption_past }" placeholder="Enter HSD Consumption" aria-label="Enter HSD Consumption" aria-describedby="basic-addon2" required=""> 
 		            	<span class="input-group-text" id="basic-addon2">Lit</span>
 	              <div class="valid-feedback">OK!</div>
 	              <div class="invalid-feedback">Please Enter HSD Consumption</div>
 		      </div>
  			</div>
  			<div class="col-md-6 col-12 mb-1">
-             <label class="form-label" for="basic-default-password1">LDO consumption
-
+            <label class="form-label" for="basic-default-password1">LDO consumption
 <span id="financial-year-next"></span><span id="financial-year"></span>
            </label>
               <div class="input-group">
-                <input type="number" class="form-control" name="ldo_consumption_past" id="ldo_consumption_past" value=" " placeholder="Enter LDO consumption pastConsumption" aria-label="Enter LDO consumption pastConsumption" aria-describedby="basic-addon2" required=""> 
+                <input type="number" class="form-control" name="ldo_consumption_past" id="ldo_consumption_past" value="${objList[1].ldo_consumption_past}" placeholder="Enter LDO consumption pastConsumption" aria-label="Enter LDO consumption pastConsumption" aria-describedby="basic-addon2" required=""> 
 		            	<span class="input-group-text" id="basic-addon2">Lit</span>
 	              <div class="valid-feedback">OK!</div>
 	              <div class="invalid-feedback">Please Enter LDO consumption pastConsumption.</div>
@@ -585,23 +590,22 @@ License: You must have a valid license purchased only from themeforest(the above
           <div class="row">
             <div class="col-md-6 col-12 mb-1">
              <label class="form-label" for="basic-default-password1">PNG consumption
-
 <span id="financial-year-next"></span><span id="financial-year"></span>
            </label>
               <div class="input-group">
-                <input type="number" class="form-control" name="png_consumption_past" id="png_consumption_past" value=" " placeholder="Enter PNG consumption" aria-label="Enter PNG consumption past" aria-describedby="basic-addon2" required=""> 
+                <input type="number" class="form-control" name="png_consumption_past" id="png_consumption_past"  value="${objList[1].png_consumption_past}" placeholder="Enter PNG consumption" aria-label="Enter PNG consumption past" aria-describedby="basic-addon2" required=""> 
 		            	<span class="input-group-text" id="basic-addon2">Kg</span>
 	              <div class="valid-feedback">OK!</div>
 	              <div class="invalid-feedback">Please Enter PNG consumption past.</div>
 		      </div>
  			</div>
  			<div class="col-md-6 col-12 mb-1">
-             <label class="form-label" for="basic-default-password1">CNG/CBG consumption
-
+            <label class="form-label" for="basic-default-password1">CNG/CBG consumption
 <span id="financial-year-next"></span><span id="financial-year"></span>
            </label>
               <div class="input-group">
-                <input type="number" class="form-control" name="cng_cbg_consumption_past" id="cng_cbg_consumption_past" value=" " placeholder="Enter CNG/CBG_consumption_past" aria-label="Enter CNG/CBG consumption past" aria-describedby="basic-addon2" required=""> 
+                <input type="number" class="form-control" name="cng_cbg_consumption_past" id="cng_cbg_consumption_past"  value="${objList[1].cng_cbg_consumption_past}"
+                placeholder="Enter CNG/CBG_consumption_past" aria-label="Enter CNG/CBG consumption past" aria-describedby="basic-addon2" required=""> 
 		            	<span class="input-group-text" id="basic-addon2">Kg</span>
 	              <div class="valid-feedback">OK!</div>
 	              <div class="invalid-feedback">Please EnterEnter CNG/CBG consumption past.</div>
@@ -609,12 +613,12 @@ License: You must have a valid license purchased only from themeforest(the above
  			</div>
             </div><div class="row">
             <div class="col-md-6 col-12 mb-1">
-             <label class="form-label" for="basic-default-password1">Coal consumption
-
+            <label class="form-label" for="basic-default-password1">Coal consumption
 <span id="financial-year-next"></span><span id="financial-year"></span>
            </label>
               <div class="input-group">
-                <input type="number" class="form-control" name="coal_consumption_past" value=" " id="coal_consumption_past" placeholder="EnterCoal consumption" aria-label="Enter Coal consumption
+                <input type="number" class="form-control" name="coal_consumption_past" value="${objList[1].coal_consumption_past}"
+                id="coal_consumption_past" placeholder="EnterCoal consumption" aria-label="Enter Coal consumption
 " aria-describedby="basic-addon2" required=""> 
 		            	<span class="input-group-text" id="basic-addon2">Kg</span>
 	              <div class="valid-feedback">OK!</div>
@@ -624,12 +628,12 @@ License: You must have a valid license purchased only from themeforest(the above
 		      </div>
  			</div>
  			<div class="col-md-6 col-12 mb-1">
-             <label class="form-label" for="basic-default-password1">Furnance oil consumption
-
+            <label class="form-label" for="basic-default-password1">Furnance oil consumption
 <span id="financial-year-next"></span><span id="financial-year"></span>
            </label>
               <div class="input-group">
-                <input type="number" class="form-control" name="furnance_oil_past" value=" " id="furnance_oil_past" placeholder="Enter Furnace Oil consumption
+                <input type="number" class="form-control" name="furnance_oil_past"  value="${objList[1].furnance_oil_past}"
+                id="furnance_oil_past" placeholder="Enter Furnace Oil consumption
 " aria-label="Enter Furnace Oil consumption
 " aria-describedby="basic-addon2" required=""> 
 		            	<span class="input-group-text" id="basic-addon2">Lit</span>
@@ -642,12 +646,11 @@ License: You must have a valid license purchased only from themeforest(the above
             </div>
         <div class="row">
             <div class="col-md-6 col-12 mb-1">
-             <label class="form-label" for="basic-default-password1">Biomass
-
+            <label class="form-label" for="basic-default-password1">Biomass
 <span id="financial-year-next"></span><span id="financial-year"></span>
            </label>
               <div class="input-group">
-                <input type="number" class="form-control" name="biomass_past" id="biomass_past" value=" " placeholder="Enter Biomass
+                <input type="number" class="form-control" name="biomass_past" id="biomass_past" value="${objList[1].biomass_past}" placeholder="Enter Biomass
 " aria-label="Enter Biomass
 " aria-describedby="basic-addon2" required=""> 
 		            	<span class="input-group-text" id="basic-addon2">Kg</span>
@@ -658,10 +661,11 @@ License: You must have a valid license purchased only from themeforest(the above
 		      </div>
  			</div>
             <div class="col-md-6 col-12 mb-1">
-             <label class="form-label" for="basic-default-password1">Total Energy<span id="financial-year-next"></span><span id="financial-year"></span>
+             <label class="form-label" for="basic-default-password1">Total Energy
+<span id="financial-year-next"></span><span id="financial-year"></span>
            </label>
               <div class="input-group">
-                <input type="number" class="form-control" name="total_energy_past" id="total_energy_past" value=" " placeholder=" Enter total energy " aria-label="Enter total energy 
+                <input type="number" class="form-control" name="total_energy_past" id="total_energy_past" value="${objList[1].total_energy_past}" placeholder=" Enter total energy " aria-label="Enter total energy 
 " aria-describedby="basic-addon2" required=""> 
 		            	<span class="input-group-text" id="basic-addon2">Gj</span>
 	              <div class="valid-feedback">OK!</div>
@@ -678,13 +682,13 @@ License: You must have a valid license purchased only from themeforest(the above
  <div class="col-md-6 col-12 mb-1 text-center" style="
     margin-left: 11rem;
 ">
-             <label class="form-label" for="basic-default-password1">Specific Thermal Energy Consumption,in GJ
-
+             <label class="form-label" for="basic-default-password1">Specific thermal energy in Gj
 <span id="financial-year-next"></span><span id="financial-year"></span>
            </label>
+</p>
 		    <div class="invoice-total-item">
 			    <h4 class="invoice-total-amount" style="display: inline-block; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">
-			        <span id="thermal">12.91 GJ/Ton</span>
+			        <span id="thermal"><b>0</b></span>
 			    </h4>
 			   	</div>
 
@@ -694,8 +698,8 @@ License: You must have a valid license purchased only from themeforest(the above
         </div>
       </div>
       <div class="col-md-6 col-sm-12">
-     <div class="card" style="
-    height: 34.4rem;
+   <div class="card" style="
+    height: 40rem;
 ">
         <div class="card-header badge badge-light-primary py-1">
                   <h4 class="card-title fw-bolder">Site Level Sustainability Goals (FY <span id="financial-year-next"></span>)</h4>
@@ -714,9 +718,10 @@ License: You must have a valid license purchased only from themeforest(the above
 
 <span id="financial-year-next"></span><span id="financial-year"></span>
            </label>
-          <div class="col-md-12 col-12 mb-1">
+          <div class="col-md-6 col-12 mb-1">
            <div class="input-group">
-                <input type="number" class="form-control" name="thermal_energy_consumption_next" id="thermal_energy_consumption_next" value=" " placeholder="Enter Specific thermal energy Consumption" aria-label="Enter Specific thermal energy Consumption" aria-describedby="basic-addon2" required=""> 
+                <input type="number" class="form-control" name="thermal_energy_consumption_next" id="thermal_energy_consumption_next" value="${objList[0].thermal_energy_consumption_next}"
+                placeholder="Enter Specific thermal energy Consumption" aria-label="Enter Specific thermal energy Consumption" aria-describedby="basic-addon2" required=""> 
 		            	<span class="input-group-text" id="basic-addon2">%</span>
 	              <div class="valid-feedback">OK!</div>
 	              <div class="invalid-feedback">Please Enter Specific thermal energy Consumption</div>
@@ -749,7 +754,9 @@ License: You must have a valid license purchased only from themeforest(the above
     <div class="collapse <c:if test="${sessionScope.USER_ID eq objList[0].created_by}">show </c:if> " id="collapseExample2">
   <div class="row"  style="zoom: 1;">
     <div class="col-md-6 col-sm-12">
-      <div class="card">
+    <div class="card" style="
+    height: 15.4rem;
+">
         <div class="card-header badge badge-light-primary  py-1">
           <h4 class="card-title fw-bolder">Baseline Information (FY <span id="financial-year"></span>)</h4>
           <div class="heading-elements">
@@ -764,27 +771,28 @@ License: You must have a valid license purchased only from themeforest(the above
             <div class="card-body">
            <c:if test="${sessionScope.BASE_SBU eq 'MSW' }">
           <div class="row">
-         <div class="col-md-12 col-12 mb-1">
+            <div class="col-md-8 col-12 mb-1">
             <h5 class="fw-bolder" style="
     color: red;">MSW</h5>
-             <label class="form-label" for="basic-default-password1">Quantity of RDF sent to Cement Industries
-
-
-
+            <label class="form-label" for="basic-default-password1">Quantity of RDF sent to Cement Industries
 <span id="financial-year-next"></span><span id="financial-year"></span>
            </label>
+   
+          
               <div class="input-group">
-                <input type="number" class="form-control" name="quantity_msw_past" id="quantity_msw_past" value=" " placeholder="Enter Quantity of RDF" aria-label="Enter Total Net Fresh Water Consumption" aria-describedby="basic-addon2" required=""> 
+                <input type="number" class="form-control" name="quantity_msw_past" id="quantity_msw_past" value="${objList[1].quantity_msw_past}"
+                placeholder="Enter Quantity of RDF" aria-label="Enter Total Net Fresh Water Consumption" aria-describedby="basic-addon2" required=""> 
 		            	<span class="input-group-text" id="basic-addon2">Ton</span>
 	              <div class="valid-feedback">OK!</div>
 	              <div class="invalid-feedback">Please Enter Quantity of RDF.</div>
 		      </div>
  			</div>
  	<!-- 		<div class="col-md-6 col-12 mb-1 text-center">
-             <p class="card-text">
+            <label class="form-label" for="basic-default-password1"> Specific Fresh Water Consumption, in KL
+<span id="financial-year-next"></span><span id="financial-year"></span>
+           </label>
              
-          Specific Fresh Water Consumption, in KL
-          </p>
+         
 		    <div class="invoice-total-item">
 			    <h4 class="invoice-total-amount" style="display: inline-block; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">
 			        <span id="waterP"><b>0</b></span>
@@ -801,10 +809,10 @@ License: You must have a valid license purchased only from themeforest(the above
             <div class="col-md-8 col-12 mb-1">
              <h5 class="fw-bolder" style="
     color: red;">WTE</h5>
-             <p class="card-text">
-          Total electricity generated in kWh
-
-          </p>
+               <label class="form-label" for="basic-default-password1">   Total electricity generated in kWh
+<span id="financial-year-next"></span><span id="financial-year"></span>
+           </label>
+         
               <div class="input-group">
                 <input type="number" class="form-control" name="quantity_wte_past" id="quantity_wte_past" value="${objList[1].quantity_wte_past}"
                  placeholder="Enter Total electricity generated in kWh" aria-label="Enter Total Net Fresh Water Consumption" aria-describedby="basic-addon2" required=""> 
@@ -812,11 +820,10 @@ License: You must have a valid license purchased only from themeforest(the above
 	              <div class="valid-feedback">OK!</div>
 	              <div class="invalid-feedback">Please Enter Total electricity generated in kWh.</div>
 		      </div>
-		       <p class="card-text">
-         Auxiliary consumption in kWh
-
-
-          </p>
+		        <label class="form-label" for="basic-default-password1"> Auxiliary consumption in kWh
+<span id="financial-year-next"></span><span id="financial-year"></span>
+           </label>
+       
 		      <div class="input-group">
                 <input type="number" class="form-control" name="wte_past" id="wte_past"  value="${objList[1].wte_past}"
                 placeholder="Enter Auxiliary consumption in kWh" aria-label="Enter Total Net Fresh Water Consumption" aria-describedby="basic-addon2" required=""> 
@@ -825,10 +832,10 @@ License: You must have a valid license purchased only from themeforest(the above
 	              <div class="invalid-feedback">Please Enter Auxiliary consumption in kWh.</div>
 		      </div>
 		      
-		       <p class="card-text">
-         Auxiliary consumption
-
-          </p>
+		        <label class="form-label" for="basic-default-password1">  Auxiliary consumption
+<span id="financial-year-next"></span><span id="financial-year"></span>
+           </label>
+         
 		      <div class="input-group">
                 <input type="number" class="form-control" name="auxillary_past" id="auxillary_past" value="${objList[1].auxillary_past}"
                 placeholder="Enter Auxiliary consumption." aria-label="Enter Total Net Fresh Water Consumption" aria-describedby="basic-addon2" required=""> 
@@ -844,10 +851,11 @@ License: You must have a valid license purchased only from themeforest(the above
             <div class="col-md-8 col-12 mb-1">
             <h5 class="fw-bolder" style="
     color: red;">IWM</h5>
-             <p class="card-text">
-          Quantity of AFR sent to Cement Industries
+            <label class="form-label" for="basic-default-password1"> Quantity of AFR sent to Cement Industries
 
-          </p>
+<span id="financial-year-next"></span><span id="financial-year"></span>
+           </label>
+         
               <div class="input-group">
                 <input type="number" class="form-control" name="quantity_iwm_past" id="quantity_iwm_past"  value="${objList[1].quantity_iwm_past}"
                 placeholder=" Enter Quantity of AFR" aria-label="Enter Total Net Fresh Water Consumption" aria-describedby="basic-addon2" required=""> 
@@ -864,10 +872,11 @@ License: You must have a valid license purchased only from themeforest(the above
             <div class="col-md-8 col-12 mb-1">
             <h5 class="fw-bolder" style="
     color: red;">BMW</h5>
-             <p class="card-text">
-          Number of BMW Incinerators in the facility
+         <label class="form-label" for="basic-default-password1"> Number of BMW Incinerators in the facility
+
+<span id="financial-year-next"></span><span id="financial-year"></span>
+           </label>
           
-          </p>
               <div class="input-group">
                 <input type="number" class="form-control" name="quantity_bmw_past" id="quantity_bmw_past"  value="${objList[1].quantity_bmw_past}"
                 placeholder="Enter  Number of BMW Incinerators" aria-label="Enter Total Net Fresh Water Consumption" aria-describedby="basic-addon2" required=""> 
@@ -882,7 +891,7 @@ License: You must have a valid license purchased only from themeforest(the above
      
       <div class="col-md-6 col-sm-12">
      <div class="card" style="
-    height: 15.2rem;
+    height: 15.4rem;
 ">
         <div class="card-header badge badge-light-primary py-1">
                   <h4 class="card-title fw-bolder">Site Level Sustainability Goals (FY <span id="financial-year-next"></span>)</h4>
@@ -899,20 +908,20 @@ License: You must have a valid license purchased only from themeforest(the above
             <div class="card-body">
          <c:if test="${sessionScope.BASE_SBU eq 'MSW' }">
           <div class="row">
-      <div class="col-md-12 col-12 mb-1">
+            <div class="col-md-8 col-12 mb-1">
             <h5 class="fw-bolder" style="
     color: red;">MSW</h5>
-             <label class="form-label" for="basic-default-password1">Quantity of RDF sent to Cement Industries
-
-
+            <label class="form-label" for="basic-default-password1">   Quantity of RDF sent to Cement Industries 
 
 <span id="financial-year-next"></span><span id="financial-year"></span>
            </label>
+         
               <div class="input-group">
-                <input type="number" class="form-control" name="quantity_msw_next" id="quantity_msw_next" value=" " placeholder="Enter Quantity of RDF" aria-label="Enter Total Net Fresh Water Consumption" aria-describedby="basic-addon2" required=""> 
+                <input type="number" class="form-control" name="quantity_msw_next" id="quantity_msw_next"  value="${objList[0].quantity_msw_next}"
+                placeholder="Enter Quantity of RDF sent to Cement Industries." aria-label="Enter Total Net Fresh Water Consumption" aria-describedby="basic-addon2" required=""> 
 		            	<span class="input-group-text" id="basic-addon2">Ton</span>
 	              <div class="valid-feedback">OK!</div>
-	              <div class="invalid-feedback">Please Enter Quantity of RDF.</div>
+	              <div class="invalid-feedback">Please Enter Quantity of RDF sent to Cement Industries.</div>
 		      </div>
  			</div>
  			
@@ -923,9 +932,12 @@ License: You must have a valid license purchased only from themeforest(the above
             <div class="col-md-8 col-12 mb-1">
              <h5 class="fw-bolder" style="
     color: red;">WTE</h5>
-             <p class="card-text">
-        Auxiliary Consumption to be less than: 
-          </p>
+          <label class="form-label" for="basic-default-password1">   Auxiliary Consumption to be less than: 
+
+<span id="financial-year-next"></span><span id="financial-year"></span>
+           </label>
+          
+        
               <div class="input-group">
                 <input type="number" class="form-control" name="quantity_wte_next" id="quantity_wte_next"  value="${objList[0].quantity_wte_next}"
                 placeholder="Enter Auxiliary Consumption." aria-describedby="basic-addon2" required=""> 
@@ -944,10 +956,11 @@ License: You must have a valid license purchased only from themeforest(the above
             <div class="col-md-8 col-12 mb-1">
             <h5 class="fw-bolder" style="
     color: red;">IWM</h5>
-             <p class="card-text">
-         Quantity of AFR to Cement Industries (FY 2025)
+             <label class="form-label" for="basic-default-password1">   Quantity of AFR to Cement Industries (FY 2025)
 
-          </p>
+<span id="financial-year-next"></span><span id="financial-year"></span>
+           </label>
+        
               <div class="input-group">
                 <input type="number" class="form-control" name="quantity_iwm_next" id="quantity_iwm_next" value="${objList[0].quantity_iwm_next}"
                 placeholder="Enter Quantity of AFR to Cement Industries" aria-label="Enter Total Net Fresh Water Consumption" aria-describedby="basic-addon2" required=""> 
@@ -965,11 +978,12 @@ License: You must have a valid license purchased only from themeforest(the above
             <div class="col-md-8 col-12 mb-1">
             <h5 class="fw-bolder" style="
     color: red;">BMW</h5>
-             <p class="card-text">
-          Number of BMW Incinerators with Dry Scrubbing System
+             <label class="form-label" for="basic-default-password1">  Number of BMW Incinerators with Dry Scrubbing System
 
-          
-          </p>
+<span id="financial-year-next"></span><span id="financial-year"></span>
+           </label>
+        
+       
               <div class="input-group">
                 <input type="number" class="form-control" name="quantity_bmw_next" id="quantity_bmw_next" value="${objList[0].quantity_bmw_next}"
                 placeholder="Enter Number of BMW Incinerators" aria-label="Enter Total Net Fresh Water Consumption" aria-describedby="basic-addon2" required=""> 
@@ -998,7 +1012,7 @@ License: You must have a valid license purchased only from themeforest(the above
      </div>
     </div>
     <div class="collapse show" id="collapseExample3">
-<div class="row" style="zoom: 1;">
+  <div class="row"  style="zoom: 1;">
    <div class="col-md-6 col-sm-12">
    <div class="card">
         <div class="card-header badge badge-light-primary  py-1">
@@ -1011,17 +1025,20 @@ License: You must have a valid license purchased only from themeforest(the above
             </ul>
           </div>
         </div>
-        <div class="card-content collapse show my-2">
+        <div class="card-content collapse show my-2" >
               <div class="card-body">
          
           <div class="row">
             <div class="col-md-12 col-12 mb-1">
-             <label class="form-label" for="basic-default-password1">Plantation of New Trees (either w/in or outside the facility)
+            <label class="form-label" for="basic-default-password1"> Plantation of New Trees (either w/in or outside the facility)
 
 <span id="financial-year-next"></span><span id="financial-year"></span>
            </label>
+        
               <div class="input-group">
-                <input type="number" class="form-control" name="plantation_next" id="plantation_next" value=" " placeholder="Enter Plantation of New Trees" aria-label="Enter Total Net Fresh Water Consumption" aria-describedby="basic-addon2" required=""> 
+                <input type="number" class="form-control" name="plantation_next" id="plantation_next" value="${objList[0].plantation_next}"
+                placeholder="Enter Plantation of New Trees" aria-label="Enter Total Net Fresh Water Consumption" 
+                aria-describedby="basic-addon2" required=""> 
 		            	<span class="input-group-text" id="basic-addon2">Absolute Number</span>
 	              <div class="valid-feedback">OK!</div>
 	              <div class="invalid-feedback">Please Enter Plantation of New Trees.</div>
@@ -1046,17 +1063,20 @@ License: You must have a valid license purchased only from themeforest(the above
             </ul>
           </div>
         </div>
-        <div class="card-content collapse show my-2">
+        <div class="card-content collapse show my-2" >
               <div class="card-body">
          
           <div class="row">
             <div class="col-md-12 col-12 mb-1">
-             <label class="form-label" for="basic-default-password1">Total Training Hours (excluding mandatory training) for All Employees at the Facility
-
+             <label class="form-label" for="basic-default-password1"> Total Training Hours (excluding mandatory training) for All Employees at the Facility
 
 <span id="financial-year-next"></span><span id="financial-year"></span>
-           </label><div class="input-group">
-                <input type="number" class="form-control" name="total_hours_next" id="total_hours_next" value=" " placeholder="Enter Total Training Hours" aria-label="Enter Total Net Fresh Water Consumption" aria-describedby="basic-addon2" required=""> 
+           </label>
+       
+              <div class="input-group">
+                <input type="number" class="form-control" name="total_hours_next" id="total_hours_next" value="${objList[0].total_hours_next}"
+                placeholder="Enter Total Training Hours" aria-label="Enter Total Net Fresh Water Consumption" 
+                aria-describedby="basic-addon2" required=""> 
 		            	<span class="input-group-text" id="basic-addon2">No.hours</span>
 	              <div class="valid-feedback">OK!</div>
 	              <div class="invalid-feedback">Please Enter Total Training Hours.</div>
@@ -1071,7 +1091,9 @@ License: You must have a valid license purchased only from themeforest(the above
       </div>
   
   <div class="col-md-6 col-sm-12">
-      <div class="card">
+     <div class="card" style="
+    height: 13.5rem;
+">
         <div class="card-header badge badge-light-primary  py-1">
           <h4 class="card-title fw-bolder">Compliance</h4>
           <div class="heading-elements">
@@ -1082,21 +1104,23 @@ License: You must have a valid license purchased only from themeforest(the above
             </ul>
           </div>
         </div>
-        <div class="card-content collapse show my-2">
+        <div class="card-content collapse show my-2" >
               <div class="card-body">
          
           <div class="row">
             <div class="col-md-12 col-12 mb-1">
-             <label class="form-label" for="basic-default-password1">Number of Violations and Non-Compliances
-
+             <label class="form-label" for="basic-default-password1">  Number of Violations and Non-Compliances
 
 <span id="financial-year-next"></span><span id="financial-year"></span>
            </label>
+       
               <div class="input-group">
-                <input type="number" class="form-control" name="violations_next" id="violations_next" value=" " placeholder="Enter Number of Violations &amp; Non-Compliances." aria-label="Enter Total Net Fresh Water Consumption" aria-describedby="basic-addon2" required=""> 
+                <input type="number" class="form-control" name="violations_next" id="violations_next" value="${objList[0].violations_next}"
+                placeholder="Enter Number of Violations & Non-Compliances." aria-label="Enter Total Net Fresh Water Consumption" 
+                aria-describedby="basic-addon2" required=""> 
 		            	<span class="input-group-text" id="basic-addon2">Number</span>
 	              <div class="valid-feedback">OK!</div>
-	              <div class="invalid-feedback">Please Enter Number of Violations &amp; Non-Compliances.</div>
+	              <div class="invalid-feedback">Please Enter Number of Violations & Non-Compliances.</div>
 		      </div>
  			</div>
  			
@@ -1110,7 +1134,7 @@ License: You must have a valid license purchased only from themeforest(the above
       
       <div class="col-md-6 col-sm-12">
       <div class="card" style="
-    height: 13.4rem;
+    height: 13.5rem;
 ">
         <div class="card-header badge badge-light-primary  py-1">
           <h4 class="card-title fw-bolder">Total Quantity of Waste Handled</h4>
@@ -1122,14 +1146,15 @@ License: You must have a valid license purchased only from themeforest(the above
             </ul>
           </div>
         </div>
-        <div class="card-content collapse show my-2">
+        <div class="card-content collapse show my-2" >
               <div class="card-body">
          
           <div class="row">
             <div class="col-md-12 col-12 ">
              <div class="card-body">
-		 		<div class="input-group">
-		            	<input type="number" class="form-control" name="total_quantity_of_waste_handled" id="total_quantity_of_waste_handled" value=" " placeholder="Enter Total Quantity of Waste Handled" aria-label="Enter Total Quantity of Waste Handled" aria-describedby="basic-addon2" required="">
+		 			<div class="input-group">
+		            	<input type="number" class="form-control" name="total_quantity_of_waste_handled" id="total_quantity_of_waste_handled" value="${objList[0].total_quantity_of_waste_handled}"
+		            	 placeholder="Enter Total Quantity of Waste Handled" aria-label="Enter Total Quantity of Waste Handled" aria-describedby="basic-addon2" required="">
 		            	<span class="input-group-text" id="basic-addon2">Tons</span>
 		            	
               <div class="valid-feedback">OK!</div>
